@@ -1,0 +1,18 @@
+---
+listing:
+  contents: posts
+  sort: "author desc"
+  type: table
+  categories: true
+  sort-ui: [title, file-modified]
+  filter-ui: [author, title, description, categories, image-alt]
+  feed: true
+  fields: [author, title, description, categories, file-modified, image-alt]
+  page-size: 100
+page-layout: full
+title-block-banner: true
+---
+
+## Data posts
+
+The `Author` is the originating BYU-I course that prompted the data. Note that `image-alt` is leveraged to provides a few key data summaries. All terms are searchable. For example, you could search `"Tidyness: 10"` to find all the datasets that are the most organized.

@@ -1,0 +1,27 @@
+project:
+  type: website
+  output-dir: .
+
+website:
+  title: "BYU-I Course Project Data"
+  description: "Documentation on the avaialable data that we use in our courses."
+  site-url: https://byuidatascience.github.io
+  navbar:
+    right:
+      - text: Data Science Program
+        href: https://byuidatascience.github.io/
+      - icon: github
+        href: https://github.com/
+      - icon: rss
+        href: index.xml
+format:
+  html:
+    theme: zephyr
+    css: styles.css
+    grid:
+      sidebar-width: 100px
+      body-width: 1300px
+      margin-width: 100px
+      gutter-width: 1.5rem
+
+
