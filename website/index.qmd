@@ -1,6 +1,6 @@
 ---
 listing:
-  contents: posts
+  contents: posts/**/*.qmd
   sort: "author desc"
   type: table
   categories: true

@@ -1,17 +1,10 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "childhealth-series.html",
+    "href": "childhealth-series.html",
+    "title": "Child Health Data",
     "section": "",
-    "text": "About this blog"
-  },
-  {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Birthdates of professional athletes",
-    "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "The data focused on Child Health.\n\n\n\n\n\n\n\n\n\n\nDutch child height and weight measurements\n\n\n\n\n\nLongitudinal height and weight measurements during ages 0-2 years for a representative sample of 1,933 Dutch children born in 1988-1989.\n\n\n\n\n\n\nNov 5, 2023\n\n\n1 min\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -26,5 +19,26 @@
     "title": "BYU-I Course Project Data",
     "section": "",
     "text": "The Author is the originating BYU-I course that prompted the data. Note that image-alt is leveraged to provides a few key data summaries. All terms are searchable. For example, you could search \"Tidyness: 10\" to find all the datasets that are the most organized."
+  },
+  {
+    "objectID": "posts/childhealth/dutch_child.html",
+    "href": "posts/childhealth/dutch_child.html",
+    "title": "Dutch child height and weight measurements",
+    "section": "",
+    "text": "Name\nDescription\n\n\n\n\nTitle\n\n\n\nDescription\n\n\n\nData source\n\n\n\nPins URL"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Birthdates of professional athletes",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
   }
 ]

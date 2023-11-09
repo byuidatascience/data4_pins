@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://byuidatascience.github.io/about.html</loc>
-    <lastmod>2023-11-08T18:55:38.915Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/welcome/index.html</loc>
-    <lastmod>2023-11-08T18:55:38.411Z</lastmod>
+    <loc>https://byuidatascience.github.io/childhealth-series.html</loc>
+    <lastmod>2023-11-09T00:11:37.761Z</lastmod>
   </url>
   <url>
     <loc>https://byuidatascience.github.io/index.html</loc>
-    <lastmod>2023-11-08T18:55:38.687Z</lastmod>
+    <lastmod>2023-11-09T00:11:37.263Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/childhealth/dutch_child.html</loc>
+    <lastmod>2023-11-09T00:11:36.738Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/welcome/index.html</loc>
+    <lastmod>2023-11-09T00:11:36.979Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/about.html</loc>
+    <lastmod>2023-11-09T00:11:37.491Z</lastmod>
   </url>
 </urlset>
