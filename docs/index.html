@@ -71,9 +71,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-author','listing-title','listing-description','listing-categories','listing-file-modified','listing-image-alt',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-author','listing-title','listing-description','listing-categories','listing-file-modified',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-author","listing-title","listing-description","listing-categories","listing-image-alt"],
+      searchColumns: ["listing-author","listing-title","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -149,7 +149,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="data-posts" class="level2">
 <h2 class="anchored" data-anchor-id="data-posts">Data posts</h2>
-<p>The <code>Author</code> is the originating BYU-I course that prompted the data. Note that <code>image-alt</code> is leveraged to provides a few key data summaries. All terms are searchable. For example, you could search <code>"Tidyness: 10"</code> to find all the datasets that are the most organized.</p>
+<p>The <code>Author</code> is the originating BYU-I course that prompted the data. All terms are searchable.</p>
 
 
 
@@ -197,13 +197,10 @@ Categories
 <th>
 <a class="sort" data-sort="listing-file-modified-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Modified</a>
 </th>
-<th>
-image-alt
-</th>
 </tr>
 </thead>
 <tbody class="list">
-<tr data-index="0" data-categories="DS150" data-listing-date-sort="1699164000000" data-listing-file-modified-sort="1699488276827" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Dutch child height and weight measurements" data-listing-filename-sort="dutch_child.qmd">
+<tr data-index="0" data-categories="DS150" data-listing-date-sort="1699164000000" data-listing-file-modified-sort="1699593465884" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Dutch child height and weight measurements" data-listing-filename-sort="dutch_child.qmd">
 <td>
 <span class="listing-author">DS 150</span>
 </td>
@@ -217,10 +214,7 @@ image-alt
 <span class="listing-categories">DS150</span>
 </td>
 <td>
-<span class="listing-file-modified">11/8/23, 5:04:36 PM</span>
-</td>
-<td>
-<span class="listing-image-alt">Rows: 3000, Variables: 10, Numeric: 6, Tidyness: 10</span>
+<span class="listing-file-modified">11/9/23, 10:17:45 PM</span>
 </td>
 </tr>
 <tr data-index="1" data-categories="DS150" data-listing-date-sort="1699164000000" data-listing-file-modified-sort="1699468748327" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Birthdates of professional athletes" data-listing-filename-sort="index.qmd">
@@ -238,9 +232,6 @@ image-alt
 </td>
 <td>
 <span class="listing-file-modified">11/8/23, 11:39:08 AM</span>
-</td>
-<td>
-<span class="listing-image-alt">Rows: 3000, Variables: 10, Numeric: 6, Tidyness: 10</span>
 </td>
 </tr>
 </tbody>

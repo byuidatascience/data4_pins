@@ -20,36 +20,273 @@
 
 
 
-<table class="table">
+<section id="section" class="level1">
+<h1></h1>
+<section id="data-details" class="level2">
+<h2 class="anchored" data-anchor-id="data-details">Data details</h2>
+<p>There are <strong>2,000 rows</strong> and <strong>8 columns</strong>. The data source<sup>1</sup> is used to create our data that is stored in our <a href="https://posit.byui.edu/connect/#/apps/1091db55-3d31-4071-b60e-a2253aa63298/access">pins table</a>. You can access this pin from a connection to <a href="https://posit.byui.edu">posit.byui.edu</a> using <code>hathawayj/childhealth_dutch</code>.</p>
+<section id="variable-description" class="level3">
+<h3 class="anchored" data-anchor-id="variable-description">Variable description</h3>
+<ul>
+<li><strong>subjid:</strong> unique identifyer of each child</li>
+<li><strong>sex:</strong> Male or Female</li>
+<li><strong>agedays:</strong> Age in days</li>
+<li><strong>gagebrth:</strong> Gestational age at birth (days)</li>
+<li><strong>htcm:</strong> Length/height in cm (34-102)</li>
+<li><strong>wtkg:</strong> Weight measurement in kg (0.8-20.5)</li>
+<li><strong>haz:</strong> Height in SDS relative to WHO child growth standard</li>
+<li><strong>waz:</strong> Weight in SDS relative to WHO child growth standard</li>
+</ul>
+</section>
+<section id="variable-summary" class="level3">
+<h3 class="anchored" data-anchor-id="variable-summary">Variable summary</h3>
+<div class="cell">
+<div class="cell-output-display">
+<p><strong>Variable type: numeric</strong></p>
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 9%">
+<col style="width: 13%">
+<col style="width: 8%">
+<col style="width: 6%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 5%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
-<th>Description</th>
+<th style="text-align: left;">skim_variable</th>
+<th style="text-align: right;">n_missing</th>
+<th style="text-align: right;">complete_rate</th>
+<th style="text-align: right;">mean</th>
+<th style="text-align: right;">sd</th>
+<th style="text-align: right;">p0</th>
+<th style="text-align: right;">p25</th>
+<th style="text-align: right;">p50</th>
+<th style="text-align: right;">p75</th>
+<th style="text-align: right;">p100</th>
+<th style="text-align: left;">hist</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Title</td>
-<td></td>
+<td style="text-align: left;">subjid</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">10637.52</td>
+<td style="text-align: right;">500.27</td>
+<td style="text-align: right;">10001.00</td>
+<td style="text-align: right;">10064.00</td>
+<td style="text-align: right;">11018.00</td>
+<td style="text-align: right;">11072.00</td>
+<td style="text-align: right;">11127.00</td>
+<td style="text-align: left;">▆▁▁▁▇</td>
 </tr>
 <tr class="even">
-<td>Description</td>
-<td></td>
+<td style="text-align: left;">agedays</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">274.38</td>
+<td style="text-align: right;">238.33</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">58.00</td>
+<td style="text-align: right;">196.00</td>
+<td style="text-align: right;">456.00</td>
+<td style="text-align: right;">978.00</td>
+<td style="text-align: left;">▇▃▃▂▁</td>
 </tr>
 <tr class="odd">
-<td>Data source</td>
-<td></td>
+<td style="text-align: left;">gagebrth</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">281.35</td>
+<td style="text-align: right;">12.52</td>
+<td style="text-align: right;">227.00</td>
+<td style="text-align: right;">276.00</td>
+<td style="text-align: right;">283.00</td>
+<td style="text-align: right;">290.00</td>
+<td style="text-align: right;">304.00</td>
+<td style="text-align: left;">▁▁▂▇▆</td>
 </tr>
 <tr class="even">
-<td>Pins URL</td>
-<td></td>
+<td style="text-align: left;">htcm</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">0.98</td>
+<td style="text-align: right;">69.08</td>
+<td style="text-align: right;">12.42</td>
+<td style="text-align: right;">38.00</td>
+<td style="text-align: right;">57.50</td>
+<td style="text-align: right;">69.50</td>
+<td style="text-align: right;">79.00</td>
+<td style="text-align: right;">97.00</td>
+<td style="text-align: left;">▁▇▆▇▂</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">wtkg</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">0.99</td>
+<td style="text-align: right;">8.10</td>
+<td style="text-align: right;">3.30</td>
+<td style="text-align: right;">1.18</td>
+<td style="text-align: right;">5.08</td>
+<td style="text-align: right;">8.22</td>
+<td style="text-align: right;">10.70</td>
+<td style="text-align: right;">16.50</td>
+<td style="text-align: left;">▅▇▇▆▂</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">haz</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">0.98</td>
+<td style="text-align: right;">0.30</td>
+<td style="text-align: right;">1.10</td>
+<td style="text-align: right;">-6.60</td>
+<td style="text-align: right;">-0.38</td>
+<td style="text-align: right;">0.37</td>
+<td style="text-align: right;">1.02</td>
+<td style="text-align: right;">3.71</td>
+<td style="text-align: left;">▁▁▃▇▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">waz</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">0.99</td>
+<td style="text-align: right;">0.29</td>
+<td style="text-align: right;">0.99</td>
+<td style="text-align: right;">-5.98</td>
+<td style="text-align: right;">-0.30</td>
+<td style="text-align: right;">0.33</td>
+<td style="text-align: right;">0.96</td>
+<td style="text-align: right;">3.11</td>
+<td style="text-align: left;">▁▁▂▇▂</td>
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<p><strong>Variable type: character</strong></p>
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 13%">
+<col style="width: 19%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 8%">
+<col style="width: 12%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">skim_variable</th>
+<th style="text-align: right;">n_missing</th>
+<th style="text-align: right;">complete_rate</th>
+<th style="text-align: right;">min</th>
+<th style="text-align: right;">max</th>
+<th style="text-align: right;">empty</th>
+<th style="text-align: right;">n_unique</th>
+<th style="text-align: right;">whitespace</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">sex</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell" data-file="../../../data_scripts/childheath/dutch_child.r">
+<details>
+<summary>Explore generating code using R</summary>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1">pacman<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, pins)</span>
+<span id="cb1-2"></span>
+<span id="cb1-3">tdat <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">tempfile</span>()</span>
+<span id="cb1-4"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">download</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://github.com/stefvanbuuren/brokenstick/raw/71dc99e62ce57b58d5c1d2a1074fbd4bf394e559/data/smocc_hgtwgt.rda"</span>,tdat, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">mode =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"wb"</span>)</span>
+<span id="cb1-5"></span>
+<span id="cb1-6"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">load</span>(tdat)</span>
+<span id="cb1-7"></span>
+<span id="cb1-8">childhealth_dutch <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> smocc_hgtwgt <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb1-9">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">select</span>(subjid, sex, agedays, gagebrth, htcm, wtkg, haz, waz)</span>
+<span id="cb1-10"></span>
+<span id="cb1-11">board <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">board_connect</span>()</span>
+<span id="cb1-12"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">pin_write</span>(board, childhealth_dutch, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"childhealth_dutch"</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">type =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"parquet"</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">access_type =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"all"</span>)</span></code></pre></div>
+</details>
+</div>
+<!-- ```{python}
+#| echo: true
+#| eval: false
+#| code-fold: true
+#| code-summary: Explore generating code using Python
+#| code-line-numbers: true
+# file: ../../../data_scripts/childhealth.py
+``` -->
 
 
+</section>
+</section>
+</section>
 
- ]]></description>
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p><a href="https://github.com/stefvanbuuren/brokenstick">https://github.com/stefvanbuuren/brokenstick</a>↩︎</p></li>
+</ol>
+</section></div> ]]></description>
   <category>DS150</category>
   <guid>https://byuidatascience.github.io/posts/childhealth/dutch_child.html</guid>
   <pubDate>Sun, 05 Nov 2023 06:00:00 GMT</pubDate>

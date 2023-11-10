@@ -11,21 +11,35 @@
     "href": "index.html",
     "title": "BYU-I Course Project Data",
     "section": "",
-    "text": "The Author is the originating BYU-I course that prompted the data. Note that image-alt is leveraged to provides a few key data summaries. All terms are searchable. For example, you could search \"Tidyness: 10\" to find all the datasets that are the most organized."
+    "text": "The Author is the originating BYU-I course that prompted the data. All terms are searchable."
   },
   {
     "objectID": "index.html#data-posts",
     "href": "index.html#data-posts",
     "title": "BYU-I Course Project Data",
     "section": "",
-    "text": "The Author is the originating BYU-I course that prompted the data. Note that image-alt is leveraged to provides a few key data summaries. All terms are searchable. For example, you could search \"Tidyness: 10\" to find all the datasets that are the most organized."
+    "text": "The Author is the originating BYU-I course that prompted the data. All terms are searchable."
   },
   {
     "objectID": "posts/childhealth/dutch_child.html",
     "href": "posts/childhealth/dutch_child.html",
     "title": "Dutch child height and weight measurements",
     "section": "",
-    "text": "Name\nDescription\n\n\n\n\nTitle\n\n\n\nDescription\n\n\n\nData source\n\n\n\nPins URL"
+    "text": "There are 2,000 rows and 8 columns. The data source1 is used to create our data that is stored in our pins table. You can access this pin from a connection to posit.byui.edu using hathawayj/childhealth_dutch.\n\n\n\nsubjid: unique identifyer of each child\nsex: Male or Female\nagedays: Age in days\ngagebrth: Gestational age at birth (days)\nhtcm: Length/height in cm (34-102)\nwtkg: Weight measurement in kg (0.8-20.5)\nhaz: Height in SDS relative to WHO child growth standard\nwaz: Weight in SDS relative to WHO child growth standard\n\n\n\n\n\n\nVariable type: numeric\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nmean\nsd\np0\np25\np50\np75\np100\nhist\n\n\n\n\nsubjid\n0\n1.00\n10637.52\n500.27\n10001.00\n10064.00\n11018.00\n11072.00\n11127.00\n▆▁▁▁▇\n\n\nagedays\n3\n1.00\n274.38\n238.33\n0.00\n58.00\n196.00\n456.00\n978.00\n▇▃▃▂▁\n\n\ngagebrth\n0\n1.00\n281.35\n12.52\n227.00\n276.00\n283.00\n290.00\n304.00\n▁▁▂▇▆\n\n\nhtcm\n40\n0.98\n69.08\n12.42\n38.00\n57.50\n69.50\n79.00\n97.00\n▁▇▆▇▂\n\n\nwtkg\n19\n0.99\n8.10\n3.30\n1.18\n5.08\n8.22\n10.70\n16.50\n▅▇▇▆▂\n\n\nhaz\n40\n0.98\n0.30\n1.10\n-6.60\n-0.38\n0.37\n1.02\n3.71\n▁▁▃▇▁\n\n\nwaz\n19\n0.99\n0.29\n0.99\n-5.98\n-0.30\n0.33\n0.96\n3.11\n▁▁▂▇▂\n\n\n\n\n\n\n\nVariable type: character\n\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nmin\nmax\nempty\nn_unique\nwhitespace\n\n\n\n\nsex\n0\n1\n4\n6\n0\n2\n0\n\n\n\n\n\n\n\nExplore generating code using R\npacman::p_load(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, pins)\n\ntdat &lt;- tempfile()\ndownload(\"https://github.com/stefvanbuuren/brokenstick/raw/71dc99e62ce57b58d5c1d2a1074fbd4bf394e559/data/smocc_hgtwgt.rda\",tdat, mode = \"wb\")\n\nload(tdat)\n\nchildhealth_dutch &lt;- smocc_hgtwgt |&gt;\n  select(subjid, sex, agedays, gagebrth, htcm, wtkg, haz, waz)\n\nboard &lt;- board_connect()\npin_write(board, childhealth_dutch, \"childhealth_dutch\", type = \"parquet\", access_type = \"all\")"
+  },
+  {
+    "objectID": "posts/childhealth/dutch_child.html#data-details",
+    "href": "posts/childhealth/dutch_child.html#data-details",
+    "title": "Dutch child height and weight measurements",
+    "section": "",
+    "text": "There are 2,000 rows and 8 columns. The data source1 is used to create our data that is stored in our pins table. You can access this pin from a connection to posit.byui.edu using hathawayj/childhealth_dutch.\n\n\n\nsubjid: unique identifyer of each child\nsex: Male or Female\nagedays: Age in days\ngagebrth: Gestational age at birth (days)\nhtcm: Length/height in cm (34-102)\nwtkg: Weight measurement in kg (0.8-20.5)\nhaz: Height in SDS relative to WHO child growth standard\nwaz: Weight in SDS relative to WHO child growth standard\n\n\n\n\n\n\nVariable type: numeric\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nmean\nsd\np0\np25\np50\np75\np100\nhist\n\n\n\n\nsubjid\n0\n1.00\n10637.52\n500.27\n10001.00\n10064.00\n11018.00\n11072.00\n11127.00\n▆▁▁▁▇\n\n\nagedays\n3\n1.00\n274.38\n238.33\n0.00\n58.00\n196.00\n456.00\n978.00\n▇▃▃▂▁\n\n\ngagebrth\n0\n1.00\n281.35\n12.52\n227.00\n276.00\n283.00\n290.00\n304.00\n▁▁▂▇▆\n\n\nhtcm\n40\n0.98\n69.08\n12.42\n38.00\n57.50\n69.50\n79.00\n97.00\n▁▇▆▇▂\n\n\nwtkg\n19\n0.99\n8.10\n3.30\n1.18\n5.08\n8.22\n10.70\n16.50\n▅▇▇▆▂\n\n\nhaz\n40\n0.98\n0.30\n1.10\n-6.60\n-0.38\n0.37\n1.02\n3.71\n▁▁▃▇▁\n\n\nwaz\n19\n0.99\n0.29\n0.99\n-5.98\n-0.30\n0.33\n0.96\n3.11\n▁▁▂▇▂\n\n\n\n\n\n\n\nVariable type: character\n\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nmin\nmax\nempty\nn_unique\nwhitespace\n\n\n\n\nsex\n0\n1\n4\n6\n0\n2\n0\n\n\n\n\n\n\n\nExplore generating code using R\npacman::p_load(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, pins)\n\ntdat &lt;- tempfile()\ndownload(\"https://github.com/stefvanbuuren/brokenstick/raw/71dc99e62ce57b58d5c1d2a1074fbd4bf394e559/data/smocc_hgtwgt.rda\",tdat, mode = \"wb\")\n\nload(tdat)\n\nchildhealth_dutch &lt;- smocc_hgtwgt |&gt;\n  select(subjid, sex, agedays, gagebrth, htcm, wtkg, haz, waz)\n\nboard &lt;- board_connect()\npin_write(board, childhealth_dutch, \"childhealth_dutch\", type = \"parquet\", access_type = \"all\")"
+  },
+  {
+    "objectID": "posts/childhealth/dutch_child.html#footnotes",
+    "href": "posts/childhealth/dutch_child.html#footnotes",
+    "title": "Dutch child height and weight measurements",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nhttps://github.com/stefvanbuuren/brokenstick↩︎"
   },
   {
     "objectID": "posts/welcome/index.html",
