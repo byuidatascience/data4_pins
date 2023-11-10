@@ -95,7 +95,7 @@ skim(dat) |> yank("character")
 #| code-fold: true
 #| code-summary: Explore generating code using R
 #| code-line-numbers: true
-#| file: ../../../data_scripts/childheath/child_summary.r
+#| file: ../../../data_scripts/childheath/child_365_days.r
 ```
 
 <!-- ```{python}
