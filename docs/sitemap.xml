@@ -2,54 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://byuidatascience.github.io/childhealth-series.html</loc>
-    <lastmod>2023-11-10T20:38:55.154Z</lastmod>
+    <lastmod>2023-11-10T23:42:51.849Z</lastmod>
   </url>
   <url>
-    <loc>https://byuidatascience.github.io/about.html</loc>
-    <lastmod>2023-11-10T20:38:54.639Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/data_topics.html</loc>
-    <lastmod>2023-11-10T20:38:54.055Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/childhealth/us_child.html</loc>
-    <lastmod>2023-11-10T20:38:53.589Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/childhealth/us_birth.html</loc>
-    <lastmod>2023-11-10T20:38:47.805Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/childhealth/dutch_birth.html</loc>
-    <lastmod>2023-11-10T20:38:42.021Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/childhealth/dutch_child.html</loc>
-    <lastmod>2023-11-10T20:38:35.933Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/childhealth/maled_child.html</loc>
-    <lastmod>2023-11-10T20:38:39.289Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/childhealth/height_coef.html</loc>
-    <lastmod>2023-11-10T20:38:44.849Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/childhealth/weight_coef.html</loc>
-    <lastmod>2023-11-10T20:38:50.707Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/welcome/index.html</loc>
-    <lastmod>2023-11-10T20:38:53.834Z</lastmod>
+    <loc>https://byuidatascience.github.io/environment.html</loc>
+    <lastmod>2023-11-10T23:42:51.205Z</lastmod>
   </url>
   <url>
     <loc>https://byuidatascience.github.io/index.html</loc>
-    <lastmod>2023-11-10T20:38:54.427Z</lastmod>
+    <lastmod>2023-11-10T23:42:50.740Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/welcome/index.html</loc>
+    <lastmod>2023-11-10T23:42:50.114Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/childhealth/weight_coef.html</loc>
+    <lastmod>2023-11-10T23:42:46.977Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/childhealth/all_child_365_days.html</loc>
+    <lastmod>2023-11-10T23:42:41.175Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/childhealth/all_child_summary.html</loc>
+    <lastmod>2023-11-10T23:42:35.160Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/childhealth/maled_child.html</loc>
+    <lastmod>2023-11-10T23:42:29.449Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/childhealth/dutch_child.html</loc>
+    <lastmod>2023-11-10T23:42:26.083Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/childhealth/dutch_birth.html</loc>
+    <lastmod>2023-11-10T23:42:32.240Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/childhealth/height_coef.html</loc>
+    <lastmod>2023-11-10T23:42:38.096Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/childhealth/us_birth.html</loc>
+    <lastmod>2023-11-10T23:42:44.086Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/childhealth/us_child.html</loc>
+    <lastmod>2023-11-10T23:42:49.863Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/data_topics.html</loc>
+    <lastmod>2023-11-10T23:42:50.349Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/about.html</loc>
+    <lastmod>2023-11-10T23:42:50.953Z</lastmod>
   </url>
   <url>
     <loc>https://byuidatascience.github.io/ds150-series.html</loc>
-    <lastmod>2023-11-10T20:38:54.867Z</lastmod>
+    <lastmod>2023-11-10T23:42:51.526Z</lastmod>
   </url>
 </urlset>

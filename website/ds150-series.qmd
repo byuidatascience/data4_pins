@@ -3,7 +3,6 @@ title: "DS 150: Data Intuition and Insight"
 listing:
   contents: 
     posts/childhealth/*.qmd
-    posts/tuberculosis/*.qmd
   sort: "date desc"
   type: table
   categories: false

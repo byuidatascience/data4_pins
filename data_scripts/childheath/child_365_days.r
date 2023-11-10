@@ -53,23 +53,6 @@ days_365 <- bind_rows(
 ) %>%
   as_tibble()
 
-dpr_document(days_365, extension = ".R.md", export_folder = usethis::proj_get(),
-             object_name = "days_365", title = "Child height and weight measurements for all data from three studies at one year of age.",
-             description = "A subset of measurements from the three studies.",
-             source = "https://github.com/stefvanbuuren/brokenstick, https://github.com/hafen/hbgd, and https://clinepidb.org/ce/app/record/dataset/DS_5c41b87221",
-             var_details = days_365_description)
-
-days_365_description <- list(subjid = "unique identifyer of each child",
-                             sex = "Male or Female",
-                             wtkg = "Weight measurement in kg (0.8-20.5)",
-                             htcm = "Height in cm",
-                             haz = "Height for age in SDS relative to WHO child growth standard",
-                             waz = "Weight for age in SDS relative to WHO child growth standard",
-                             country = "Label for the varied countries")
-
-
-
-
 
 board <- board_connect()
 

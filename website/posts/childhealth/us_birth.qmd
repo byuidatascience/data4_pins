@@ -6,7 +6,6 @@ categories: [health, child]
 description: "Subset of growth data from the collaborative perinatal project (CPP)."
 params: 
     source: "https://github.com/hafen/hbgd"
-    pins_url: "https://posit.byui.edu/connect/#/apps/1091db55-3d31-4071-b60e-a2253aa63298/access"
     pins_name: 'hathawayj/birth_us'
     available: all
 ---
@@ -48,6 +47,15 @@ library(arrow)
 board <- board_connect()
 dat <- pin_read(board, params$pins_name)
 meta <- pin_meta(board, params$pins_name)
+url_path <- meta$local$url
+file_name <- meta$file
+url_download <- paste0(
+    str_remove(
+        url_path,
+        paste0(
+            rev(unlist(str_split(url_path, "/")))[2],
+            "/")),
+    file_name)
 ```
 
 There are __`r prettyNum(nrow(dat), big.mark = ",", scientific = FALSE)` rows__ and __`r ncol(dat)` columns__. The data source[^1] is used to create our data that is stored in our [pins table](`r meta$local$url`). You can access this pin from a connection to [posit.byui.edu](https://posit.byui.edu) using ``r params$pins_name``.
@@ -100,5 +108,36 @@ skim(dat) |> yank("character")
 #| code-line-numbers: true
 # file: ../../../data_scripts/childhealth.py
 ``` -->
+
+
+## Access data
+
+__Direct Download:__ [`r file_name`](`r url_download`)
+
+__R and Python Download:__
+
+Our connect server is [https://posit.byui.edu](https://posit.byui.edu/connect/#/content/listing?filter=min_role:viewer&filter=content_type:all&view_type=compact) which you assign to your `CONNECT_SERVER` environment variable. You must [create and API key](https://docs.posit.co/connect/user/api-keys/#api-keys-creating) and store it in your environment under `CONNECT_API_KEY`. 
+
+_Read more about [environment variables and the pins package](../../environment.qmd) to understand how these environment variables are stored and accessed in R and Python with pins._
+
+```r
+library(pins)
+board <- board_connect(auth = "auto")
+dat <- pin_read(board, "`r params$pins_name`")
+```
+
+
+```python
+import os
+from pins import board_rsconnect
+from dotenv import load_dotenv
+load_dotenv()
+API_KEY = os.getenv('CONNECT_API_KEY')
+SERVER = os.getenv('CONNECT_SERVER')
+
+board = board_rsconnect(server_url=SERVER, api_key=API_KEY)
+dat = board.pin_read("`r params$pins_name`")
+```
+
 
 [^1]: [`r params$source`](`r params$source`)

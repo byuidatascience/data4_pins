@@ -8,9 +8,9 @@
 
 <meta name="author" content="DS 150">
 <meta name="dcterms.date" content="2023-11-05">
-<meta name="description" content="See https://www.cdc.gov/nchs/data/nhsr/nhsr063.pdf for a description of how calculations are made. However, the CDC has different coefficients.">
+<meta name="description" content="Data from three different research studies. Each study had different research objectives.">
 
-<title>BYU-I Course Project Data - WHO coeficients for height Z-score calculations</title>
+<title>BYU-I Course Project Data - Child height and weight HAZ summaries for multiple countries</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -143,10 +143,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">WHO coeficients for height Z-score calculations</h1>
+      <h1 class="title">Child height and weight HAZ summaries for multiple countries</h1>
                   <div>
         <div class="description">
-          See https://www.cdc.gov/nchs/data/nhsr/nhsr063.pdf for a description of how calculations are made. However, the CDC has different coefficients.
+          Data from three different research studies. Each study had different research objectives.
         </div>
       </div>
                           <div class="quarto-categories">
@@ -191,17 +191,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h1></h1>
 <section id="data-details" class="level2">
 <h2 class="anchored" data-anchor-id="data-details">Data details</h2>
-<p>There are <strong>1,800 rows</strong> and <strong>6 columns</strong>. The data source<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> is used to create our data that is stored in our <a href="https://posit.byui.edu/content/8eb49f02-9b48-4a2e-b9e4-07101b2e6fd2/_rev69/">pins table</a>. You can access this pin from a connection to <a href="https://posit.byui.edu">posit.byui.edu</a> using <code>hathawayj/height_coef</code>.</p>
+<p>There are <strong>2,851 rows</strong> and <strong>12 columns</strong>. The data source<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> is used to create our data that is stored in our <a href="https://posit.byui.edu/content/42353593-8ad8-4632-b210-544580b96962/_rev73/">pins table</a>. You can access this pin from a connection to <a href="https://posit.byui.edu">posit.byui.edu</a> using <code>hathawayj/childhealth_summary</code>.</p>
 <p>This data is available to <strong>all</strong>.</p>
 <section id="variable-description" class="level3">
 <h3 class="anchored" data-anchor-id="variable-description">Variable description</h3>
 <ul>
-<li><strong>agedays:</strong> Age of child in days</li>
-<li><strong>sex:</strong> The gender of the child</li>
-<li><strong>mean:</strong> The mean for a child at agedays</li>
-<li><strong>cv:</strong> The <a href="https://en.wikipedia.org/wiki/Coefficient_of_variation">coefficient of variation</a> for children at age in days</li>
-<li><strong>l:</strong> The box-cox transformation for children at age in days <a href="https://www.cdc.gov/nchs/data/nhsr/nhsr063.pdf">see documentation</a></li>
-<li><strong>sd:</strong> The standard deviation of weights for children at age age in days</li>
+<li><strong>subjid:</strong> unique identifier of each child</li>
+<li><strong>sex:</strong> Male or Female</li>
+<li><strong>country:</strong> Label for the varied countries</li>
+<li><strong>haz_mean:</strong> The average HAZ score over all measurements</li>
+<li><strong>waz_mean:</strong> The average WAZ score over all measurements</li>
+<li><strong>observations:</strong> Number of observations for that subject</li>
+<li><strong>agedays_last:</strong> The age in days for the HAZ and WAZ last variable</li>
+<li><strong>agedays_first:</strong> The age in days for the HAZ and WAZ first variable</li>
+<li><strong>haz_last:</strong> The first HAZ measurement on the subject for age in days</li>
+<li><strong>haz_first:</strong> The last HAZ measurement on the subject for age in days</li>
+<li><strong>waz_last:</strong> The last WAZ measurement on the subject for age in days</li>
+<li><strong>waz_first:</strong> The first WAZ measurement on the subject for age in days</li>
 </ul>
 </section>
 <section id="variable-summary" class="level3">
@@ -220,7 +226,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <col style="width: 7%">
 <col style="width: 7%">
 <col style="width: 7%">
-<col style="width: 7%">
+<col style="width: 8%">
 <col style="width: 6%">
 </colgroup>
 <thead>
@@ -240,69 +246,121 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">agedays</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">449.50</td>
-<td style="text-align: right;">259.88</td>
-<td style="text-align: right;">0.00</td>
-<td style="text-align: right;">224.75</td>
-<td style="text-align: right;">449.50</td>
-<td style="text-align: right;">674.25</td>
-<td style="text-align: right;">899.00</td>
-<td style="text-align: left;">▇▇▇▇▇</td>
+<td style="text-align: left;">haz_mean</td>
+<td style="text-align: right;">280</td>
+<td style="text-align: right;">0.90</td>
+<td style="text-align: right;">-0.85</td>
+<td style="text-align: right;">1.23</td>
+<td style="text-align: right;">-5.99</td>
+<td style="text-align: right;">-1.70</td>
+<td style="text-align: right;">-0.91</td>
+<td style="text-align: right;">-0.02</td>
+<td style="text-align: right;">3.10</td>
+<td style="text-align: left;">▁▂▇▆▁</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">mean</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">76.24</td>
-<td style="text-align: right;">10.60</td>
-<td style="text-align: right;">49.15</td>
-<td style="text-align: right;">68.77</td>
-<td style="text-align: right;">78.08</td>
-<td style="text-align: right;">85.47</td>
-<td style="text-align: right;">91.59</td>
-<td style="text-align: left;">▂▃▅▆▇</td>
+<td style="text-align: left;">waz_mean</td>
+<td style="text-align: right;">47</td>
+<td style="text-align: right;">0.98</td>
+<td style="text-align: right;">-0.52</td>
+<td style="text-align: right;">1.13</td>
+<td style="text-align: right;">-4.61</td>
+<td style="text-align: right;">-1.26</td>
+<td style="text-align: right;">-0.47</td>
+<td style="text-align: right;">0.22</td>
+<td style="text-align: right;">4.03</td>
+<td style="text-align: left;">▁▃▇▂▁</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">sd</td>
+<td style="text-align: left;">observations</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">2.65</td>
-<td style="text-align: right;">0.45</td>
-<td style="text-align: right;">1.86</td>
-<td style="text-align: right;">2.25</td>
-<td style="text-align: right;">2.62</td>
-<td style="text-align: right;">3.04</td>
-<td style="text-align: right;">3.51</td>
-<td style="text-align: left;">▇▇▇▇▆</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">18.43</td>
+<td style="text-align: right;">9.61</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">8.00</td>
+<td style="text-align: right;">25.00</td>
+<td style="text-align: right;">26.00</td>
+<td style="text-align: right;">27.00</td>
+<td style="text-align: left;">▃▁▁▁▇</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">cv</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">0.03</td>
+<td style="text-align: left;">agedays_last</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">895.35</td>
+<td style="text-align: right;">691.06</td>
 <td style="text-align: right;">0.00</td>
-<td style="text-align: right;">0.03</td>
-<td style="text-align: right;">0.03</td>
-<td style="text-align: right;">0.03</td>
-<td style="text-align: right;">0.04</td>
-<td style="text-align: right;">0.04</td>
-<td style="text-align: left;">▆▂▇▅▂</td>
+<td style="text-align: right;">729.00</td>
+<td style="text-align: right;">730.00</td>
+<td style="text-align: right;">734.00</td>
+<td style="text-align: right;">2558.00</td>
+<td style="text-align: left;">▂▇▁▁▂</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">l</td>
+<td style="text-align: left;">agedays_first</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
 <td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.29</td>
+<td style="text-align: right;">3.34</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
 <td style="text-align: right;">0.00</td>
 <td style="text-align: right;">1.00</td>
+<td style="text-align: right;">17.00</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">haz_last</td>
+<td style="text-align: right;">305</td>
+<td style="text-align: right;">0.89</td>
+<td style="text-align: right;">-1.13</td>
+<td style="text-align: right;">1.45</td>
+<td style="text-align: right;">-6.72</td>
+<td style="text-align: right;">-2.13</td>
+<td style="text-align: right;">-1.24</td>
+<td style="text-align: right;">-0.12</td>
+<td style="text-align: right;">5.33</td>
+<td style="text-align: left;">▁▅▇▂▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">haz_first</td>
+<td style="text-align: right;">1996</td>
+<td style="text-align: right;">0.30</td>
+<td style="text-align: right;">0.26</td>
+<td style="text-align: right;">1.52</td>
+<td style="text-align: right;">-9.82</td>
+<td style="text-align: right;">-0.71</td>
+<td style="text-align: right;">0.37</td>
+<td style="text-align: right;">1.12</td>
+<td style="text-align: right;">4.72</td>
+<td style="text-align: left;">▁▁▂▇▂</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">waz_first</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">1.00</td>
+<td style="text-align: right;">-0.43</td>
+<td style="text-align: right;">1.15</td>
+<td style="text-align: right;">-5.98</td>
+<td style="text-align: right;">-1.15</td>
+<td style="text-align: right;">-0.40</td>
+<td style="text-align: right;">0.35</td>
+<td style="text-align: right;">3.60</td>
+<td style="text-align: left;">▁▁▇▇▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">waz_last</td>
+<td style="text-align: right;">8</td>
 <td style="text-align: right;">1.00</td>
-<td style="text-align: right;">1.00</td>
-<td style="text-align: right;">1.00</td>
-<td style="text-align: left;">▁▁▇▁▁</td>
+<td style="text-align: right;">-0.63</td>
+<td style="text-align: right;">1.33</td>
+<td style="text-align: right;">-5.83</td>
+<td style="text-align: right;">-1.53</td>
+<td style="text-align: right;">-0.64</td>
+<td style="text-align: right;">0.23</td>
+<td style="text-align: right;">4.42</td>
+<td style="text-align: left;">▁▂▇▃▁</td>
 </tr>
 </tbody>
 </table>
@@ -336,6 +394,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </thead>
 <tbody>
 <tr class="odd">
+<td style="text-align: left;">subjid</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2851</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
 <td style="text-align: left;">sex</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">1</td>
@@ -345,38 +413,87 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: right;">2</td>
 <td style="text-align: right;">0</td>
 </tr>
+<tr class="odd">
+<td style="text-align: left;">country</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">0</td>
+</tr>
 </tbody>
 </table>
 </div>
 </div>
-<div class="cell" data-file="../../../data_scripts/childheath/height_coef.r">
+<div class="cell" data-file="../../../data_scripts/childheath/child_summary.r">
 <details>
 <summary>Explore generating code using R</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># both need to be installed</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="co"># remotes::install_github("bokeh/rbokeh")</span></span>
-<span id="cb1-3"><a href="#cb1-3"></a><span class="co"># remotes::install_github("ki-tools/growthstandards")</span></span>
-<span id="cb1-4"><a href="#cb1-4"></a></span>
-<span id="cb1-5"><a href="#cb1-5"></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, pins, growthstandards)</span>
-<span id="cb1-6"><a href="#cb1-6"></a></span>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, pins)</span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="co"># get three sources</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a>hbgd_temp <span class="ot">&lt;-</span> <span class="fu">tempfile</span>()</span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="fu">download</span>(<span class="st">'https://github.com/HBGDki/hbgd/raw/master/data/cpp.rda'</span>, hbgd_temp, <span class="at">mode =</span> <span class="st">'wb'</span>)</span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="fu">load</span>(hbgd_temp) <span class="co">#cpp object</span></span>
 <span id="cb1-7"><a href="#cb1-7"></a></span>
-<span id="cb1-8"><a href="#cb1-8"></a>height_coef <span class="ot">&lt;-</span> growthstandards<span class="sc">::</span>who_coefs<span class="sc">$</span>htcm_agedays<span class="sc">$</span>Female<span class="sc">$</span>data <span class="sc">%&gt;%</span></span>
-<span id="cb1-9"><a href="#cb1-9"></a>  <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb1-10"><a href="#cb1-10"></a>  <span class="fu">filter</span>(x <span class="sc">&lt;</span> <span class="dv">900</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb1-11"><a href="#cb1-11"></a>  <span class="fu">select</span>(<span class="at">agedays =</span> x, <span class="at">mean =</span> m, <span class="at">cv =</span> s, <span class="at">l =</span> l) <span class="sc">%&gt;%</span></span>
-<span id="cb1-12"><a href="#cb1-12"></a>  <span class="fu">mutate</span>(<span class="at">sex =</span> <span class="st">"Female"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb1-13"><a href="#cb1-13"></a>  <span class="fu">bind_rows</span>(</span>
-<span id="cb1-14"><a href="#cb1-14"></a>    growthstandards<span class="sc">::</span>who_coefs<span class="sc">$</span>htcm_agedays<span class="sc">$</span>Male<span class="sc">$</span>data <span class="sc">%&gt;%</span></span>
-<span id="cb1-15"><a href="#cb1-15"></a>      <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb1-16"><a href="#cb1-16"></a>      <span class="fu">filter</span>(x <span class="sc">&lt;</span> <span class="dv">900</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb1-17"><a href="#cb1-17"></a>      <span class="fu">select</span>(<span class="at">agedays =</span> x, <span class="at">mean =</span> m, <span class="at">cv =</span> s, <span class="at">l =</span> l) <span class="sc">%&gt;%</span></span>
-<span id="cb1-18"><a href="#cb1-18"></a>      <span class="fu">mutate</span>(<span class="at">sex =</span> <span class="st">"Male"</span>)</span>
-<span id="cb1-19"><a href="#cb1-19"></a>  ) <span class="sc">%&gt;%</span></span>
-<span id="cb1-20"><a href="#cb1-20"></a>  <span class="fu">mutate</span>(<span class="at">sd =</span> mean <span class="sc">*</span> cv) <span class="sc">%&gt;%</span></span>
-<span id="cb1-21"><a href="#cb1-21"></a>  <span class="fu">select</span>(agedays, sex, mean, sd, cv, l)</span>
+<span id="cb1-8"><a href="#cb1-8"></a>tdat <span class="ot">&lt;-</span> <span class="fu">tempfile</span>()</span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="fu">download</span>(<span class="st">"https://github.com/stefvanbuuren/brokenstick/raw/71dc99e62ce57b58d5c1d2a1074fbd4bf394e559/data/smocc_hgtwgt.rda"</span>,tdat, <span class="at">mode =</span> <span class="st">"wb"</span>) <span class="co">#smocc_hgtwgt object</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a><span class="fu">load</span>(tdat)</span>
+<span id="cb1-11"><a href="#cb1-11"></a></span>
+<span id="cb1-12"><a href="#cb1-12"></a>sdrive <span class="ot">&lt;-</span> <span class="fu">shared_drive_find</span>(<span class="st">"byuids_data"</span>)</span>
+<span id="cb1-13"><a href="#cb1-13"></a>maled_file <span class="ot">&lt;-</span> <span class="fu">drive_ls</span>(sdrive)  <span class="sc">|&gt;</span></span>
+<span id="cb1-14"><a href="#cb1-14"></a>    <span class="fu">filter</span>(stringr<span class="sc">::</span><span class="fu">str_detect</span>(name, <span class="st">"MALED"</span>))</span>
+<span id="cb1-15"><a href="#cb1-15"></a>tempf <span class="ot">&lt;-</span> <span class="fu">tempfile</span>()</span>
+<span id="cb1-16"><a href="#cb1-16"></a><span class="fu">drive_download</span>(maled_file, tempf)</span>
+<span id="cb1-17"><a href="#cb1-17"></a>dat <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(tempf)</span>
+<span id="cb1-18"><a href="#cb1-18"></a></span>
+<span id="cb1-19"><a href="#cb1-19"></a><span class="co"># Format source data</span></span>
+<span id="cb1-20"><a href="#cb1-20"></a>childhealth_dutch <span class="ot">&lt;-</span> smocc_hgtwgt <span class="sc">|&gt;</span></span>
+<span id="cb1-21"><a href="#cb1-21"></a>  <span class="fu">select</span>(subjid, sex, agedays, gagebrth, htcm, wtkg, haz, waz)</span>
 <span id="cb1-22"><a href="#cb1-22"></a></span>
-<span id="cb1-23"><a href="#cb1-23"></a></span>
-<span id="cb1-24"><a href="#cb1-24"></a>board <span class="ot">&lt;-</span> <span class="fu">board_connect</span>()</span>
-<span id="cb1-25"><a href="#cb1-25"></a><span class="fu">pin_write</span>(board, height_coef, <span class="at">type =</span> <span class="st">"parquet"</span>, <span class="at">access_type =</span> <span class="st">"all"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-23"><a href="#cb1-23"></a>childhealth_us <span class="ot">&lt;-</span> cpp <span class="sc">%&gt;%</span></span>
+<span id="cb1-24"><a href="#cb1-24"></a>  <span class="fu">select</span>(subjid, sex, agedays, gagebrth, htcm, wtkg, haz, waz, mrace, mage, meducyrs, ses)</span>
+<span id="cb1-25"><a href="#cb1-25"></a></span>
+<span id="cb1-26"><a href="#cb1-26"></a></span>
+<span id="cb1-27"><a href="#cb1-27"></a>childhealth_maled <span class="ot">&lt;-</span> dat <span class="sc">%&gt;%</span></span>
+<span id="cb1-28"><a href="#cb1-28"></a>  <span class="fu">select</span>(</span>
+<span id="cb1-29"><a href="#cb1-29"></a>    <span class="at">subjid =</span> <span class="st">`</span><span class="at">Participant ID</span><span class="st">`</span>, <span class="at">sex =</span> Sex, <span class="at">country =</span> Country,</span>
+<span id="cb1-30"><a href="#cb1-30"></a>    <span class="at">agedays =</span> <span class="st">`</span><span class="at">Age (days)</span><span class="st">`</span>, <span class="at">wtkg =</span> <span class="st">`</span><span class="at">Weight (kg)</span><span class="st">`</span>, <span class="at">stcm =</span> <span class="st">`</span><span class="at">Stature (cm)</span><span class="st">`</span>,</span>
+<span id="cb1-31"><a href="#cb1-31"></a>    <span class="at">htcm =</span> <span class="st">`</span><span class="at">Height (cm)</span><span class="st">`</span>, <span class="at">lncm =</span> <span class="st">`</span><span class="at">Recumbent length (cm)</span><span class="st">`</span>,</span>
+<span id="cb1-32"><a href="#cb1-32"></a>    <span class="at">lh_used =</span> <span class="st">`</span><span class="at">Recumbent length or height used for stature</span><span class="st">`</span>,</span>
+<span id="cb1-33"><a href="#cb1-33"></a>    <span class="at">hccm =</span> <span class="st">`</span><span class="at">Head circumference (cm)</span><span class="st">`</span>,</span>
+<span id="cb1-34"><a href="#cb1-34"></a>    <span class="at">lhaz =</span> <span class="st">`</span><span class="at">Length- or height-for-age z-score</span><span class="st">`</span>,</span>
+<span id="cb1-35"><a href="#cb1-35"></a>    <span class="at">haz =</span> <span class="st">`</span><span class="at">Height-for-age z-score</span><span class="st">`</span>, <span class="at">laz=</span> <span class="st">`</span><span class="at">Length-for-age z-score</span><span class="st">`</span>,</span>
+<span id="cb1-36"><a href="#cb1-36"></a>    <span class="at">waz =</span> <span class="st">`</span><span class="at">Weight-for-age z-score</span><span class="st">`</span>, <span class="at">hcaz =</span> <span class="st">`</span><span class="at">Head circumference-for-age z-score</span><span class="st">`</span>,</span>
+<span id="cb1-37"><a href="#cb1-37"></a>    <span class="at">whz =</span> <span class="st">`</span><span class="at">Weight-for-length or -height z-score</span><span class="st">`</span>)</span>
+<span id="cb1-38"><a href="#cb1-38"></a></span>
+<span id="cb1-39"><a href="#cb1-39"></a></span>
+<span id="cb1-40"><a href="#cb1-40"></a><span class="co"># combine to one file</span></span>
+<span id="cb1-41"><a href="#cb1-41"></a>childhealth_summary <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(</span>
+<span id="cb1-42"><a href="#cb1-42"></a>  childhealth_dutch <span class="sc">%&gt;%</span></span>
+<span id="cb1-43"><a href="#cb1-43"></a>    <span class="fu">select</span>(subjid, agedays, sex, htcm, wtkg, haz, waz) <span class="sc">%&gt;%</span></span>
+<span id="cb1-44"><a href="#cb1-44"></a>    <span class="fu">mutate</span>(<span class="at">country =</span> <span class="st">"Netherlands"</span>, <span class="at">subjid =</span> <span class="fu">as.character</span>(subjid)),</span>
+<span id="cb1-45"><a href="#cb1-45"></a></span>
+<span id="cb1-46"><a href="#cb1-46"></a>  childhealth_maled <span class="sc">%&gt;%</span></span>
+<span id="cb1-47"><a href="#cb1-47"></a>    <span class="fu">select</span>(subjid, agedays,  sex, <span class="at">htcm =</span> stcm, wtkg, lhaz, waz, country) <span class="sc">%&gt;%</span></span>
+<span id="cb1-48"><a href="#cb1-48"></a>    <span class="fu">rename</span>(<span class="at">haz =</span> lhaz),</span>
+<span id="cb1-49"><a href="#cb1-49"></a></span>
+<span id="cb1-50"><a href="#cb1-50"></a>  childhealth_us <span class="sc">%&gt;%</span></span>
+<span id="cb1-51"><a href="#cb1-51"></a>    <span class="fu">select</span>(subjid, agedays, sex, htcm, wtkg, haz, waz) <span class="sc">%&gt;%</span></span>
+<span id="cb1-52"><a href="#cb1-52"></a>    <span class="fu">mutate</span>(<span class="at">country =</span> <span class="st">"United States"</span>, <span class="at">subjid =</span> <span class="fu">as.character</span>(subjid))</span>
+<span id="cb1-53"><a href="#cb1-53"></a>) <span class="sc">%&gt;%</span></span>
+<span id="cb1-54"><a href="#cb1-54"></a>  <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb1-55"><a href="#cb1-55"></a>  <span class="fu">group_by</span>(subjid, sex, country) <span class="sc">%&gt;%</span></span>
+<span id="cb1-56"><a href="#cb1-56"></a>  <span class="fu">arrange</span>(agedays) <span class="sc">%&gt;%</span></span>
+<span id="cb1-57"><a href="#cb1-57"></a>  <span class="fu">summarise</span>(<span class="at">haz_mean =</span> <span class="fu">mean</span>(haz, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="at">waz_mean =</span> <span class="fu">mean</span>(waz), </span>
+<span id="cb1-58"><a href="#cb1-58"></a>            <span class="at">observations =</span> <span class="fu">n</span>(), <span class="at">agedays_last =</span> agedays[<span class="fu">n</span>()], <span class="at">agedays_first =</span> agedays[<span class="dv">1</span>],</span>
+<span id="cb1-59"><a href="#cb1-59"></a>            <span class="at">haz_last =</span> haz[<span class="fu">n</span>()], <span class="at">haz_first =</span> haz[<span class="dv">1</span>], <span class="at">waz_first =</span> waz[<span class="dv">1</span>], <span class="at">waz_last =</span> waz[<span class="fu">n</span>()]) <span class="sc">%&gt;%</span></span>
+<span id="cb1-60"><a href="#cb1-60"></a>  <span class="fu">ungroup</span>()</span>
+<span id="cb1-61"><a href="#cb1-61"></a></span>
+<span id="cb1-62"><a href="#cb1-62"></a><span class="co"># push to board</span></span>
+<span id="cb1-63"><a href="#cb1-63"></a>board <span class="ot">&lt;-</span> <span class="fu">board_connect</span>()</span>
+<span id="cb1-64"><a href="#cb1-64"></a><span class="fu">pin_write</span>(board, childhealth_summary, <span class="at">type =</span> <span class="st">"parquet"</span>, <span class="at">access_type =</span> <span class="st">"all"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 <!-- ```{python}
@@ -391,13 +508,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="access-data" class="level2">
 <h2 class="anchored" data-anchor-id="access-data">Access data</h2>
-<p><strong>Direct Download:</strong> <a href="https://posit.byui.edu/content/8eb49f02-9b48-4a2e-b9e4-07101b2e6fd2/height_coef.parquet">height_coef.parquet</a></p>
+<p><strong>Direct Download:</strong> <a href="https://posit.byui.edu/content/42353593-8ad8-4632-b210-544580b96962/childhealth_summary.parquet">childhealth_summary.parquet</a></p>
 <p><strong>R and Python Download:</strong></p>
 <p>Our connect server is <a href="https://posit.byui.edu/connect/#/content/listing?filter=min_role:viewer&amp;filter=content_type:all&amp;view_type=compact">https://posit.byui.edu</a> which you assign to your <code>CONNECT_SERVER</code> environment variable. You must <a href="https://docs.posit.co/connect/user/api-keys/#api-keys-creating">create and API key</a> and store it in your environment under <code>CONNECT_API_KEY</code>.</p>
 <p><em>Read more about <a href="../../environment.html">environment variables and the pins package</a> to understand how these environment variables are stored and accessed in R and Python with pins.</em></p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(pins)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>board <span class="ot">&lt;-</span> <span class="fu">board_connect</span>(<span class="at">auth =</span> <span class="st">"auto"</span>)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">pin_read</span>(board, <span class="st">"hathawayj/height_coef"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">pin_read</span>(board, <span class="st">"hathawayj/childhealth_summary"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pins <span class="im">import</span> board_rsconnect</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> dotenv <span class="im">import</span> load_dotenv</span>
@@ -406,7 +523,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>SERVER <span class="op">=</span> os.getenv(<span class="st">'CONNECT_SERVER'</span>)</span>
 <span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>board <span class="op">=</span> board_rsconnect(server_url<span class="op">=</span>SERVER, api_key<span class="op">=</span>API_KEY)</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>dat <span class="op">=</span> board.pin_read(<span class="st">"hathawayj/height_coef"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>dat <span class="op">=</span> board.pin_read(<span class="st">"hathawayj/childhealth_summary"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section>
@@ -416,7 +533,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
-<li id="fn1"><p><a href="https://github.com/hafen/growthstandards">https://github.com/hafen/growthstandards</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p><a href="https://github.com/hafen/hbgd">https://github.com/hafen/hbgd</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

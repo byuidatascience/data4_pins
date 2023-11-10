@@ -387,9 +387,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 #| code-line-numbers: true
 # file: ../../../data_scripts/childhealth.py
 ``` -->
-
-
 </section>
+</section>
+<section id="access-data" class="level2">
+<h2 class="anchored" data-anchor-id="access-data">Access data</h2>
+<p><strong>Direct Download:</strong> <a href="https://posit.byui.edu/content/f902e3fe-e4f9-40e5-b7fa-26013efc5d2a/weight_coef.parquet">weight_coef.parquet</a></p>
+<p><strong>R and Python Download:</strong></p>
+<p>Our connect server is <a href="https://posit.byui.edu/connect/#/content/listing?filter=min_role:viewer&amp;filter=content_type:all&amp;view_type=compact">https://posit.byui.edu</a> which you assign to your <code>CONNECT_SERVER</code> environment variable. You must <a href="https://docs.posit.co/connect/user/api-keys/#api-keys-creating">create and API key</a> and store it in your environment under <code>CONNECT_API_KEY</code>.</p>
+<p><em>Read more about <a href="../../environment.html">environment variables and the pins package</a> to understand how these environment variables are stored and accessed in R and Python with pins.</em></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(pins)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>board <span class="ot">&lt;-</span> <span class="fu">board_connect</span>(<span class="at">auth =</span> <span class="st">"auto"</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">pin_read</span>(board, <span class="st">"hathawayj/weight_coef"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pins <span class="im">import</span> board_rsconnect</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> dotenv <span class="im">import</span> load_dotenv</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>load_dotenv()</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>API_KEY <span class="op">=</span> os.getenv(<span class="st">'CONNECT_API_KEY'</span>)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>SERVER <span class="op">=</span> os.getenv(<span class="st">'CONNECT_SERVER'</span>)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>board <span class="op">=</span> board_rsconnect(server_url<span class="op">=</span>SERVER, api_key<span class="op">=</span>API_KEY)</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>dat <span class="op">=</span> board.pin_read(<span class="st">"hathawayj/weight_coef"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+
 </section>
 </section>
 

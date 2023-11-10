@@ -1,12 +1,14 @@
 ---
-title: "WHO coeficients for height Z-score calculations"
+title: "Child height and weight measurements for all data from three studies at one year of age."
 author: "DS 150"
 date: "2023-11-05"
 categories: [health, child]
-description: "See https://www.cdc.gov/nchs/data/nhsr/nhsr063.pdf for a description of how calculations are made.  However, the CDC has different coefficients."
+description: "Data from three different research studies. Each study had different research objectives."
 params: 
-    source: "https://github.com/hafen/growthstandards"
-    pins_name: 'hathawayj/height_coef'
+    source: "https://github.com/hafen/hbgd"
+    source2: "https://github.com/stefvanbuuren/brokenstick"
+    source3: "https://clinepidb.org/ce/app/record/dataset/DS_5c41b87221"
+    pins_name: 'hathawayj/days_365'
     available: all
 ---
 
@@ -17,7 +19,6 @@ title <- params$title
 description <- params$description
 source <- params$source
 pins_url <- params$pins_url
-
 ```
 
 # `r params$title`
@@ -31,7 +32,6 @@ title = r.title
 description = r.description
 source = r.source
 pins_url = r.pins_url
-
 ```
 
 
@@ -65,12 +65,14 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __agedays:__ Age of child in days
-- __sex:__ The gender of the child
-- __mean:__ The mean for a child at agedays
-- __cv:__ The [coefficient of variation](https://en.wikipedia.org/wiki/Coefficient_of_variation) for children at age in days
-- __l:__ The box-cox transformation for children at age in days [see documentation](https://www.cdc.gov/nchs/data/nhsr/nhsr063.pdf)
-- __sd:__ The standard deviation of weights for children at age age in days
+- __subjid:__ unique identifyer of each child",
+- __sex:__ Male or Female
+- __wtkg:__ Weight measurement in kg (0.8-20.5)
+- __htcm:__ Height in cm
+- __haz:__ Height for age in SDS relative to WHO child growth standard
+- __waz:__ Weight for age in SDS relative to WHO child growth standard
+- __country:__ Label for the varied countries
+
 
 ### Variable summary
 
@@ -93,7 +95,7 @@ skim(dat) |> yank("character")
 #| code-fold: true
 #| code-summary: Explore generating code using R
 #| code-line-numbers: true
-#| file: ../../../data_scripts/childheath/height_coef.r
+#| file: ../../../data_scripts/childheath/child_summary.r
 ```
 
 <!-- ```{python}
@@ -104,7 +106,6 @@ skim(dat) |> yank("character")
 #| code-line-numbers: true
 # file: ../../../data_scripts/childhealth.py
 ``` -->
-
 
 ## Access data
 

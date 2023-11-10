@@ -1,12 +1,12 @@
 ---
-title: "WHO coeficients for height Z-score calculations"
-author: "DS 150"
+title: "TITLE"
+author: "COURSE THAT INSPIRED"
 date: "2023-11-05"
-categories: [health, child]
-description: "See https://www.cdc.gov/nchs/data/nhsr/nhsr063.pdf for a description of how calculations are made.  However, the CDC has different coefficients."
+categories: []
+description: "Data descriptions"
 params: 
-    source: "https://github.com/hafen/growthstandards"
-    pins_name: 'hathawayj/height_coef'
+    source: "URL to Source"
+    pins_name: 'pin name from posit.byui.edu'
     available: all
 ---
 
@@ -17,7 +17,6 @@ title <- params$title
 description <- params$description
 source <- params$source
 pins_url <- params$pins_url
-
 ```
 
 # `r params$title`
@@ -65,12 +64,7 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __agedays:__ Age of child in days
-- __sex:__ The gender of the child
-- __mean:__ The mean for a child at agedays
-- __cv:__ The [coefficient of variation](https://en.wikipedia.org/wiki/Coefficient_of_variation) for children at age in days
-- __l:__ The box-cox transformation for children at age in days [see documentation](https://www.cdc.gov/nchs/data/nhsr/nhsr063.pdf)
-- __sd:__ The standard deviation of weights for children at age age in days
+SOME TYPE OF DATA DICTIONARY
 
 ### Variable summary
 
@@ -87,14 +81,14 @@ skim(dat) |> yank("numeric")
 skim(dat) |> yank("character")
 ```
 
-```{r}
+<!-- ```{r}
 #| echo: true
 #| eval: false
 #| code-fold: true
 #| code-summary: Explore generating code using R
 #| code-line-numbers: true
-#| file: ../../../data_scripts/childheath/height_coef.r
-```
+#| file: ../../../data_scripts/YOURFILEPATH
+``` -->
 
 <!-- ```{python}
 #| echo: true
@@ -102,9 +96,8 @@ skim(dat) |> yank("character")
 #| code-fold: true
 #| code-summary: Explore generating code using Python
 #| code-line-numbers: true
-# file: ../../../data_scripts/childhealth.py
+#| file: ../../../data_scripts/YOURFILEPATH
 ``` -->
-
 
 ## Access data
 

@@ -5,7 +5,9 @@
       "/posts/childhealth/dutch_child.html",
       "/posts/childhealth/maled_child.html",
       "/posts/childhealth/dutch_birth.html",
+      "/posts/childhealth/all_child_summary.html",
       "/posts/childhealth/height_coef.html",
+      "/posts/childhealth/all_child_365_days.html",
       "/posts/childhealth/us_birth.html",
       "/posts/childhealth/weight_coef.html",
       "/posts/childhealth/us_child.html"
@@ -14,6 +16,8 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/childhealth/all_child_365_days.html",
+      "/posts/childhealth/all_child_summary.html",
       "/posts/childhealth/dutch_birth.html",
       "/posts/childhealth/dutch_child.html",
       "/posts/childhealth/height_coef.html",
@@ -26,6 +30,16 @@
   },
   {
     "listing": "/ds150-series.html",
-    "items": []
+    "items": [
+      "/posts/childhealth/all_child_365_days.html",
+      "/posts/childhealth/all_child_summary.html",
+      "/posts/childhealth/dutch_birth.html",
+      "/posts/childhealth/dutch_child.html",
+      "/posts/childhealth/height_coef.html",
+      "/posts/childhealth/maled_child.html",
+      "/posts/childhealth/us_birth.html",
+      "/posts/childhealth/us_child.html",
+      "/posts/childhealth/weight_coef.html"
+    ]
   }
 ]

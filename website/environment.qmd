@@ -1,0 +1,53 @@
+# Environment variables
+
+## Python
+
+The `load_dotenv()` function from the `dotenv` package will look for a file named `.env` in the current directory and add all its variable definitions to the `os.environ` dictionary. If your `.env` file is not in the current directory, then `dotenv` will keep searching the parent directory hierarchy until it finds a `.env` file or reaches the top-level directory.
+
+In your `.env` file you store you keys with the variable name, an `=`, and the key with no spaces or quotes.
+
+```bash
+CONNECT_SERVER=https://posit.byui.edu
+CONNECT_API_KEY=TjM34tp44_USE_YOUR_CREATED_KEY_61irtrpJ3ddfdd2vjyiyuyyuy
+```
+
+You can import your key to your environment using the following python code chunk. 
+
+```python
+import os
+from dotenv import load_dotenv
+load_dotenv()
+API_KEY = os.getenv('CONNECT_API_KEY')
+SERVER = os.getenv('CONNECT_SERVER')
+```
+
+If you do not have [dotenv](https://pypi.org/project/python-dotenv/) installed then use pip to install it.
+
+```bash
+pip install python-dotenv
+```
+
+## R
+
+R has a `.Renviron` file that loads each time you start R.  Use the [usethis package](https://usethis.r-lib.org/) to gain access to your `.Renviron` file by running the command `usethis::edit_r_environ()`. You can install the package with `install.packages("usethis")`.
+
+You would then create your `CONNECT_SERVER` and `CONNECT_API_KEY` using the same format as shown above.
+
+```bash
+CONNECT_SERVER=https://posit.byui.edu
+CONNECT_API_KEY=TjM34tp44_USE_YOUR_CREATED_KEY_61irtrpJ3ddfdd2vjyiyuyyuy
+```
+
+Save this file and restart R.  Now, `board <- board_connect()` will see those variables and leverage them to connect without any further code on your part. 
+
+# Pins package
+
+You must install the pins package to get data access as well.
+
+## R
+
+In R use `install.packages("pins")` to access the pins package. Please explore the [package documentation](https://pins.rstudio.com/index.html) for further help.
+
+## Python
+
+In your terminal use `pip install pins` or `python -m pip install pins` to access the pins package.  Please explore the [package documentation](https://rstudio.github.io/pins-python/) or the [pypi documentation](https://pypi.org/project/pins/) for further help.

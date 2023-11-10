@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>BYU-I Course Project Data - Child Health Data</title>
+<title>BYU-I Course Project Data – environment</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,8 +64,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -61,43 +93,12 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -136,160 +137,57 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page">
-      <h1 class="title">Child Health Data</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 
 
+<section id="environment-variables" class="level1">
+<h1>Environment variables</h1>
+<section id="python" class="level2">
+<h2 class="anchored" data-anchor-id="python">Python</h2>
+<p>The <code>load_dotenv()</code> function from the <code>dotenv</code> package will look for a file named <code>.env</code> in the current directory and add all its variable definitions to the <code>os.environ</code> dictionary. If your <code>.env</code> file is not in the current directory, then <code>dotenv</code> will keep searching the parent directory hierarchy until it finds a <code>.env</code> file or reaches the top-level directory.</p>
+<p>In your <code>.env</code> file you store you keys with the variable name, an <code>=</code>, and the key with no spaces or quotes.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="va">CONNECT_SERVER</span><span class="op">=</span>https://posit.byui.edu</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="va">CONNECT_API_KEY</span><span class="op">=</span>TjM34tp44_USE_YOUR_CREATED_KEY_61irtrpJ3ddfdd2vjyiyuyyuy</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>You can import your key to your environment using the following python code chunk.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> dotenv <span class="im">import</span> load_dotenv</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>load_dotenv()</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>API_KEY <span class="op">=</span> os.getenv(<span class="st">'CONNECT_API_KEY'</span>)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>SERVER <span class="op">=</span> os.getenv(<span class="st">'CONNECT_SERVER'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>If you do not have <a href="https://pypi.org/project/python-dotenv/">dotenv</a> installed then use pip to install it.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install python-dotenv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="r" class="level2">
+<h2 class="anchored" data-anchor-id="r">R</h2>
+<p>R has a <code>.Renviron</code> file that loads each time you start R. Use the <a href="https://usethis.r-lib.org/">usethis package</a> to gain access to your <code>.Renviron</code> file by running the command <code>usethis::edit_r_environ()</code>. You can install the package with <code>install.packages("usethis")</code>.</p>
+<p>You would then create your <code>CONNECT_SERVER</code> and <code>CONNECT_API_KEY</code> using the same format as shown above.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="va">CONNECT_SERVER</span><span class="op">=</span>https://posit.byui.edu</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="va">CONNECT_API_KEY</span><span class="op">=</span>TjM34tp44_USE_YOUR_CREATED_KEY_61irtrpJ3ddfdd2vjyiyuyyuy</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Save this file and restart R. Now, <code>board &lt;- board_connect()</code> will see those variables and leverage them to connect without any further code on your part.</p>
+</section>
+</section>
+<section id="pins-package" class="level1">
+<h1>Pins package</h1>
+<p>You must install the pins package to get data access as well.</p>
+<section id="r-1" class="level2">
+<h2 class="anchored" data-anchor-id="r-1">R</h2>
+<p>In R use <code>install.packages("pins")</code> to access the pins package. Please explore the <a href="https://pins.rstudio.com/index.html">package documentation</a> for further help.</p>
+</section>
+<section id="python-1" class="level2">
+<h2 class="anchored" data-anchor-id="python-1">Python</h2>
+<p>In your terminal use <code>pip install pins</code> or <code>python -m pip install pins</code> to access the pins package. Please explore the <a href="https://rstudio.github.io/pins-python/">package documentation</a> or the <a href="https://pypi.org/project/pins/">pypi documentation</a> for further help.</p>
 
-<p>The data focused on Child Health.</p>
 
+</section>
+</section>
 
-
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-<th>
-Date
-</th>
-<th>
-Title
-</th>
-<th>
-Description
-</th>
-</tr>
-</thead>
-<tbody class="list">
-<tr data-index="0" data-categories="health,child" data-listing-date-sort="1699164000000" data-listing-file-modified-sort="1699659620590" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="Dutch child height and weight measurements" data-listing-filename-sort="dutch_child.qmd">
-<td>
-<span class="listing-date">Nov 5, 2023</span>
-</td>
-<td>
-<a href="./posts/childhealth/dutch_child.html" class="title listing-title">Dutch child height and weight measurements</a>
-</td>
-<td>
-<span class="listing-description">Longitudinal height and weight measurements during ages 0-2 years for a representative sample of 1,933 Dutch children born in 1988-1989.</span>
-</td>
-</tr>
-<tr data-index="1" data-categories="health,child" data-listing-date-sort="1699164000000" data-listing-file-modified-sort="1699659642666" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-title-sort="Child height, weight, head circumference measurements in resource-poor environments" data-listing-filename-sort="maled_child.qmd">
-<td>
-<span class="listing-date">Nov 5, 2023</span>
-</td>
-<td>
-<a href="./posts/childhealth/maled_child.html" class="title listing-title">Child height, weight, head circumference measurements in resource-poor environments</a>
-</td>
-<td>
-<span class="listing-description">Subset of growth data from the Malnutrition and Enteric Disease Study (MAL-ED).</span>
-</td>
-</tr>
-<tr data-index="2" data-categories="health,child" data-listing-date-sort="1699164000000" data-listing-file-modified-sort="1699659608831" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="Dutch child birth data" data-listing-filename-sort="dutch_birth.qmd">
-<td>
-<span class="listing-date">Nov 5, 2023</span>
-</td>
-<td>
-<a href="./posts/childhealth/dutch_birth.html" class="title listing-title">Dutch child birth data</a>
-</td>
-<td>
-<span class="listing-description">Longitudinal height and weight measurements during ages 0-2 years for a representative sample of 1,933 Dutch children born in 1988-1989.</span>
-</td>
-</tr>
-<tr data-index="3" data-categories="health,child" data-listing-date-sort="1699164000000" data-listing-file-modified-sort="1699659087666" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="Child height and weight HAZ summaries for multiple countries" data-listing-filename-sort="all_child_summary.qmd">
-<td>
-<span class="listing-date">Nov 5, 2023</span>
-</td>
-<td>
-<a href="./posts/childhealth/all_child_summary.html" class="title listing-title">Child height and weight HAZ summaries for multiple countries</a>
-</td>
-<td>
-<span class="listing-description">Data from three different research studies. Each study had different research objectives.</span>
-</td>
-</tr>
-<tr data-index="4" data-categories="health,child" data-listing-date-sort="1699164000000" data-listing-file-modified-sort="1699659741041" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="WHO coeficients for height Z-score calculations" data-listing-filename-sort="height_coef.qmd">
-<td>
-<span class="listing-date">Nov 5, 2023</span>
-</td>
-<td>
-<a href="./posts/childhealth/height_coef.html" class="title listing-title">WHO coeficients for height Z-score calculations</a>
-</td>
-<td>
-<span class="listing-description">See https://www.cdc.gov/nchs/data/nhsr/nhsr063.pdf for a description of how calculations are made. However, the CDC has different coefficients.</span>
-</td>
-</tr>
-<tr data-index="5" data-categories="health,child" data-listing-date-sort="1699164000000" data-listing-file-modified-sort="1699659557178" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="Child height and weight measurements for all data from three studies at one year of age." data-listing-filename-sort="all_child_365_days.qmd">
-<td>
-<span class="listing-date">Nov 5, 2023</span>
-</td>
-<td>
-<a href="./posts/childhealth/all_child_365_days.html" class="title listing-title">Child height and weight measurements for all data from three studies at one year of age.</a>
-</td>
-<td>
-<span class="listing-description">Data from three different research studies. Each study had different research objectives.</span>
-</td>
-</tr>
-<tr data-index="6" data-categories="health,child" data-listing-date-sort="1699164000000" data-listing-file-modified-sort="1699659651160" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="US child birth data" data-listing-filename-sort="us_birth.qmd">
-<td>
-<span class="listing-date">Nov 5, 2023</span>
-</td>
-<td>
-<a href="./posts/childhealth/us_birth.html" class="title listing-title">US child birth data</a>
-</td>
-<td>
-<span class="listing-description">Subset of growth data from the collaborative perinatal project (CPP).</span>
-</td>
-</tr>
-<tr data-index="7" data-categories="health,child" data-listing-date-sort="1699164000000" data-listing-file-modified-sort="1699659668681" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="WHO coeficients for weight Z-score calculations" data-listing-filename-sort="weight_coef.qmd">
-<td>
-<span class="listing-date">Nov 5, 2023</span>
-</td>
-<td>
-<a href="./posts/childhealth/weight_coef.html" class="title listing-title">WHO coeficients for weight Z-score calculations</a>
-</td>
-<td>
-<span class="listing-description">See https://www.cdc.gov/nchs/data/nhsr/nhsr063.pdf for a desciption on how calculations are made. However, the CDC has different coefficients.</span>
-</td>
-</tr>
-<tr data-index="8" data-categories="health,child" data-listing-date-sort="1699164000000" data-listing-file-modified-sort="1699659659948" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="US child height and weight measurements" data-listing-filename-sort="us_child.qmd">
-<td>
-<span class="listing-date">Nov 5, 2023</span>
-</td>
-<td>
-<a href="./posts/childhealth/us_child.html" class="title listing-title">US child height and weight measurements</a>
-</td>
-<td>
-<span class="listing-description">Subset of growth data from the collaborative perinatal project (CPP).</span>
-</td>
-</tr>
-</tbody>
-
-</table>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
