@@ -1,14 +1,22 @@
 ---
-title: "Dutch child height and weight measurements"
+title: "Child height and weight HAZ summaries for multiple countries"
 author: "DS 150"
 date: "2023-11-05"
 categories: [health, child]
-description: "Longitudinal height and weight measurements during ages 0-2 years for a representative sample of 1,933 Dutch children born in 1988-1989."
+description: "Data from three different research studies. Each study had different research objectives."
 params: 
-    source: "https://github.com/stefvanbuuren/brokenstick"
-    pins_name: "hathawayj/childhealth_dutch"
+    source: "https://github.com/hafen/hbgd"
+    pins_url: "https://posit.byui.edu/connect/#/apps/1091db55-3d31-4071-b60e-a2253aa63298/access"
+    pins_name: 'hathawayj/childhealth_summary'
     available: all
 ---
+
+dpr_document(childhealth_summary, extension = ".R.md", export_folder = usethis::proj_get(),
+             object_name = "childhealth_summary", title = "Child height and weight HAZ summaries",
+             description = "For all data from three studies",
+             source = "https://github.com/stefvanbuuren/brokenstick, https://github.com/hafen/hbgd, and https://clinepidb.org/ce/app/record/dataset/DS_5c41b87221",
+             var_details = childhealth_summary_description)
+
 
 ```{r}
 #| echo: false
@@ -54,14 +62,18 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __subjid:__ unique identifyer of each child
+- __subjid:__ unique identifier of each child
 - __sex:__ Male or Female
-- __agedays:__ Age in days
-- __gagebrth:__ Gestational age at birth (days)
-- __htcm:__ Length/height in cm (34-102)
-- __wtkg:__ Weight measurement in kg (0.8-20.5)
-- __haz:__ Height in SDS relative to WHO child growth standard
-- __waz:__ Weight in SDS relative to WHO child growth standard
+- __country:__ Label for the varied countries
+- __haz_mean:__ The average HAZ score over all measurements
+- __waz_mean:__ The average WAZ score over all measurements
+- __observations:__ Number of observations for that subject
+- __agedays_last:__ The age in days for the HAZ and WAZ last variable
+- __agedays_first:__ The age in days for the HAZ and WAZ first variable
+- __haz_last:__ The first HAZ measurement on the subject for age in days
+- __haz_first:__ The last HAZ measurement on the subject for age in days
+- __waz_last:__ The last WAZ measurement on the subject for age in days
+- __waz_first:__ The first WAZ measurement on the subject for age in days
 
 ### Variable summary
 

@@ -8,9 +8,9 @@
 
 <meta name="author" content="DS 150">
 <meta name="dcterms.date" content="2023-11-05">
-<meta name="description" content="Longitudinal height and weight measurements during ages 0-2 years for a representative sample of 1,933 Dutch children born in 1988-1989.">
+<meta name="description" content="See https://www.cdc.gov/nchs/data/nhsr/nhsr063.pdf for a desciption on how calculations are made. However, the CDC has different coefficients.">
 
-<title>BYU-I Course Project Data - Dutch child height and weight measurements</title>
+<title>BYU-I Course Project Data - WHO coeficients for weight Z-score calculations</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -143,10 +143,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Dutch child height and weight measurements</h1>
+      <h1 class="title">WHO coeficients for weight Z-score calculations</h1>
                   <div>
         <div class="description">
-          Longitudinal height and weight measurements during ages 0-2 years for a representative sample of 1,933 Dutch children born in 1988-1989.
+          See https://www.cdc.gov/nchs/data/nhsr/nhsr063.pdf for a desciption on how calculations are made. However, the CDC has different coefficients.
         </div>
       </div>
                           <div class="quarto-categories">
@@ -191,19 +191,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h1></h1>
 <section id="data-details" class="level2">
 <h2 class="anchored" data-anchor-id="data-details">Data details</h2>
-<p>There are <strong>2,000 rows</strong> and <strong>8 columns</strong>. The data source<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> is used to create our data that is stored in our <a href="https://posit.byui.edu/content/1091db55-3d31-4071-b60e-a2253aa63298/_rev64/">pins table</a>. You can access this pin from a connection to <a href="https://posit.byui.edu">posit.byui.edu</a> using <code>hathawayj/childhealth_dutch</code>.</p>
+<p>There are <strong>1,800 rows</strong> and <strong>6 columns</strong>. The data source<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> is used to create our data that is stored in our <a href="https://posit.byui.edu/content/f902e3fe-e4f9-40e5-b7fa-26013efc5d2a/_rev68/">pins table</a>. You can access this pin from a connection to <a href="https://posit.byui.edu">posit.byui.edu</a> using <code>hathawayj/weight_coef</code>.</p>
 <p>This data is available to <strong>all</strong>.</p>
 <section id="variable-description" class="level3">
 <h3 class="anchored" data-anchor-id="variable-description">Variable description</h3>
 <ul>
-<li><strong>subjid:</strong> unique identifyer of each child</li>
-<li><strong>sex:</strong> Male or Female</li>
-<li><strong>agedays:</strong> Age in days</li>
-<li><strong>gagebrth:</strong> Gestational age at birth (days)</li>
-<li><strong>htcm:</strong> Length/height in cm (34-102)</li>
-<li><strong>wtkg:</strong> Weight measurement in kg (0.8-20.5)</li>
-<li><strong>haz:</strong> Height in SDS relative to WHO child growth standard</li>
-<li><strong>waz:</strong> Weight in SDS relative to WHO child growth standard</li>
+<li><strong>agedays:</strong> Age of child in days</li>
+<li><strong>sex:</strong> The gender of the child</li>
+<li><strong>mean:</strong> The mean for a child at agedays</li>
+<li><strong>cv:</strong> The <a href="https://en.wikipedia.org/wiki/Coefficient_of_variation">coefficient of variation</a> for children at age in days</li>
+<li><strong>l:</strong> The box-cox transformation for children at age in days <a href="https://www.cdc.gov/nchs/data/nhsr/nhsr063.pdf">see documentation</a></li>
+<li><strong>sd:</strong> The standard deviation of weights for children at age age in days</li>
 </ul>
 </section>
 <section id="variable-summary" class="level3">
@@ -213,17 +211,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><strong>Variable type: numeric</strong></p>
 <table class="table table-sm table-striped small">
 <colgroup>
-<col style="width: 13%">
-<col style="width: 9%">
-<col style="width: 13%">
-<col style="width: 8%">
+<col style="width: 15%">
+<col style="width: 10%">
+<col style="width: 15%">
+<col style="width: 7%">
+<col style="width: 7%">
 <col style="width: 6%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 5%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 6%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -242,95 +240,69 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">subjid</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1.00</td>
-<td style="text-align: right;">10637.52</td>
-<td style="text-align: right;">500.27</td>
-<td style="text-align: right;">10001.00</td>
-<td style="text-align: right;">10064.00</td>
-<td style="text-align: right;">11018.00</td>
-<td style="text-align: right;">11072.00</td>
-<td style="text-align: right;">11127.00</td>
-<td style="text-align: left;">▆▁▁▁▇</td>
-</tr>
-<tr class="even">
 <td style="text-align: left;">agedays</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">1.00</td>
-<td style="text-align: right;">274.38</td>
-<td style="text-align: right;">238.33</td>
-<td style="text-align: right;">0.00</td>
-<td style="text-align: right;">58.00</td>
-<td style="text-align: right;">196.00</td>
-<td style="text-align: right;">456.00</td>
-<td style="text-align: right;">978.00</td>
-<td style="text-align: left;">▇▃▃▂▁</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">gagebrth</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">1.00</td>
-<td style="text-align: right;">281.35</td>
-<td style="text-align: right;">12.52</td>
-<td style="text-align: right;">227.00</td>
-<td style="text-align: right;">276.00</td>
-<td style="text-align: right;">283.00</td>
-<td style="text-align: right;">290.00</td>
-<td style="text-align: right;">304.00</td>
-<td style="text-align: left;">▁▁▂▇▆</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">449.50</td>
+<td style="text-align: right;">259.88</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">224.75</td>
+<td style="text-align: right;">449.50</td>
+<td style="text-align: right;">674.25</td>
+<td style="text-align: right;">899.00</td>
+<td style="text-align: left;">▇▇▇▇▇</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">htcm</td>
-<td style="text-align: right;">40</td>
-<td style="text-align: right;">0.98</td>
-<td style="text-align: right;">69.08</td>
-<td style="text-align: right;">12.42</td>
-<td style="text-align: right;">38.00</td>
-<td style="text-align: right;">57.50</td>
-<td style="text-align: right;">69.50</td>
-<td style="text-align: right;">79.00</td>
-<td style="text-align: right;">97.00</td>
-<td style="text-align: left;">▁▇▆▇▂</td>
+<td style="text-align: left;">mean</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">9.54</td>
+<td style="text-align: right;">2.37</td>
+<td style="text-align: right;">3.20</td>
+<td style="text-align: right;">8.07</td>
+<td style="text-align: right;">9.90</td>
+<td style="text-align: right;">11.44</td>
+<td style="text-align: right;">13.22</td>
+<td style="text-align: left;">▂▃▆▇▇</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">wtkg</td>
-<td style="text-align: right;">19</td>
-<td style="text-align: right;">0.99</td>
-<td style="text-align: right;">8.10</td>
-<td style="text-align: right;">3.30</td>
-<td style="text-align: right;">1.18</td>
-<td style="text-align: right;">5.08</td>
-<td style="text-align: right;">8.22</td>
-<td style="text-align: right;">10.70</td>
-<td style="text-align: right;">16.50</td>
-<td style="text-align: left;">▅▇▇▆▂</td>
+<td style="text-align: left;">sd</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1.13</td>
+<td style="text-align: right;">0.27</td>
+<td style="text-align: right;">0.46</td>
+<td style="text-align: right;">0.93</td>
+<td style="text-align: right;">1.15</td>
+<td style="text-align: right;">1.35</td>
+<td style="text-align: right;">1.59</td>
+<td style="text-align: left;">▂▅▇▇▇</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">haz</td>
-<td style="text-align: right;">40</td>
-<td style="text-align: right;">0.98</td>
-<td style="text-align: right;">0.30</td>
-<td style="text-align: right;">1.10</td>
-<td style="text-align: right;">-6.60</td>
-<td style="text-align: right;">-0.38</td>
-<td style="text-align: right;">0.37</td>
-<td style="text-align: right;">1.02</td>
-<td style="text-align: right;">3.71</td>
-<td style="text-align: left;">▁▁▃▇▁</td>
+<td style="text-align: left;">cv</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.12</td>
+<td style="text-align: right;">0.01</td>
+<td style="text-align: right;">0.11</td>
+<td style="text-align: right;">0.11</td>
+<td style="text-align: right;">0.12</td>
+<td style="text-align: right;">0.12</td>
+<td style="text-align: right;">0.15</td>
+<td style="text-align: left;">▇▇▂▁▁</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">waz</td>
-<td style="text-align: right;">19</td>
-<td style="text-align: right;">0.99</td>
-<td style="text-align: right;">0.29</td>
-<td style="text-align: right;">0.99</td>
-<td style="text-align: right;">-5.98</td>
-<td style="text-align: right;">-0.30</td>
-<td style="text-align: right;">0.33</td>
-<td style="text-align: right;">0.96</td>
-<td style="text-align: right;">3.11</td>
-<td style="text-align: left;">▁▁▂▇▂</td>
+<td style="text-align: left;">l</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">-0.06</td>
+<td style="text-align: right;">0.17</td>
+<td style="text-align: right;">-0.31</td>
+<td style="text-align: right;">-0.24</td>
+<td style="text-align: right;">-0.02</td>
+<td style="text-align: right;">0.06</td>
+<td style="text-align: right;">0.38</td>
+<td style="text-align: left;">▇▂▇▃▁</td>
 </tr>
 </tbody>
 </table>
@@ -377,22 +349,34 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </table>
 </div>
 </div>
-<div class="cell" data-file="../../../data_scripts/childheath/dutch_child.r">
+<div class="cell" data-file="../../../data_scripts/childheath/weight_coef.r">
 <details>
 <summary>Explore generating code using R</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, pins)</span>
-<span id="cb1-2"><a href="#cb1-2"></a></span>
-<span id="cb1-3"><a href="#cb1-3"></a>tdat <span class="ot">&lt;-</span> <span class="fu">tempfile</span>()</span>
-<span id="cb1-4"><a href="#cb1-4"></a><span class="fu">download</span>(<span class="st">"https://github.com/stefvanbuuren/brokenstick/raw/71dc99e62ce57b58d5c1d2a1074fbd4bf394e559/data/smocc_hgtwgt.rda"</span>,tdat, <span class="at">mode =</span> <span class="st">"wb"</span>)</span>
-<span id="cb1-5"><a href="#cb1-5"></a></span>
-<span id="cb1-6"><a href="#cb1-6"></a><span class="fu">load</span>(tdat)</span>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># both need to be installed</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="co"># remotes::install_github("bokeh/rbokeh")</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="co"># remotes::install_github("ki-tools/growthstandards")</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a></span>
+<span id="cb1-5"><a href="#cb1-5"></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, pins, growthstandards)</span>
+<span id="cb1-6"><a href="#cb1-6"></a></span>
 <span id="cb1-7"><a href="#cb1-7"></a></span>
-<span id="cb1-8"><a href="#cb1-8"></a>childhealth_dutch <span class="ot">&lt;-</span> smocc_hgtwgt <span class="sc">|&gt;</span></span>
-<span id="cb1-9"><a href="#cb1-9"></a>  <span class="fu">select</span>(subjid, sex, agedays, gagebrth, htcm, wtkg, haz, waz)</span>
-<span id="cb1-10"><a href="#cb1-10"></a></span>
-<span id="cb1-11"><a href="#cb1-11"></a>board <span class="ot">&lt;-</span> <span class="fu">board_connect</span>()</span>
-<span id="cb1-12"><a href="#cb1-12"></a></span>
-<span id="cb1-13"><a href="#cb1-13"></a><span class="fu">pin_write</span>(board, childhealth_dutch, <span class="st">"childhealth_dutch"</span>, <span class="at">type =</span> <span class="st">"parquet"</span>, <span class="at">access_type =</span> <span class="st">"all"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-8"><a href="#cb1-8"></a>weight_coef <span class="ot">&lt;-</span> growthstandards<span class="sc">::</span>who_coefs<span class="sc">$</span>wtkg_agedays<span class="sc">$</span>Male<span class="sc">$</span>data <span class="sc">%&gt;%</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a>  <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a>  <span class="fu">filter</span>(x <span class="sc">&lt;</span> <span class="dv">900</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb1-11"><a href="#cb1-11"></a>  <span class="fu">select</span>(<span class="at">agedays =</span> x, <span class="at">mean =</span> m, <span class="at">cv =</span> s, <span class="at">l =</span> l) <span class="sc">%&gt;%</span></span>
+<span id="cb1-12"><a href="#cb1-12"></a>  <span class="fu">mutate</span>(<span class="at">sex =</span> <span class="st">"Female"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb1-13"><a href="#cb1-13"></a>  <span class="fu">bind_rows</span>(</span>
+<span id="cb1-14"><a href="#cb1-14"></a>    growthstandards<span class="sc">::</span>who_coefs<span class="sc">$</span>wtkg_agedays<span class="sc">$</span>Female<span class="sc">$</span>data <span class="sc">%&gt;%</span></span>
+<span id="cb1-15"><a href="#cb1-15"></a>      <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb1-16"><a href="#cb1-16"></a>      <span class="fu">filter</span>(x <span class="sc">&lt;</span> <span class="dv">900</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb1-17"><a href="#cb1-17"></a>      <span class="fu">select</span>(<span class="at">agedays =</span> x, <span class="at">mean =</span> m, <span class="at">cv =</span> s, <span class="at">l =</span> l) <span class="sc">%&gt;%</span></span>
+<span id="cb1-18"><a href="#cb1-18"></a>      <span class="fu">mutate</span>(<span class="at">sex =</span> <span class="st">"Male"</span>)</span>
+<span id="cb1-19"><a href="#cb1-19"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb1-20"><a href="#cb1-20"></a>  <span class="fu">mutate</span>(<span class="at">sd =</span> mean <span class="sc">*</span> cv) <span class="sc">%&gt;%</span></span>
+<span id="cb1-21"><a href="#cb1-21"></a>  <span class="fu">select</span>(agedays, sex, mean, sd, cv, l)</span>
+<span id="cb1-22"><a href="#cb1-22"></a></span>
+<span id="cb1-23"><a href="#cb1-23"></a></span>
+<span id="cb1-24"><a href="#cb1-24"></a>board <span class="ot">&lt;-</span> <span class="fu">board_connect</span>()</span>
+<span id="cb1-25"><a href="#cb1-25"></a><span class="fu">pin_write</span>(board, weight_coef, <span class="at">type =</span> <span class="st">"parquet"</span>, <span class="at">access_type =</span> <span class="st">"all"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 <!-- ```{python}
@@ -413,7 +397,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
-<li id="fn1"><p><a href="https://github.com/stefvanbuuren/brokenstick">https://github.com/stefvanbuuren/brokenstick</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p><a href="https://github.com/hafen/growthstandards">https://github.com/hafen/growthstandards</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

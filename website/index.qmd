@@ -15,4 +15,4 @@ title-block-banner: true
 
 ## Data posts
 
-The `Author` is the originating BYU-I course that prompted the data. All terms are searchable. 
+The `Author` is the originating BYU-I course that prompted the data. All terms are searchable. This page shows all datasets in a large table.  You can explore datasets by topic or course by browsing [data topics](data_topics.qmd)

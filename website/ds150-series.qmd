@@ -1,7 +1,9 @@
 ---
-title: "Child Health Data"
+title: "DS 150: Data Intuition and Insight"
 listing:
-  contents: posts/childhealth
+  contents: 
+    posts/childhealth/*.qmd
+    posts/tuberculosis/*.qmd
   sort: "date desc"
   type: table
   categories: false
@@ -13,4 +15,4 @@ title-block-banner: true
 ---
 
 
-The data focused on Child Health.
+The data used in DS 150.

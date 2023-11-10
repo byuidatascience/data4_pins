@@ -9,4 +9,8 @@ childhealth_dutch <- smocc_hgtwgt |>
   select(subjid, sex, agedays, gagebrth, htcm, wtkg, haz, waz)
 
 board <- board_connect()
+
 pin_write(board, childhealth_dutch, "childhealth_dutch", type = "parquet", access_type = "all")
+
+
+

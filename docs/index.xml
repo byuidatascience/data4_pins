@@ -12,6 +12,236 @@
 <generator>quarto-1.3.450</generator>
 <lastBuildDate>Sun, 05 Nov 2023 06:00:00 GMT</lastBuildDate>
 <item>
+  <title>Dutch child birth data</title>
+  <dc:creator>DS 150</dc:creator>
+  <link>https://byuidatascience.github.io/posts/childhealth/dutch_birth.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="section" class="level1">
+<h1></h1>
+<section id="data-details" class="level2">
+<h2 class="anchored" data-anchor-id="data-details">Data details</h2>
+<p>There are <strong>206 rows</strong> and <strong>3 columns</strong>. The data source<sup>1</sup> is used to create our data that is stored in our <a href="https://posit.byui.edu/content/0fd46852-12db-4a36-9316-1907f1e19225/_rev67/">pins table</a>. You can access this pin from a connection to <a href="https://posit.byui.edu">posit.byui.edu</a> using <code>hathawayj/birth_dutch</code>.</p>
+<p>This data is available to <strong>all</strong>.</p>
+<section id="variable-description" class="level3">
+<h3 class="anchored" data-anchor-id="variable-description">Variable description</h3>
+<ul>
+<li><strong>subjid:</strong> unique identifier of each child</li>
+<li><strong>sex:</strong> Male or Female</li>
+<li><strong>birthwt:</strong> Birthweight of the child</li>
+</ul>
+</section>
+<section id="variable-summary" class="level3">
+<h3 class="anchored" data-anchor-id="variable-summary">Variable summary</h3>
+<div class="cell">
+<div class="cell-output-display">
+<p><strong>Variable type: numeric</strong></p>
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 10%">
+<col style="width: 14%">
+<col style="width: 9%">
+<col style="width: 7%">
+<col style="width: 6%">
+<col style="width: 9%">
+<col style="width: 8%">
+<col style="width: 9%">
+<col style="width: 6%">
+<col style="width: 6%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">skim_variable</th>
+<th style="text-align: right;">n_missing</th>
+<th style="text-align: right;">complete_rate</th>
+<th style="text-align: right;">mean</th>
+<th style="text-align: right;">sd</th>
+<th style="text-align: right;">p0</th>
+<th style="text-align: right;">p25</th>
+<th style="text-align: right;">p50</th>
+<th style="text-align: right;">p75</th>
+<th style="text-align: right;">p100</th>
+<th style="text-align: left;">hist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">subjid</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">10632.60</td>
+<td style="text-align: right;">502.06</td>
+<td style="text-align: right;">10001</td>
+<td style="text-align: right;">10064.25</td>
+<td style="text-align: right;">11017.5</td>
+<td style="text-align: right;">11071.75</td>
+<td style="text-align: right;">11127</td>
+<td style="text-align: left;">▆▁▁▁▇</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">birthwt</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3484.73</td>
+<td style="text-align: right;">571.14</td>
+<td style="text-align: right;">1180</td>
+<td style="text-align: right;">3135.00</td>
+<td style="text-align: right;">3500.0</td>
+<td style="text-align: right;">3897.50</td>
+<td style="text-align: right;">5100</td>
+<td style="text-align: left;">▁▂▇▇▁</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<p><strong>Variable type: character</strong></p>
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 13%">
+<col style="width: 19%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 8%">
+<col style="width: 12%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">skim_variable</th>
+<th style="text-align: right;">n_missing</th>
+<th style="text-align: right;">complete_rate</th>
+<th style="text-align: right;">min</th>
+<th style="text-align: right;">max</th>
+<th style="text-align: right;">empty</th>
+<th style="text-align: right;">n_unique</th>
+<th style="text-align: right;">whitespace</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">sex</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell" data-file="../../../data_scripts/childheath/dutch_birth.r">
+<details>
+<summary>Explore generating code using R</summary>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1">pacman<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, pins)</span>
+<span id="cb1-2"></span>
+<span id="cb1-3">t.dat <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">tempfile</span>()</span>
+<span id="cb1-4"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">download</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://github.com/stefvanbuuren/brokenstick/raw/71dc99e62ce57b58d5c1d2a1074fbd4bf394e559/data/smocc_hgtwgt.rda"</span>,t.dat, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">mode =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"wb"</span>)</span>
+<span id="cb1-5"></span>
+<span id="cb1-6"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">load</span>(t.dat)</span>
+<span id="cb1-7"></span>
+<span id="cb1-8">birth_dutch <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> smocc_hgtwgt <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb1-9">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">group_by</span>(subjid) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb1-10">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">summarise</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">sex =</span> sex[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>], <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">birthwt =</span> birthwt[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>]) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb1-11">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ungroup</span>()</span>
+<span id="cb1-12"></span>
+<span id="cb1-13"></span>
+<span id="cb1-14">board <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">board_connect</span>()</span>
+<span id="cb1-15"></span>
+<span id="cb1-16"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">pin_write</span>(board, birth_dutch, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">type =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"parquet"</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">access_type =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"all"</span>)</span></code></pre></div>
+</details>
+</div>
+<!-- ```{python}
+#| echo: true
+#| eval: false
+#| code-fold: true
+#| code-summary: Explore generating code using Python
+#| code-line-numbers: true
+# file: ../../../data_scripts/childhealth.py
+``` -->
+
+
+</section>
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p><a href="https://github.com/stefvanbuuren/brokenstick">https://github.com/stefvanbuuren/brokenstick</a>↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>health</category>
+  <category>child</category>
+  <guid>https://byuidatascience.github.io/posts/childhealth/dutch_birth.html</guid>
+  <pubDate>Sun, 05 Nov 2023 06:00:00 GMT</pubDate>
+</item>
+<item>
   <title>Dutch child height and weight measurements</title>
   <dc:creator>DS 150</dc:creator>
   <link>https://byuidatascience.github.io/posts/childhealth/dutch_child.html</link>
@@ -24,7 +254,8 @@
 <h1></h1>
 <section id="data-details" class="level2">
 <h2 class="anchored" data-anchor-id="data-details">Data details</h2>
-<p>There are <strong>2,000 rows</strong> and <strong>8 columns</strong>. The data source<sup>1</sup> is used to create our data that is stored in our <a href="https://posit.byui.edu/connect/#/apps/1091db55-3d31-4071-b60e-a2253aa63298/access">pins table</a>. You can access this pin from a connection to <a href="https://posit.byui.edu">posit.byui.edu</a> using <code>hathawayj/childhealth_dutch</code>.</p>
+<p>There are <strong>2,000 rows</strong> and <strong>8 columns</strong>. The data source<sup>1</sup> is used to create our data that is stored in our <a href="https://posit.byui.edu/content/1091db55-3d31-4071-b60e-a2253aa63298/_rev64/">pins table</a>. You can access this pin from a connection to <a href="https://posit.byui.edu">posit.byui.edu</a> using <code>hathawayj/childhealth_dutch</code>.</p>
+<p>This data is available to <strong>all</strong>.</p>
 <section id="variable-description" class="level3">
 <h3 class="anchored" data-anchor-id="variable-description">Variable description</h3>
 <ul>
@@ -251,7 +482,8 @@ background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">board_connect</span>()</span>
-<span id="cb1-12"><span class="fu" style="color: #4758AB;
+<span id="cb1-12"></span>
+<span id="cb1-13"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">pin_write</span>(board, childhealth_dutch, <span class="st" style="color: #20794D;
 background-color: null;
@@ -287,8 +519,1928 @@ font-style: inherit;">"all"</span>)</span></code></pre></div>
 <li id="fn1"><p><a href="https://github.com/stefvanbuuren/brokenstick">https://github.com/stefvanbuuren/brokenstick</a>↩︎</p></li>
 </ol>
 </section></div> ]]></description>
-  <category>DS150</category>
+  <category>health</category>
+  <category>child</category>
   <guid>https://byuidatascience.github.io/posts/childhealth/dutch_child.html</guid>
+  <pubDate>Sun, 05 Nov 2023 06:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>WHO coeficients for height Z-score calculations</title>
+  <dc:creator>DS 150</dc:creator>
+  <link>https://byuidatascience.github.io/posts/childhealth/height_coef.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="section" class="level1">
+<h1></h1>
+<section id="data-details" class="level2">
+<h2 class="anchored" data-anchor-id="data-details">Data details</h2>
+<p>There are <strong>1,800 rows</strong> and <strong>6 columns</strong>. The data source<sup>1</sup> is used to create our data that is stored in our <a href="https://posit.byui.edu/content/8eb49f02-9b48-4a2e-b9e4-07101b2e6fd2/_rev69/">pins table</a>. You can access this pin from a connection to <a href="https://posit.byui.edu">posit.byui.edu</a> using <code>hathawayj/height_coef</code>.</p>
+<p>This data is available to <strong>all</strong>.</p>
+<section id="variable-description" class="level3">
+<h3 class="anchored" data-anchor-id="variable-description">Variable description</h3>
+<ul>
+<li><strong>agedays:</strong> Age of child in days</li>
+<li><strong>sex:</strong> The gender of the child</li>
+<li><strong>mean:</strong> The mean for a child at agedays</li>
+<li><strong>cv:</strong> The <a href="https://en.wikipedia.org/wiki/Coefficient_of_variation">coefficient of variation</a> for children at age in days</li>
+<li><strong>l:</strong> The box-cox transformation for children at age in days <a href="https://www.cdc.gov/nchs/data/nhsr/nhsr063.pdf">see documentation</a></li>
+<li><strong>sd:</strong> The standard deviation of weights for children at age age in days</li>
+</ul>
+</section>
+<section id="variable-summary" class="level3">
+<h3 class="anchored" data-anchor-id="variable-summary">Variable summary</h3>
+<div class="cell">
+<div class="cell-output-display">
+<p><strong>Variable type: numeric</strong></p>
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 10%">
+<col style="width: 15%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 6%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 6%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">skim_variable</th>
+<th style="text-align: right;">n_missing</th>
+<th style="text-align: right;">complete_rate</th>
+<th style="text-align: right;">mean</th>
+<th style="text-align: right;">sd</th>
+<th style="text-align: right;">p0</th>
+<th style="text-align: right;">p25</th>
+<th style="text-align: right;">p50</th>
+<th style="text-align: right;">p75</th>
+<th style="text-align: right;">p100</th>
+<th style="text-align: left;">hist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">agedays</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">449.50</td>
+<td style="text-align: right;">259.88</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">224.75</td>
+<td style="text-align: right;">449.50</td>
+<td style="text-align: right;">674.25</td>
+<td style="text-align: right;">899.00</td>
+<td style="text-align: left;">▇▇▇▇▇</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">mean</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">76.24</td>
+<td style="text-align: right;">10.60</td>
+<td style="text-align: right;">49.15</td>
+<td style="text-align: right;">68.77</td>
+<td style="text-align: right;">78.08</td>
+<td style="text-align: right;">85.47</td>
+<td style="text-align: right;">91.59</td>
+<td style="text-align: left;">▂▃▅▆▇</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sd</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2.65</td>
+<td style="text-align: right;">0.45</td>
+<td style="text-align: right;">1.86</td>
+<td style="text-align: right;">2.25</td>
+<td style="text-align: right;">2.62</td>
+<td style="text-align: right;">3.04</td>
+<td style="text-align: right;">3.51</td>
+<td style="text-align: left;">▇▇▇▇▆</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">cv</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.03</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.03</td>
+<td style="text-align: right;">0.03</td>
+<td style="text-align: right;">0.03</td>
+<td style="text-align: right;">0.04</td>
+<td style="text-align: right;">0.04</td>
+<td style="text-align: left;">▆▂▇▅▂</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">l</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: left;">▁▁▇▁▁</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<p><strong>Variable type: character</strong></p>
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 13%">
+<col style="width: 19%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 8%">
+<col style="width: 12%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">skim_variable</th>
+<th style="text-align: right;">n_missing</th>
+<th style="text-align: right;">complete_rate</th>
+<th style="text-align: right;">min</th>
+<th style="text-align: right;">max</th>
+<th style="text-align: right;">empty</th>
+<th style="text-align: right;">n_unique</th>
+<th style="text-align: right;">whitespace</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">sex</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell" data-file="../../../data_scripts/childheath/height_coef.r">
+<details>
+<summary>Explore generating code using R</summary>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># both need to be installed</span></span>
+<span id="cb1-2"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># remotes::install_github("bokeh/rbokeh")</span></span>
+<span id="cb1-3"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># remotes::install_github("ki-tools/growthstandards")</span></span>
+<span id="cb1-4"></span>
+<span id="cb1-5">pacman<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, pins, growthstandards)</span>
+<span id="cb1-6"></span>
+<span id="cb1-7"></span>
+<span id="cb1-8">height_coef <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> growthstandards<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span>who_coefs<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>htcm_agedays<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>Female<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>data <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb1-9">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">as_tibble</span>() <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb1-10">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">filter</span>(x <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">900</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb1-11">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">select</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">agedays =</span> x, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">mean =</span> m, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">cv =</span> s, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">l =</span> l) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb1-12">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">sex =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Female"</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb1-13">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">bind_rows</span>(</span>
+<span id="cb1-14">    growthstandards<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span>who_coefs<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>htcm_agedays<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>Male<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>data <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb1-15">      <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">as_tibble</span>() <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb1-16">      <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">filter</span>(x <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">900</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb1-17">      <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">select</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">agedays =</span> x, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">mean =</span> m, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">cv =</span> s, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">l =</span> l) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb1-18">      <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">sex =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Male"</span>)</span>
+<span id="cb1-19">  ) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb1-20">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">sd =</span> mean <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> cv) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb1-21">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">select</span>(agedays, sex, mean, sd, cv, l)</span>
+<span id="cb1-22"></span>
+<span id="cb1-23"></span>
+<span id="cb1-24">board <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">board_connect</span>()</span>
+<span id="cb1-25"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">pin_write</span>(board, height_coef, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">type =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"parquet"</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">access_type =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"all"</span>)</span></code></pre></div>
+</details>
+</div>
+<!-- ```{python}
+#| echo: true
+#| eval: false
+#| code-fold: true
+#| code-summary: Explore generating code using Python
+#| code-line-numbers: true
+# file: ../../../data_scripts/childhealth.py
+``` -->
+
+
+</section>
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p><a href="https://github.com/hafen/growthstandards">https://github.com/hafen/growthstandards</a>↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>health</category>
+  <category>child</category>
+  <guid>https://byuidatascience.github.io/posts/childhealth/height_coef.html</guid>
+  <pubDate>Sun, 05 Nov 2023 06:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Child height, weight, head circumference measurements in resource-poor environments</title>
+  <dc:creator>DS 150</dc:creator>
+  <link>https://byuidatascience.github.io/posts/childhealth/maled_child.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="section" class="level1">
+<h1></h1>
+<section id="data-details" class="level2">
+<h2 class="anchored" data-anchor-id="data-details">Data details</h2>
+<p>There are <strong>48,632 rows</strong> and <strong>16 columns</strong>. The data source<sup>1</sup> is used to create our data that is stored in our <a href="https://posit.byui.edu/content/b0e39d4a-519c-417e-8ca4-95b3c0f2c980/_rev70/">pins table</a>. You can access this pin from a connection to <a href="https://posit.byui.edu">posit.byui.edu</a> using <code>hathawayj/childhealth_maled</code>.</p>
+<p>This data is available to <strong>BYUI users</strong>.</p>
+<section id="variable-description" class="level3">
+<h3 class="anchored" data-anchor-id="variable-description">Variable description</h3>
+<ul>
+<li><strong>subjid:</strong> unique identifyer of each child</li>
+<li><strong>country:</strong> Label for the varied countries</li>
+<li><strong>sex:</strong> Male or Female</li>
+<li><strong>agedays:</strong> Age in days</li>
+<li><strong>wtkg:</strong> Weight measurement in kg (0.8-20.5)</li>
+<li><strong>stcm:</strong> Stature either Length or height in cm</li>
+<li><strong>htcm:</strong> Height in cm</li>
+<li><strong>lncm:</strong> Length in cm</li>
+<li><strong>lh_used:</strong> Lenght or Height used for stature</li>
+<li><strong>hccm:</strong> Head Circumference in cm</li>
+<li><strong>lhaz:</strong> Length or Height for age in SDS relative to WHO child growth standard</li>
+<li><strong>haz:</strong> Height for age in SDS relative to WHO child growth standard</li>
+<li><strong>laz:</strong> Length for age in SDS relative to WHO child growth standard</li>
+<li><strong>waz:</strong> Weight for age in SDS relative to WHO child growth standard</li>
+<li><strong>hcaz:</strong> Head circumference for age in SDS relative to WHO child growth standard</li>
+<li><strong>whz:</strong> Weight for height or length in SDS relative to WHO child growth standard</li>
+</ul>
+</section>
+<section id="variable-summary" class="level3">
+<h3 class="anchored" data-anchor-id="variable-summary">Variable summary</h3>
+<div class="cell">
+<div class="cell-output-display">
+<p><strong>Variable type: numeric</strong></p>
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 10%">
+<col style="width: 15%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 6%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 6%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">skim_variable</th>
+<th style="text-align: right;">n_missing</th>
+<th style="text-align: right;">complete_rate</th>
+<th style="text-align: right;">mean</th>
+<th style="text-align: right;">sd</th>
+<th style="text-align: right;">p0</th>
+<th style="text-align: right;">p25</th>
+<th style="text-align: right;">p50</th>
+<th style="text-align: right;">p75</th>
+<th style="text-align: right;">p100</th>
+<th style="text-align: left;">hist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">agedays</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">341.81</td>
+<td style="text-align: right;">226.81</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">149.00</td>
+<td style="text-align: right;">334.00</td>
+<td style="text-align: right;">546.00</td>
+<td style="text-align: right;">759.00</td>
+<td style="text-align: left;">▇▆▆▆▅</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">wtkg</td>
+<td style="text-align: right;">29</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">7.83</td>
+<td style="text-align: right;">2.52</td>
+<td style="text-align: right;">1.66</td>
+<td style="text-align: right;">6.29</td>
+<td style="text-align: right;">8.10</td>
+<td style="text-align: right;">9.52</td>
+<td style="text-align: right;">20.08</td>
+<td style="text-align: left;">▃▇▅▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">stcm</td>
+<td style="text-align: right;">8314</td>
+<td style="text-align: right;">0.83</td>
+<td style="text-align: right;">69.30</td>
+<td style="text-align: right;">9.63</td>
+<td style="text-align: right;">38.90</td>
+<td style="text-align: right;">63.00</td>
+<td style="text-align: right;">70.60</td>
+<td style="text-align: right;">76.60</td>
+<td style="text-align: right;">97.00</td>
+<td style="text-align: left;">▁▃▇▇▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">htcm</td>
+<td style="text-align: right;">48527</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">83.16</td>
+<td style="text-align: right;">4.28</td>
+<td style="text-align: right;">73.50</td>
+<td style="text-align: right;">80.50</td>
+<td style="text-align: right;">82.50</td>
+<td style="text-align: right;">85.60</td>
+<td style="text-align: right;">96.80</td>
+<td style="text-align: left;">▂▇▅▂▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">lncm</td>
+<td style="text-align: right;">8316</td>
+<td style="text-align: right;">0.83</td>
+<td style="text-align: right;">69.30</td>
+<td style="text-align: right;">9.63</td>
+<td style="text-align: right;">38.90</td>
+<td style="text-align: right;">63.00</td>
+<td style="text-align: right;">70.60</td>
+<td style="text-align: right;">76.60</td>
+<td style="text-align: right;">97.00</td>
+<td style="text-align: left;">▁▃▇▇▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">hccm</td>
+<td style="text-align: right;">13142</td>
+<td style="text-align: right;">0.73</td>
+<td style="text-align: right;">42.87</td>
+<td style="text-align: right;">3.72</td>
+<td style="text-align: right;">29.00</td>
+<td style="text-align: right;">40.90</td>
+<td style="text-align: right;">43.60</td>
+<td style="text-align: right;">45.50</td>
+<td style="text-align: right;">53.70</td>
+<td style="text-align: left;">▁▂▆▇▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">lhaz</td>
+<td style="text-align: right;">8314</td>
+<td style="text-align: right;">0.83</td>
+<td style="text-align: right;">-1.29</td>
+<td style="text-align: right;">1.20</td>
+<td style="text-align: right;">-6.72</td>
+<td style="text-align: right;">-2.08</td>
+<td style="text-align: right;">-1.30</td>
+<td style="text-align: right;">-0.53</td>
+<td style="text-align: right;">4.71</td>
+<td style="text-align: left;">▁▃▇▂▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">haz</td>
+<td style="text-align: right;">48527</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">-1.32</td>
+<td style="text-align: right;">1.29</td>
+<td style="text-align: right;">-3.98</td>
+<td style="text-align: right;">-2.15</td>
+<td style="text-align: right;">-1.45</td>
+<td style="text-align: right;">-0.53</td>
+<td style="text-align: right;">2.90</td>
+<td style="text-align: left;">▂▇▅▂▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">laz</td>
+<td style="text-align: right;">8316</td>
+<td style="text-align: right;">0.83</td>
+<td style="text-align: right;">-1.29</td>
+<td style="text-align: right;">1.20</td>
+<td style="text-align: right;">-6.72</td>
+<td style="text-align: right;">-2.08</td>
+<td style="text-align: right;">-1.30</td>
+<td style="text-align: right;">-0.53</td>
+<td style="text-align: right;">4.71</td>
+<td style="text-align: left;">▁▃▇▂▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">waz</td>
+<td style="text-align: right;">29</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">-0.78</td>
+<td style="text-align: right;">1.24</td>
+<td style="text-align: right;">-6.27</td>
+<td style="text-align: right;">-1.57</td>
+<td style="text-align: right;">-0.79</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">5.33</td>
+<td style="text-align: left;">▁▃▇▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">hcaz</td>
+<td style="text-align: right;">13142</td>
+<td style="text-align: right;">0.73</td>
+<td style="text-align: right;">-0.89</td>
+<td style="text-align: right;">1.21</td>
+<td style="text-align: right;">-5.60</td>
+<td style="text-align: right;">-1.73</td>
+<td style="text-align: right;">-0.91</td>
+<td style="text-align: right;">-0.10</td>
+<td style="text-align: right;">9.35</td>
+<td style="text-align: left;">▁▇▂▁▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">whz</td>
+<td style="text-align: right;">8346</td>
+<td style="text-align: right;">0.83</td>
+<td style="text-align: right;">0.09</td>
+<td style="text-align: right;">1.26</td>
+<td style="text-align: right;">-5.92</td>
+<td style="text-align: right;">-0.76</td>
+<td style="text-align: right;">0.04</td>
+<td style="text-align: right;">0.89</td>
+<td style="text-align: right;">6.80</td>
+<td style="text-align: left;">▁▃▇▁▁</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<p><strong>Variable type: character</strong></p>
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 13%">
+<col style="width: 19%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 8%">
+<col style="width: 12%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">skim_variable</th>
+<th style="text-align: right;">n_missing</th>
+<th style="text-align: right;">complete_rate</th>
+<th style="text-align: right;">min</th>
+<th style="text-align: right;">max</th>
+<th style="text-align: right;">empty</th>
+<th style="text-align: right;">n_unique</th>
+<th style="text-align: right;">whitespace</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">subjid</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2145</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sex</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">country</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">lh_used</td>
+<td style="text-align: right;">8293</td>
+<td style="text-align: right;">0.83</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell" data-file="../../../data_scripts/childheath/maled_child.r">
+<details>
+<summary>Explore generating code using R</summary>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## Obfuscate data</span></span>
+<span id="cb1-2"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># https://clinepidb.org/ce/app/record/dataset/DS_5c41b87221</span></span>
+<span id="cb1-3"></span>
+<span id="cb1-4">pacman<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, pins)</span>
+<span id="cb1-5"></span>
+<span id="cb1-6">sdrive <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">shared_drive_find</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"byuids_data"</span>)</span>
+<span id="cb1-7">maled_file <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">drive_ls</span>(sdrive)  <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb1-8">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">filter</span>(stringr<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">str_detect</span>(name, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"MALED"</span>))</span>
+<span id="cb1-9">tempf <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">tempfile</span>()</span>
+<span id="cb1-10"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">drive_download</span>(maled_file, tempf)</span>
+<span id="cb1-11">dat <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(tempf)</span>
+<span id="cb1-12"></span>
+<span id="cb1-13">childhealth_maled <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> dat <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb1-14">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">select</span>(</span>
+<span id="cb1-15">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">subjid =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Participant ID</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">sex =</span> Sex, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">country =</span> Country,</span>
+<span id="cb1-16">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">agedays =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Age (days)</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">wtkg =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Weight (kg)</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">stcm =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Stature (cm)</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span>,</span>
+<span id="cb1-17">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">htcm =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Height (cm)</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">lncm =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Recumbent length (cm)</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span>,</span>
+<span id="cb1-18">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">lh_used =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Recumbent length or height used for stature</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span>,</span>
+<span id="cb1-19">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">hccm =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Head circumference (cm)</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span>,</span>
+<span id="cb1-20">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">lhaz =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Length- or height-for-age z-score</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span>,</span>
+<span id="cb1-21">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">haz =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Height-for-age z-score</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">laz=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Length-for-age z-score</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span>,</span>
+<span id="cb1-22">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">waz =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Weight-for-age z-score</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">hcaz =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Head circumference-for-age z-score</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span>,</span>
+<span id="cb1-23">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">whz =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Weight-for-length or -height z-score</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span>)</span>
+<span id="cb1-24"></span>
+<span id="cb1-25">board <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">board_connect</span>()</span>
+<span id="cb1-26"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">pin_write</span>(board, childhealth_maled, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">type =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"parquet"</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">access_type =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"all"</span>)</span></code></pre></div>
+</details>
+</div>
+<!-- ```{python}
+#| echo: true
+#| eval: false
+#| code-fold: true
+#| code-summary: Explore generating code using Python
+#| code-line-numbers: true
+# file: ../../../data_scripts/childhealth.py
+``` -->
+
+
+</section>
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p><a href="https://clinepidb.org/ce/app/record/dataset/DS_5c41b87221">https://clinepidb.org/ce/app/record/dataset/DS_5c41b87221</a>↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>health</category>
+  <category>child</category>
+  <guid>https://byuidatascience.github.io/posts/childhealth/maled_child.html</guid>
+  <pubDate>Sun, 05 Nov 2023 06:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>US child birth data</title>
+  <dc:creator>DS 150</dc:creator>
+  <link>https://byuidatascience.github.io/posts/childhealth/us_birth.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="section" class="level1">
+<h1></h1>
+<section id="data-details" class="level2">
+<h2 class="anchored" data-anchor-id="data-details">Data details</h2>
+<p>There are <strong>500 rows</strong> and <strong>11 columns</strong>. The data source<sup>1</sup> is used to create our data that is stored in our <a href="https://posit.byui.edu/content/020299e2-2941-4a7e-8d75-4ce544b6fb22/_rev66/">pins table</a>. You can access this pin from a connection to <a href="https://posit.byui.edu">posit.byui.edu</a> using <code>hathawayj/birth_us</code>.</p>
+<p>This data is available to <strong>all</strong>.</p>
+<section id="variable-description" class="level3">
+<h3 class="anchored" data-anchor-id="variable-description">Variable description</h3>
+<ul>
+<li><strong>subjid:</strong> unique identifier of each child</li>
+<li><strong>sex:</strong> Male or Female</li>
+<li><strong>birthwt:</strong> Birthweight of the child</li>
+<li><strong>birthlen:</strong> Birth length of the child</li>
+<li><strong>apgar1:</strong> <a href="https:/medlineplus.gov/ency/article/003402.htm">a quick test performed on a baby at 1 minute after birth</a>.</li>
+<li><strong>apgar5:</strong> <a href="https:/medlineplus.gov/ency/article/003402.htm">a quick test performed on a baby at 5 minutes after birth</a></li>
+<li><strong>mrace:</strong> Race of the mother</li>
+<li><strong>mage:</strong> Mother age at childbirth</li>
+<li><strong>smoked:</strong> If the mother smoked (1) or didn’t smoke (0)</li>
+<li><strong>meducyrs:</strong> Educational years of mother</li>
+<li><strong>ses:</strong> Socioeconomic status of mother</li>
+</ul>
+</section>
+<section id="variable-summary" class="level3">
+<h3 class="anchored" data-anchor-id="variable-summary">Variable summary</h3>
+<div class="cell">
+<div class="cell-output-display">
+<p><strong>Variable type: numeric</strong></p>
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 10%">
+<col style="width: 15%">
+<col style="width: 8%">
+<col style="width: 7%">
+<col style="width: 5%">
+<col style="width: 8%">
+<col style="width: 7%">
+<col style="width: 8%">
+<col style="width: 5%">
+<col style="width: 6%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">skim_variable</th>
+<th style="text-align: right;">n_missing</th>
+<th style="text-align: right;">complete_rate</th>
+<th style="text-align: right;">mean</th>
+<th style="text-align: right;">sd</th>
+<th style="text-align: right;">p0</th>
+<th style="text-align: right;">p25</th>
+<th style="text-align: right;">p50</th>
+<th style="text-align: right;">p75</th>
+<th style="text-align: right;">p100</th>
+<th style="text-align: left;">hist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">subjid</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">250.86</td>
+<td style="text-align: right;">144.88</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">125.75</td>
+<td style="text-align: right;">250.5</td>
+<td style="text-align: right;">376.25</td>
+<td style="text-align: right;">501</td>
+<td style="text-align: left;">▇▇▇▇▇</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">birthwt</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">3407.64</td>
+<td style="text-align: right;">492.56</td>
+<td style="text-align: right;">1531</td>
+<td style="text-align: right;">3090.00</td>
+<td style="text-align: right;">3402.0</td>
+<td style="text-align: right;">3742.00</td>
+<td style="text-align: right;">5386</td>
+<td style="text-align: left;">▁▃▇▂▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">birthlen</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0.99</td>
+<td style="text-align: right;">50.84</td>
+<td style="text-align: right;">2.67</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">49.00</td>
+<td style="text-align: right;">51.0</td>
+<td style="text-align: right;">52.00</td>
+<td style="text-align: right;">59</td>
+<td style="text-align: left;">▁▁▁▇▂</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">apgar1</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">0.96</td>
+<td style="text-align: right;">7.71</td>
+<td style="text-align: right;">1.89</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">7.00</td>
+<td style="text-align: right;">8.0</td>
+<td style="text-align: right;">9.00</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">▁▁▂▆▇</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">apgar5</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">0.91</td>
+<td style="text-align: right;">8.78</td>
+<td style="text-align: right;">1.17</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">9.00</td>
+<td style="text-align: right;">9.0</td>
+<td style="text-align: right;">9.00</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">▁▁▁▁▇</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">mage</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">26.86</td>
+<td style="text-align: right;">6.09</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">22.00</td>
+<td style="text-align: right;">26.0</td>
+<td style="text-align: right;">31.00</td>
+<td style="text-align: right;">43</td>
+<td style="text-align: left;">▂▇▆▃▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">smoked</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0.99</td>
+<td style="text-align: right;">0.48</td>
+<td style="text-align: right;">0.50</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">▇▁▁▁▇</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">meducyrs</td>
+<td style="text-align: right;">61</td>
+<td style="text-align: right;">0.88</td>
+<td style="text-align: right;">11.30</td>
+<td style="text-align: right;">1.99</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">10.00</td>
+<td style="text-align: right;">12.0</td>
+<td style="text-align: right;">12.00</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">▁▁▃▇▁</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<p><strong>Variable type: character</strong></p>
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 13%">
+<col style="width: 19%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 8%">
+<col style="width: 12%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">skim_variable</th>
+<th style="text-align: right;">n_missing</th>
+<th style="text-align: right;">complete_rate</th>
+<th style="text-align: right;">min</th>
+<th style="text-align: right;">max</th>
+<th style="text-align: right;">empty</th>
+<th style="text-align: right;">n_unique</th>
+<th style="text-align: right;">whitespace</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">sex</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">mrace</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ses</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell" data-file="../../../data_scripts/childheath/us_birth.r">
+<details>
+<summary>Explore generating code using R</summary>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1">pacman<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, pins)</span>
+<span id="cb1-2"></span>
+<span id="cb1-3">hbgd_temp <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">tempfile</span>()</span>
+<span id="cb1-4"></span>
+<span id="cb1-5"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">download</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'https://github.com/HBGDki/hbgd/raw/master/data/cpp.rda'</span>, hbgd_temp, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">mode =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'wb'</span>)</span>
+<span id="cb1-6"></span>
+<span id="cb1-7"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">load</span>(hbgd_temp)</span>
+<span id="cb1-8"></span>
+<span id="cb1-9">birth_us <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> cpp <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb1-10">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">group_by</span>(subjid) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb1-11">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">summarise</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">sex =</span> sex[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>], <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">birthwt =</span> birthwt[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>], <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">birthlen =</span> birthlen[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>], </span>
+<span id="cb1-12">            <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">apgar1 =</span> apgar1[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>], <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">apgar5 =</span> apgar5[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>], <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">mrace =</span> mrace[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>], </span>
+<span id="cb1-13">            <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">mage =</span> mage[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>], <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">smoked =</span> smoked[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>], <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">meducyrs =</span> meducyrs[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>], <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">ses =</span> ses[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>]) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb1-14">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ungroup</span>()</span>
+<span id="cb1-15"></span>
+<span id="cb1-16"></span>
+<span id="cb1-17">board <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">board_connect</span>()</span>
+<span id="cb1-18"></span>
+<span id="cb1-19"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">pin_write</span>(board, birth_us, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">type =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"parquet"</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">access_type =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"all"</span>)</span></code></pre></div>
+</details>
+</div>
+<!-- ```{python}
+#| echo: true
+#| eval: false
+#| code-fold: true
+#| code-summary: Explore generating code using Python
+#| code-line-numbers: true
+# file: ../../../data_scripts/childhealth.py
+``` -->
+
+
+</section>
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p><a href="https://github.com/hafen/hbgd">https://github.com/hafen/hbgd</a>↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>health</category>
+  <category>child</category>
+  <guid>https://byuidatascience.github.io/posts/childhealth/us_birth.html</guid>
+  <pubDate>Sun, 05 Nov 2023 06:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>US child height and weight measurements</title>
+  <dc:creator>DS 150</dc:creator>
+  <link>https://byuidatascience.github.io/posts/childhealth/us_child.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="section" class="level1">
+<h1></h1>
+<section id="data-details" class="level2">
+<h2 class="anchored" data-anchor-id="data-details">Data details</h2>
+<p>There are <strong>500 rows</strong> and <strong>11 columns</strong>. The data source<sup>1</sup> is used to create our data that is stored in our <a href="https://posit.byui.edu/content/020299e2-2941-4a7e-8d75-4ce544b6fb22/_rev66/">pins table</a>. You can access this pin from a connection to <a href="https://posit.byui.edu">posit.byui.edu</a> using <code>hathawayj/birth_us</code>.</p>
+<p>This data is available to <strong>all</strong>.</p>
+<section id="variable-description" class="level3">
+<h3 class="anchored" data-anchor-id="variable-description">Variable description</h3>
+<ul>
+<li><strong>subjid:</strong> unique identifyer of each child</li>
+<li><strong>sex:</strong> Male or Female</li>
+<li><strong>agedays:</strong> Age in days</li>
+<li><strong>gagebrth:</strong> Gestational age at birth (days)</li>
+<li><strong>htcm:</strong> Length/height in cm (34-102)</li>
+<li><strong>wtkg:</strong> Weight measurement in kg (0.8-20.5)</li>
+<li><strong>haz:</strong> Height in SDS relative to WHO child growth standard</li>
+<li><strong>waz:</strong> Weight in SDS relative to WHO child growth standard</li>
+<li><strong>mrace:</strong> Race of the mother</li>
+<li><strong>mage:</strong> Mother age at child birth</li>
+<li><strong>meducyrs:</strong> Educational years of mother</li>
+<li><strong>ses:</strong> Socioeconomic status of mother ### Variable summary</li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<p><strong>Variable type: numeric</strong></p>
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 10%">
+<col style="width: 15%">
+<col style="width: 8%">
+<col style="width: 7%">
+<col style="width: 5%">
+<col style="width: 8%">
+<col style="width: 7%">
+<col style="width: 8%">
+<col style="width: 5%">
+<col style="width: 6%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">skim_variable</th>
+<th style="text-align: right;">n_missing</th>
+<th style="text-align: right;">complete_rate</th>
+<th style="text-align: right;">mean</th>
+<th style="text-align: right;">sd</th>
+<th style="text-align: right;">p0</th>
+<th style="text-align: right;">p25</th>
+<th style="text-align: right;">p50</th>
+<th style="text-align: right;">p75</th>
+<th style="text-align: right;">p100</th>
+<th style="text-align: left;">hist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">subjid</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">250.86</td>
+<td style="text-align: right;">144.88</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">125.75</td>
+<td style="text-align: right;">250.5</td>
+<td style="text-align: right;">376.25</td>
+<td style="text-align: right;">501</td>
+<td style="text-align: left;">▇▇▇▇▇</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">birthwt</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">3407.64</td>
+<td style="text-align: right;">492.56</td>
+<td style="text-align: right;">1531</td>
+<td style="text-align: right;">3090.00</td>
+<td style="text-align: right;">3402.0</td>
+<td style="text-align: right;">3742.00</td>
+<td style="text-align: right;">5386</td>
+<td style="text-align: left;">▁▃▇▂▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">birthlen</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0.99</td>
+<td style="text-align: right;">50.84</td>
+<td style="text-align: right;">2.67</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">49.00</td>
+<td style="text-align: right;">51.0</td>
+<td style="text-align: right;">52.00</td>
+<td style="text-align: right;">59</td>
+<td style="text-align: left;">▁▁▁▇▂</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">apgar1</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">0.96</td>
+<td style="text-align: right;">7.71</td>
+<td style="text-align: right;">1.89</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">7.00</td>
+<td style="text-align: right;">8.0</td>
+<td style="text-align: right;">9.00</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">▁▁▂▆▇</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">apgar5</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">0.91</td>
+<td style="text-align: right;">8.78</td>
+<td style="text-align: right;">1.17</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">9.00</td>
+<td style="text-align: right;">9.0</td>
+<td style="text-align: right;">9.00</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">▁▁▁▁▇</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">mage</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">26.86</td>
+<td style="text-align: right;">6.09</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">22.00</td>
+<td style="text-align: right;">26.0</td>
+<td style="text-align: right;">31.00</td>
+<td style="text-align: right;">43</td>
+<td style="text-align: left;">▂▇▆▃▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">smoked</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0.99</td>
+<td style="text-align: right;">0.48</td>
+<td style="text-align: right;">0.50</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">▇▁▁▁▇</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">meducyrs</td>
+<td style="text-align: right;">61</td>
+<td style="text-align: right;">0.88</td>
+<td style="text-align: right;">11.30</td>
+<td style="text-align: right;">1.99</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">10.00</td>
+<td style="text-align: right;">12.0</td>
+<td style="text-align: right;">12.00</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">▁▁▃▇▁</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<p><strong>Variable type: character</strong></p>
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 13%">
+<col style="width: 19%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 8%">
+<col style="width: 12%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">skim_variable</th>
+<th style="text-align: right;">n_missing</th>
+<th style="text-align: right;">complete_rate</th>
+<th style="text-align: right;">min</th>
+<th style="text-align: right;">max</th>
+<th style="text-align: right;">empty</th>
+<th style="text-align: right;">n_unique</th>
+<th style="text-align: right;">whitespace</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">sex</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">mrace</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ses</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell" data-file="../../../data_scripts/childheath/dutch_child.r">
+<details>
+<summary>Explore generating code using R</summary>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1">pacman<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, pins)</span>
+<span id="cb1-2"></span>
+<span id="cb1-3">tdat <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">tempfile</span>()</span>
+<span id="cb1-4"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">download</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://github.com/stefvanbuuren/brokenstick/raw/71dc99e62ce57b58d5c1d2a1074fbd4bf394e559/data/smocc_hgtwgt.rda"</span>,tdat, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">mode =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"wb"</span>)</span>
+<span id="cb1-5"></span>
+<span id="cb1-6"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">load</span>(tdat)</span>
+<span id="cb1-7"></span>
+<span id="cb1-8">childhealth_dutch <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> smocc_hgtwgt <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb1-9">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">select</span>(subjid, sex, agedays, gagebrth, htcm, wtkg, haz, waz)</span>
+<span id="cb1-10"></span>
+<span id="cb1-11">board <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">board_connect</span>()</span>
+<span id="cb1-12"></span>
+<span id="cb1-13"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">pin_write</span>(board, childhealth_dutch, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"childhealth_dutch"</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">type =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"parquet"</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">access_type =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"all"</span>)</span></code></pre></div>
+</details>
+</div>
+<!-- ```{python}
+#| echo: true
+#| eval: false
+#| code-fold: true
+#| code-summary: Explore generating code using Python
+#| code-line-numbers: true
+# file: ../../../data_scripts/childhealth.py
+``` -->
+
+
+</section>
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p><a href="https://github.com/hafen/hbgd">https://github.com/hafen/hbgd</a>↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>health</category>
+  <category>child</category>
+  <guid>https://byuidatascience.github.io/posts/childhealth/us_child.html</guid>
+  <pubDate>Sun, 05 Nov 2023 06:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>WHO coeficients for weight Z-score calculations</title>
+  <dc:creator>DS 150</dc:creator>
+  <link>https://byuidatascience.github.io/posts/childhealth/weight_coef.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="section" class="level1">
+<h1></h1>
+<section id="data-details" class="level2">
+<h2 class="anchored" data-anchor-id="data-details">Data details</h2>
+<p>There are <strong>1,800 rows</strong> and <strong>6 columns</strong>. The data source<sup>1</sup> is used to create our data that is stored in our <a href="https://posit.byui.edu/content/f902e3fe-e4f9-40e5-b7fa-26013efc5d2a/_rev68/">pins table</a>. You can access this pin from a connection to <a href="https://posit.byui.edu">posit.byui.edu</a> using <code>hathawayj/weight_coef</code>.</p>
+<p>This data is available to <strong>all</strong>.</p>
+<section id="variable-description" class="level3">
+<h3 class="anchored" data-anchor-id="variable-description">Variable description</h3>
+<ul>
+<li><strong>agedays:</strong> Age of child in days</li>
+<li><strong>sex:</strong> The gender of the child</li>
+<li><strong>mean:</strong> The mean for a child at agedays</li>
+<li><strong>cv:</strong> The <a href="https://en.wikipedia.org/wiki/Coefficient_of_variation">coefficient of variation</a> for children at age in days</li>
+<li><strong>l:</strong> The box-cox transformation for children at age in days <a href="https://www.cdc.gov/nchs/data/nhsr/nhsr063.pdf">see documentation</a></li>
+<li><strong>sd:</strong> The standard deviation of weights for children at age age in days</li>
+</ul>
+</section>
+<section id="variable-summary" class="level3">
+<h3 class="anchored" data-anchor-id="variable-summary">Variable summary</h3>
+<div class="cell">
+<div class="cell-output-display">
+<p><strong>Variable type: numeric</strong></p>
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 10%">
+<col style="width: 15%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 6%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 6%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">skim_variable</th>
+<th style="text-align: right;">n_missing</th>
+<th style="text-align: right;">complete_rate</th>
+<th style="text-align: right;">mean</th>
+<th style="text-align: right;">sd</th>
+<th style="text-align: right;">p0</th>
+<th style="text-align: right;">p25</th>
+<th style="text-align: right;">p50</th>
+<th style="text-align: right;">p75</th>
+<th style="text-align: right;">p100</th>
+<th style="text-align: left;">hist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">agedays</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">449.50</td>
+<td style="text-align: right;">259.88</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">224.75</td>
+<td style="text-align: right;">449.50</td>
+<td style="text-align: right;">674.25</td>
+<td style="text-align: right;">899.00</td>
+<td style="text-align: left;">▇▇▇▇▇</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">mean</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">9.54</td>
+<td style="text-align: right;">2.37</td>
+<td style="text-align: right;">3.20</td>
+<td style="text-align: right;">8.07</td>
+<td style="text-align: right;">9.90</td>
+<td style="text-align: right;">11.44</td>
+<td style="text-align: right;">13.22</td>
+<td style="text-align: left;">▂▃▆▇▇</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sd</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1.13</td>
+<td style="text-align: right;">0.27</td>
+<td style="text-align: right;">0.46</td>
+<td style="text-align: right;">0.93</td>
+<td style="text-align: right;">1.15</td>
+<td style="text-align: right;">1.35</td>
+<td style="text-align: right;">1.59</td>
+<td style="text-align: left;">▂▅▇▇▇</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">cv</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.12</td>
+<td style="text-align: right;">0.01</td>
+<td style="text-align: right;">0.11</td>
+<td style="text-align: right;">0.11</td>
+<td style="text-align: right;">0.12</td>
+<td style="text-align: right;">0.12</td>
+<td style="text-align: right;">0.15</td>
+<td style="text-align: left;">▇▇▂▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">l</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">-0.06</td>
+<td style="text-align: right;">0.17</td>
+<td style="text-align: right;">-0.31</td>
+<td style="text-align: right;">-0.24</td>
+<td style="text-align: right;">-0.02</td>
+<td style="text-align: right;">0.06</td>
+<td style="text-align: right;">0.38</td>
+<td style="text-align: left;">▇▂▇▃▁</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<p><strong>Variable type: character</strong></p>
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 13%">
+<col style="width: 19%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 8%">
+<col style="width: 12%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">skim_variable</th>
+<th style="text-align: right;">n_missing</th>
+<th style="text-align: right;">complete_rate</th>
+<th style="text-align: right;">min</th>
+<th style="text-align: right;">max</th>
+<th style="text-align: right;">empty</th>
+<th style="text-align: right;">n_unique</th>
+<th style="text-align: right;">whitespace</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">sex</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell" data-file="../../../data_scripts/childheath/weight_coef.r">
+<details>
+<summary>Explore generating code using R</summary>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># both need to be installed</span></span>
+<span id="cb1-2"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># remotes::install_github("bokeh/rbokeh")</span></span>
+<span id="cb1-3"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># remotes::install_github("ki-tools/growthstandards")</span></span>
+<span id="cb1-4"></span>
+<span id="cb1-5">pacman<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, pins, growthstandards)</span>
+<span id="cb1-6"></span>
+<span id="cb1-7"></span>
+<span id="cb1-8">weight_coef <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> growthstandards<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span>who_coefs<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>wtkg_agedays<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>Male<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>data <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb1-9">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">as_tibble</span>() <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb1-10">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">filter</span>(x <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">900</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb1-11">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">select</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">agedays =</span> x, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">mean =</span> m, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">cv =</span> s, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">l =</span> l) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb1-12">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">sex =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Female"</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb1-13">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">bind_rows</span>(</span>
+<span id="cb1-14">    growthstandards<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span>who_coefs<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>wtkg_agedays<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>Female<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>data <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb1-15">      <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">as_tibble</span>() <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb1-16">      <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">filter</span>(x <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">900</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb1-17">      <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">select</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">agedays =</span> x, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">mean =</span> m, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">cv =</span> s, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">l =</span> l) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb1-18">      <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">sex =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Male"</span>)</span>
+<span id="cb1-19">  ) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb1-20">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">sd =</span> mean <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> cv) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb1-21">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">select</span>(agedays, sex, mean, sd, cv, l)</span>
+<span id="cb1-22"></span>
+<span id="cb1-23"></span>
+<span id="cb1-24">board <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">board_connect</span>()</span>
+<span id="cb1-25"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">pin_write</span>(board, weight_coef, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">type =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"parquet"</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">access_type =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"all"</span>)</span></code></pre></div>
+</details>
+</div>
+<!-- ```{python}
+#| echo: true
+#| eval: false
+#| code-fold: true
+#| code-summary: Explore generating code using Python
+#| code-line-numbers: true
+# file: ../../../data_scripts/childhealth.py
+``` -->
+
+
+</section>
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p><a href="https://github.com/hafen/growthstandards">https://github.com/hafen/growthstandards</a>↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>health</category>
+  <category>child</category>
+  <guid>https://byuidatascience.github.io/posts/childhealth/weight_coef.html</guid>
   <pubDate>Sun, 05 Nov 2023 06:00:00 GMT</pubDate>
 </item>
 <item>

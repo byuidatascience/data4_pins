@@ -1,0 +1,11 @@
+# Data groups 
+
+Explore data specific to a category or course.
+
+## By data catagory
+
+- [Child Health](childhealth-series.qmd): Height and weight measurement data.
+
+## By course
+
+- [DS 150: Data Intuition and Insight](ds150-series.qmd)

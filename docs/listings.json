@@ -2,14 +2,30 @@
   {
     "listing": "/childhealth-series.html",
     "items": [
-      "/posts/childhealth/dutch_child.html"
+      "/posts/childhealth/dutch_child.html",
+      "/posts/childhealth/maled_child.html",
+      "/posts/childhealth/dutch_birth.html",
+      "/posts/childhealth/height_coef.html",
+      "/posts/childhealth/us_birth.html",
+      "/posts/childhealth/weight_coef.html",
+      "/posts/childhealth/us_child.html"
     ]
   },
   {
     "listing": "/index.html",
     "items": [
+      "/posts/childhealth/dutch_birth.html",
       "/posts/childhealth/dutch_child.html",
+      "/posts/childhealth/height_coef.html",
+      "/posts/childhealth/maled_child.html",
+      "/posts/childhealth/us_birth.html",
+      "/posts/childhealth/us_child.html",
+      "/posts/childhealth/weight_coef.html",
       "/posts/welcome/index.html"
     ]
+  },
+  {
+    "listing": "/ds150-series.html",
+    "items": []
   }
 ]

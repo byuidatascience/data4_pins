@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="DS 150">
+<meta name="dcterms.date" content="2023-11-05">
+<meta name="description" content="Longitudinal height and weight measurements during ages 0-2 years for a representative sample of 1,933 Dutch children born in 1988-1989.">
 
-<title>BYU-I Course Project Data - Child Health Data</title>
+<title>BYU-I Course Project Data - Dutch child birth data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +23,59 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -61,50 +96,19 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">BYU-I Course Project Data</span>
     </a>
   </div>
@@ -124,7 +128,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./index.xml" rel="" target=""><i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../../index.xml" rel="" target=""><i class="bi bi-rss" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
@@ -138,136 +142,213 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page">
-      <h1 class="title">Child Health Data</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">Dutch child birth data</h1>
+                  <div>
+        <div class="description">
+          Longitudinal height and weight measurements during ages 0-2 years for a representative sample of 1,933 Dutch children born in 1988-1989.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">health</div>
+                <div class="quarto-category">child</div>
+              </div>
+                  </div>
   </div>
     
   
   <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>DS 150 </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">November 5, 2023</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-<p>The data focused on Child Health.</p>
-
-
-
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-
-<table class="quarto-listing-table table">
+<section id="section" class="level1">
+<h1></h1>
+<section id="data-details" class="level2">
+<h2 class="anchored" data-anchor-id="data-details">Data details</h2>
+<p>There are <strong>206 rows</strong> and <strong>3 columns</strong>. The data source<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> is used to create our data that is stored in our <a href="https://posit.byui.edu/content/0fd46852-12db-4a36-9316-1907f1e19225/_rev67/">pins table</a>. You can access this pin from a connection to <a href="https://posit.byui.edu">posit.byui.edu</a> using <code>hathawayj/birth_dutch</code>.</p>
+<p>This data is available to <strong>all</strong>.</p>
+<section id="variable-description" class="level3">
+<h3 class="anchored" data-anchor-id="variable-description">Variable description</h3>
+<ul>
+<li><strong>subjid:</strong> unique identifier of each child</li>
+<li><strong>sex:</strong> Male or Female</li>
+<li><strong>birthwt:</strong> Birthweight of the child</li>
+</ul>
+</section>
+<section id="variable-summary" class="level3">
+<h3 class="anchored" data-anchor-id="variable-summary">Variable summary</h3>
+<div class="cell">
+<div class="cell-output-display">
+<p><strong>Variable type: numeric</strong></p>
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 10%">
+<col style="width: 14%">
+<col style="width: 9%">
+<col style="width: 7%">
+<col style="width: 6%">
+<col style="width: 9%">
+<col style="width: 8%">
+<col style="width: 9%">
+<col style="width: 6%">
+<col style="width: 6%">
+</colgroup>
 <thead>
-<tr>
-<th>
-Date
-</th>
-<th>
-Title
-</th>
-<th>
-Description
-</th>
+<tr class="header">
+<th style="text-align: left;">skim_variable</th>
+<th style="text-align: right;">n_missing</th>
+<th style="text-align: right;">complete_rate</th>
+<th style="text-align: right;">mean</th>
+<th style="text-align: right;">sd</th>
+<th style="text-align: right;">p0</th>
+<th style="text-align: right;">p25</th>
+<th style="text-align: right;">p50</th>
+<th style="text-align: right;">p75</th>
+<th style="text-align: right;">p100</th>
+<th style="text-align: left;">hist</th>
 </tr>
 </thead>
-<tbody class="list">
-<tr data-index="0" data-categories="health,child" data-listing-date-sort="1699164000000" data-listing-file-modified-sort="1699648655088" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Dutch child height and weight measurements" data-listing-filename-sort="dutch_child.qmd">
-<td>
-<span class="listing-date">Nov 5, 2023</span>
-</td>
-<td>
-<a href="./posts/childhealth/dutch_child.html" class="title listing-title">Dutch child height and weight measurements</a>
-</td>
-<td>
-<span class="listing-description">Longitudinal height and weight measurements during ages 0-2 years for a representative sample of 1,933 Dutch children born in 1988-1989.</span>
-</td>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">subjid</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">10632.60</td>
+<td style="text-align: right;">502.06</td>
+<td style="text-align: right;">10001</td>
+<td style="text-align: right;">10064.25</td>
+<td style="text-align: right;">11017.5</td>
+<td style="text-align: right;">11071.75</td>
+<td style="text-align: right;">11127</td>
+<td style="text-align: left;">▆▁▁▁▇</td>
 </tr>
-<tr data-index="1" data-categories="health,child" data-listing-date-sort="1699164000000" data-listing-file-modified-sort="1699648711007" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="Child height, weight, head circumference measurements in resource-poor environments" data-listing-filename-sort="maled_child.qmd">
-<td>
-<span class="listing-date">Nov 5, 2023</span>
-</td>
-<td>
-<a href="./posts/childhealth/maled_child.html" class="title listing-title">Child height, weight, head circumference measurements in resource-poor environments</a>
-</td>
-<td>
-<span class="listing-description">Subset of growth data from the Malnutrition and Enteric Disease Study (MAL-ED).</span>
-</td>
-</tr>
-<tr data-index="2" data-categories="health,child" data-listing-date-sort="1699164000000" data-listing-file-modified-sort="1699648647869" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Dutch child birth data" data-listing-filename-sort="dutch_birth.qmd">
-<td>
-<span class="listing-date">Nov 5, 2023</span>
-</td>
-<td>
-<a href="./posts/childhealth/dutch_birth.html" class="title listing-title">Dutch child birth data</a>
-</td>
-<td>
-<span class="listing-description">Longitudinal height and weight measurements during ages 0-2 years for a representative sample of 1,933 Dutch children born in 1988-1989.</span>
-</td>
-</tr>
-<tr data-index="3" data-categories="health,child" data-listing-date-sort="1699164000000" data-listing-file-modified-sort="1699648666315" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="WHO coeficients for height Z-score calculations" data-listing-filename-sort="height_coef.qmd">
-<td>
-<span class="listing-date">Nov 5, 2023</span>
-</td>
-<td>
-<a href="./posts/childhealth/height_coef.html" class="title listing-title">WHO coeficients for height Z-score calculations</a>
-</td>
-<td>
-<span class="listing-description">See https://www.cdc.gov/nchs/data/nhsr/nhsr063.pdf for a description of how calculations are made. However, the CDC has different coefficients.</span>
-</td>
-</tr>
-<tr data-index="4" data-categories="health,child" data-listing-date-sort="1699164000000" data-listing-file-modified-sort="1699648706931" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="US child birth data" data-listing-filename-sort="us_birth.qmd">
-<td>
-<span class="listing-date">Nov 5, 2023</span>
-</td>
-<td>
-<a href="./posts/childhealth/us_birth.html" class="title listing-title">US child birth data</a>
-</td>
-<td>
-<span class="listing-description">Subset of growth data from the collaborative perinatal project (CPP).</span>
-</td>
-</tr>
-<tr data-index="5" data-categories="health,child" data-listing-date-sort="1699164000000" data-listing-file-modified-sort="1699648712406" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="WHO coeficients for weight Z-score calculations" data-listing-filename-sort="weight_coef.qmd">
-<td>
-<span class="listing-date">Nov 5, 2023</span>
-</td>
-<td>
-<a href="./posts/childhealth/weight_coef.html" class="title listing-title">WHO coeficients for weight Z-score calculations</a>
-</td>
-<td>
-<span class="listing-description">See https://www.cdc.gov/nchs/data/nhsr/nhsr063.pdf for a desciption on how calculations are made. However, the CDC has different coefficients.</span>
-</td>
-</tr>
-<tr data-index="6" data-categories="health,child" data-listing-date-sort="1699164000000" data-listing-file-modified-sort="1699648712406" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="US child height and weight measurements" data-listing-filename-sort="us_child.qmd">
-<td>
-<span class="listing-date">Nov 5, 2023</span>
-</td>
-<td>
-<a href="./posts/childhealth/us_child.html" class="title listing-title">US child height and weight measurements</a>
-</td>
-<td>
-<span class="listing-description">Subset of growth data from the collaborative perinatal project (CPP).</span>
-</td>
+<tr class="even">
+<td style="text-align: left;">birthwt</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3484.73</td>
+<td style="text-align: right;">571.14</td>
+<td style="text-align: right;">1180</td>
+<td style="text-align: right;">3135.00</td>
+<td style="text-align: right;">3500.0</td>
+<td style="text-align: right;">3897.50</td>
+<td style="text-align: right;">5100</td>
+<td style="text-align: left;">▁▂▇▇▁</td>
 </tr>
 </tbody>
-
 </table>
-<div class="listing-no-matching d-none">
-No matching items
 </div>
-</div></main> <!-- /main -->
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<p><strong>Variable type: character</strong></p>
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 13%">
+<col style="width: 19%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 8%">
+<col style="width: 12%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">skim_variable</th>
+<th style="text-align: right;">n_missing</th>
+<th style="text-align: right;">complete_rate</th>
+<th style="text-align: right;">min</th>
+<th style="text-align: right;">max</th>
+<th style="text-align: right;">empty</th>
+<th style="text-align: right;">n_unique</th>
+<th style="text-align: right;">whitespace</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">sex</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell" data-file="../../../data_scripts/childheath/dutch_birth.r">
+<details>
+<summary>Explore generating code using R</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, pins)</span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a>t.dat <span class="ot">&lt;-</span> <span class="fu">tempfile</span>()</span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="fu">download</span>(<span class="st">"https://github.com/stefvanbuuren/brokenstick/raw/71dc99e62ce57b58d5c1d2a1074fbd4bf394e559/data/smocc_hgtwgt.rda"</span>,t.dat, <span class="at">mode =</span> <span class="st">"wb"</span>)</span>
+<span id="cb1-5"><a href="#cb1-5"></a></span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="fu">load</span>(t.dat)</span>
+<span id="cb1-7"><a href="#cb1-7"></a></span>
+<span id="cb1-8"><a href="#cb1-8"></a>birth_dutch <span class="ot">&lt;-</span> smocc_hgtwgt <span class="sc">%&gt;%</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a>  <span class="fu">group_by</span>(subjid) <span class="sc">%&gt;%</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a>  <span class="fu">summarise</span>(<span class="at">sex =</span> sex[<span class="dv">1</span>], <span class="at">birthwt =</span> birthwt[<span class="dv">1</span>]) <span class="sc">%&gt;%</span></span>
+<span id="cb1-11"><a href="#cb1-11"></a>  <span class="fu">ungroup</span>()</span>
+<span id="cb1-12"><a href="#cb1-12"></a></span>
+<span id="cb1-13"><a href="#cb1-13"></a></span>
+<span id="cb1-14"><a href="#cb1-14"></a>board <span class="ot">&lt;-</span> <span class="fu">board_connect</span>()</span>
+<span id="cb1-15"><a href="#cb1-15"></a></span>
+<span id="cb1-16"><a href="#cb1-16"></a><span class="fu">pin_write</span>(board, birth_dutch, <span class="at">type =</span> <span class="st">"parquet"</span>, <span class="at">access_type =</span> <span class="st">"all"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<!-- ```{python}
+#| echo: true
+#| eval: false
+#| code-fold: true
+#| code-summary: Explore generating code using Python
+#| code-line-numbers: true
+# file: ../../../data_scripts/childhealth.py
+``` -->
+
+
+</section>
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p><a href="https://github.com/stefvanbuuren/brokenstick">https://github.com/stefvanbuuren/brokenstick</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

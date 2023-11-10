@@ -1,14 +1,16 @@
 ---
-title: "Dutch child height and weight measurements"
+title: "US child birth data"
 author: "DS 150"
 date: "2023-11-05"
 categories: [health, child]
-description: "Longitudinal height and weight measurements during ages 0-2 years for a representative sample of 1,933 Dutch children born in 1988-1989."
+description: "Subset of growth data from the collaborative perinatal project (CPP)."
 params: 
-    source: "https://github.com/stefvanbuuren/brokenstick"
-    pins_name: "hathawayj/childhealth_dutch"
+    source: "https://github.com/hafen/hbgd"
+    pins_url: "https://posit.byui.edu/connect/#/apps/1091db55-3d31-4071-b60e-a2253aa63298/access"
+    pins_name: 'hathawayj/birth_us'
     available: all
 ---
+
 
 ```{r}
 #| echo: false
@@ -54,14 +56,17 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __subjid:__ unique identifyer of each child
+- __subjid:__ unique identifier of each child
 - __sex:__ Male or Female
-- __agedays:__ Age in days
-- __gagebrth:__ Gestational age at birth (days)
-- __htcm:__ Length/height in cm (34-102)
-- __wtkg:__ Weight measurement in kg (0.8-20.5)
-- __haz:__ Height in SDS relative to WHO child growth standard
-- __waz:__ Weight in SDS relative to WHO child growth standard
+- __birthwt:__ Birthweight of the child
+- __birthlen:__ Birth length of the child
+- __apgar1:__ [a quick test performed on a baby at 1 minute after birth](https:/medlineplus.gov/ency/article/003402.htm).
+- __apgar5:__ [a quick test performed on a baby at 5 minutes after birth](https:/medlineplus.gov/ency/article/003402.htm)
+- __mrace:__ Race of the mother
+- __mage:__ Mother age at childbirth
+- __smoked:__ If the mother smoked (1) or didn't smoke (0)
+- __meducyrs:__ Educational years of mother
+- __ses:__ Socioeconomic status of mother 
 
 ### Variable summary
 
@@ -84,7 +89,7 @@ skim(dat) |> yank("character")
 #| code-fold: true
 #| code-summary: Explore generating code using R
 #| code-line-numbers: true
-#| file: ../../../data_scripts/childheath/dutch_child.r
+#| file: ../../../data_scripts/childheath/us_birth.r
 ```
 
 <!-- ```{python}
