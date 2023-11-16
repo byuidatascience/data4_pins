@@ -2,9 +2,9 @@
 listing:
   contents: posts/**/*.qmd
   sort: "author desc"
-  type: table
+  type: grid
   categories: true
-  sort-ui: [title, file-modified]
+  sort-ui: [author, title, file-modified]
   filter-ui: [author, title, description, categories]
   feed: true
   fields: [author, title, description, categories, file-modified]
@@ -13,6 +13,49 @@ page-layout: full
 title-block-banner: true
 ---
 
-## Data posts
+## Data Overview
 
-The `Author` is the originating BYU-I course that prompted the data. All terms are searchable. This page shows all datasets in a large table.  You can explore datasets by topic or course by browsing [data topics](data_topics.qmd)
+The `Author` is the originating BYU-I course that prompted the data. All terms are searchable. This page shows all datasets available on this site.  You can explore datasets by topic or course by browsing [data topics](data_topics.qmd). We leverage the Posit's pin packages in [Python (pins)](https://pypi.org/project/pins/) and [R (pins)](https://pins.rstudio.com/).
+
+For R users, the following process will read the data from this website. You will need to change `DATANAMEONPOSIT` to the actual name.
+
+
+```{r}
+#| eval: false
+#| echo: true
+#| code-fold: true
+#| code-summary: R code example to read data
+library(pins)
+url_data <- "https://posit.byui.edu/data/DATANAMEONPOSIT/"
+board_url <- board_connect_url(c("dat" = url_data))
+dat <- pin_read(board_url, "dat")
+
+```
+
+Use the following python function (`read_url_pin()`) to access the data in a Pandas DataFrame.
+
+```{python}
+#| eval: false
+#| echo: true
+#| code-fold: true
+#| code-summary: Python code example to read data
+import pandas as pd
+import requests
+from io import BytesIO
+
+def read_url_pin(name):
+  url = "https://posit.byui.edu/data/" + name + "/" + name + ".parquet"
+  response = requests.get(url)
+  if response.status_code == 200:
+    parquet_content = BytesIO(response.content)
+    pandas_dataframe = pd.read_parquet(parquet_content)
+    return pandas_dataframe
+  else:
+    print(f"Failed to retrieve data. Status code: {response.status_code}")
+    return None
+
+# Example usage:
+pandas_df = read_url_pin("DATANAMEONPOSIT")
+```
+
+## Data Posts

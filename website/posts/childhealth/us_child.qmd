@@ -48,6 +48,7 @@ board <- board_connect()
 dat <- pin_read(board, params$pins_name)
 meta <- pin_meta(board, params$pins_name)
 url_path <- meta$local$url
+object_name <- rev(unlist(str_split(meta$name, "/")))[[1]]
 file_name <- meta$file
 url_download <- paste0(
     str_remove(
@@ -59,8 +60,6 @@ url_download <- paste0(
 ```
 
 There are __`r prettyNum(nrow(dat), big.mark = ",", scientific = FALSE)` rows__ and __`r ncol(dat)` columns__. The data source[^1] is used to create our data that is stored in our [pins table](`r meta$local$url`). You can access this pin from a connection to [posit.byui.edu](https://posit.byui.edu) using ``r params$pins_name``.
-
-This data is available to __`r params$available`__.
 
 ### Variable description
 
@@ -113,9 +112,46 @@ skim(dat) |> yank("character")
 
 ## Access data
 
+This data is available to __`r params$available`__.
+
 __Direct Download:__ [`r file_name`](`r url_download`)
 
-__R and Python Download:__
+#### __R and Python Download:__
+
+##### __URL Connections:__
+
+For public data, any user can connect and read the data using `pins::board_connect_url()` in R.
+
+```r
+library(pins)
+url_data <- "https://posit.byui.edu/data/`r object_name`/"
+board_url <- board_connect_url(c("dat" = url_data))
+dat <- pin_read(board_url, "dat")
+```
+
+Use this custom function in Python to have the data in a Pandas DataFrame.
+
+```python
+import pandas as pd
+import requests
+from io import BytesIO
+
+def read_url_pin(name):
+  url = "https://posit.byui.edu/data/" + name + "/" + name + ".parquet"
+  response = requests.get(url)
+  if response.status_code == 200:
+    parquet_content = BytesIO(response.content)
+    pandas_dataframe = pd.read_parquet(parquet_content)
+    return pandas_dataframe
+  else:
+    print(f"Failed to retrieve data. Status code: {response.status_code}")
+    return None
+
+# Example usage:
+pandas_df = read_url_pin("`r object_name`")
+```
+
+#### __Authenticated Connection:__
 
 Our connect server is [https://posit.byui.edu](https://posit.byui.edu/connect/#/content/listing?filter=min_role:viewer&filter=content_type:all&view_type=compact) which you assign to your `CONNECT_SERVER` environment variable. You must [create and API key](https://docs.posit.co/connect/user/api-keys/#api-keys-creating) and store it in your environment under `CONNECT_API_KEY`. 
 

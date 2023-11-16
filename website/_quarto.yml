@@ -16,7 +16,9 @@ website:
         href: index.xml
 format:
   html:
-    theme: zephyr
+    theme:
+      light: yeti
+      dark: darkly
     css: styles.css
     grid:
       sidebar-width: 100px
@@ -24,4 +26,4 @@ format:
       margin-width: 100px
       gutter-width: 1.5rem
 
-
+# lumen cerulean

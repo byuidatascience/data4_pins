@@ -11,3 +11,9 @@ childhealth_us <- cpp %>%
 
 board <- board_connect()
 pin_write(board, childhealth_us, type = "parquet", access_type = "all")
+
+pin_name <- "childhealth_us"
+meta <- pin_meta(board, paste0("hathawayj/", pin_name))
+client <- connect()
+my_app <- content_item(client, meta$local$content_id)
+set_vanity_url(my_app, paste0("data/", pin_name))

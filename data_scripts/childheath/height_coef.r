@@ -23,3 +23,9 @@ height_coef <- growthstandards::who_coefs$htcm_agedays$Female$data %>%
 
 board <- board_connect()
 pin_write(board, height_coef, type = "parquet", access_type = "all")
+
+pin_name <- "height_coef"
+meta <- pin_meta(board, paste0("hathawayj/", pin_name))
+client <- connect()
+my_app <- content_item(client, meta$local$content_id)
+set_vanity_url(my_app, paste0("data/", pin_name))

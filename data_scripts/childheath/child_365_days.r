@@ -57,3 +57,11 @@ days_365 <- bind_rows(
 board <- board_connect()
 
 pin_write(board, days_365, type = "parquet", access_type = "all")
+
+pin_name <- "days_365"
+meta <- pin_meta(board, paste0("hathawayj/", pin_name))
+client <- connect()
+my_app <- content_item(client, meta$local$content_id)
+set_vanity_url(my_app, paste0("data/", pin_name))
+
+
