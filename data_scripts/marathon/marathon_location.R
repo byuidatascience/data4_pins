@@ -1,4 +1,6 @@
 # Data is from master_marathon
+dat <- read_csv("/Users/hathawayj/odrive/Dropbox/data/master_marathon.csv")
+
 
 # Data details
 dpr_document(marathon_location, extension = ".R.md", export_folder = usethis::proj_get(),
@@ -9,7 +11,7 @@ dpr_document(marathon_location, extension = ".R.md", export_folder = usethis::pr
              var_details = runner_details)
 
 # Wrangling 
-marathon_location <- filter(dat, marathon %in% race_location$marathon) %>%
+marathon_location <- filter(dat, marathon %in% race_location$marathon) %>% # race_location comes from race_location dataset and is needed for the filter. 
   group_by(marathon) %>%
   filter(year == max(year)) %>%
   ungroup() %>%

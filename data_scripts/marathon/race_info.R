@@ -1,5 +1,11 @@
 # Data is from some htm file online
 
+# Data origin
+race_info <- read_html("https://faculty.chicagobooth.edu/george.wu/research/marathon/marathon_names.htm") %>%
+  html_nodes("table") %>% 
+  html_table() %>%
+  .[[1]] 
+
 # Data details
 dpr_document(race_info, extension = ".R.md", export_folder = usethis::proj_get(),
              object_name = "race_info", title = "Table of Information about Marathons",
@@ -11,11 +17,7 @@ dpr_document(race_info, extension = ".R.md", export_folder = usethis::proj_get()
                                 finishers = "The number of finishers at the marathon",
                                 mean_time = "The average finish time in minutes."))
 
-# Data origin
-race_info <- read_html("https://faculty.chicagobooth.edu/george.wu/research/marathon/marathon_names.htm") %>%
-  html_nodes("table") %>% 
-  html_table() %>%
-  .[[1]] 
+
 
 # Wrangle
 colnames(race_info) <- race_info[1,]

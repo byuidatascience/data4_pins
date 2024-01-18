@@ -1,4 +1,6 @@
 # Data is from master_marathon
+dat <- read_csv("/Users/hathawayj/odrive/Dropbox/data/master_marathon.csv")
+
 
 # Data details
 dpr_document(marathon_sample, extension = ".R.md", export_folder = usethis::proj_get(),

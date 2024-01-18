@@ -1,4 +1,6 @@
 # Data is from master_marathon
+dat <- read_csv("/Users/hathawayj/odrive/Dropbox/data/master_marathon.csv")
+
 
 # Info about the Berlin dataset that needs to be put into the qmd eventually
 dpr_document(marathon_berlin, extension = ".R.md", export_folder = usethis::proj_get(),

@@ -1,4 +1,6 @@
-# Data is from some htm file online
+# Data is from master marathon
+dat <- read_csv("/Users/hathawayj/odrive/Dropbox/data/master_marathon.csv")
+
 
 # Data details
 dpr_document(marathon_2010, extension = ".R.md", export_folder = usethis::proj_get(),
