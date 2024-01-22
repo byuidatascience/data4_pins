@@ -1,4 +1,7 @@
-# Data is from master marathon
+pacman::p_load(tidyverse, downloader, fs, glue, rvest)
+
+
+# Data is from master marathon. Path doesn't exist. 
 dat <- read_csv("/Users/hathawayj/odrive/Dropbox/data/master_marathon.csv")
 
 
@@ -12,3 +15,15 @@ dpr_document(marathon_2010, extension = ".R.md", export_folder = usethis::proj_g
 # Wrangle (filter to 2010)
 marathon_2010 <- dat %>%
   filter(year == 2010)
+
+
+
+# The parquet thing. Do not run.
+# board <- board_connect()
+# pin_write(board, marathon_2010, type = "parquet") 
+# 
+# pin_name <- "marathon_2010"
+# meta <- pin_meta(board, paste0("hathawayj/", pin_name))
+# client <- connect()
+# my_app <- content_item(client, meta$local$content_id)
+# set_vanity_url(my_app, paste0("data/", pin_name))

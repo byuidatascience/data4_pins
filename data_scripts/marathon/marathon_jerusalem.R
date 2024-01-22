@@ -1,4 +1,7 @@
-# Data is from master_marathon  
+pacman::p_load(tidyverse, downloader, fs, glue, rvest)
+
+
+# Data is from master_marathon. Path doesn't exist. 
 dat <- read_csv("/Users/hathawayj/odrive/Dropbox/data/master_marathon.csv")
 
 
@@ -13,3 +16,16 @@ dpr_document(marathon_jerusalem, extension = ".R.md", export_folder = usethis::p
 # Filter for the Jerusalem Marathon only
 marathon_jerusalem <- dat %>%
   filter(marathon == "Jerusalem Marathon")
+
+
+
+
+# The parquet thing. Do not run.
+# board <- board_connect()
+# pin_write(board, marathon_jerusalem, type = "parquet") 
+# 
+# pin_name <- "marathon_jerusalem"
+# meta <- pin_meta(board, paste0("hathawayj/", pin_name))
+# client <- connect()
+# my_app <- content_item(client, meta$local$content_id)
+# set_vanity_url(my_app, paste0("data/", pin_name))

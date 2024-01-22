@@ -1,6 +1,6 @@
-# Data is from some htm file online
+pacman::p_load(tidyverse, downloader, fs, glue, rvest)
 
-# Data origin
+# Data origin. This works.
 race_info <- read_html("https://faculty.chicagobooth.edu/george.wu/research/marathon/marathon_names.htm") %>%
   html_nodes("table") %>% 
   html_table() %>%
@@ -29,9 +29,13 @@ race_info <- race_info[-1,] %>%
          `mean time` = as.numeric(`mean time`)) %>%
   rename(mean_time = `mean time`)
 
-race_location <- select(race_locations,-finishers, -max_mean, -years) %>%
-  left_join(race_info) %>%
-  mutate(day = ifelse(month == 2 & day == 29, 28, day),
-         date = mdy(str_c(month, "/", day, "/", year))) %>%
-  select(marathon, marathon_name = name, state_id, city = city_ascii, finishers, mean_time, lat, lng, elevation_m, date, month, day, year, -marathon_clean )
 
+# The parquet thing. Do not run.
+# board <- board_connect()
+# pin_write(board, race_info, type = "parquet") 
+# 
+# pin_name <- "race_info"
+# meta <- pin_meta(board, paste0("hathawayj/", pin_name))
+# client <- connect()
+# my_app <- content_item(client, meta$local$content_id)
+# set_vanity_url(my_app, paste0("data/", pin_name))

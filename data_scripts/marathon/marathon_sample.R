@@ -1,4 +1,7 @@
-# Data is from master_marathon
+pacman::p_load(tidyverse, downloader, fs, glue, rvest)
+
+
+# Data is from master_marathon. Path doesn't exist. 
 dat <- read_csv("/Users/hathawayj/odrive/Dropbox/data/master_marathon.csv")
 
 
@@ -16,3 +19,15 @@ marathon_sample <- dat %>%
   sample_n(50, replace = TRUE) %>%
   ungroup() %>%
   mutate(finishers = as.integer(finishers), year = as.integer(year))
+
+
+
+# The parquet thing. Do not run.
+# board <- board_connect()
+# pin_write(board, marathon_sample, type = "parquet") 
+# 
+# pin_name <- "marathon_sample"
+# meta <- pin_meta(board, paste0("hathawayj/", pin_name))
+# client <- connect()
+# my_app <- content_item(client, meta$local$content_id)
+# set_vanity_url(my_app, paste0("data/", pin_name))
