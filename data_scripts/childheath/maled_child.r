@@ -1,7 +1,7 @@
 ## Obfuscate data
 # https://clinepidb.org/ce/app/record/dataset/DS_5c41b87221
 
-pacman::p_load(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, pins)
+pacman::p_load(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, , pins, connectapi)
 
 sdrive <- shared_drive_find("byuids_data")
 maled_file <- drive_ls(sdrive)  |>

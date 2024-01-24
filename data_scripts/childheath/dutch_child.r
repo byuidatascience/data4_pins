@@ -1,4 +1,4 @@
-pacman::p_load(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, pins)
+pacman::p_load(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, , pins, connectapi)
 
 tdat <- tempfile()
 download("https://github.com/stefvanbuuren/brokenstick/raw/71dc99e62ce57b58d5c1d2a1074fbd4bf394e559/data/smocc_hgtwgt.rda",tdat, mode = "wb")

@@ -2,7 +2,8 @@
 # remotes::install_github("bokeh/rbokeh")
 # remotes::install_github("ki-tools/growthstandards")
 
-pacman::p_load(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, pins, growthstandards)
+pacman::p_load(tidyverse, fs, sf, arrow, googledrive, downloader, fs,
+  glue, rvest, pins, connectapi, growthstandards)
 
 
 weight_coef <- growthstandards::who_coefs$wtkg_agedays$Male$data %>%
