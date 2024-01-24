@@ -6,19 +6,6 @@ race_info <- read_html("https://faculty.chicagobooth.edu/george.wu/research/mara
   html_table() %>%
   .[[1]] 
 
-# Data details
-dpr_document(race_info, extension = ".R.md", export_folder = usethis::proj_get(),
-             object_name = "race_info", title = "Table of Information about Marathons",
-             description = "An interesting data set to see the effects of goals on what should be a unimodal distrubtion of finish times. The NYT had a good article - https://www.nytimes.com/2014/04/23/upshot/what-good-marathons-and-bad-investments-have-in-common.html?rref=upshot&_r=1",
-             source = "https://faculty.chicagobooth.edu/george.wu/research/marathon/marathon_names.htm",
-             var_details = list(year = "The year of the marathon", 
-                                marathon = "The name of the marathon",
-                                country = "The country where the marathon was held",
-                                finishers = "The number of finishers at the marathon",
-                                mean_time = "The average finish time in minutes."))
-
-
-
 # Wrangle
 colnames(race_info) <- race_info[1,]
 
@@ -39,3 +26,20 @@ race_info <- race_info[-1,] %>%
 # client <- connect()
 # my_app <- content_item(client, meta$local$content_id)
 # set_vanity_url(my_app, paste0("data/", pin_name))
+
+
+
+
+
+# Data details
+# dpr_document(race_info, extension = ".R.md", export_folder = usethis::proj_get(),
+#              object_name = "race_info", title = "Table of Information about Marathons",
+#              description = "An interesting data set to see the effects of goals on what should be a unimodal distrubtion of finish times. The NYT had a good article - https://www.nytimes.com/2014/04/23/upshot/what-good-marathons-and-bad-investments-have-in-common.html?rref=upshot&_r=1",
+#              source = "https://faculty.chicagobooth.edu/george.wu/research/marathon/marathon_names.htm",
+#              var_details = list(year = "The year of the marathon", 
+#                                 marathon = "The name of the marathon",
+#                                 country = "The country where the marathon was held",
+#                                 finishers = "The number of finishers at the marathon",
+#                                 mean_time = "The average finish time in minutes."))
+# 
+
