@@ -10,7 +10,568 @@
 <atom:link href="https://byuidatascience.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Documentation on the avaialable data that we use in our courses.</description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Sun, 05 Nov 2023 06:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 25 Jan 2024 07:00:00 GMT</lastBuildDate>
+<item>
+  <title>Table of Information about Marathons</title>
+  <dc:creator>DS 150</dc:creator>
+  <link>https://byuidatascience.github.io/posts/marathons/race_info.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="section" class="level1">
+<h1></h1>
+<section id="data-details" class="level2">
+<h2 class="anchored" data-anchor-id="data-details">Data details</h2>
+<p>There are <strong>6,888 rows</strong> and <strong>5 columns</strong>. The data source<sup>1</sup> is used to create our data that is stored in our <a href="https://posit.byui.edu/content/2e7f072f-d19c-408b-9791-7ea6e44a5502/_rev161/">pins table</a>. You can access this pin from a connection to <a href="https://posit.byui.edu">posit.byui.edu</a> using <code>hathawayj/race_info</code>.</p>
+<p>This data is available to <strong>all</strong>.</p>
+<section id="variable-description" class="level3">
+<h3 class="anchored" data-anchor-id="variable-description">Variable description</h3>
+<ul>
+<li><strong>year:</strong> The year of the marathon</li>
+<li><strong>marathon:</strong> The name of the marathon</li>
+<li><strong>country:</strong> The country where the marathon occured</li>
+<li><strong>finishers:</strong> The number of finishers at the marathon</li>
+<li><strong>mean_time:</strong> The average finish time in minutes</li>
+</ul>
+</section>
+<section id="variable-summary" class="level3">
+<h3 class="anchored" data-anchor-id="variable-summary">Variable summary</h3>
+<div class="cell">
+<div class="cell-output-display">
+<p><strong>Variable type: numeric</strong></p>
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 10%">
+<col style="width: 14%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 5%">
+<col style="width: 7%">
+<col style="width: 8%">
+<col style="width: 6%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">skim_variable</th>
+<th style="text-align: right;">n_missing</th>
+<th style="text-align: right;">complete_rate</th>
+<th style="text-align: right;">mean</th>
+<th style="text-align: right;">sd</th>
+<th style="text-align: right;">p0</th>
+<th style="text-align: right;">p25</th>
+<th style="text-align: right;">p50</th>
+<th style="text-align: right;">p75</th>
+<th style="text-align: right;">p100</th>
+<th style="text-align: left;">hist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">year</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2007.53</td>
+<td style="text-align: right;">4.73</td>
+<td style="text-align: right;">1970.00</td>
+<td style="text-align: right;">2005.00</td>
+<td style="text-align: right;">2008</td>
+<td style="text-align: right;">2011.0</td>
+<td style="text-align: right;">2013.0</td>
+<td style="text-align: left;">▁▁▁▂▇</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">finishers</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1421.21</td>
+<td style="text-align: right;">4166.05</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">87.75</td>
+<td style="text-align: right;">224</td>
+<td style="text-align: right;">842.5</td>
+<td style="text-align: right;">50062.0</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">mean_time</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">270.47</td>
+<td style="text-align: right;">35.52</td>
+<td style="text-align: right;">139.07</td>
+<td style="text-align: right;">250.85</td>
+<td style="text-align: right;">263</td>
+<td style="text-align: right;">280.0</td>
+<td style="text-align: right;">614.5</td>
+<td style="text-align: left;">▁▇▁▁▁</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<p><strong>Variable type: character</strong></p>
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 13%">
+<col style="width: 19%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 8%">
+<col style="width: 12%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">skim_variable</th>
+<th style="text-align: right;">n_missing</th>
+<th style="text-align: right;">complete_rate</th>
+<th style="text-align: right;">min</th>
+<th style="text-align: right;">max</th>
+<th style="text-align: right;">empty</th>
+<th style="text-align: right;">n_unique</th>
+<th style="text-align: right;">whitespace</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">marathon</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">64</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1176</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">country</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">43</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell" data-file="../../../data_scripts/marathon/race_info.R">
+<details>
+<summary>Explore generating code using R</summary>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1">pacman<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">p_load</span>(pins, tidyverse, downloader, fs, glue, rvest, pins, connectapi)</span>
+<span id="cb1-2"></span>
+<span id="cb1-3"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Data origin. This works.</span></span>
+<span id="cb1-4">race_info <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_html</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://faculty.chicagobooth.edu/george.wu/research/marathon/marathon_names.htm"</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb1-5">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html_nodes</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"table"</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span> </span>
+<span id="cb1-6">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html_table</span>() <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb1-7">  .[[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>]]</span>
+<span id="cb1-8"></span>
+<span id="cb1-9"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Wrangle</span></span>
+<span id="cb1-10"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">colnames</span>(race_info) <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> race_info[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>,]</span>
+<span id="cb1-11"></span>
+<span id="cb1-12">race_info <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> race_info[<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>,] <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span> </span>
+<span id="cb1-13">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">as_tibble</span>() <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb1-14">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">rename_all</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"str_to_lower"</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb1-15">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">year =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">as.integer</span>(year), <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">finishers =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">as.integer</span>(finishers), </span>
+<span id="cb1-16">         <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">mean time</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">as.numeric</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">mean time</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span>)) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb1-17">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">rename</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">mean_time =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">mean time</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span>)</span>
+<span id="cb1-18"></span>
+<span id="cb1-19">board <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">board_connect</span>()</span>
+<span id="cb1-20"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">pin_write</span>(board, race_info, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">type =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"parquet"</span>) </span>
+<span id="cb1-21"></span>
+<span id="cb1-22">pin_name <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"race_info"</span></span>
+<span id="cb1-23">meta <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">pin_meta</span>(board, <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">paste0</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"hathawayj/"</span>, pin_name))</span>
+<span id="cb1-24">client <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">connect</span>()</span>
+<span id="cb1-25">my_app <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">content_item</span>(client, meta<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>local<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>content_id)</span>
+<span id="cb1-26"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">set_vanity_url</span>(my_app, <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">paste0</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"data/"</span>, pin_name))</span>
+<span id="cb1-27"></span>
+<span id="cb1-28"></span>
+<span id="cb1-29"></span>
+<span id="cb1-30"></span>
+<span id="cb1-31"></span>
+<span id="cb1-32"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Data details</span></span>
+<span id="cb1-33"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># dpr_document(race_info, extension = ".R.md", export_folder = usethis::proj_get(),</span></span>
+<span id="cb1-34"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#              object_name = "race_info", title = "Table of Information about Marathons",</span></span>
+<span id="cb1-35"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#              description = "An interesting data set to see the effects of goals on what should be a unimodal distrubtion of finish times. The NYT had a good article - https://www.nytimes.com/2014/04/23/upshot/what-good-marathons-and-bad-investments-have-in-common.html?rref=upshot&amp;_r=1",</span></span>
+<span id="cb1-36"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#              source = "https://faculty.chicagobooth.edu/george.wu/research/marathon/marathon_names.htm",</span></span>
+<span id="cb1-37"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#              var_details = list(year = "The year of the marathon", </span></span>
+<span id="cb1-38"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#                                 marathon = "The name of the marathon",</span></span>
+<span id="cb1-39"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#                                 country = "The country where the marathon was held",</span></span>
+<span id="cb1-40"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#                                 finishers = "The number of finishers at the marathon",</span></span>
+<span id="cb1-41"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#                                 mean_time = "The average finish time in minutes."))</span></span>
+<span id="cb1-42"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># </span></span></code></pre></div>
+</details>
+</div>
+<!-- ```{python}
+#| echo: true
+#| eval: false
+#| code-fold: true
+#| code-summary: Explore generating code using Python
+#| code-line-numbers: true
+#| file: ../../../data_scripts/YOURFILEPATH
+``` -->
+</section>
+</section>
+<section id="access-data" class="level2">
+<h2 class="anchored" data-anchor-id="access-data">Access data</h2>
+<p>This data is available to <strong>all</strong>.</p>
+<p><strong>Direct Download:</strong> <a href="https://posit.byui.edu/content/2e7f072f-d19c-408b-9791-7ea6e44a5502/race_info.parquet">race_info.parquet</a></p>
+<section id="r-and-python-download" class="level4">
+<h4 class="anchored" data-anchor-id="r-and-python-download"><strong>R and Python Download:</strong></h4>
+<section id="url-connections" class="level5">
+<h5 class="anchored" data-anchor-id="url-connections"><strong>URL Connections:</strong></h5>
+<p>For public data, any user can connect and read the data using <code>pins::board_connect_url()</code> in R.</p>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(pins)</span>
+<span id="cb2-2">url_data <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://posit.byui.edu/data/race_info/"</span></span>
+<span id="cb2-3">board_url <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">board_connect_url</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"dat"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> url_data))</span>
+<span id="cb2-4">dat <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">pin_read</span>(board_url, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"dat"</span>)</span></code></pre></div>
+<p>Use this custom function in Python to have the data in a Pandas DataFrame.</p>
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> pandas <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> pd</span>
+<span id="cb3-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> requests</span>
+<span id="cb3-3"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> io <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> BytesIO</span>
+<span id="cb3-4"></span>
+<span id="cb3-5"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> read_url_pin(name):</span>
+<span id="cb3-6">  url <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://posit.byui.edu/data/"</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> name <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"/"</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> name <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">".parquet"</span></span>
+<span id="cb3-7">  response <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> requests.get(url)</span>
+<span id="cb3-8">  <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">if</span> response.status_code <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">200</span>:</span>
+<span id="cb3-9">    parquet_content <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> BytesIO(response.content)</span>
+<span id="cb3-10">    pandas_dataframe <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> pd.read_parquet(parquet_content)</span>
+<span id="cb3-11">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> pandas_dataframe</span>
+<span id="cb3-12">  <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">else</span>:</span>
+<span id="cb3-13">    <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(<span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f"Failed to retrieve data. Status code: </span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>response<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span>status_code<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"</span>)</span>
+<span id="cb3-14">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">None</span></span>
+<span id="cb3-15"></span>
+<span id="cb3-16"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Example usage:</span></span>
+<span id="cb3-17">pandas_df <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> read_url_pin(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"race_info"</span>)</span></code></pre></div>
+</section>
+</section>
+<section id="authenticated-connection" class="level4">
+<h4 class="anchored" data-anchor-id="authenticated-connection"><strong>Authenticated Connection:</strong></h4>
+<p>Our connect server is <a href="https://posit.byui.edu/connect/#/content/listing?filter=min_role:viewer&amp;filter=content_type:all&amp;view_type=compact">https://posit.byui.edu</a> which you assign to your <code>CONNECT_SERVER</code> environment variable. You must <a href="https://docs.posit.co/connect/user/api-keys/#api-keys-creating">create and API key</a> and store it in your environment under <code>CONNECT_API_KEY</code>.</p>
+<p><em>Read more about <a href="../../environment.html">environment variables and the pins package</a> to understand how these environment variables are stored and accessed in R and Python with pins.</em></p>
+<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(pins)</span>
+<span id="cb4-2">board <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">board_connect</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">auth =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"auto"</span>)</span>
+<span id="cb4-3">dat <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">pin_read</span>(board, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"hathawayj/race_info"</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> os</span>
+<span id="cb5-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> pins <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> board_rsconnect</span>
+<span id="cb5-3"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> dotenv <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> load_dotenv</span>
+<span id="cb5-4">load_dotenv()</span>
+<span id="cb5-5">API_KEY <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> os.getenv(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'CONNECT_API_KEY'</span>)</span>
+<span id="cb5-6">SERVER <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> os.getenv(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'CONNECT_SERVER'</span>)</span>
+<span id="cb5-7"></span>
+<span id="cb5-8">board <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> board_rsconnect(server_url<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>SERVER, api_key<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>API_KEY)</span>
+<span id="cb5-9">dat <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> board.pin_read(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"hathawayj/race_info"</span>)</span></code></pre></div>
+
+
+</section>
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p><a href="https://faculty.chicagobooth.edu/george.wu/research/marathon/marathon_names.htm">https://faculty.chicagobooth.edu/george.wu/research/marathon/marathon_names.htm</a>↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>marathon</category>
+  <guid>https://byuidatascience.github.io/posts/marathons/race_info.html</guid>
+  <pubDate>Thu, 25 Jan 2024 07:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Child height and weight measurements for all data from three studies at one year of age.</title>
   <dc:creator>DS 150</dc:creator>
@@ -28,7 +589,7 @@
 <section id="variable-description" class="level3">
 <h3 class="anchored" data-anchor-id="variable-description">Variable description</h3>
 <ul>
-<li><strong>subjid:</strong> unique identifyer of each child”,</li>
+<li><strong>subjid:</strong> unique identifyer of each child</li>
 <li><strong>sex:</strong> Male or Female</li>
 <li><strong>wtkg:</strong> Weight measurement in kg (0.8-20.5)</li>
 <li><strong>htcm:</strong> Height in cm</li>
@@ -196,7 +757,7 @@
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, pins)</span>
+font-style: inherit;">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, , pins, connectapi)</span>
 <span id="cb1-2"></span>
 <span id="cb1-3">hbgd_temp <span class="ot" style="color: #003B4F;
 background-color: null;
@@ -1056,7 +1617,7 @@ font-style: inherit;">"hathawayj/days_365"</span>)</span></code></pre></div>
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, pins)</span>
+font-style: inherit;">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, , pins, connectapi)</span>
 <span id="cb1-2"></span>
 <span id="cb1-3"><span class="co" style="color: #5E5E5E;
 background-color: null;
@@ -1828,7 +2389,7 @@ font-style: inherit;">"hathawayj/childhealth_summary"</span>)</span></code></pre
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, pins)</span>
+font-style: inherit;">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, pins, connectapi)</span>
 <span id="cb1-2"></span>
 <span id="cb1-3">t.dat <span class="ot" style="color: #003B4F;
 background-color: null;
@@ -2346,7 +2907,7 @@ font-style: inherit;">"hathawayj/birth_dutch"</span>)</span></code></pre></div>
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, pins)</span>
+font-style: inherit;">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, , pins, connectapi)</span>
 <span id="cb1-2"></span>
 <span id="cb1-3">tdat <span class="ot" style="color: #003B4F;
 background-color: null;
@@ -2829,10 +3390,11 @@ font-style: inherit;"># remotes::install_github("ki-tools/growthstandards")</spa
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, pins, growthstandards)</span>
-<span id="cb1-6"></span>
+font-style: inherit;">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs,</span>
+<span id="cb1-6">  glue, rvest, , pins, connectapi, growthstandards)</span>
 <span id="cb1-7"></span>
-<span id="cb1-8">height_coef <span class="ot" style="color: #003B4F;
+<span id="cb1-8"></span>
+<span id="cb1-9">height_coef <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> growthstandards<span class="sc" style="color: #5E5E5E;
 background-color: null;
@@ -2845,12 +3407,12 @@ background-color: null;
 font-style: inherit;">$</span>data <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">%&gt;%</span></span>
-<span id="cb1-9">  <span class="fu" style="color: #4758AB;
+<span id="cb1-10">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">as_tibble</span>() <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">%&gt;%</span></span>
-<span id="cb1-10">  <span class="fu" style="color: #4758AB;
+<span id="cb1-11">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">filter</span>(x <span class="sc" style="color: #5E5E5E;
 background-color: null;
@@ -2859,7 +3421,7 @@ background-color: null;
 font-style: inherit;">900</span>) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">%&gt;%</span></span>
-<span id="cb1-11">  <span class="fu" style="color: #4758AB;
+<span id="cb1-12">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">select</span>(<span class="at" style="color: #657422;
 background-color: null;
@@ -2872,7 +3434,7 @@ background-color: null;
 font-style: inherit;">l =</span> l) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">%&gt;%</span></span>
-<span id="cb1-12">  <span class="fu" style="color: #4758AB;
+<span id="cb1-13">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
 background-color: null;
@@ -2881,10 +3443,10 @@ background-color: null;
 font-style: inherit;">"Female"</span>) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">%&gt;%</span></span>
-<span id="cb1-13">  <span class="fu" style="color: #4758AB;
+<span id="cb1-14">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">bind_rows</span>(</span>
-<span id="cb1-14">    growthstandards<span class="sc" style="color: #5E5E5E;
+<span id="cb1-15">    growthstandards<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">::</span>who_coefs<span class="sc" style="color: #5E5E5E;
 background-color: null;
@@ -2895,12 +3457,12 @@ background-color: null;
 font-style: inherit;">$</span>data <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">%&gt;%</span></span>
-<span id="cb1-15">      <span class="fu" style="color: #4758AB;
+<span id="cb1-16">      <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">as_tibble</span>() <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">%&gt;%</span></span>
-<span id="cb1-16">      <span class="fu" style="color: #4758AB;
+<span id="cb1-17">      <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">filter</span>(x <span class="sc" style="color: #5E5E5E;
 background-color: null;
@@ -2909,7 +3471,7 @@ background-color: null;
 font-style: inherit;">900</span>) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">%&gt;%</span></span>
-<span id="cb1-17">      <span class="fu" style="color: #4758AB;
+<span id="cb1-18">      <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">select</span>(<span class="at" style="color: #657422;
 background-color: null;
@@ -2922,17 +3484,17 @@ background-color: null;
 font-style: inherit;">l =</span> l) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">%&gt;%</span></span>
-<span id="cb1-18">      <span class="fu" style="color: #4758AB;
+<span id="cb1-19">      <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">sex =</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Male"</span>)</span>
-<span id="cb1-19">  ) <span class="sc" style="color: #5E5E5E;
+<span id="cb1-20">  ) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">%&gt;%</span></span>
-<span id="cb1-20">  <span class="fu" style="color: #4758AB;
+<span id="cb1-21">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
 background-color: null;
@@ -2941,17 +3503,17 @@ background-color: null;
 font-style: inherit;">*</span> cv) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">%&gt;%</span></span>
-<span id="cb1-21">  <span class="fu" style="color: #4758AB;
+<span id="cb1-22">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">select</span>(agedays, sex, mean, sd, cv, l)</span>
-<span id="cb1-22"></span>
 <span id="cb1-23"></span>
-<span id="cb1-24">board <span class="ot" style="color: #003B4F;
+<span id="cb1-24"></span>
+<span id="cb1-25">board <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">board_connect</span>()</span>
-<span id="cb1-25"><span class="fu" style="color: #4758AB;
+<span id="cb1-26"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">pin_write</span>(board, height_coef, <span class="at" style="color: #657422;
 background-color: null;
@@ -2962,13 +3524,13 @@ background-color: null;
 font-style: inherit;">access_type =</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"all"</span>)</span>
-<span id="cb1-26"></span>
-<span id="cb1-27">pin_name <span class="ot" style="color: #003B4F;
+<span id="cb1-27"></span>
+<span id="cb1-28">pin_name <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"height_coef"</span></span>
-<span id="cb1-28">meta <span class="ot" style="color: #003B4F;
+<span id="cb1-29">meta <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -2977,12 +3539,12 @@ background-color: null;
 font-style: inherit;">paste0</span>(<span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"hathawayj/"</span>, pin_name))</span>
-<span id="cb1-29">client <span class="ot" style="color: #003B4F;
+<span id="cb1-30">client <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">connect</span>()</span>
-<span id="cb1-30">my_app <span class="ot" style="color: #003B4F;
+<span id="cb1-31">my_app <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -2991,7 +3553,7 @@ background-color: null;
 font-style: inherit;">$</span>local<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">$</span>content_id)</span>
-<span id="cb1-31"><span class="fu" style="color: #4758AB;
+<span id="cb1-32"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">set_vanity_url</span>(my_app, <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -3524,7 +4086,7 @@ font-style: inherit;"># https://clinepidb.org/ce/app/record/dataset/DS_5c41b8722
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, pins)</span>
+font-style: inherit;">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, , pins, connectapi)</span>
 <span id="cb1-5"></span>
 <span id="cb1-6">sdrive <span class="ot" style="color: #003B4F;
 background-color: null;
@@ -4199,7 +4761,7 @@ font-style: inherit;">"hathawayj/childhealth_maled"</span>)</span></code></pre><
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, pins)</span>
+font-style: inherit;">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, , pins, connectapi)</span>
 <span id="cb1-2"></span>
 <span id="cb1-3">hbgd_temp <span class="ot" style="color: #003B4F;
 background-color: null;
@@ -4789,7 +5351,7 @@ font-style: inherit;">"hathawayj/birth_us"</span>)</span></code></pre></div>
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, pins)</span>
+font-style: inherit;">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, , pins, connectapi)</span>
 <span id="cb1-2"></span>
 <span id="cb1-3">tdat <span class="ot" style="color: #003B4F;
 background-color: null;
@@ -5272,10 +5834,11 @@ font-style: inherit;"># remotes::install_github("ki-tools/growthstandards")</spa
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, pins, growthstandards)</span>
-<span id="cb1-6"></span>
+font-style: inherit;">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs,</span>
+<span id="cb1-6">  glue, rvest, pins, connectapi, growthstandards)</span>
 <span id="cb1-7"></span>
-<span id="cb1-8">weight_coef <span class="ot" style="color: #003B4F;
+<span id="cb1-8"></span>
+<span id="cb1-9">weight_coef <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> growthstandards<span class="sc" style="color: #5E5E5E;
 background-color: null;
@@ -5288,12 +5851,12 @@ background-color: null;
 font-style: inherit;">$</span>data <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">%&gt;%</span></span>
-<span id="cb1-9">  <span class="fu" style="color: #4758AB;
+<span id="cb1-10">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">as_tibble</span>() <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">%&gt;%</span></span>
-<span id="cb1-10">  <span class="fu" style="color: #4758AB;
+<span id="cb1-11">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">filter</span>(x <span class="sc" style="color: #5E5E5E;
 background-color: null;
@@ -5302,7 +5865,7 @@ background-color: null;
 font-style: inherit;">900</span>) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">%&gt;%</span></span>
-<span id="cb1-11">  <span class="fu" style="color: #4758AB;
+<span id="cb1-12">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">select</span>(<span class="at" style="color: #657422;
 background-color: null;
@@ -5315,7 +5878,7 @@ background-color: null;
 font-style: inherit;">l =</span> l) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">%&gt;%</span></span>
-<span id="cb1-12">  <span class="fu" style="color: #4758AB;
+<span id="cb1-13">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
 background-color: null;
@@ -5324,10 +5887,10 @@ background-color: null;
 font-style: inherit;">"Female"</span>) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">%&gt;%</span></span>
-<span id="cb1-13">  <span class="fu" style="color: #4758AB;
+<span id="cb1-14">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">bind_rows</span>(</span>
-<span id="cb1-14">    growthstandards<span class="sc" style="color: #5E5E5E;
+<span id="cb1-15">    growthstandards<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">::</span>who_coefs<span class="sc" style="color: #5E5E5E;
 background-color: null;
@@ -5338,12 +5901,12 @@ background-color: null;
 font-style: inherit;">$</span>data <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">%&gt;%</span></span>
-<span id="cb1-15">      <span class="fu" style="color: #4758AB;
+<span id="cb1-16">      <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">as_tibble</span>() <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">%&gt;%</span></span>
-<span id="cb1-16">      <span class="fu" style="color: #4758AB;
+<span id="cb1-17">      <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">filter</span>(x <span class="sc" style="color: #5E5E5E;
 background-color: null;
@@ -5352,7 +5915,7 @@ background-color: null;
 font-style: inherit;">900</span>) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">%&gt;%</span></span>
-<span id="cb1-17">      <span class="fu" style="color: #4758AB;
+<span id="cb1-18">      <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">select</span>(<span class="at" style="color: #657422;
 background-color: null;
@@ -5365,17 +5928,17 @@ background-color: null;
 font-style: inherit;">l =</span> l) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">%&gt;%</span></span>
-<span id="cb1-18">      <span class="fu" style="color: #4758AB;
+<span id="cb1-19">      <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">sex =</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Male"</span>)</span>
-<span id="cb1-19">  ) <span class="sc" style="color: #5E5E5E;
+<span id="cb1-20">  ) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">%&gt;%</span></span>
-<span id="cb1-20">  <span class="fu" style="color: #4758AB;
+<span id="cb1-21">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
 background-color: null;
@@ -5384,17 +5947,17 @@ background-color: null;
 font-style: inherit;">*</span> cv) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">%&gt;%</span></span>
-<span id="cb1-21">  <span class="fu" style="color: #4758AB;
+<span id="cb1-22">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">select</span>(agedays, sex, mean, sd, cv, l)</span>
-<span id="cb1-22"></span>
 <span id="cb1-23"></span>
-<span id="cb1-24">board <span class="ot" style="color: #003B4F;
+<span id="cb1-24"></span>
+<span id="cb1-25">board <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">board_connect</span>()</span>
-<span id="cb1-25"><span class="fu" style="color: #4758AB;
+<span id="cb1-26"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">pin_write</span>(board, weight_coef, <span class="at" style="color: #657422;
 background-color: null;
@@ -5405,13 +5968,13 @@ background-color: null;
 font-style: inherit;">access_type =</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"all"</span>)</span>
-<span id="cb1-26"></span>
-<span id="cb1-27">pin_name <span class="ot" style="color: #003B4F;
+<span id="cb1-27"></span>
+<span id="cb1-28">pin_name <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"weight_coef"</span></span>
-<span id="cb1-28">meta <span class="ot" style="color: #003B4F;
+<span id="cb1-29">meta <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -5420,12 +5983,12 @@ background-color: null;
 font-style: inherit;">paste0</span>(<span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"hathawayj/"</span>, pin_name))</span>
-<span id="cb1-29">client <span class="ot" style="color: #003B4F;
+<span id="cb1-30">client <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">connect</span>()</span>
-<span id="cb1-30">my_app <span class="ot" style="color: #003B4F;
+<span id="cb1-31">my_app <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -5434,7 +5997,7 @@ background-color: null;
 font-style: inherit;">$</span>local<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">$</span>content_id)</span>
-<span id="cb1-31"><span class="fu" style="color: #4758AB;
+<span id="cb1-32"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">set_vanity_url</span>(my_app, <span class="fu" style="color: #4758AB;
 background-color: null;
