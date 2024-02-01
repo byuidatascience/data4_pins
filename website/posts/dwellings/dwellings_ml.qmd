@@ -1,8 +1,8 @@
 ---
 title: "Denver residential dwelling sales for 2013"
-author: "COURSE THAT INSPIRED"
+author: "DS 250"
 date: "2024-02-01"
-categories: [housing]
+categories: [housing, DS250]
 description: "Attributes of each dwelling with their selling price in machine learning format"
 params: 
     source: "https://www.denvergov.org/opendata/dataset/city-and-county-of-denver-real-property-sales-book-2013"
@@ -142,14 +142,14 @@ skim(dat) |> yank("character")
 #| file: ../../../data_scripts/YOURFILEPATH
 ``` -->
 
-<!-- ```{python}
-#| echo: true
-#| eval: false
-#| code-fold: true
-#| code-summary: Explore generating code using Python
-#| code-line-numbers: true
-#| file: ../../../data_scripts/YOURFILEPATH
-``` -->
+```{python}
+| echo: true
+| eval: false
+| code-fold: true
+| code-summary: Explore generating code using Python
+| code-line-numbers: true
+| file: ../../../data_scripts/dwellings/dwellings_ml.py
+```
 
 
 ## Access data
