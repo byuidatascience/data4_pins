@@ -1,8 +1,8 @@
 ---
 title: "LED example bulbs of lumen output for two products with standard procedure time point measurements"
-author: "COURSE THAT INSPIRED"
+author: "M119"
 date: "2024-02-01"
-categories: []
+categories: [products]
 description: "An example data set of LED bulbs based on actual data."
 params: 
     source: "URL to Source"
