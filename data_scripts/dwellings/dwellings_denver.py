@@ -2,6 +2,7 @@
 import pandas as pd
 from pydrive2.drive import GoogleDrive
 from pydrive2.auth import GoogleAuth
+from io import StringIO, BytesIO
 
 
 
@@ -17,6 +18,8 @@ file_id = url.split('/')[2]
 
 file = drive.CreateFile({'id':file_id})
 
+# ????!!?!?!
+# buffer = file.GetContentIOBuffer()
 
 dat = (pd.read_csv(file.read_csv())
     .query('~COMMUSE.notna()') # Filter nulls from commuse column
