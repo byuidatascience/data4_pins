@@ -3,21 +3,25 @@ import pandas as pd
 from pydrive2.drive import GoogleDrive
 from pydrive2.auth import GoogleAuth
 from io import StringIO, BytesIO
+from googleapiclient.discovery import build
+import google.auth
+
 
 
 
 # get and clean data
 url = "https://drive.google.com/file/d/1i0ASVFW9t_oUpwD0gGoqabRakDQrWttY/view?usp=drive_link"
 
+
 # Set the drive to an authentication object with access to target account.
-drive = GoogleDrive(GoogleAuth())
+# drive = GoogleDrive(GoogleAuth())
 
-# Parse URL.
-file_id = url.split('/')[2]
+# # Parse URL.
+# file_id = url.split('/')[2]
 
-file = drive.CreateFile({'id':file_id})
+# file = drive.CreateFile({'id':file_id})
 
-# ????!!?!?!
+# # ????!!?!?!
 # buffer = file.GetContentIOBuffer()
 
 pd.read_csv(
