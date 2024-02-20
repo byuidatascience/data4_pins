@@ -2,7 +2,7 @@
 # Data is from google drive.
 sdrive <- shared_drive_find("byuids_data") # This will ask for authentication.
 google_file <- drive_ls(sdrive)  |>
-  filter(stringr::str_detect(name, "master_marathon"))
+  filter(stringr::str_detect(name, "mtcars_missing"))
 tempf <- tempfile()
 drive_download(google_file, tempf)
 
