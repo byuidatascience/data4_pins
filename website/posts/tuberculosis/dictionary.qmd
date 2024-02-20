@@ -1,6 +1,6 @@
 ---
 title: "World Health Organization (WHO) Tuberculosis csv file column names"
-author: "COURSE THAT INSPIRED"
+author: "DS 150"
 date: "2024-02-20"
 categories: [health]
 description: "File found at https://extranet.who.int/tme/generateCSV.asp?ds=dictionary"

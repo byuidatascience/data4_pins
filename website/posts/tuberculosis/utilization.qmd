@@ -1,6 +1,6 @@
 ---
 title: "Word Health Organization (WHO) Tuberculosis expenditures and utilization by country"
-author: "COURSE THAT INSPIRED"
+author: "DS 150"
 date: "2024-02-20"
 categories: [health]
 description: "See source for description of the data. tb_dictionary describes the column names."
