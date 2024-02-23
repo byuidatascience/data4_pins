@@ -45,6 +45,8 @@ basketball_date_rip <- function(m,d) {
 
 
 basketball_list <- map2(month_days$month, month_days$days, ~basketball_date_rip(.x, .y))
+# currently gives an error - HTTP error 429. Means that too many requests were made too fast. 
+
 
 basketball_births <- basketball_list %>%
   bind_rows() %>%
