@@ -30,19 +30,3 @@ meta <- pin_meta(board, paste0("hathawayj/", pin_name))
 client <- connect()
 my_app <- content_item(client, meta$local$content_id)
 set_vanity_url(my_app, paste0("data/", pin_name))
-
-
-
-# # Info about the Berlin dataset that needs to be put into the qmd eventually
-# dpr_document(marathon_berlin, extension = ".R.md", export_folder = usethis::proj_get(),
-#              object_name = "marathon_berlin", 
-#              title = "The 50% sample of male/female runners for all years of the Berlin marathon that recorded gender.",
-#              description = "This data set has ~200k observations.  Marathon website - https://www.bmw-berlin-marathon.com/en/",
-#              source = "http://faculty.chicagobooth.edu/george.wu/research/marathon/data.htm",
-#              var_details = list(age = "The age of the runner", 
-#                                 gender = "The gender of the runner (M/F)",
-#                                 chiptime = "The time in minutes for the runner",
-#                                 year = "The year of the marathon",
-#                                 marathon = "The name of the marathon",
-#                                 country = "The country where the marathon was held",
-#                                 finishers = "The number of finishers at the marathon") )

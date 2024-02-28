@@ -1,7 +1,6 @@
 pacman::p_load(pins, tidyverse, downloader, fs, glue, rvest, connectapi)
 
 # Load the data from Race Info.
-library(pins)
 url_data <- "https://posit.byui.edu/data/race_info/"
 board_url <- board_connect_url(c("dat" = url_data))
 dat <- pin_read(board_url, "dat")
@@ -27,28 +26,6 @@ my_app <- content_item(client, meta$local$content_id)
 set_vanity_url(my_app, paste0("data/", pin_name))
 
 
-
-
-
-# # Data details
-# dpr_document(race_location, extension = ".R.md", export_folder = usethis::proj_get(),
-#              object_name = "race_location", 
-#              title = "",
-#              description = "This data set has ~2k observations.",
-#              source = "http://faculty.chicagobooth.edu/george.wu/research/marathon/data.htm and https://simplemaps.com/data/us-cities",
-#              var_details = list(marathon = "The name of the marathon that matches all other files",
-#                                 marathon_name = "A cleaned name of the marathon",
-#                                 state_id = "The two letter ID for each US state",
-#                                 city = "The name of the city where the race is held",
-#                                 finishers = "The number of finishers at the marathon",
-#                                 mean_time = "The average finish time in minutes.",
-#                                 lat = "The lattitude of the city as listed at https://simplemaps.com/data/us-cities",
-#                                 lng = "The longitude of the city as listed at https://simplemaps.com/data/us-cities",
-#                                 elevation_m = "The elevation in meters above sea level as estimated from the elevatr R package.",
-#                                 date = "The approximate date of the marathon.  The year is correct but the month and day changes every year and we have marked it the same.",
-#                                 month = "Approximate month of the marathon", 
-#                                 day = "Approximate day of the month of the marathon.",
-#                                 year = "The year of the marathon  "))
 
 
 
