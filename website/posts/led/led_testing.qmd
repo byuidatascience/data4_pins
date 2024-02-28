@@ -5,7 +5,7 @@ date: "2024-02-01"
 categories: [products]
 description: "An example data set of LED bulbs based on actual data."
 params: 
-    source: "URL to Source"
+    source: "J. Hathaway"
     pins_name: 'hathawayj/led_testing'
     available: all
 ---

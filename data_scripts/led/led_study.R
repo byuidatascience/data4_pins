@@ -1,22 +1,8 @@
-pacman::p_load(tidyverse)
+pacman::p_load(tidyverse, googledrive, connectapi)
 
-
-load("../data_led_private/data/LumenData.Rdata")
-# dat object from the .Rdata file
-
-
-led_study <- dat %>%
-  select(ID, Hours, Intensity, NI) %>%
-  rename_all("str_to_lower") %>%
-  rename(percent_intensity = ni) %>%
-  mutate(hours = floor(hours)) %>%
-  group_by(id) %>%
-  mutate(intensity = intensity + rnorm(n(), mean = 0, sd = .25),
-         normalized_intensity = intensity / intensity[1],
-         percent_intensity = normalized_intensity*100,
-         hours = ifelse(hours < 10, 0, hours)) %>%
-  ungroup() %>%
-  filter(hours > 25 | hours < 10) %>%
-  as_tibble() %>%
-  mutate(hours = ifelse(hours == 191, 192, hours)) %>%
-  select(id, hours, intensity, normalized_intensity, percent_intensity)
+sdrive <- shared_drive_find("byuids_data") # This will ask for authentication.
+google_file <- drive_ls(sdrive)  |>
+  filter(stringr::str_detect(name, "led_study.csv"))
+tempf <- tempfile()
+drive_download(google_file, tempf)
+led_study <- read_csv(tempf)
