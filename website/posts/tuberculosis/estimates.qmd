@@ -3,7 +3,7 @@ title: ""
 author: "DS 150"
 date: "2024-02-20"
 categories: [health]
-description: "File found at https://extranet.who.int/tme/generateCSV.asp?ds=estimates"
+description: ""
 params: 
     source: "https://www.who.int/tb/country/data/download/en/"
     pins_name: 'hathawayj/estimates'
