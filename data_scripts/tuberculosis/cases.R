@@ -4,7 +4,7 @@ library(tidyverse)
 tb_cases <- read_csv("https://extranet.who.int/tme/generateCSV.asp?ds=notifications")
 
 # Wrangling
-cases_clean <- tb_cases %>%
+tb_cases <- tb_cases %>%
   select(-(new_sp:c_newinc), 
          -contains('_fu'), -contains('_mu'), -contains('_sexunk'), 
          -contains('gesex'), -contains('15plus'), -contains('014'),
@@ -41,3 +41,12 @@ cases_clean <- tb_cases %>%
 
 
 
+# Publish the data to the server with Bro. Hathaway as the owner.
+board <- board_connect()
+pin_write(board, tb_cases, type = "parquet")
+
+pin_name <- "tb_cases"
+meta <- pin_meta(board, paste0("hathawayj/", pin_name))
+client <- connect()
+my_app <- content_item(client, meta$local$content_id)
+set_vanity_url(my_app, paste0("data/", pin_name))
