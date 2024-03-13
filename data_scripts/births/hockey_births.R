@@ -57,3 +57,15 @@ dpr_document(hockey_births, extension = ".md.R", export_folder = usethis::proj_g
              description = "Data obtained from https://www.hockey-reference.com",
              source = "https://www.hockey-reference.com/friv/birthdays.cgi?month=1&day=1",
              var_details = hockey_description)
+
+
+
+# Publish the data to the server with Bro. Hathaway as the owner.
+board <- board_connect()
+pin_write(board, hockey_births, type = "parquet")
+
+pin_name <- "hockey_births"
+meta <- pin_meta(board, paste0("hathawayj/", pin_name))
+client <- connect()
+my_app <- content_item(client, meta$local$content_id)
+set_vanity_url(my_app, paste0("data/", pin_name))

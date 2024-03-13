@@ -24,3 +24,14 @@ dpr_document(counts_baseball, extension = ".md.R", export_folder = usethis::proj
              description = "Data obtained from Lahman http://www.seanlahman.com/baseball-archive/statistics/",
              source = "https://github.com/cdalzell/Lahman",
              var_details = counts_description)
+
+
+# Publish the data to the server with Bro. Hathaway as the owner.
+board <- board_connect()
+pin_write(board, counts_baseball, type = "parquet")
+
+pin_name <- "counts_baseball"
+meta <- pin_meta(board, paste0("hathawayj/", pin_name))
+client <- connect()
+my_app <- content_item(client, meta$local$content_id)
+set_vanity_url(my_app, paste0("data/", pin_name))
