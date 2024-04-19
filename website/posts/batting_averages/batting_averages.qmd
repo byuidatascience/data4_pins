@@ -68,7 +68,7 @@ This data is available to __`r params$available`__.
 - __Name__ The name of the baseball player
 - __Team__ The team they belong to
 - __League__ The league they belong to
-- __BattingAvg__ A metric that measures a batter's success. It's determined by dividing the player's hits by their total at-bats.
+- __BattingAvg__ A metric that measures batter success. Determined by dividing the player's hits by their total at-bats.
 - __AtBats__ The turns a batter has had at batting
 - __Hits__ How many times the batter hit the ball
 
