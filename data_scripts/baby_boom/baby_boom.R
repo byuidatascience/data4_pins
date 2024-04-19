@@ -2,6 +2,9 @@ library(tidyverse)
 
 baby_boom <- read_csv('https://github.com/byuistats/data/raw/master/BabyBoom-JSE/BabyBoom-JSE.csv')
 
+baby_boom <- baby_boom %>% 
+  select(!Time)
+
 
 # Publish the data to the server with Bro. Hathaway as the owner.
 board <- board_connect()

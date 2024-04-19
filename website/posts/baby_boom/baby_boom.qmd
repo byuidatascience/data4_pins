@@ -3,7 +3,7 @@ title: "Baby Boom"
 author: "MATH 221"
 date: "2024-03-13"
 categories: [population]
-description: ""
+description: "This dataset appears to record the weights of newborn babies."
 params: 
     source: ""
     pins_name: 'hathawayj/baby_boom'
@@ -65,11 +65,10 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Time__ A unique key that identifies each student
-- __Gender__ 
-- __Weight__ 
-- __Minutes__
-- __WeightTimes__
+- __Gender__ Gender of baby. Based on weight, we assume that 1 refers to female and 2 refers to male. 
+- __Weight__ Weight of baby (grams)
+- __Minutes__ (minutes)
+- __WaitTimes__ Wait time (minutes)
 
 
 ### Variable summary
