@@ -1,7 +1,6 @@
 library(tidyverse)
 
-body_measurements <- read_csv('')
-# source to be put in qmd : http://lib.stat.cmu.edu/datasets/bodyfat
+body_measurements <- read_csv('https://github.com/byuistats/data/raw/master/BodyMeasurementsCorrected/BodyMeasurementsCorrected.csv')
 
 
 # Publish the data to the server with Bro. Hathaway as the owner.
