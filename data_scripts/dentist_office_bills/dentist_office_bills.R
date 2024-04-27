@@ -1,4 +1,5 @@
 library(tidyverse)
+library(pins)
 
 dentist_office_bills <- read_csv('https://github.com/byuistats/data/raw/master/DentistOfficeBills/DentistOfficeBills.csv')
 

@@ -1,4 +1,5 @@
 library(tidyverse)
+library(pins)
 
 birth_weights_two_var <- read_csv('https://github.com/byuistats/data/raw/master/BirthWeightsTwoVar/BirthWeightsTwoVar.csv')
 

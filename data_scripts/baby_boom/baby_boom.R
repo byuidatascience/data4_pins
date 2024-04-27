@@ -1,4 +1,5 @@
 library(tidyverse)
+library(pins)
 
 baby_boom <- read_csv('https://github.com/byuistats/data/raw/master/BabyBoom-JSE/BabyBoom-JSE.csv')
 

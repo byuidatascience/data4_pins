@@ -1,4 +1,5 @@
 library(tidyverse)
+library(pins)
 
 batting_averages <- read_csv('https://github.com/byuistats/data/raw/master/BattingAverages/BattingAverages.csv')
 

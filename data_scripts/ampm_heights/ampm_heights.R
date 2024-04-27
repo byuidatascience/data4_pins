@@ -1,4 +1,5 @@
 library(tidyverse)
+library(pins)
 
 ampm_heights <- read_csv('https://github.com/byuistats/data/raw/master/AMPM-Heights/AMPM-Heights.csv')
 

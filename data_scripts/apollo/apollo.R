@@ -1,4 +1,5 @@
 library(tidyverse)
+library(pins)
 
 apollo <- read_csv('https://github.com/byuistats/data/raw/master/Apollo/Apollo.csv')
 
