@@ -1,4 +1,5 @@
 library(tidyverse)
+library(pins)
 
 bleu_scores <- read_csv('https://github.com/byuistats/data/raw/master/BLEU-Scores/BLEU-Scores.csv')
 
