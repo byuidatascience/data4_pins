@@ -3,7 +3,7 @@ title: "DASL Helium Football"
 author: "MATH 221"
 date: "2024-04-27"
 categories: [sports]
-description: "."
+description: ""
 params: 
     source: ""
     pins_name: 'hathawayj/dasl_helium_football'

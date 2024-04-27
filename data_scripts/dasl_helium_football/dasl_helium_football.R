@@ -1,6 +1,6 @@
 library(tidyverse)
 
-dasl_helium_football <- read_csv('')
+dasl_helium_football <- read_csv('https://github.com/byuistats/data/raw/master/DASL-HeliumFootball/DASL-HeliumFootball.csv')
 
 
 # Publish the data to the server with Bro. Hathaway as the owner.
