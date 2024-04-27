@@ -65,9 +65,9 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Score__ 7-point scale for palatability ()
-- __Screen__ Acidity of acetic acid (acidity is measured on pH scale)
-- __Liquid__ Hydrogen Sulfide (a chemical compound found in cheese) 
+- __Score__ Palatability score
+- __Screen__ Screen type (Coarse, Fine)
+- __Liquid__ Concentration of a liquid component (High, Low)
 
 
 ### Variable summary
