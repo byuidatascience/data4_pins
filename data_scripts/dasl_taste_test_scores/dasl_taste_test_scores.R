@@ -1,6 +1,7 @@
 library(tidyverse)
 
-dasl_taste_test_scores <- read_csv('https://github.com/byuistats/data/raw/master/DASL-TasteTestScores/DASL-TasteTestScores.csv')
+dasl_taste_test_scores <- read_csv('https://github.com/byuistats/data/raw/master/DASL-TasteTestScores/DASL-TasteTestScores.csv') %>% 
+  select(!Description)
 
 
 # Publish the data to the server with Bro. Hathaway as the owner.

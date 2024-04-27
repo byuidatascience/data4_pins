@@ -3,14 +3,7 @@ title: "DASL Taste Test Scores"
 author: "MATH 221"
 date: "2024-04-27"
 categories: [food]
-description: " [1] In testing food products for palatability, General Foods employed a 7-point scale      
- [2] from -3 (terrible) to +3 (excellent) with 0 representing "average". Their standard     
- [3] method for testing palatability was to conduct a taste test with 50 persons - 25 men   
- [4] and 25 women. The experiment reported here involved the effects on palatability of a   
- [5] course versus fine screen and of a low versus high concentration of a liquid component.
- [6] Four groups of 50 consumers each were recruited from local churches and club groups.   
- [7] Persons were assigned randomly to the four treatment groups as they were recruited.    
- [8] The experiment was replicated four times, so that there were 16 groups of 50 consumers each in the entire experiment.   "
+description: 'In testing food products for palatability, General Foods employed a 7-point scale from -3 (terrible) to +3 (excellent) with 0 representing "average". Their standard method for testing palatability was to conduct a taste test with 50 persons - 25 men and 25 women. The experiment reported here involved the effects on palatability of a course versus fine screen and of a low versus high concentration of a liquid component. Four groups of 50 consumers each were recruited from local churches and club groups. Persons were assigned randomly to the four treatment groups as they were recruited. The experiment was replicated four times, so that there were 16 groups of 50 consumers each in the entire experiment.'
 params: 
     source: ""
     pins_name: 'hathawayj/dasl_taste_test_scores'
@@ -72,10 +65,10 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Taste__ A score for the taste of each cheese
-- __Acetic__ Acidity of acetic acid (acidity is measured on pH scale)
-- __H2S__ Hydrogen Sulfide (a chemical compound found in cheese) 
-- __Lactic__ Lactic acid
+- __Score__ 7-point scale for palatability ()
+- __Screen__ Acidity of acetic acid (acidity is measured on pH scale)
+- __Liquid__ Hydrogen Sulfide (a chemical compound found in cheese) 
+
 
 ### Variable summary
 
