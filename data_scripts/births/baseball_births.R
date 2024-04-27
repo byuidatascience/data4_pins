@@ -1,4 +1,4 @@
-library(tidyverse)
+pacman::p_load(tidyverse, pins)
 
 # Grabs data from Lahman database, which is available in R.
 baseball_births <- Lahman::People %>%

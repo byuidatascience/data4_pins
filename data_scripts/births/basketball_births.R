@@ -1,4 +1,4 @@
-pacman::p_load(tidyverse, glue, rvest)
+pacman::p_load(tidyverse, glue, rvest, pins)
 
 # Make month_days tibble for wrangling later
 month_days <- bind_rows(

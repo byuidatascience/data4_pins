@@ -1,4 +1,4 @@
-library(tidyverse)
+pacman::p_load(tidyverse, glue, rvest, pins)
 
 # Load in football births.
 years <- 1900:1999

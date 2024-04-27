@@ -1,4 +1,5 @@
-library(tidyverse)
+pacman::p_load(tidyverse, glue, rvest, pins)
+
 
 
 month_days <- bind_rows(

@@ -1,4 +1,4 @@
-library(tidyverse)
+pacman::p_load(tidyverse, glue, rvest, pins)
 
 # US population data
 dat_94_03 <- read_csv("https://github.com/fivethirtyeight/data/raw/master/births/US_births_1994-2003_CDC_NCHS.csv")

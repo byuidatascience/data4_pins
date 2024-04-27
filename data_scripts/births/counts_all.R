@@ -1,4 +1,4 @@
-library(tidyverse)
+library(tidyverse, pins)
 
 # Put the code that brings in all these datasets when it's all working. 
 counts_all <- bind_rows(
