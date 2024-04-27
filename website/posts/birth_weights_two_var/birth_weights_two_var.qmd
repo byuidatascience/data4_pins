@@ -66,7 +66,7 @@ This data is available to __`r params$available`__.
 ### Variable description
 
 - __Black_Africa__ African baby birth weight (grams)
-- __Black_US__ American baby birth (grams)
+- __Black_US__ American baby birth weight (grams)
 
 
 ### Variable summary
