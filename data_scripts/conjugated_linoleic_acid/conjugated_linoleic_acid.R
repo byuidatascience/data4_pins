@@ -1,4 +1,5 @@
 library(tidyverse)
+library(pins)
 
 conjugated_linoleic_acid <- read_csv('https://github.com/byuistats/data/raw/master/ConjugatedLinoleicAcid/ConjugatedLinoleicAcid.csv')
 

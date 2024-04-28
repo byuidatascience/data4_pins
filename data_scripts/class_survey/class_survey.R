@@ -1,4 +1,5 @@
 library(tidyverse)
+library(pins)
 
 class_survey <- read_csv('https://github.com/byuistats/data/raw/master/ClassSurvey/ClassSurvey.csv')
 

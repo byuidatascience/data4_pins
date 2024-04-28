@@ -1,4 +1,5 @@
 library(tidyverse)
+library(pins)
 
 crossroads_purchases <- read_csv('https://github.com/byuistats/data/raw/master/CrossroadsPurchases/CrossroadsPurchases.csv')
 

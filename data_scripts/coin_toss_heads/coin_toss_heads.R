@@ -1,4 +1,5 @@
 library(tidyverse)
+library(pins)
 
 coin_toss_heads <- read_csv('https://github.com/byuistats/data/raw/master/CoinTossHeads/CoinTossHeads.csv')
 

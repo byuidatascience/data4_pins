@@ -1,4 +1,5 @@
 library(tidyverse)
+library(pins)
 
 comet_water_production_magnitude <- read_csv('https://github.com/byuistats/data/raw/master/Comet-WaterProduction-Magnitude/Comet-WaterProduction-Magnitude.csv')
 

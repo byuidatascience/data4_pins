@@ -1,4 +1,5 @@
 library(tidyverse)
+library(pins)
 
 bone_mineral_data <- read_csv('https://github.com/byuistats/data/raw/master/Bone_Mineral_Data/Bone_Mineral_Data.csv') %>% 
   select(!Description) # Remove the column that contains the description because it doesn't belong in the data

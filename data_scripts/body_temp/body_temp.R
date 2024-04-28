@@ -1,4 +1,5 @@
 library(tidyverse)
+library(pins)
 
 body_temp <- read_csv('https://github.com/byuistats/data/raw/master/BodyTemp/BodyTemp.csv')
 

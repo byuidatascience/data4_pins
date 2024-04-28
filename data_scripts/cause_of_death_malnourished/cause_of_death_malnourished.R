@@ -1,4 +1,5 @@
 library(tidyverse)
+library(pins)
 
 cause_of_death_malnourished <- read_csv('https://github.com/byuistats/data/raw/master/CauseOfDeath-Malnourished/CauseOfDeath-Malnourished.csv')
 

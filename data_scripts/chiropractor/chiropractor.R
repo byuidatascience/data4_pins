@@ -1,4 +1,5 @@
 library(tidyverse)
+library(pins)
 
 chiropractor <- read_csv('https://github.com/byuistats/data/raw/master/Chiropractor/Chiropractor.csv')
 

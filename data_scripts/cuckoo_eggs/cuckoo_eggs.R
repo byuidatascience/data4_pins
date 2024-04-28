@@ -1,4 +1,5 @@
 library(tidyverse)
+library(pins)
 
 cuckoo_eggs <- read_csv('https://github.com/byuistats/data/raw/master/CuckooEggs/CuckooEggs.csv')
 

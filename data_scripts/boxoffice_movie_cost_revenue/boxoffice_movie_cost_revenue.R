@@ -1,4 +1,5 @@
 library(tidyverse)
+library(pins)
 
 boxoffice_movie_cost_revenue <- read_csv('https://github.com/byuistats/data/raw/master/Boxoffice_Movie_Cost_Revenue/Boxoffice_Movie_Cost_Revenue.csv')
 

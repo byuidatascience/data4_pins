@@ -1,4 +1,5 @@
 library(tidyverse)
+library(pins)
 
 body_measurements <- read_csv('https://github.com/byuistats/data/raw/master/BodyMeasurementsCorrected/BodyMeasurementsCorrected.csv')
 

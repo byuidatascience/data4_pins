@@ -1,4 +1,5 @@
 library(tidyverse)
+library(pins)
 
 book_of_mormon_wordprint <- read_csv('https://github.com/byuistats/data/raw/master/BookOfMormonWordprint/BookOfMormonWordprint.csv')
 
