@@ -1,12 +1,12 @@
 ---
-title: "Estuarine Crocodile"
+title: "Estuarine Crocodiles"
 author: "MATH 221"
 date: "2024-04-29"
 categories: [animals]
 description: "Head and Body length of estuarine crocodiles"
 params: 
     source: ""
-    pins_name: 'hathawayj/estuarine_crocodile'
+    pins_name: 'hathawayj/estuarine_crocodiles'
     available: all
 ---
 
@@ -91,7 +91,7 @@ skim(dat) |> yank("character")
 #| code-fold: true
 #| code-summary: Explore generating code using R
 #| code-line-numbers: true
-#| file: ../../../data_scripts/estuarine_crocodile.R
+#| file: ../../../data_scripts/estuarine_crocodiles.R
 ```
 
 <!-- ```{python}
