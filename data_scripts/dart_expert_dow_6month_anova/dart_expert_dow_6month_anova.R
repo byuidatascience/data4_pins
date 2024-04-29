@@ -1,4 +1,5 @@
 library(tidyverse)
+library(pins)
 
 dart_expert_dow_6month_anova <- read_csv('https://github.com/byuistats/data/raw/master/Dart_Expert_Dow_6month_anova/Dart_Expert_Dow_6month_anova.csv')
 

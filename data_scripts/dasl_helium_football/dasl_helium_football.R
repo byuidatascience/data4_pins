@@ -1,4 +1,5 @@
 library(tidyverse)
+library(pins)
 
 dasl_helium_football <- read_csv('https://github.com/byuistats/data/raw/master/DASL-HeliumFootball/DASL-HeliumFootball.csv')
 

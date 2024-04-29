@@ -1,4 +1,5 @@
 library(tidyverse)
+library(pins)
 
 dasl_stepping <- read_csv('https://github.com/byuistats/data/raw/master/DASL-Stepping/DASL-Stepping.csv')
 

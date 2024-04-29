@@ -1,4 +1,5 @@
 library(tidyverse)
+library(pins)
 
 dasl_hubble <- read_csv('https://github.com/byuistats/data/raw/master/DASL-Hubble/DASL-Hubble.csv')
 

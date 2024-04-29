@@ -1,4 +1,5 @@
 library(tidyverse)
+library(pins)
 
 dasl_student <- read_csv('https://github.com/byuistats/data/raw/master/DASL-StudentDat/DASL-StudentDat.csv')
 

@@ -1,4 +1,5 @@
 library(tidyverse)
+library(pins)
 
 dasl_waste_run_up <- read_csv('https://github.com/byuistats/data/raw/master/DASL-WasteRunUp/DASL-WasteRunUp.csv')
 

@@ -1,4 +1,5 @@
 library(tidyverse)
+library(pins)
 
 dasl_taste_test_scores <- read_csv('https://github.com/byuistats/data/raw/master/DASL-TasteTestScores/DASL-TasteTestScores.csv') %>% 
   select(!Description)

@@ -1,4 +1,5 @@
 library(tidyverse)
+library(pins)
 
 dasl_fiber <- read_csv('https://github.com/byuistats/data/raw/master/DASL-Fiber/DASL-Fiber.csv')
 

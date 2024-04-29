@@ -1,4 +1,5 @@
 library(tidyverse)
+library(pins)
 
 dasl_cheese <- read_csv('https://github.com/byuistats/data/raw/master/DASL-Cheese/DASL-Cheese.csv')
 

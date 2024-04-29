@@ -1,4 +1,5 @@
 library(tidyverse)
+library(pins)
 
 dasl_hot_dog_nutrition <- read_csv('https://github.com/byuistats/data/raw/master/DASL-HotDogNutrition/DASL-HotDogNutrition.csv')
 
