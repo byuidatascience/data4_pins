@@ -1,4 +1,4 @@
-pacman::p_load(tidyverse, glue, rvest, pins)
+pacman::p_load(tidyverse, glue, rvest, pins, connectapi)
 
 # Make month_days tibble for wrangling later
 month_days <- bind_rows(
@@ -65,7 +65,7 @@ dpr_document(basketball_births, extension = ".md.R", export_folder = usethis::pr
 
 # Publish the data to the server with Bro. Hathaway as the owner.
 board <- board_connect()
-pin_write(board, basketball_births, type = "parquet")
+pin_write(board, basketball_births, type = "parquet", access_type = "all")
 
 pin_name <- "basketball_births"
 meta <- pin_meta(board, paste0("hathawayj/", pin_name))

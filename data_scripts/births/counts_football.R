@@ -1,4 +1,4 @@
-pacman::p_load(tidyverse, glue, rvest, pins)
+pacman::p_load(tidyverse, glue, rvest, pins, connectapi)
 
 # Load in football births.
 years <- 1900:1999
@@ -46,7 +46,7 @@ dpr_document(counts_football, extension = ".md.R", export_folder = usethis::proj
 
 # Publish the data to the server with Bro. Hathaway as the owner.
 board <- board_connect()
-pin_write(board, counts_football, type = "parquet")
+pin_write(board, counts_football, type = "parquet", access_type = "all")
 
 pin_name <- "counts_football"
 meta <- pin_meta(board, paste0("hathawayj/", pin_name))

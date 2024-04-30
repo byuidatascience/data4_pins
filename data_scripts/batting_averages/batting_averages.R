@@ -1,12 +1,13 @@
 library(tidyverse)
 library(pins)
+library(connectapi)
 
 batting_averages <- read_csv('https://github.com/byuistats/data/raw/master/BattingAverages/BattingAverages.csv')
 
 
 # Publish the data to the server with Bro. Hathaway as the owner.
 board <- board_connect()
-pin_write(board, batting_averages, type = "parquet")
+pin_write(board, batting_averages, type = "parquet", access_type = "all")
 
 pin_name <- "batting_averages"
 meta <- pin_meta(board, paste0("hathawayj/", pin_name))

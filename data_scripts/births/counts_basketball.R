@@ -1,4 +1,4 @@
-pacman::p_load(tidyverse, glue, rvest, pins)
+pacman::p_load(tidyverse, glue, rvest, pins, connectapi)
 
 # Make basketball_births first
 
@@ -74,7 +74,7 @@ dpr_document(counts_basketball, extension = ".md.R", export_folder = usethis::pr
 
 # Publish the data to the server with Bro. Hathaway as the owner.
 board <- board_connect()
-pin_write(board, counts_basketball, type = "parquet")
+pin_write(board, counts_basketball, type = "parquet", access_type = "all")
 
 pin_name <- "counts_basketball"
 meta <- pin_meta(board, paste0("hathawayj/", pin_name))

@@ -1,4 +1,4 @@
-pacman::p_load(tidyverse, glue, rvest, pins)
+pacman::p_load(tidyverse, glue, rvest, pins, connectapi)
 
 # Grabs data from Lahman database, which is available in R (from baseball_births)
 baseball_births <- Lahman::People %>%
@@ -28,7 +28,7 @@ dpr_document(counts_baseball, extension = ".md.R", export_folder = usethis::proj
 
 # Publish the data to the server with Bro. Hathaway as the owner.
 board <- board_connect()
-pin_write(board, counts_baseball, type = "parquet")
+pin_write(board, counts_baseball, type = "parquet", access_type = "all")
 
 pin_name <- "counts_baseball"
 meta <- pin_meta(board, paste0("hathawayj/", pin_name))

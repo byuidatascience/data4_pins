@@ -1,4 +1,4 @@
-pacman::p_load(tidyverse, glue, rvest, pins)
+pacman::p_load(tidyverse, glue, rvest, pins, connectapi)
 
 # US population data
 dat_94_03 <- read_csv("https://github.com/fivethirtyeight/data/raw/master/births/US_births_1994-2003_CDC_NCHS.csv")
@@ -27,7 +27,7 @@ dpr_document(counts_us, extension = ".md.R", export_folder = usethis::proj_get()
 
 # Publish the data to the server with Bro. Hathaway as the owner.
 board <- board_connect()
-pin_write(board, counts_us, type = "parquet")
+pin_write(board, counts_us, type = "parquet", access_type = "all")
 
 pin_name <- "counts_us"
 meta <- pin_meta(board, paste0("hathawayj/", pin_name))

@@ -1,12 +1,13 @@
 library(tidyverse)
 library(pins)
+library(connectapi)
 
 birth_weights_two_var <- read_csv('https://github.com/byuistats/data/raw/master/BirthWeightsTwoVar/BirthWeightsTwoVar.csv')
 
 
 # Publish the data to the server with Bro. Hathaway as the owner.
 board <- board_connect()
-pin_write(board, birth_weights_two_var, type = "parquet")
+pin_write(board, birth_weights_two_var, type = "parquet", access_type = "all")
 
 pin_name <- "birth_weights_two_var"
 meta <- pin_meta(board, paste0("hathawayj/", pin_name))

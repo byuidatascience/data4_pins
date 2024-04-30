@@ -1,4 +1,4 @@
-library(tidyverse, pins)
+library(tidyverse, pins, connectapi)
 
 # Put the code that brings in all these datasets when it's all working. 
 counts_all <- bind_rows(
@@ -20,7 +20,7 @@ dpr_document(counts_all, extension = ".md.R", export_folder = usethis::proj_get(
 
 # Publish the data to the server with Bro. Hathaway as the owner.
 board <- board_connect()
-pin_write(board, counts_all, type = "parquet")
+pin_write(board, counts_all, type = "parquet", access_type = "all")
 
 pin_name <- "counts_all"
 meta <- pin_meta(board, paste0("hathawayj/", pin_name))
