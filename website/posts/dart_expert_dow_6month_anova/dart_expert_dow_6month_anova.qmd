@@ -66,8 +66,8 @@ This data is available to __`r params$available`__.
 ### Variable description
 
 - __contest_period__ Time period
-- __variable__ Unknown (DARTS, DIJA, PROS)
-- __value__ Unknown
+- __variable__ The 3 stock-picking options (DARTS, DJIA, PROS)
+- __value__ Percent change in stock value for that period
 
 
 ### Variable summary
