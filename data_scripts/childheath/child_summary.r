@@ -1,4 +1,4 @@
-pacman::p_load(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, , pins, connectapi)
+pacman::p_load(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, pins, connectapi)
 
 # get three sources
 hbgd_temp <- tempfile()
