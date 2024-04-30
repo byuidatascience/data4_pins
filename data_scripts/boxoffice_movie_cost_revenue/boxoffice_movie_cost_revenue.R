@@ -1,12 +1,13 @@
 library(tidyverse)
 library(pins)
+library(connectapi)
 
 boxoffice_movie_cost_revenue <- read_csv('https://github.com/byuistats/data/raw/master/Boxoffice_Movie_Cost_Revenue/Boxoffice_Movie_Cost_Revenue.csv')
 
 
 # Publish the data to the server with Bro. Hathaway as the owner.
 board <- board_connect()
-pin_write(board, boxoffice_movie_cost_revenue, type = "parquet")
+pin_write(board, boxoffice_movie_cost_revenue, type = "parquet", access_type = "all")
 
 pin_name <- "boxoffice_movie_cost_revenue"
 meta <- pin_meta(board, paste0("hathawayj/", pin_name))

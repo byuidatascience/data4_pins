@@ -1,12 +1,13 @@
 library(tidyverse)
 library(pins)
+library(connectapi)
 
 body_temp <- read_csv('https://github.com/byuistats/data/raw/master/BodyTemp/BodyTemp.csv')
 
 
 # Publish the data to the server with Bro. Hathaway as the owner.
 board <- board_connect()
-pin_write(board, body_temp, type = "parquet")
+pin_write(board, body_temp, type = "parquet", access_type = "all")
 
 pin_name <- "body_temp"
 meta <- pin_meta(board, paste0("hathawayj/", pin_name))

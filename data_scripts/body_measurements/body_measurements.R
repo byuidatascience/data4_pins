@@ -1,12 +1,13 @@
 library(tidyverse)
 library(pins)
+library(connectapi)
 
 body_measurements <- read_csv('https://github.com/byuistats/data/raw/master/BodyMeasurementsCorrected/BodyMeasurementsCorrected.csv')
 
 
 # Publish the data to the server with Bro. Hathaway as the owner.
 board <- board_connect()
-pin_write(board, body_measurements, type = "parquet")
+pin_write(board, body_measurements, type = "parquet", access_type = "all")
 
 pin_name <- "body_measurements"
 meta <- pin_meta(board, paste0("hathawayj/", pin_name))
