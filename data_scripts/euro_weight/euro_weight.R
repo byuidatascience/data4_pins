@@ -1,12 +1,13 @@
 library(tidyverse)
 library(pins)
+library(connectapi)
 
 euro_weight <- read_csv('https://github.com/byuistats/data/raw/master/EuroWeight/EuroWeight.csv')
 
 
 # Publish the data to the server with Bro. Hathaway as the owner.
 board <- board_connect()
-pin_write(board, euro_weight, type = "parquet")
+pin_write(board, euro_weight, type = "parquet", access_type = "all")
 
 pin_name <- "euro_weight"
 meta <- pin_meta(board, paste0("hathawayj/", pin_name))

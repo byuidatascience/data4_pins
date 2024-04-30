@@ -1,12 +1,13 @@
 library(tidyverse)
 library(pins)
+library(connectapi)
 
 class_survey <- read_csv('https://github.com/byuistats/data/raw/master/ClassSurvey/ClassSurvey.csv')
 
 
 # Publish the data to the server with Bro. Hathaway as the owner.
 board <- board_connect()
-pin_write(board, class_survey, type = "parquet")
+pin_write(board, class_survey, type = "parquet", access_type = "all")
 
 pin_name <- "class_survey"
 meta <- pin_meta(board, paste0("hathawayj/", pin_name))

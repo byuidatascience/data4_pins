@@ -1,12 +1,13 @@
 library(tidyverse)
 library(pins)
+library(connectapi)
 
 exercised_bone_density <- read_csv('https://github.com/byuistats/data/raw/master/ExercisedBoneDensity/ExercisedBoneDensity.csv')
 
 
 # Publish the data to the server with Bro. Hathaway as the owner.
 board <- board_connect()
-pin_write(board, exercised_bone_density, type = "parquet")
+pin_write(board, exercised_bone_density, type = "parquet", access_type = "all")
 
 pin_name <- "exercised_bone_density"
 meta <- pin_meta(board, paste0("hathawayj/", pin_name))

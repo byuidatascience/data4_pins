@@ -1,12 +1,13 @@
 library(tidyverse)
 library(pins)
+library(connectapi)
 
 draft_vietnam <- read_csv('https://github.com/byuistats/data/raw/master/Draft_vietnam/Draft_vietnam.csv')
 
 
 # Publish the data to the server with Bro. Hathaway as the owner.
 board <- board_connect()
-pin_write(board, draft_vietnam, type = "parquet")
+pin_write(board, draft_vietnam, type = "parquet", access_type = "all")
 
 pin_name <- "draft_vietnam"
 meta <- pin_meta(board, paste0("hathawayj/", pin_name))

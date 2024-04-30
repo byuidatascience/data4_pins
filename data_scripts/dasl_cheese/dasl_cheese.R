@@ -1,12 +1,13 @@
 library(tidyverse)
 library(pins)
+library(connectapi)
 
 dasl_cheese <- read_csv('https://github.com/byuistats/data/raw/master/DASL-Cheese/DASL-Cheese.csv')
 
 
 # Publish the data to the server with Bro. Hathaway as the owner.
 board <- board_connect()
-pin_write(board, dasl_cheese, type = "parquet")
+pin_write(board, dasl_cheese, type = "parquet", access_type = "all")
 
 pin_name <- "dasl_cheese"
 meta <- pin_meta(board, paste0("hathawayj/", pin_name))

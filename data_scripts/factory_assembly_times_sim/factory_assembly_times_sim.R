@@ -1,12 +1,13 @@
 library(tidyverse)
 library(pins)
+library(connectapi)
 
 factory_assembly_times_sim <- read_csv('https://github.com/byuistats/data/raw/master/FactoryAssemblyTimes-sim/FactoryAssemblyTimes-sim.csv')
 
 
 # Publish the data to the server with Bro. Hathaway as the owner.
 board <- board_connect()
-pin_write(board, factory_assembly_times_sim, type = "parquet")
+pin_write(board, factory_assembly_times_sim, type = "parquet", access_type = "all")
 
 pin_name <- "factory_assembly_times_sim"
 meta <- pin_meta(board, paste0("hathawayj/", pin_name))

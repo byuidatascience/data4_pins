@@ -1,12 +1,13 @@
 library(tidyverse)
 library(pins)
+library(connectapi)
 
 gpas_byui <- read_csv('https://github.com/byuistats/data/raw/master/GPAsBYUI/GPAsBYUI.csv')
 
 
 # Publish the data to the server with Bro. Hathaway as the owner.
 board <- board_connect()
-pin_write(board, gpas_byui, type = "parquet")
+pin_write(board, gpas_byui, type = "parquet", access_type = "all")
 
 pin_name <- "gpas_byui"
 meta <- pin_meta(board, paste0("hathawayj/", pin_name))

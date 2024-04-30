@@ -1,12 +1,13 @@
 library(tidyverse)
 library(pins)
+library(connectapi)
 
 direct_flight_costs <- read_csv('https://github.com/byuistats/data/raw/master/DirectFlightCosts/DirectFlightCosts.csv')
 
 
 # Publish the data to the server with Bro. Hathaway as the owner.
 board <- board_connect()
-pin_write(board, direct_flight_costs, type = "parquet")
+pin_write(board, direct_flight_costs, type = "parquet", access_type = "all")
 
 pin_name <- "direct_flight_costs"
 meta <- pin_meta(board, paste0("hathawayj/", pin_name))

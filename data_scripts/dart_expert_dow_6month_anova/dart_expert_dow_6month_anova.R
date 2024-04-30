@@ -1,12 +1,13 @@
 library(tidyverse)
 library(pins)
+library(connectapi)
 
 dart_expert_dow_6month_anova <- read_csv('https://github.com/byuistats/data/raw/master/Dart_Expert_Dow_6month_anova/Dart_Expert_Dow_6month_anova.csv')
 
 
 # Publish the data to the server with Bro. Hathaway as the owner.
 board <- board_connect()
-pin_write(board, dart_expert_dow_6month_anova, type = "parquet")
+pin_write(board, dart_expert_dow_6month_anova, type = "parquet", access_type = "all")
 
 pin_name <- "dart_expert_dow_6month_anova"
 meta <- pin_meta(board, paste0("hathawayj/", pin_name))

@@ -1,12 +1,13 @@
 library(tidyverse)
 library(pins)
+library(connectapi)
 
 dasl_waste_run_up <- read_csv('https://github.com/byuistats/data/raw/master/DASL-WasteRunUp/DASL-WasteRunUp.csv')
 
 
 # Publish the data to the server with Bro. Hathaway as the owner.
 board <- board_connect()
-pin_write(board, dasl_waste_run_up, type = "parquet")
+pin_write(board, dasl_waste_run_up, type = "parquet", access_type = "all")
 
 pin_name <- "dasl_waste_run_up"
 meta <- pin_meta(board, paste0("hathawayj/", pin_name))

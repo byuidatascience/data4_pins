@@ -1,12 +1,13 @@
 library(tidyverse)
 library(pins)
+library(connectapi)
 
 dasl_student <- read_csv('https://github.com/byuistats/data/raw/master/DASL-StudentDat/DASL-StudentDat.csv')
 
 
 # Publish the data to the server with Bro. Hathaway as the owner.
 board <- board_connect()
-pin_write(board, dasl_student, type = "parquet")
+pin_write(board, dasl_student, type = "parquet", access_type = "all")
 
 pin_name <- "dasl_student"
 meta <- pin_meta(board, paste0("hathawayj/", pin_name))
