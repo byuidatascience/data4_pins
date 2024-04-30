@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: ../docs
+  render:
+    - "*.qmd"
+    - "!dev_posts/"
 
 website:
   title: "BYU-I Course Project Data"
