@@ -1,12 +1,12 @@
 ---
-title: "No Click Query (Summary)"
+title: "No Click Query"
 author: "MATH 221"
 date: "2024-05-01"
 categories: [technology]
-description: "An aggregated version of no_click_query. Includes a count of each type of result."
+description: ""
 params: 
     source: ""
-    pins_name: 'hathawayj/no_click_query_summary'
+    pins_name: 'hathawayj/no_click_query'
     available: all
 ---
 
@@ -65,9 +65,9 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
+- __Subject__ A unique key for each subject
 - __Reason__ Category of results for no click query
 - __Details.for.Result.of.Query.with.No.Clicks__  Results for no click query
-- __Count__ Count of query results of that category
 
 
 ### Variable summary
@@ -91,7 +91,7 @@ skim(dat) |> yank("character")
 #| code-fold: true
 #| code-summary: Explore generating code using R
 #| code-line-numbers: true
-#| file: ../../../data_scripts/no_click_query_summary.R
+#| file: ../../../data_scripts/no_click_query.R
 ```
 
 <!-- ```{python}
