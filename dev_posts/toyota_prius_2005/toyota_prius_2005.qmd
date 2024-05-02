@@ -72,7 +72,7 @@ This data is available to __`r params$available`__.
 - __Mileage__ Mileage
 - __Seller__ Seller Name and Phone Number
 - __TypeOfSeller__ Seller type (Dealer, Private)
-- __Body__ unknown
+- __Body__ Body (Hatch)
 - __Color__ Vehicle color
 
 
