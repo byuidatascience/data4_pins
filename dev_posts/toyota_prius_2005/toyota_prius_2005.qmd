@@ -3,7 +3,7 @@ title: "Toyota Prius 2005"
 author: "MATH 221"
 date: "2024-05-02"
 categories: [vehicles, products]
-description: "Data on on various 2005 Toyota vehicles"
+description: "Data on on various 2005 Toyota priuses"
 params: 
     source: ""
     pins_name: 'hathawayj/toyota_prius_2005'
