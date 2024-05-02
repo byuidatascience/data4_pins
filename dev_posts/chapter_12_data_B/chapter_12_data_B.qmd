@@ -1,12 +1,12 @@
 ---
-title: "Chapter 12 Data A"
+title: "Chapter 12 Data B"
 author: "MATH 221"
 date: "2024-05-02"
 categories: []
 description: ""
 params: 
     source: ""
-    pins_name: 'hathawayj/chapter_12_data_A'
+    pins_name: 'hathawayj/chapter_12_data_B'
     available: all
 ---
 
@@ -90,7 +90,7 @@ skim(dat) |> yank("character")
 #| code-fold: true
 #| code-summary: Explore generating code using R
 #| code-line-numbers: true
-#| file: ../../../data_scripts/chapter_12_data_A.R
+#| file: ../../../data_scripts/chapter_12_data_B.R
 ```
 
 <!-- ```{python}
