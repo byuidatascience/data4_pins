@@ -2,7 +2,7 @@
 title: "DASL Cheese"
 author: "MATH 221"
 date: "2024-04-27"
-categories: [products, health, food]
+categories: [products, food]
 description: "Taste of cheeses with various acidic components and hydrogen sulfide content"
 params: 
     source: ""
