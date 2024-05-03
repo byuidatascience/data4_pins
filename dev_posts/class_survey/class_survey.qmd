@@ -3,7 +3,7 @@ title: "Class Survey"
 author: "MATH 221"
 date: "2024-04-26"
 categories: [poulation]
-description: "Data from a survey of students"
+description: "Data from a survey of students in MATH 221"
 params: 
     source: ""
     pins_name: 'hathawayj/class_survey'
@@ -65,23 +65,23 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Class__ Unclear, appears to refer to class to which student pertains
+- __Class__ Time at which class meets
 - __Gender__ Gender (M/F)
 - __Hand__ Dominant hand (R/L)
-- __Roll__ Unknown (Y/N)
-- __Flip__ Unknown (Y/N)
-- __Nose__ Unknown (Y/N)
-- __Penny__ Unknown (Y/N)
+- __Roll__ Can student roll their tongue (Y/N)
+- __Flip__ Can student rotate tongue upside down in their mouth (Y/N)
+- __Nose__ Can student touch their tongue with their nose (Y/N)
+- __Penny__ Should the penny be in circulation? (Y/N)
 - __Rank__ Class in school (FR, JR, SO, SR)
 - __Credits__ Total credits taken in school
 - __Height__ Student height (inches)
-- __Fear__ Unknown (numeric)
-- __Skill__ Unknown (numeric)
+- __Fear__ Fear of statistics (1-7, 7 being the highest fear)
+- __Skill__ How skilled do you feel you are at math? (1-6)
 - __State__ Two-letter code of state, or name of country
 - __Wage__ Hourly wage (dollars)
 - __Age__ Age (years)
-- __Date__ Unknown (Y/N)
-- __Random__ Unknown (numeric)
+- __Date__ For men: Would you date someone taller than you? For women: Would you date someone shorter than you? (Y/N)
+- __Random__ A random number chosen by student (1-20)
 - __Heart__ Heart rate (BPM)
 
 ### Variable summary
