@@ -2,7 +2,7 @@
 title: "DASL Hubble"
 author: "MATH 221"
 date: "2024-04-27"
-categories: [astronomy]
+categories: [astronomy, physics]
 description: "Recession velocity (rate at which an object recedes from view) and distance from the Earth of the Hubble Space Telescope"
 params: 
     source: ""
