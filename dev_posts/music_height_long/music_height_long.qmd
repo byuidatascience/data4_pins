@@ -3,7 +3,7 @@ title: "Music Height (Long)"
 author: "MATH 221"
 date: "2024-04-30"
 categories: [music]
-description: ""
+description: "The heights of singers in various sections (Alto, Bass, Soprano, Tenor)"
 params: 
     source: ""
     pins_name: 'hathawayj/music_height_long'
@@ -67,7 +67,7 @@ This data is available to __`r params$available`__.
 
 - __x__ A unique key for each row
 - __variable__ Musical section (Alto, Bass, Soprano, Tenor)
-- __value__ Unknown
+- __value__ Singer height (in)
 
 
 ### Variable summary
