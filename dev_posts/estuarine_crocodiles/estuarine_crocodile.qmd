@@ -2,7 +2,7 @@
 title: "Estuarine Crocodiles"
 author: "MATH 221"
 date: "2024-04-29"
-categories: [animals]
+categories: [animals, ecology]
 description: "Head and Body length of estuarine crocodiles"
 params: 
     source: ""
