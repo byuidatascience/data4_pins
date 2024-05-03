@@ -2,7 +2,7 @@
 title: "Cuckoo Eggs"
 author: "MATH 221"
 date: "2024-04-26"
-categories: [zoology]
+categories: [animals, ecology]
 description: "The size of eggs that cuckoos lay in the nests of other species"
 params: 
     source: ""

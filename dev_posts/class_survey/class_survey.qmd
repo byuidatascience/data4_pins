@@ -2,7 +2,7 @@
 title: "Class Survey"
 author: "MATH 221"
 date: "2024-04-26"
-categories: [survey]
+categories: [poulation]
 description: "Data from a survey of students"
 params: 
     source: ""
