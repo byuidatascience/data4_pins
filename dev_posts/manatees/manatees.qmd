@@ -67,7 +67,7 @@ This data is available to __`r params$available`__.
 
 - __Fiscal.Year__ Year
 - __Power.Boats..in.1000.s.__ Count of power boats
-- __Manatees__ Count of manatees
+- __Manatees__ Count of manatees killed
 
 
 ### Variable summary
