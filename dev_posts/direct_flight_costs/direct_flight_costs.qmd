@@ -3,7 +3,7 @@ title: "Direct Flight Costs"
 author: "MATH 221"
 date: "2024-04-29"
 categories: [business, transportation]
-description: "Costs of various direct flights"
+description: "Costs of various direct flights from the Heathrow Airport"
 params: 
     source: ""
     pins_name: 'hathawayj/direct_flights_cost'
@@ -65,10 +65,10 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Origin__ Airport from which flight originated
+- __Origin__ Airport from which flight originated (all Heathrow)
 - __Destination__ Airport at which flight arrived
-- __FourteenDays__ Cost
-- __NinetyDays__ Cost
+- __FourteenDays__ Flight cost 14 days before day of flight
+- __NinetyDays__ Flight cost 90 days before day of flight
 
 ### Variable summary
 
