@@ -6,7 +6,7 @@ categories: [health, pharmaceuticals]
 description: ""
 params: 
     source: ""
-    pins_name: 'hathawayj/gratitude'
+    pins_name: 'hathawayj/insulin_resistance_depression'
     available: all
 ---
 
@@ -91,7 +91,7 @@ skim(dat) |> yank("character")
 #| code-fold: true
 #| code-summary: Explore generating code using R
 #| code-line-numbers: true
-#| file: ../../../data_scripts/gratitude.R
+#| file: ../../../data_scripts/insulin_resistance_depression.R
 ```
 
 <!-- ```{python}
