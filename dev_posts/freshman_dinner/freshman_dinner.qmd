@@ -3,7 +3,7 @@ title: "Freshman Dinner"
 author: "MATH 221"
 date: "2024-04-29"
 categories: []
-description: ""
+description: "The number of times freshman students from Colorado and Utah cooked their own dinner in a month"
 params: 
     source: ""
     pins_name: 'hathawayj/freshman_dinner'
@@ -65,8 +65,8 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Freshman.students.from.Utah.__ Unknown (9-22)
-- __Freshman.students.from.Colorado__ Unknown (7-21)
+- __Freshman.students.from.Utah.__ The number of times a student from Utah cooked their own dinner in a month 
+- __Freshman.students.from.Colorado__ The number of times a student from Colorado cooked their own dinner in a month
 
 ### Variable summary
 
