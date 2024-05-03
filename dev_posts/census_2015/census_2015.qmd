@@ -65,7 +65,7 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __censusid__ Unknown
+- __censusid__ Unique ID for each county
 - __state__ Unknown
 - __county__ Unknown
 - __totalpop__ .
