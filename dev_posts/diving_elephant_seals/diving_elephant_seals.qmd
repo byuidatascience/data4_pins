@@ -2,7 +2,7 @@
 title: "Diving Elephant Seals"
 author: "MATH 221"
 date: "2024-04-29"
-categories: [science, animals]
+categories: [ecology, animals]
 description: "Information about various elephant seals and their dives"
 params: 
     source: ""
