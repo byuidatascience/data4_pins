@@ -3,7 +3,7 @@ title: "Gratitude"
 author: "MATH 221"
 date: "2024-04-29"
 categories: [mentalhealth]
-description: ""
+description: "In a study, people were asked to journal on either things they were grateful for, hassles, or events. They were given a happiness score based on a survey."
 params: 
     source: ""
     pins_name: 'hathawayj/gratitude'
@@ -65,9 +65,9 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Grateful__ Unknown
-- __Hassles__ Unknown
-- __Events__ Unknown
+- __Grateful__ Happiness score of those who recorded things they were grateful for
+- __Hassles__ Happiness score of those who recorded their hassles
+- __Events__ Happiness score of those who recorded the events of their lives
 
 
 ### Variable summary
