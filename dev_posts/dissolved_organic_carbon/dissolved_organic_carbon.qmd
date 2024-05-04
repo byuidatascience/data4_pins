@@ -2,7 +2,7 @@
 title: "Dissoleved Organic Carbon"
 author: "MATH 221"
 date: "2024-04-29"
-categories: [science, chemistry]
+categories: [science, chemistry, physics]
 description: "Dissolved organic carbon is the organic carbon that can pass through a filter. "
 params: 
     source: ""

@@ -2,7 +2,7 @@
 title: "Hubble's Constant: Supernovas"
 author: "MATH 221"
 date: "2024-04-30"
-categories: [astronomy]
+categories: [astronomy, physics]
 description: ""
 params: 
     source: ""

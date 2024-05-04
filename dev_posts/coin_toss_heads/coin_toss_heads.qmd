@@ -2,7 +2,7 @@
 title: "Coin Toss Heads"
 author: "MATH 221"
 date: "2024-04-26"
-categories: []
+categories: [probability]
 description: "This dataset contains percentages of coin tosses that showed heads. "
 params: 
     source: ""
