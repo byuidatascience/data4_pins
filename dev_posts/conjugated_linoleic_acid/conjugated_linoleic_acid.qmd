@@ -2,10 +2,10 @@
 title: "Conjugated Linoleic Acid"
 author: "MATH 221"
 date: "2024-04-26"
-categories: [health]
-description: "Data from a study on Conjugated Linoleic Acid (CLA), which is thought to aid weight loss."
+categories: [health, animals, nutrition]
+description: "Conjugated linoleic acid (CLA) is found in milk fat from cows.  It has recently been discovered that CLA has several health-promoting characteristics, including cancer risk reduction.  The principal chemical form in which CLA is found in the milk fat is the “cis-9, trans-11” CLA.  Researchers in Alberta, Canada wanted to know if supplementing the diet of cattle with monensin, safflower oil, or both would affect the amount of CLA in the milk fat (measured in percent). Seven cattle were randomly assigned to each diet (including a control group)."
 params: 
-    source: ""
+    source: "J. A. Bell, J. M. Griinari, and J. J. Kennelly. Effect of safflower oil, flaxseed oil, monensin, and vitamin E on concentration of conjugated linoleic acid in bovine milk fat. Journal of Dairy Science, 89:733-748, 2006. "
     pins_name: 'hathawayj/conjugated_linoleic_acid'
     available: all
 ---
@@ -65,8 +65,8 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __CLA__ Conjugated linoleic acid (grams)
-- __Treatment__ Subject group (SAFF could refer to safflower oil, a source of CLA)
+- __CLA__ Conjugated linoleic acid in milk fat (percent)
+- __Treatment__ Subject group (SAFF: diet supplemented with safflower oil, MON: diet supplemented with monensin, SAFF/M: diet supplemented with both safflower oil and monensin, Control: control group)
 
 ### Variable summary
 
