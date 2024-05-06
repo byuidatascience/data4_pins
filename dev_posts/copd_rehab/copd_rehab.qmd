@@ -3,9 +3,19 @@ title: "COPD Rehab"
 author: "MATH 221"
 date: "2024-05-02"
 categories: [health]
-description: ""
+description: "The National Heart Lung and Blood Institute gives the following explanation of COPD:  
+
+COPD, or chronic obstructive pulmonary (PULL-mun-ary) disease, is a progressive disease that makes it hard to breathe.  “Progressive” means the disease gets worse over time.  COPD can cause coughing that produces large amounts of mucus (a slimy substance), wheezing, shortness of breath, chest tightness, and other symptoms.  Cigarette smoking is the leading cause of COPD.  Most people who have COPD smoke or used to smoke.  Long-term exposure to other lung irritants, such as air pollution, chemical fumes, or dust, also may contribute to COPD. 
+
+A study was conducted in the United Kingdom to determine if there is a difference in the effectiveness of community-based rehabilitation program compared to hospital-based rehabilitation.  Because hospital-based rehabilitation tends to be more expensive, the researchers wanted to assess if there is a significant difference in the patients' improvement under the two programs.  If not, then it makes sense to refer patients to the less expensive treatment option. 
+
+Patients suffering from COPD were randomly assigned to either the community or hospital group.  Twice a week for six weeks, they participated in two-hour educational and exercise sessions.  Patients were also encouraged to exercise between sessions. 
+
+The effectiveness of the program was measured based on the total distance patients could walk at one time at a particular pace.  This is called the endurance shuttle walking test (ESWT).  This was measured at the beginning of the study and again at the end of the six-week rehabilitation period.  Negative values indicate that the distance decreased. "
 params: 
-    source: ""
+    source: "National Heart Lung and Blood Institute, National Institutes of Health, U.S. Department of Health & Human Services. What is chronic obstructive pulmonary disease (COPD)? Website, March 2009. http://www.nhlbi.nih.gov/health/dci/Diseases/Copd/Copd_WhatIs.html. 
+
+J. C. Waterhouse, S. J. Walters, Y. Oluboyede, and R. A. Lawson. A randomised 2x2 trial of community versus hospital pulmonary rehabilitation for chronic obstructive pulmonary disease followed by telephone or conventional follow-up. Health Technology Assessment, 14(6), 2010. "
     pins_name: 'hathawayj/copd_rehab'
     available: all
 ---
@@ -65,8 +75,9 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Community__ Unknown
-- __Hospital__ Unknown
+- __Community__ Difference in ESWT score over course of study for participants in community-based rehab. 
+- __Hospital__ Difference in ESWT score over course of study for participants in hospital-based rehab.
+Note: Higher scores indicate improvement, and negative scores indicate deterioration.
 
 
 ### Variable summary
