@@ -1,8 +1,12 @@
-library(tidyverse)
-library(pins)
-library(connectapi)
+pacman::p_load(tidyverse, pins, connectapi, googledrive, readxl)
 
-worldwide_heights_estimates <- read_csv('')
+# Download the file from google drive
+sdrive <- shared_drive_find("byuids_data") # This will ask for authentication.
+google_file <- drive_ls(sdrive) |>
+  filter(stringr::str_detect(name, "worldwide_heights_estimates"))
+tempf <- tempfile()
+drive_download(google_file, tempf)
+worldwide_heights_estimates <- read_excel(tempf)
 
 
 # Publish the data to the server with Bro. Hathaway as the owner.
