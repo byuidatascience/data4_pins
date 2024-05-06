@@ -3,9 +3,9 @@ title: "Cardiac Arrest Health"
 author: "MATH 221"
 date: "2024-05-02"
 categories: [health]
-description: ""
+description: "The New England Journal of Medicine performed a study of Minnesota patients who had cardiac arrest and early difibrillation between November 1990 and January 2001. They collected data on quality of life based on the 36-Item Short Form Survey (SF-36). The score ranges from 0-100, with 100 meaning greater health."
 params: 
-    source: ""
+    source: "New England Journal of Medicine"
     pins_name: 'hathawayj/cardiac_arrest_health'
     available: all
 ---
@@ -65,7 +65,7 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __x__ Unknown
+- __x__ SF-36 score?
 
 
 ### Variable summary
