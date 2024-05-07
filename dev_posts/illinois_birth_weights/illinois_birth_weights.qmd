@@ -2,10 +2,10 @@
 title: "Illinois Birth Weights"
 author: "MATH 221"
 date: "2024-04-30"
-categories: [population]
-description: "Birth weights of black and white children in Africa and America"
+categories: [population, health]
+description: "The birth weights of babies in Illinois were taken, grouped by race and origin of the mother. "
 params: 
-    source: ""
+    source: "Richard J. David and James W. Collins. Differing birth weight among infants of u.s.-born blacks, african-born blacks, and u.s.-born whites. New England Journal of Medicine, 337(17):1209-1214, 1997. "
     pins_name: 'hathawayj/illinois_birth_weights'
     available: all
 ---
@@ -65,9 +65,9 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Black_US__ Black (American) baby birth weight (grams)
-- __Black_Africa__ Black (African) baby birth weight (grams)
-- __White_US__ White (American) baby birth weight (grams)
+- __Black_US__ Birth weight of babies with black mothers born in the US  (grams)
+- __Black_Africa__ Birth weight of babies with black mothers born in Africa (grams)
+- __White_US__ Birth weight of babies with white mothers born in the US (grams)
 
 
 ### Variable summary
