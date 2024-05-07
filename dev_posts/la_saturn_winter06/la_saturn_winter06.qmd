@@ -3,9 +3,9 @@ title: "LA Saturn Winter 06"
 author: "MATH 221"
 date: "2024-04-30"
 categories: [products, vehicles]
-description: ""
+description: "Brother Johnson wanted to see how the price of a car was affected by different attributes of that car, so he took a sample of 222 different cars of the same make and in the same city.\nThis data set was collected by conducting a Los Angeles search on cars.com."
 params: 
-    source: ""
+    source: "cars.com"
     pins_name: 'hathawayj/la_saturn_winter06'
     available: all
 ---
@@ -66,18 +66,18 @@ This data is available to __`r params$available`__.
 ### Variable description
 
 - __Year__ Year
-- __Age__ Age (years)
-- __Vehicle__ Name
-- __Model__ Model
-- __Price__ Price (dollars)
-- __Mileage__ Mileage (miles)
+- __Age__ Age (years) (2006 – (Year – 1))
+- __Vehicle__ Make and model of vehicle
+- __Model__ Model series
+- __Price__ Selling price (dollars)
+- __Mileage__ Odometer reading of car (miles)
 - __Seller__ Seller
 - __Body__ Vehicle body type (Coupe, Sedan, SUV, Wagon, Unknown)
-- __Color__ Color (Black, Blue, Green, Red, Silver, White, Other)
-- __IsSaturnDealer__ If dealer is Saturn or not (0, 1)
-- __NonSaturnDealer__ (0, 1)
-- __City__ City
-- __Distance__ unknown
+- __Color__ Vehicle body color (Black, Blue, Green, Red, Silver, White, Other)
+- __IsSaturnDealer__ If dealer is Saturn or not (0 = not Saturn dealer, 1 = is Saturn Dealer)
+- __NonSaturnDealer__ Opposite of IsSaturnDealer (0 = is Saturn Dealer, 1 = not Saturn dealer)
+- __City__ City where car is located (Los Angeles)
+- __Distance__ How far away car is (miles)
 
 
 ### Variable summary
