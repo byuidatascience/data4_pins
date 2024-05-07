@@ -3,9 +3,9 @@ title: "Speed of Light by Michelson 1879"
 author: "MATH 221"
 date: "2024-05-02"
 categories: [science, physics]
-description: ""
+description: "In 1879, Albert Abraham Michelson, an American physicist, published several observations of the speed of light in air.  This was early in his quest to measure the speed of light accurately.\nThe speed of light in a vacuum is currently defined as 299 792 458 meters per second.  The speed of light through air is about 90 000 meters per second slower. \nMichelson used some improvised equipment to collect this data set. "
 params: 
-    source: ""
+    source: "Ernest N. Dorsey. The velocity of light. Transactions of the American Philosophical Society, 34(1):1-110, 1944.\nNational Institute of Standards and Technology (NIST). Data gallery: Michelson speed of light. Website. http://www.itl.nist.gov/div898/bayesian/datagall/michelso.htm "
     pins_name: 'hathawayj/speed_of_light_by_michelson_1879'
     available: all
 ---
@@ -65,11 +65,11 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __SpeedOfLight__ Speed of light (m/s)
+- __SpeedOfLight__ Speed of light (millions of meters per second)
 - __Temp__ Temperature (F)
 - __Day__ Day of the month
 - __TimeOfDay__ (AM/PM)
-- __Set__ unknown
+- __Set__ Identification number of dataset (1 to 24)
 
 
 ### Variable summary
