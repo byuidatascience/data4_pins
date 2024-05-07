@@ -2,7 +2,8 @@ library(tidyverse)
 library(pins)
 library(connectapi)
 
-dasl_student <- read_csv('https://github.com/byuistats/data/raw/master/DASL-StudentDat/DASL-StudentDat.csv')
+dasl_student <- read_csv('https://github.com/byuistats/data/raw/master/DASL-StudentDat/DASL-StudentDat.csv') %>% 
+  rename(AdditionalSleep = x) # Rename the column to match the documentation
 
 
 # Publish the data to the server with Bro. Hathaway as the owner.
