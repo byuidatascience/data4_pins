@@ -5,7 +5,9 @@ date: "2024-05-01"
 categories: [technology]
 description: ""
 params: 
-    source: ""
+    source: "Stamou and Efthimiadis, Queries without Clicks: Successful or failed searches?
+Proceedings of the SIGIR 2009 Workshop on the Future of IR Evaluation
+Boston, MA,  23 July 2009"
     pins_name: 'hathawayj/no_click_query'
     available: all
 ---
