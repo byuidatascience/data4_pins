@@ -3,9 +3,9 @@ title: "Twins Diabetes"
 author: "MATH 221"
 date: "2024-05-02"
 categories: [health]
-description: ""
+description: "A group of researchers studied the heights of youths diagnosed with type I diabetes.  They wanted to see how diabetes affected height.\nThe researchers compared identical twins, where one twin manifests the disease and the other twin does not. The researchers recorded the heights of the juveniles at the time one of them was diagnosed with type I diabetes. "
 params: 
-    source: ""
+    source: "P. J. Hoskins, R. D. Leslie, and D. A. Pyke. Height at diagnosis of diabetes in children: a study in identical twins. British Medical Journal, 290(6464):278-280, 1985."
     pins_name: 'hathawayj/twins_diabetes'
     available: all
 ---
@@ -65,11 +65,11 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Twin__ Unknown
-- __Age__ Age (years)
-- __Gender__ Gender (M, F)
-- __NonDiabeticHeight__ .
-- __DiabeticHeight__ .
+- __Twin__ ID for each pair of twins
+- __Age__ Age at time of diagnosis (years)
+- __Gender__ Gender of twins (M, F)
+- __NonDiabeticHeight__ Height of non-diabetic twin (cm)
+- __DiabeticHeight__ Height of diabetic twin (cm)
 
 
 ### Variable summary
