@@ -3,7 +3,7 @@ title: "Chipotle"
 author: "DS 350"
 date: "2024-05-06"
 categories: [business]
-description: "See https://docs.safegraph.com/docs/monthly-patterns#section-raw-visit-counts for a more detailed data dictionary."
+description: "Data on various Chipotle locations. See https://docs.safegraph.com/docs/monthly-patterns#section-raw-visit-counts for a more detailed data dictionary."
 params: 
     source: "Safegraph \"patterns\" dataset"
     pins_name: 'hathawayj/chipotle_reduced'
