@@ -2,10 +2,10 @@
 title: "Vertebral Heights"
 author: "MATH 221"
 date: "2024-05-02"
-categories: []
-description: ""
+categories: [health, anthropology]
+description: "When an x-ray or lateral radiograph of the spine is taken, it is not immediately clear whether a vertebra is fractured.  Experts may disagree on their interpretations, and in order for the dimensions of the vertebrae to be used, they need a standard against which they can be compared.  A group of researchers wanted to try a new approach to define what this standard of normal vertebral dimensions could be.\nUsing lateral spinal radiographs, the heights of the vertebrae of 2992 women between the ages of 65 and 70 were recorded.  Anterior, middle, and posterior measurements were taken.  The data in the file represent the middle measurements.  All the vertebrae were measured, but only the data on the T4 vertebra are represented.\nNote: Due to SPSS student version limitations, a random sample of 1000 values (rather than 2992) was selected). "
 params: 
-    source: ""
+    source: "Dennis M. Black, Steven R. Cummings, Katie Stone, Estie Hudes, Lisa Palermo, and Peter Steiger. A new approach to defining normal vertebral dimensions. Journal of Bone and Mineral Research, Volume 6, Number 8, 1991. "
     pins_name: 'hathawayj/vertebral_heights'
     available: all
 ---
@@ -65,7 +65,7 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __x__ Vertebral height
+- __VertebralHeight__ Height of the T4 vertebra of the subject (centimeters) 
 
 
 ### Variable summary
