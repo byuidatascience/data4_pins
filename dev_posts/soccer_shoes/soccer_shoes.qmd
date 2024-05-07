@@ -2,10 +2,10 @@
 title: "Soccer Shoes"
 author: "MATH 221"
 date: "2024-05-02"
-categories: [sports, products]
-description: ""
+categories: [sports, products, advertising]
+description: "Nike, a company that makes sporting goods including shoes, funded a study to compare five soccer shoe designs.  The objective of the research was to assess if footwear could affect the accuracy of a soccer player.\nThe researchers asked trained soccer players to kick a ball at a target.  The target was placed 115 cm above the ground and at a distance of 10 m from the players.  Using electronic equipment, the researchers recorded the distance from the center of the target to the point where the ball hit.  The subjects wore five different soccer shoes, and for one treatment they kicked the ball in stocking feet.  Due to the proprietary nature of the data, the shoes are only labeled “A,” “B,” “C,” “D,” and “E” in the article. "
 params: 
-    source: ""
+    source: "Ewald M. Hennig, Katharina Althoff, and Ann-Kathrin Hoemme. Soccer footwear and ball kicking accuracy. Footwear Science, 1(S1):85-87, 2010.\nEwald M. Hennig and Thorsten Sterzing. The influence of soccer shoe design on playing performance: a series of biomechanical studies. Footwear Science, 2(1):3-11, 2010. "
     pins_name: 'hathawayj/soccer_shoes'
     available: all
 ---
@@ -66,7 +66,7 @@ This data is available to __`r params$available`__.
 ### Variable description
 
 - __Footwear__ A unique ID for each footwear (A, B, C, D, E, Socks)
-- __Accuracy__ Unknown
+- __Accuracy__ Distance from the center of the target (centimeters)
 
 
 ### Variable summary
