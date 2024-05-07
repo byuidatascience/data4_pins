@@ -3,9 +3,9 @@ title: "DASL Stepping"
 author: "MATH 221"
 date: "2024-04-27"
 categories: [health]
-description: "Heart rate resting and during stepping"
+description: "In 1993, students at Ohio State University wanted to determine how heart rate was affected by various stepping exercises.  They wanted to consider the relationship between heart rate and stepping frequency as well as the height of the step.  They used two step heights and three stepping frequencies, yielding six possible combinations. \nSubjects and experimenters were split into six groups, referred to as blocks.  Two experimenters measured the same subject for the entire test.  Each block performed five of the six possible tests.  Each exercise lasted 3 minutes.  Heart rate was counted by one experimenter for 20 seconds before and after the trial.  The subjects rested between each trial to recover their resting heart rates.  Pace was kept by synchronizing with an electric metronome. "
 params: 
-    source: ""
+    source: "Cornell University DASL Project. The data and story library. Website. http://lib.stat.cmu.edu/DASL/Datafiles/Stepping.html. "
     pins_name: 'hathawayj/dasl_stepping'
     available: all
 ---
@@ -65,13 +65,13 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Order__ A unique key for each row
+- __Order__ A unique key for each row; overall performance order of the trial
 - __Subject__ A unique key for each participating subject
-- __Height__ Unknown (0-1)
-- __Frequency__ Unknown (0-2)
-- __RestHR__ Resting heart rate (BPM)
-- __HR__ Heart rate during study (BPM)
-- __IncreaseinHR__ Difference between resting heart rate and heart rate during study
+- __Height__ Height of step; 0 = low height (5.75”), 1 = high height (11.5”) 
+- __Frequency__ Rate of stepping; 0 = slow (14 steps/minute), 1 = medium (21 steps/minute), 2 = high (28 steps/minute) 
+- __RestHR__ Resting heart rate before trial (BPM)
+- __HR__ Final heart rate after trial (BPM)
+- __IncreaseinHR__ Difference between resting heart rate and final heart rate 
 
 ### Variable summary
 
