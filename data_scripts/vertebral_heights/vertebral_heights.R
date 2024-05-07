@@ -2,7 +2,8 @@ library(tidyverse)
 library(pins)
 library(connectapi)
 
-vertebral_heights <- read_csv('https://github.com/byuistats/data/raw/master/VertebralHeights/VertebralHeights.csv')
+vertebral_heights <- read_csv('https://github.com/byuistats/data/raw/master/VertebralHeights/VertebralHeights.csv') %>% 
+  rename(VertebralHeight = x) # Rename column to match documentation
 
 
 # Publish the data to the server with Bro. Hathaway as the owner.
