@@ -2,10 +2,10 @@
 title: "Redbox Decision Times"
 author: "MATH 221"
 date: "2024-05-02"
-categories: [entertainment, products]
-description: ""
+categories: [socialscience]
+description: "The study tests decision times of men vs. women at a Redbox kiosk.  The students wanted to test the alternative hypothesis that women would take longer to decide \“due to an indecisive nature.\” \nThe students observed the lengths of time people took to decide on a movie at a Redbox kiosk.  People who chose either more or less than a single movie were not counted, but people who had pre-ordered a movie were counted."
 params: 
-    source: ""
+    source: "Ryan Brower, Heather Nielsen, Josef Patterson, Logan Tataipu, and Todd Wilson, statistics students, BYU-Idaho "
     pins_name: 'hathawayj/redbox_decision_times'
     available: all
 ---
@@ -66,7 +66,7 @@ This data is available to __`r params$available`__.
 ### Variable description
 
 - __Gender__ Gender (Men, Women)
-- __TimeInSec__ Time (seconds)
+- __TimeInSec__ Decision time (seconds)
 
 
 ### Variable summary
