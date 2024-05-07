@@ -2,10 +2,10 @@
 title: "Mahon"
 author: "MATH 221"
 date: "2024-04-30"
-categories: []
-description: ""
+categories: [health, nutrition]
+description: "A group of researchers including Annie Mahon investigated the weight loss of middle-aged women when they followed a reduced-calorie diet for 9 weeks.\nThe weights of the women were measured in kilograms at the beginning of the study and again at the end. "
 params: 
-    source: ""
+    source: "A. K. Mahon, M. G. Flynn, H. B. Iglay, L. K. Stewart, C. A. Johnson, B. K. McFarlin, and W. W. Campbell. Measurement of body composition changes with weight loss in postmenopausal women: a comparison of methods. J Nutr Health Aging, 11(3):203-213, 2007.  "
     pins_name: 'hathawayj/mahon'
     available: all
 ---
@@ -66,8 +66,8 @@ This data is available to __`r params$available`__.
 ### Variable description
 
 - __Subject__ A unique key that identifies each subject
-- __Pre__ Unknown
-- __Post__ Unknown
+- __Pre__ Weight before diet measured (kg) 
+- __Post__ Weight after diet measured (kg)
 
 
 ### Variable summary
