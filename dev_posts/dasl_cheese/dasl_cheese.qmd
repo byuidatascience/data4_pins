@@ -5,7 +5,7 @@ date: "2024-04-27"
 categories: [products, food, chemistry]
 description: "As cheese ages, various chemical processes take place that determine the taste of the final product. \nConcentrations of various chemicals were measured in 30 samples of mature cheddar cheese, and a subjective measure of taste from several tasters was recorded for each sample."
 params: 
-    source: ""
+    source: "Cornell University DASL Project. The data and story library. Website. http://lib.stat.cmu.edu/DASL/  "
     pins_name: 'hathawayj/dasl_cheese'
     available: all
 ---
