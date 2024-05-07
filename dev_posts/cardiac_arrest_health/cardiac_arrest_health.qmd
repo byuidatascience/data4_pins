@@ -69,7 +69,7 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __x__ SF-36 score (0-100). Lower scores on the SF-36 indicate a poorer quality of health. 
+- __Health__ SF-36 score (0-100). Lower scores on the SF-36 indicate a poorer quality of health. 
 
 
 ### Variable summary

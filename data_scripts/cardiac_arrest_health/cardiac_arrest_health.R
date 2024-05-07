@@ -2,7 +2,8 @@ library(tidyverse)
 library(pins)
 library(connectapi)
 
-cardiac_arrest_health <- read_csv('https://github.com/byuistats/data/raw/master/CardiacArrestHealth/CardiacArrestHealth.csv')
+cardiac_arrest_health <- read_csv('https://github.com/byuistats/data/raw/master/CardiacArrestHealth/CardiacArrestHealth.csv') %>% 
+  rename(Health = x) # Rename column to match documentation
 
 
 # Publish the data to the server with Bro. Hathaway as the owner.
