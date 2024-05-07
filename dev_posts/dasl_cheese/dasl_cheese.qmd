@@ -2,8 +2,8 @@
 title: "DASL Cheese"
 author: "MATH 221"
 date: "2024-04-27"
-categories: [products, food]
-description: "Taste of cheeses with various acidic components and hydrogen sulfide content"
+categories: [products, food, chemistry]
+description: "As cheese ages, various chemical processes take place that determine the taste of the final product. \nConcentrations of various chemicals were measured in 30 samples of mature cheddar cheese, and a subjective measure of taste from several tasters was recorded for each sample."
 params: 
     source: ""
     pins_name: 'hathawayj/dasl_cheese'
@@ -65,10 +65,10 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Taste__ A score for the taste of each cheese
-- __Acetic__ Acidity of acetic acid (acidity is measured on pH scale)
-- __H2S__ Hydrogen Sulfide (a chemical compound found in cheese) 
-- __Lactic__ Lactic acid
+- __Taste__ A subjective score for the taste of each cheese, obtained by combining the scores of several tasters; higher values indicate better taste 
+- __Acetic__ Natural logarithm of concentration of acetic acid in the sample
+- __H2S__ Natural logarithm of concentration of hydrogen sulfide in the sample 
+- __Lactic__ Lactic acid concentration
 
 ### Variable summary
 
