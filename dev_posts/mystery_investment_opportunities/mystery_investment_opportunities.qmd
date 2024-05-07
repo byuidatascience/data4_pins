@@ -3,7 +3,7 @@ title: "Mystery Investment Opportunities"
 author: "MATH 221"
 date: "2024-04-30"
 categories: [finance]
-description: ""
+description: "The change in price for various investment opportunities "
 params: 
     source: ""
     pins_name: 'hathawayj/mystery_investment_opportunities'
