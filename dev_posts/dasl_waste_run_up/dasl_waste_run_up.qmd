@@ -2,7 +2,7 @@
 title: "DASL Waste Run Up"
 author: "MATH 221"
 date: "2024-04-27"
-categories: []
+categories: [production, efficiency]
 description: "The Levi-Strauss clothing manufacture plant in Albuquerque, New Mexico gets its cloth supplies from other supplying plants.  These data were collected in order to determine whether there was a difference in waste management between five supplier plants.\nThe quality control department collects data weekly on percentage waste (run-up).  These values are relative to what computer pattern layouts would achieve.  Negative values indicate that the employees did better than the computer at minimizing waste."
 params: 
     source: "Cornell University DASL Project. The data and story library. Website. http://lib.stat.cmu.edu/DASL/Datafiles/wasterunupdat.html. "
@@ -65,7 +65,8 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __x__ Some numbers
+- __Source__ Plant number
+- __RunUp__ Percentage waste (run-up)
 
 ### Variable summary
 
