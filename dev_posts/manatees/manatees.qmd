@@ -2,10 +2,10 @@
 title: "Manatees"
 author: "MATH 221"
 date: "2024-04-30"
-categories: [animals, population]
-description: "Change in manatee population and in quantity of power boats over time (from 1977 to 1986)"
+categories: [animals, population, ecology]
+description: "Manatees are curious, peaceful sea creatures that like to sun themselves just below the ocean's surface.  Sadly, this puts them in direct contact with powerboat propellers.  This has been a serious problem off the coast of Florida for many years.\nThe number of Florida powerboat registrations and the number of manatees killed by powerboats were recorded for the years 1977-2006. "
 params: 
-    source: ""
+    source: "Brigitte Baldi and David S. Moore. The Practice of Statistics in the Life Sciences, pages 67-68. W. H. Freeman and Company, New York, NY, 2009"
     pins_name: 'hathawayj/manatees'
     available: all
 ---
@@ -66,8 +66,8 @@ This data is available to __`r params$available`__.
 ### Variable description
 
 - __Fiscal.Year__ Year
-- __Power.Boats..in.1000.s.__ Count of power boats
-- __Manatees__ Count of manatees killed
+- __Power.Boats..in.1000.s.__ Powerboat registrations in Florida in thousands
+- __Manatees__ Count of manatees killed by powerboats
 
 
 ### Variable summary
