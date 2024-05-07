@@ -3,9 +3,9 @@ title: "Wrong Site, Wrong Patient"
 author: "MATH 221"
 date: "2024-05-02"
 categories: [health]
-description: ""
+description: "On rare occasions, a medical procedure is performed on the wrong body part of the body or on the wrong patient.  These are called wrong-site and wrong-patient mistakes.  Such errors occur hundreds of times each year across the country.  It is not always required to report these mistakes, so not every instance is counted.  In a small percentage of these cases, the patient files a lawsuit against the hospital.\nThe medical community is trying to eliminate these errors but have had difficulty reducing their frequency.\nPhilip Stahel et al. conducted a study on these mistakes and the lawsuits that follow. \nCosts to hospitals resulting from wrong-site and wrong-patient lawsuits were collected. "
 params: 
-    source: ""
+    source: "Philip F. Stahel, Allison L. Sabel, Michael S. Victoroff, Jeffrey Varnell, Alan Lembitz, Dennis J. Boyle, Ted J. Clarke, Wade R. Smith, and Philip S. Mehler. Wrong-site and wrong-patient procedures in the universal protocol era: Analysis of a prospective database of physician self-reported occurrences. Arch Surg, 145(10):978-984, 2010. "
     pins_name: 'hathawayj/wrong_site_wrong_patient'
     available: all
 ---
@@ -65,8 +65,8 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Wrong.Site__ Count of wrong site operations
-- __Wrong.Patient__ Count of wrong patient operations
+- __Wrong.Site__ Costs incurred by hospital from wrong site errors (dollars)
+- __Wrong.Patient__ Costs incurred by hospital from wrong patient errors (dollars)
 
 
 
