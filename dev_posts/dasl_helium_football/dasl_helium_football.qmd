@@ -2,10 +2,10 @@
 title: "DASL Helium Football"
 author: "MATH 221"
 date: "2024-04-27"
-categories: [sports]
-description: ""
+categories: [sports, physics]
+description: "Researchers at Ohio State University wanted to determine whether a football filled with helium would fly further than an identical football filled with normal air.\nThe experimenters went to the athletic complex at the university with a novice punter and the two footballs on a windless day.  The kicker did not know which football contained helium.  The kicker kicked each football 39 times, alternating footballs each time.  None of the kicks were thrown out, so there may have been flubbed kicks. "
 params: 
-    source: ""
+    source: "Lafferty, M. B. (1993), “OSU scientists get a kick out of sports controversy.” The Columbus Dispatch, November 21, 1993, B7. "
     pins_name: 'hathawayj/dasl_helium_football'
     available: all
 ---
@@ -66,8 +66,8 @@ This data is available to __`r params$available`__.
 ### Variable description
 
 - __Trial__ An ID for each trial
-- __Helium__ Unknown
-- __Air__ Unknown 
+- __Helium__ Distance the helium football traveled (yards) 
+- __Air__ Distance the air football traveled (yards) 
 
 ### Variable summary
 
