@@ -3,9 +3,13 @@ title: "Cardiac Arrest Health"
 author: "MATH 221"
 date: "2024-05-02"
 categories: [health]
-description: "The New England Journal of Medicine performed a study of Minnesota patients who had cardiac arrest and early difibrillation between November 1990 and January 2001. They collected data on quality of life based on the 36-Item Short Form Survey (SF-36). The score ranges from 0-100, with 100 meaning greater health."
+description: "A group of researchers led by Jared Bunch studied the long-term effects suffered by patients who experienced a cardiac arrest outside a hospital. Using the Short-Form General Health Survey (SF-36), n = 50 patients assessed their general health at the time of their last follow-up visit. The SF-36 is normalized so the mean score in the general population is 50 and the standard deviation is 10."
 params: 
-    source: "New England Journal of Medicine"
+    source: "T. Jared Bunch, Roger D. White, Bernard J. Gersh, Ryan A. Meverden, David O. Hodge, Karla V. Ballman, Stephen C. Hammill, Win-Kuang Shen, and Douglas L. Packer. Long-term outcomes of out-of-hospital cardiac arrest after successful early defibrillation. New England Journal of Medicine, 348:2626-2633, 2003. 
+
+John E.Ware, Jr. and Cathy Donald Sherbourne. The MOS 36-item Short-Form Health Survey (SF-36): I. conceptual framework and item selection. Medical Care, 30(6):473-483, June 1992. 
+
+Crispin Jenkinson, Sarah Stewart-Brown, Sophie Petersen, and Colin Paice. Assessment of the SF-36 version 2 in the United Kingdom. The Journal of Epidemiology and Community Health, 53:46-50, 1999. "
     pins_name: 'hathawayj/cardiac_arrest_health'
     available: all
 ---
@@ -65,7 +69,7 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __x__ SF-36 score?
+- __x__ SF-36 score (0-100). Lower scores on the SF-36 indicate a poorer quality of health. 
 
 
 ### Variable summary
