@@ -2,10 +2,10 @@
 title: "REE Classical Music"
 author: "MATH 221"
 date: "2024-05-01"
-categories: [music]
-description: ""
+categories: [music, psychology, health]
+description: "Obesity is a growing problem worldwide.  Many scientists are seeking creative solutions to trim down this epidemic.  Reduced energy expenditure is a potential cause of obesity.  Resting energy expenditure (REE) is defined as the amount of energy a person would use if resting for 24 hours.  In essence, this is the amount of energy that a person's body will consume if they do not do any physical activity.  REE is measured in terms of kilojoules per day (kJ/d).  REE accounts for approximately 70 to 80% of all energy that a person will expend in a day.  If researchers can find simple, enjoyable activities that will increase REE, it may be possible to minimize the spread of obesity around the world.  Ebba Carlsson and other researchers in Sweden investigated the effect of listening to stressful classical music on a person's REE.\nThe REE was measured by indirect calorimetry using the Deltatrac II Metabolic Monitor.  Each subject's REE was measured during silence and again while listening to stressful classical music.\nThe “stressful” classical music included:\nBéla Bartók’s String Quartet No. 4 : Prestissimo, con sordino\nIgor Stravinsky’s “Infernal Dance of all Kashchei’s Subjects” from The Firebird\nHans Werner Henze’s “Dies Irae,” second movement from Requiem: Nine Sacred Concertos for Piano, Trumpet Concertante and Chamber Orchestra\nDataset consists of simulated data matching reported summary statistics. "
 params: 
-    source: ""
+    source: "Ebba Carlsson, Hannah Helgegren, and Frode Slinde. Resting energy expenditure is not influenced by classical music. Journal of Negative Results in BioMedicine, 4:6, 2005.  "
     pins_name: 'hathawayj/ree_classical_music'
     available: all
 ---
@@ -65,9 +65,9 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Silence__ Unknown
-- __Stressful__ Unknown
-- __Difference__ Unknown
+- __Silence__ Resting Energy Expenditure (REE) during silence (kilojoules per day)
+- __Stressful__ REE during stressful classical music in kilojoules per day
+- __Difference__ Difference between the two REEs
 
 
 ### Variable summary
