@@ -1,6 +1,6 @@
 pacman::p_load(tidyverse, pins, connectapi, owidR)
 
-# pwid() doesn't work for this dataset right now because the source site is down 5/8/2024
+# owid() doesn't work for this dataset right now because the source site is down 5/8/2024
 
 # owid() function downloads current data directly from Our World in Data.
 # Use owid_search() to search for other OWID datasets.
