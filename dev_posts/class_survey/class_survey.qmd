@@ -161,7 +161,7 @@ pandas_df = read_url_pin("`r object_name`")
 
 #### __Authenticated Connection:__
 
-Our connect server is [https://posit.byui.edu](https://posit.byui.edu/connect/#/content/listing?filter=min_role:viewer&filter=content_type:all&view_type=compact) which you assign to your `CONNECT_SERVER` environment variable. You must [create and API key](https://docs.posit.co/connect/user/api-keys/#api-keys-creating) and store it in your environment under `CONNECT_API_KEY`. 
+Our connect server is [https://posit.byui.edu](https://posit.byui.edu/connect/#/content/listing?filter=min_role:viewer&filter=content_type:all&view_type=compact) which you assign to your `CONNECT_SERVER` environment variable. You must [create an API key](https://docs.posit.co/connect/user/api-keys/#api-keys-creating) and store it in your environment under `CONNECT_API_KEY`. 
 
 _Read more about [environment variables and the pins package](../../environment.qmd) to understand how these environment variables are stored and accessed in R and Python with pins._
 
