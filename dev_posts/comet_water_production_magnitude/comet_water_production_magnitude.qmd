@@ -2,10 +2,11 @@
 title: "Comet Water Production and Magnitude"
 author: "MATH 221"
 date: "2024-04-26"
-categories: [astronomy, science]
-description: "The water production and magnitude of comets. Water production refers to the rate at which water vapor is released from the comet into space. Magnitude refers to the brightness of the comet. "
+categories: [astronomy, physics, science]
+description: "A comet is a small icy object which orbits the sun.  As a comet approaches the sun, water and other particles thaw and detach from the comet.  This forms a small temporary atmosphere called a coma, and in some cases, a tail.\nWaterProduction is a measure of the amount of water that the comet is releasing. It is measured in terms of Log[Q(H2O)].  Higher values indicate that more water is being released.\nThe \"Magnitude\" of a comet is a measure of how bright it is appears to be.  The magnitude depends on several factors, including the distance to the comet.  The magnitude reported here is the negative of the \"heliocentric\" magnitude, or the magnitude of the comet as viewed 
+from the location of the Sun.  Magnitude is measured as the negative logarithm of brightness. The AdjustedMagnitude is the negative of the magnitude, so brighter comets have higher positive values.\nImportant Note: Magnitude is measured on a negative logarithmic scale! This means that comets that are very bright have a low value for their magnitude. Faint comets have a high magnitude value.\nThe magnitude data have been adjusted by recording the negative of the magnitude.  "
 params: 
-    source: ""
+    source: "L. Jorda, J. Crovisier, and D. W. E. Green. The correlation between water production rates and visual magnitudes in comets. Asteroids, Comets, Meteors 1991, 285-288, Houston, Texas, 1992. Lunar and Planetary Institute. "
     pins_name: 'hathawayj/comet_water_production_magnitude'
     available: all
 ---
@@ -66,7 +67,7 @@ This data is available to __`r params$available`__.
 ### Variable description
 
 - __AdjustedMagnitude__ Brightness that a comet emits when placed one astronomical unit from Earth. Low magnitudes indicate brighter objects, and high magnitudes indicate more dim objects. The scale of magnitude is logarithmic. 
-- __WaterProduction__ The rate at which water vapor is released into space
+- __WaterProduction__ The rate at which water vapor is released into space in Log[Q(H2O)]. Higher values indicate that more water is being released. 
 
 ### Variable summary
 
