@@ -3,7 +3,7 @@ title: "AM/PM Heights"
 author: "MATH 221"
 date: "2024-03-13"
 categories: [health]
-description: "Student heights, measured in the morning and in the evening"
+description: "Researcher Peter Stothart noted that “We have known for well over a century that people are taller in the morning, shrink progressively through the day and recover their height overnight while sleeping.”  These data can be used to check the validity of that claim.\nThe heights of n = 41 children in a boarding school in India were measured.  Values were recorded in mm for each child in the morning and again in the evening. "
 params: 
     source: ""
     pins_name: 'hathawayj/ampm_heights'
