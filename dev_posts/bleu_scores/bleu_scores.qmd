@@ -2,8 +2,8 @@
 title: "BLEU Scores"
 author: "MATH 221"
 date: "2024-03-13"
-categories: [tech, language]
-description: "BLEU scores evaluate the quality of text translated by machine learning. Scores go from 0 to 1, and a score closer to 1 indicates a higher quality translation."
+categories: [technology, language, machinelearning]
+description: "Computer software is commonly used to translate text from one language to another.  As part of his Ph.D. thesis, Philipp Koehn developed a phrase-based translation program called Pharaoh.\nA good translation system should match a professional human translation.  It is important to be able to quantify how good the translations produced by Pharaoh are.\nThe IBM T. J. Watson Research Center developed methods to measure the quality of a translation.  One of these is the BiLingual Evaluation Understudy (BLEU).  BLEU scores indicate how well a computer translation matches a professional human translation of the same text.  BLEU helps companies who develop translation software “to monitor the effect of daily changes to their systems in order to weed out bad ideas from good ideas.”\nBLEU scores range from 0 to 1, with higher scores corresponding to better translations.\nTo test Pharaoh’s ability to translate, Koehn took 100 blocks of Spanish text, each of which contained 300 sentences, and used Pharaoh to translate each to English.  The BLEU score was calculated for each of the 100 blocks."
 params: 
     source: ""
     pins_name: 'hathawayj/bleu_scores'
