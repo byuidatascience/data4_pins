@@ -3,9 +3,9 @@ title: "Batting Averages"
 author: "MATH 221"
 date: "2024-03-16"
 categories: [sports]
-description: "The batting averages of various baseball players"
+description: "Athletes’ statistics such as the batting average of a baseball player are regularly publicized and are a topic of discussion among sports enthusiasts.  The batting average is computed by dividing the number of successful hits by the number of times the player has been at bat.  A “time at bat” is every time the player leaves the home base after receiving pitches, but some exceptions apply. \nThe batting averages of 446 baseball players were downloaded from Sean Lahman’s Baseball Archive at baseball1.com."
 params: 
-    source: ""
+    source: "Sean Lahman. Sean lahman's baseball archive. Website, accessed November 2010. http://www.baseball1.com/. "
     pins_name: 'hathawayj/batting_averages'
     available: all
 ---
@@ -69,8 +69,8 @@ This data is available to __`r params$available`__.
 - __Team__ The team they belong to
 - __League__ The league they belong to
 - __BattingAvg__ A metric that measures batter success. Determined by dividing the player's hits by their total at-bats.
-- __AtBats__ The turns a batter has had at batting
-- __Hits__ How many times the batter hit the ball
+- __AtBats__ Number of times the player has been at bat, or attempted to hit the ball
+- __Hits__ Number of successful hits the player has made
 
 
 
