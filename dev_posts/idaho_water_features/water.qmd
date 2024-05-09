@@ -1,7 +1,7 @@
 ---
 title: "Idaho Water Features"
 author: "DS 350"
-date: "2023-11-05"
+date: "2024-05-09"
 categories: [infrastructure, idaho, resources, geospatial]
 description: "Data on water features of Montana, Nevada, Oregon, Washington, and primarily Idaho. Includes geometry for geospatial visualizations. "
 params: 
