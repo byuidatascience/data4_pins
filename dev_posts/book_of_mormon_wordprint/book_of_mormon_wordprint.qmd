@@ -3,9 +3,9 @@ title: "Book of Mormon Wordprint"
 author: "MATH 221"
 date: "2024-04-25"
 categories: [religion]
-description: "The amount of times various Book of Mormon authors/speakers used certain words"
+description: "For several years, researchers have used statistics to try to determine the author of a disputed literary work.  These techniques have been applied to the Federalist Papers, disputed Shakespearean plays, and other works including the Book of Mormon. These methods are commonly called wordprinting or stylometry.  One technique used in wordprint analysis is to count the frequency with which an author uses non-contextual words.  These are words that do not convey meaning but connect the ideas into sentences.  It is postulated that an author who is trying to forge a work would not be able to control their subconscious use of these words.  So, if Joseph Smith wrote the Book of Mormon, we should expect to see his “wordprint” throughout the text, and the frequency of use of non-contextual words is one way to observe this. The most common non-contextual words used in The Book of Mormon are “and,” “of,” “that,” “the,” “to,” and “unto.” \nBlocks of text were taken from 2 Nephi 4 (Nephi, son of Lehi), Enos 1 (Enos, son of Jacob), 3 Nephi 15 (Jesus Christ), Moroni 9 (Mormon, son of Mormon), and Moroni 10 (Moroni, son of Mormon)"
 params: 
-    source: ""
+    source: "Wayne A. Larsen, Alvin C. Rencher, and Tim Layton. Who wrote the Book of Mormon? An analysis of wordprints. BYU Studies, 20(3):225-251, 1980.\nJohn L. Hilton. On verifying wordprint studies: Book of mormon. BYU Studies, 30(3):90-106, 1990. "
     pins_name: 'hathawayj/book_of_mormon_wordprint'
     available: all
 ---
