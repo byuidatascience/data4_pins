@@ -1,4 +1,4 @@
-pacman::p_load(tidyverse, pins, connectapi, owidR)
+pacman::p_load(tidyverse, pins, connectapi, owidR, googledrive)
 
 # owid() doesn't work for this dataset right now because the source site is down 5/8/2024
 
