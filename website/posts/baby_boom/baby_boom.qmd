@@ -5,7 +5,7 @@ date: "2024-03-13"
 categories: [population, health, anthropology]
 description: "The Mater Mothers’ Hospital is a busy hospital in Brisbane, Australia. The birth weights and times of all children born on December 18, 1997 in this hospital were recorded. "
 params: 
-    source: ""
+    source: "S Steele. Babies by the dozen for Christmas: 24-hour baby boom. The Sunday Mail (Brisbane), page 7, December 21, 1997.\nPeter K. Dunn. A simple dataset for demonstrating common distributions. Journal of Statistics Education, 7(3), 1999. "
     pins_name: 'hathawayj/baby_boom'
     available: all
 ---
