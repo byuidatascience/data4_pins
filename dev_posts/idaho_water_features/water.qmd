@@ -1,5 +1,5 @@
 ---
-title: "Idaho Water"
+title: "Idaho Water Features"
 author: "DS 350"
 date: "2023-11-05"
 categories: [infrastructure, idaho, resources, geospatial]
