@@ -2,10 +2,10 @@
 title: "Apollo Missions"
 author: "MATH 221"
 date: "2024-03-13"
-categories: [space]
-description: "A small dataset containing information about Apollo missions 11-17"
+categories: [astronomy, physics]
+description: "During the 1960s and early 1970s, the United States was in a race to explore the moon. Seven missions (Apollo 11 through Apollo 17) were launched in an attempt to reach the lunar surface.  Each of these successfully landed on the moon, with the exception of Apollo 13.  The lunar landing of Apollo 13 was aborted due to a failure of cryogenic oxygen tank 2.  Miraculously, all three astronauts returned safely to Earth.\nData was collected from records that were recorded for each mission."
 params: 
-    source: ""
+    source: "NASA. Apollo lunar surface journal. Website, accessed May 2010. http://www.hq.nasa.gov/alsj/frame.html.\nNASA. Apollo program summary report. Website, accessed May 2010. http://history.nasa.gov/apsr/apsr.htm.\nNASA. Apollo flight summary. Website, accessed May 2010. http://science.ksc.nasa.gov/history/apollo/flight-summary.txt. "
     pins_name: 'hathawayj/apollo'
     available: all
 ---
@@ -65,11 +65,11 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Mission__ Apollo mission
+- __Mission__ Apollo mission name
 - __LaunchDate__ Date of launch
 - __LunarLandingSite__ Location of landing
-- __DistanceTraveledOnMoon__ Distance travelled on moon (kilometers)
-- __MassOfSamples__ Total mass of samples collected, usually rocks and soil (kilograms)
+- __DistanceTraveledOnMoon__ Distance probe travelled on moon (kilometers)
+- __MassOfSamples__ Total mass of lunar rock samples collected (kilograms)
 - __MissionDuration__ Total duration of mission (days)
 
 
