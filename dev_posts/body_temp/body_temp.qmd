@@ -5,7 +5,13 @@ date: "2024-04-25"
 categories: [health]
 description: "The body temperatures of 149 men and women"
 params: 
-    source: ""
+    source: "Representative data from:
+Mackowiak, P. A., Wasserman, S. S., and Levine, M. M.
+\"A Critical Appraisal of 98.6 Degrees F,
+the Upper Limit of the Normal Body Temperature,
+and Other Legacies of Carl Reinhold August Wunderlich.\"
+Journal of the American Medical Association.
+268, 12 (23-30 September 1992): 1578-80.\n(Data were extracted from Figure 1 of the article. Relative frequencies were multiplied by n=148 to get representative counts at each body temperature.)"
     pins_name: 'hathawayj/body_temp'
     available: all
 ---
