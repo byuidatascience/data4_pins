@@ -2,8 +2,8 @@
 title: "Baby Boom"
 author: "MATH 221"
 date: "2024-03-13"
-categories: [population]
-description: "This dataset appears to record the weights of newborn babies."
+categories: [population, health, anthropology]
+description: "The Mater Mothers’ Hospital is a busy hospital in Brisbane, Australia. The birth weights and times of all children born on December 18, 1997 in this hospital were recorded. "
 params: 
     source: ""
     pins_name: 'hathawayj/baby_boom'
@@ -65,11 +65,11 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Gender__ Gender of baby. Based on weight, we assume that 1 refers to female and 2 refers to male. 
+- __Time__ Time of birth, 24-hour clock (2010 = 8:10 PM)
+- __Gender__ Gender of baby (1 - female, 2 = male)
 - __Weight__ Weight of baby (grams)
-- __Minutes__ (minutes)
-- __WaitTimes__ Wait time (minutes)
-
+- __Minutes__ Number of minutes past midnight the baby was born
+- __WaitTimes__ Number of minutes between the current and previous births 
 
 ### Variable summary
 
