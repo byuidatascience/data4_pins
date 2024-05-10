@@ -2,7 +2,8 @@ library(tidyverse)
 library(pins)
 library(connectapi)
 
-speed_of_light_by_michelson_1882 <- read_csv('https://github.com/byuistats/data/raw/master/SpeedOfLightByMichelson1882/SpeedOfLightByMichelson1882.csv')
+speed_of_light_by_michelson_1882 <- read_csv('https://github.com/byuistats/data/raw/master/SpeedOfLightByMichelson1882/SpeedOfLightByMichelson1882.csv') %>% 
+  rename(SpeedOfLight = x)
 
 
 # Publish the data to the server with Bro. Hathaway as the owner.
