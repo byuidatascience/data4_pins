@@ -3,7 +3,7 @@ title: "Speed of Light by Michelson 1882"
 author: "MATH 221"
 date: "2024-05-02"
 categories: [science, physics]
-description: "A single-column dataframe of Michelson's speed of light measurements"
+description: "A single-column dataframe of Michelson's speed of light measurements in 1882."
 params: 
     source: ""
     pins_name: 'hathawayj/speed_of_light_by_michelson_1882'
