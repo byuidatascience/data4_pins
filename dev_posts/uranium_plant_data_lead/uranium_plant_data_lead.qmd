@@ -3,11 +3,9 @@ title: "Uranium Plant Data: Lead"
 author: "MATH 221"
 date: "2024-05-02"
 categories: [health, environmentalhealth]
-description: "These data represent the concentration of lead in the soil near a uranium enrichment facility.\nThe United States Government decided to open some land near a uranium enrichment facility to public use.  				
-After a few years of the public hiking, biking, and sometimes even hunting on this land, workers from the facility noticed that there are several unnatural-looking mounds in the earth near the area. 				
-Because this land was once used by the facility and nobody knows the origin of these piles, the government closed public access to the land until they could assess if the mounds were safe.\nMeasurements of many different potential contaminants were taken from the mounds.\nOne of the contaminants they assessed was lead.\nThe tests involved are very expensive.  Each sample costs about $600 to process.\nThe Environmental Protection Agency (EPA) has set a “No Action Level” (NAL) for lead and the other contaminants.\nIf the mean concentration in the soil of each of the critical contaminants is less than the NAL,\nthen the area can be declared safe for public use.  The NAL for lead is of 50 mg/kg."
+description: "These data represent the concentration of lead in the soil near a uranium enrichment facility.\nThe United States Government decided to open some land near a uranium enrichment facility to public use.\nAfter a few years of the public hiking, biking, and sometimes even hunting on this land, workers from the facility noticed that there are several unnatural-looking mounds in the earth near the area.\nBecause this land was once used by the facility and nobody knows the origin of these piles, the government closed public access to the land until they could assess if the mounds were safe.\nMeasurements of many different potential contaminants were taken from the mounds.\nOne of the contaminants they assessed was lead.\nThe tests involved are very expensive.  Each sample costs about $600 to process.\nThe Environmental Protection Agency (EPA) has set a “No Action Level” (NAL) for lead and the other contaminants.\nIf the mean concentration in the soil of each of the critical contaminants is less than the NAL,\nthen the area can be declared safe for public use.  The NAL for lead is of 50 mg/kg."
 params: 
-    source: ""
+    source: "Data is from a national lab, source prefers to remain anonymous"
     pins_name: 'hathawayj/uranium_plant_data_lead'
     available: all
 ---
@@ -67,7 +65,7 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Lead..mg.kg.__ Lead contamination in soil (mg/kg)
+- __Lead..mg.kg.:__ Lead contamination in soil (mg/kg)
 
 
 ### Variable summary
