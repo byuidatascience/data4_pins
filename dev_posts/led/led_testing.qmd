@@ -67,7 +67,6 @@ This data is available to __`r params$available`__.
 
 - __id:__ An id for each LED light measured
 - __hours:__ The number of hours since the first measurement
-- __normalized_intensity:__ The normalized light output based on the first measured intensity of the bulb
 - __percent_intensity:__ The normalized_intensity multiplied by 100
 - __company:__ Either A or B to represent different company products
 
