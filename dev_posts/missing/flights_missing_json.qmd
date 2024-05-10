@@ -68,15 +68,15 @@ This data is available to __`r params$available`__.
 
 - __airport_code:__ Airport Code
 - __airport_name:__ Airport Name
-- __month:__ Month 
+- __month:__ Month name
 - __year:__ Year 
-- __num_of_flights_total:__ Num Of Flights Total 
-- __num_of_delays_carrier:__ Num Of Delays Carrier
-- __num_of_delays_late_aircraft:__ Num Of Delays Late Aircraft 
-- __num_of_delays_nas:__ Num Of Delays Nas
-- __num_of_delays_security:__ Num Of Delays Security 
-- __num_of_delays_weather:__ Num Of Delays Weather 
-- __num_of_delays_total:__ Num Of Delays Total
+- __carrier_delays:__ Num Of Delays Carrier
+- __late_aircraft_delays:__ Num Of Delays Late Aircraft 
+- __nas_delays:__ Num Of Delays Nas
+- __security_delays:__ Num Of Delays Security 
+- __weather_delays:__ Num Of Delays Weather 
+- __flights_delayed:__ Num Of Delays Total
+- __flights_total:__ Num Of Flights Total 
 - __minutes_delayed_carrier:__ Minutes Delayed Carrier
 - __minutes_delayed_late_aircraft:__ Minutes Delayed Late Aircraft 
 - __minutes_delayed_nas:__ Minutes Delayed Nas
