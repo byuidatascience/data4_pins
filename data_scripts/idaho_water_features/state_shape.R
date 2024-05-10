@@ -1,4 +1,4 @@
-pacman::p_load(tidyverse, pins, connectapi, sf, fs)
+pacman::p_load(tidyverse, pins, connectapi, sf, fs, googledrive)
 
 # Download the file from google drive
 sdrive <- shared_drive_find("byuids_data") # This will ask for authentication.
