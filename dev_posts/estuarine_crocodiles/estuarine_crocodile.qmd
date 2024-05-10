@@ -5,7 +5,9 @@ date: "2024-04-29"
 categories: [animals, ecology]
 description: "Head and Body length of estuarine crocodiles"
 params: 
-    source: ""
+    source: "Paul C. Sereno, Hans C. E. Larsson, Christian A. Sidor, and Boub´e Gado.
+The giant crocodyliform Sarcosuchus from the cretaceous of Africa.
+Science, 294:1516–1519, 2001."
     pins_name: 'hathawayj/estuarine_crocodiles'
     available: all
 ---
@@ -65,10 +67,10 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Species__ Crocodile species
-- __CommonName__ Crocodile common name
-- __HeadLength__ Length of crocodile head (cm)
-- __BodyLength__ Length of crocodile body (cm)
+- __Species:__ Crocodile species
+- __CommonName:__ Crocodile common name
+- __HeadLength:__ Length of crocodile head (cm)
+- __BodyLength:__ Length of crocodile body (cm)
 
 ### Variable summary
 
