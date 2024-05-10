@@ -2,7 +2,7 @@
 title: "Idaho Shape"
 author: "DS 350"
 date: "2024-05-09"
-categories: [idaho, geospatial]
+categories: [DS350, idaho, geospatial, geography]
 description: ""
 params: 
     source: ""
@@ -65,22 +65,22 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __OBJECTID__ A unique ID for each object
-- __FIPS__ .
-- __FIPSNum__ .
-- __StateFIPS__ .
-- __CountyFIPS__ .
-- __StateFIPSN__ .
-- __CntyFIPSN__ .
-- __StateName__ State name
-- __CntyName__ .
-- __SEERArea__ .
-- __CensusReg__ .
-- __CensusDiv__ .
-- __XCentroid__ .
-- __YCentroid__ .
-- __Notes__ .
-- __geometry__ Geometry column for geospatial visualizations
+- __OBJECTID:__ A unique ID for each object
+- __FIPS:__ Federal Information Processing System (FIPS) number that identifies a county (character)
+- __FIPSNum:__ FIPS number that identifies a county (integer)
+- __StateFIPS:__ FIPS number that identifies a state (character)
+- __CountyFIPS:__ Last 3 digits of county_level FIPS number (character)
+- __StateFIPSN:__ FIPS number that identifies a state (integer)
+- __CntyFIPSN:__ Last 3 digits of county_level FIPS number (integer)
+- __StateName:__ State name
+- __CntyName:__ County name
+- __SEERArea:__ Surveillance, Epidemiology, and End Results (SEER) program (states with a cancer registry) area if applicable
+- __CensusReg:__ Census registration
+- __CensusDiv:__ Census division
+- __XCentroid:__ Geometric center of area horizontally
+- __YCentroid:__ Geometric center of area vertically
+- __Notes:__ 4 Rows contain this text: "The county boundaries for Adams, Boulder, Jefferson and Weld changed in 2002 when Broomfield was incorporated into a county (officially November 15, 2001) from portions of Adams, Boulder, Jefferson and Weld. "
+- __geometry:__ Geometry column for geospatial visualizations
 
 
 ### Variable summary
