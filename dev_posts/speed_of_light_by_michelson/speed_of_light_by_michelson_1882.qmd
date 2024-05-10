@@ -2,10 +2,10 @@
 title: "Speed of Light by Michelson 1882"
 author: "MATH 221"
 date: "2024-05-02"
-categories: [science, physics]
-description: "A single-column dataframe of Michelson's speed of light measurements in 1882."
+categories: [MATH221, science, physics]
+description: "A single-column dataframe of Michelson's speed of light measurements in 1882. Compare this dataset to the one he recorded in 1879."
 params: 
-    source: ""
+    source: "S. M. Stigler. Do robust estimators work with real data? The Annals of Statistics, 5(6):1055-1098, November 1977.\nCornell University DASL Project. The data and story library: Difference tests. Website. http://lib.stat.cmu.edu/DASL/Datafiles/differencetestdat.html "
     pins_name: 'hathawayj/speed_of_light_by_michelson_1882'
     available: all
 ---
@@ -65,7 +65,7 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __x__ Speed of light (m/s)
+- __x:__ Speed of light (m/s)
 
 
 ### Variable summary
