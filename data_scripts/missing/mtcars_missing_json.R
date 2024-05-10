@@ -1,3 +1,4 @@
+pacman::p_load(pins, tidyverse, googledrive, connectapi, jsonlite)
 
 # Data is from google drive.
 sdrive <- shared_drive_find("byuids_data") # This will ask for authentication.
