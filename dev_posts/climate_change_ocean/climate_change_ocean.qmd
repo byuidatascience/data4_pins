@@ -65,13 +65,13 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Entity__ Country name
-- __Code__ 3-letter code for each country
-- __Year__ Year
-- __700m_ocean_heat_content_iap__ .
-- __700m_ocean_heat_content_noaa__ .
-- __700m_ocean_heat_content_csiro__ .
-- __700m_ocean_heat_content_mrijma__ .
+- __Entity:__ Country name
+- __Code:__ 3-letter code for each country
+- __Year:__ Year
+- __700m_ocean_heat_content_iap:__ .
+- __700m_ocean_heat_content_noaa:__ .
+- __700m_ocean_heat_content_csiro:__ .
+- __700m_ocean_heat_content_mrijma:__ .
 
 ### Variable summary
 
