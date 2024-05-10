@@ -2,7 +2,7 @@
 title: "AM/PM Heights"
 author: "MATH 221"
 date: "2024-03-13"
-categories: [health]
+categories: [MATH221, health]
 description: "Researcher Peter Stothart noted that “We have known for well over a century that people are taller in the morning, shrink progressively through the day and recover their height overnight while sleeping.”  These data can be used to check the validity of that claim.\nThe heights of n = 41 children in a boarding school in India were measured.  Values were recorded in mm for each child in the morning and again in the evening. "
 params: 
     source: ""
@@ -65,9 +65,9 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Student__ A unique key that identifies each student
-- __AM_Height__ The student height in the morning (millimeters)
-- __PM_Height__ The student height in the evening (millimeters)
+- __Student:__ A unique key that identifies each student
+- __AM_Height:__ The student height in the morning (millimeters)
+- __PM_Height:__ The student height in the evening (millimeters)
 
 
 ### Variable summary

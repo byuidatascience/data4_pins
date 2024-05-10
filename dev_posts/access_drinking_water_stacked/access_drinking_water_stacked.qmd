@@ -2,7 +2,7 @@
 title: "Access to Drinking Water"
 author: "DS 350"
 date: "2024-05-08"
-categories: [world, resources]
+categories: [DS350, world, resources]
 description: "Data on drinking water access around the world"
 params: 
     source: "https://ourworldindata.org/grapher/access-drinking-water-stacked?country=OWID_WRL~Low+income~Upper-middle+income~High+income~Lower-middle+income~Sub-Saharan+Africa~Central+and+Southern+Asia~North+America+and+Europe~Latin+America+and+the+Caribbean~Western+Asia+and+Northern+Africa"
@@ -65,14 +65,14 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __entity__ Country name
-- __code__ 3-letter code for each country
-- __year__ Year
-- __Share of the population using safely managed drinking water services__ (Percent)
-- __Share of the population using only basic drinking water services__ (Percent)
-- __Share of the population using limited drinking water services__ (Percent)
-- __Share of the population using unimproved drinking water services__ (Percent)
-- __Share of the population using surface water as a primary source of drinking water__ (Percent)
+- __entity:__ Country name
+- __code:__ 3-letter code for each country
+- __year:__ Year
+- __Share of the population using safely managed drinking water services:__ (Percent)
+- __Share of the population using only basic drinking water services:__ (Percent)
+- __Share of the population using limited drinking water services:__ (Percent)
+- __Share of the population using unimproved drinking water services:__ (Percent)
+- __Share of the population using surface water as a primary source of drinking water:__ (Percent)
 
 
 ### Variable summary
