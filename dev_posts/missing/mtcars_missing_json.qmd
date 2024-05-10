@@ -65,6 +65,7 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
+- __car:__ Car name
 - __mpg:__ Miles/(US) gallon
 - __cyl:__ Number of cylinders
 - __disp:__ Displacement (cu.in.)
