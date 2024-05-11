@@ -2,7 +2,7 @@
 title: "Crossroads Purchases"
 author: "MATH 221"
 date: "2024-04-26"
-categories: [finance]
+categories: [MATH221, finance]
 description: "Purchase amounts and payment methods at the Crossroads"
 params: 
     source: ""
@@ -65,8 +65,8 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Method__ Payment method (Cash, Credit, or I-Card)
-- __Amount__ Amount of purchase (dollars)
+- __Method:__ Payment method (Cash, Credit, or I-Card)
+- __Amount:__ Amount of purchase (dollars)
 
 ### Variable summary
 

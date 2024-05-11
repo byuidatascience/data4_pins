@@ -2,7 +2,7 @@
 title: "COPD Rehab"
 author: "MATH 221"
 date: "2024-05-02"
-categories: [health]
+categories: [MATH221, health]
 description: "The National Heart Lung and Blood Institute gives the following explanation of COPD:  
 
 COPD, or chronic obstructive pulmonary (PULL-mun-ary) disease, is a progressive disease that makes it hard to breathe.  “Progressive” means the disease gets worse over time.  COPD can cause coughing that produces large amounts of mucus (a slimy substance), wheezing, shortness of breath, chest tightness, and other symptoms.  Cigarette smoking is the leading cause of COPD.  Most people who have COPD smoke or used to smoke.  Long-term exposure to other lung irritants, such as air pollution, chemical fumes, or dust, also may contribute to COPD. 
@@ -75,8 +75,8 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Community__ Difference in ESWT score over course of study for participants in community-based rehab. 
-- __Hospital__ Difference in ESWT score over course of study for participants in hospital-based rehab.
+- __Community:__ Difference in ESWT score over course of study for participants in community-based rehab. 
+- __Hospital:__ Difference in ESWT score over course of study for participants in hospital-based rehab.
 Note: Higher scores indicate improvement, and negative scores indicate deterioration.
 
 
