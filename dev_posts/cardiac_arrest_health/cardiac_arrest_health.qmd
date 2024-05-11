@@ -2,7 +2,7 @@
 title: "Cardiac Arrest Health"
 author: "MATH 221"
 date: "2024-05-02"
-categories: [health]
+categories: [MATH221, health]
 description: "A group of researchers led by Jared Bunch studied the long-term effects suffered by patients who experienced a cardiac arrest outside a hospital. Using the Short-Form General Health Survey (SF-36), n = 50 patients assessed their general health at the time of their last follow-up visit. The SF-36 is normalized so the mean score in the general population is 50 and the standard deviation is 10."
 params: 
     source: "T. Jared Bunch, Roger D. White, Bernard J. Gersh, Ryan A. Meverden, David O. Hodge, Karla V. Ballman, Stephen C. Hammill, Win-Kuang Shen, and Douglas L. Packer. Long-term outcomes of out-of-hospital cardiac arrest after successful early defibrillation. New England Journal of Medicine, 348:2626-2633, 2003. 
@@ -69,7 +69,7 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Health__ SF-36 score (0-100). Lower scores on the SF-36 indicate a poorer quality of health. 
+- __Health:__ SF-36 score (0-100). Lower scores on the SF-36 indicate a poorer quality of health. 
 
 
 ### Variable summary
