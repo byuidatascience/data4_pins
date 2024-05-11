@@ -2,7 +2,7 @@
 title: "Idaho Dams"
 author: "DS 350"
 date: "2024-05-09"
-categories: [infrastructure, idaho, resources, geospatial]
+categories: [DS350, infrastructure, idaho, resources, geospatial]
 description: "Data on dams in Idaho. Includes geometry for geospatial visualizations. "
 params: 
     source: ""
@@ -65,30 +65,30 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __FID__ A unique ID that identifies each row
-- __DamID__ A unique ID for each dam
-- __NIDID__ An ID
-- __StateID__ Unknown (may be related to water rights?)
-- __DamName__ Name of dam
-- __Status__ Dam status (BREACHED, NON REGULATED, PENDING, RECLAIMED, REGULATED)
-- __YearComple__ Year dam was completed (up to 2014)
-- __YearModifi__ Year Modified
-- __DamHeight__ Dam height (ft)
-- __HydraulicH__ Unknown (decimal)
-- __NormalStor__ Unknown (decimal)
-- __SurfaceAre__ Dam surface area (acres)
-- __DrainageAr__ Unknown (decimal)
-- __DownStream__ Unknown (HIGH, LOW, NOT RATED, SIGNIFICANT)
-- __Source__ Source of water feature
-- __SourceQual__ Unknown (LITTLE NORTH FORK SOUTH FORK, NORTH FORK, SOUTH FORK, MIDDLE FORK, NORTHEAST FORK, WEST FORK)
-- __TributaryO__ Tributary name
-- __Tributar_1__ Unknown (EAST FORK, EAST FORK SOUTH FORK, MIDDLE FORK, NORTH FORK, SECOND FORK, SOUTH FORK, WEST FORK)
-- __DataSource__ Source of data (Digitized, GPS - Downloaded, GPS - Manually Entered)
-- __MetalTagNu__ Unkown key, mostly null
-- __TRS__ Unknown
-- __County__ County name
-- __SpatialDat__ Unknown (mostly unique values for each row)
-- __geometry__ Geometry column for geospatial visualizations
+- __FID:__ A unique ID that identifies each row
+- __DamID:__ A unique ID for each dam
+- __NIDID:__ An ID
+- __StateID:__ Unknown (may be related to water rights?)
+- __DamName:__ Name of dam
+- __Status:__ Dam status (BREACHED, NON REGULATED, PENDING, RECLAIMED, REGULATED)
+- __YearComple:__ Year dam was completed (up to 2014)
+- __YearModifi:__ Year Modified
+- __DamHeight:__ Dam height (ft)
+- __HydraulicH:__ Unknown (decimal)
+- __NormalStor:__ Unknown (decimal)
+- __SurfaceAre:__ Dam surface area (acres)
+- __DrainageAr:__ Unknown (decimal)
+- __DownStream:__ Unknown (HIGH, LOW, NOT RATED, SIGNIFICANT)
+- __Source:__ Source of water feature
+- __SourceQual:__ Unknown (LITTLE NORTH FORK SOUTH FORK, NORTH FORK, SOUTH FORK, MIDDLE FORK, NORTHEAST FORK, WEST FORK)
+- __TributaryO:__ Tributary name
+- __Tributar_1:__ Unknown (EAST FORK, EAST FORK SOUTH FORK, MIDDLE FORK, NORTH FORK, SECOND FORK, SOUTH FORK, WEST FORK)
+- __DataSource:__ Source of data (Digitized, GPS - Downloaded, GPS - Manually Entered)
+- __MetalTagNu:__ Unkown key, mostly null
+- __TRS:__ Unknown
+- __County:__ County name
+- __SpatialDat:__ Unknown (mostly unique values for each row)
+- __geometry:__ Geometry column for geospatial visualizations
 
 
 ### Variable summary

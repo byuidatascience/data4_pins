@@ -2,7 +2,7 @@
 title: "Worldwide Heights Estimates"
 author: "DS 350"
 date: "2024-05-06"
-categories: [population]
+categories: [DS350, population]
 description: "Mean resident height of various countries over time"
 params: 
     source: ""
@@ -66,10 +66,10 @@ This data is available to __`r params$available`__.
 ### Variable description
 
 Note: these column names are mostly invalid because the data hasn't been cleaned.
-- __Height__ Contains the column "Code," which acts as a unique identifyer for every country
-- __...2__ Contains the column "Continent, Region, Country," which designates the name of the continent, region, or country
-- __(Remaining Columns)__ Mean height for residents of each country (cm)
-- __(First Row)__ Year
+- __Height:__ Contains the column "Code," which acts as a unique identifyer for every country
+- __...2:__ Contains the column "Continent, Region, Country," which designates the name of the continent, region, or country
+- __(Remaining Columns):__ Mean height for residents of each country (cm)
+- __(First Row):__ Year
 
 ### Variable summary
 

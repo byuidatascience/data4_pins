@@ -2,7 +2,7 @@
 title: "Idaho Wells"
 author: "DS 350"
 date: "2024-05-09"
-categories: [infrastructure, idaho, resources, geospatial]
+categories: [DS350, infrastructure, idaho, resources, geospatial]
 description: "Data on Idaho wells, including geometry for geospatial visualizations. "
 params: 
     source: ""
@@ -65,40 +65,40 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __OBJECTID__ A unique ID for each object
-- __WellID__ A unique ID for each well
-- __PermitID__ A unique ID for each permit
-- __MetalTagNu__ Some kind of unique id
-- __CurrentSta__ Empty column
-- __Constructi__ (YYYY-MM-DD)
-- __Owner__ Owner name (FIRSTNAME LASTNAME)
-- __AppType__ Empty column
-- __WellUse__ Thing for which well is being used
-- __BasinNumbe__ Unknown (integer)
-- __CountyName__ County name
-- __Township__ Unknown
-- __Range__ Unknown
-- __Section__ Unknown (integer)
-- __QQQ__ Unknown (NE, NW, SE, SW)
-- __QQ__ Unknown (NE, NW, SE, SW)
-- __Quarter__ Unknown (NE, NW, SE, SW)
-- __GovLotNum__ Empty column
-- __WellAddres__ Address of well (directions from landmarks)
-- __Lot__ Unknown
-- __Block__ Unknown
-- __subdivisio__ Subdivision name
-- __Production__ Well production (gallons)
-- __StaticWate__ Static water level: amount of water (distance from measuring point to water level in the well) under normal conditions, while at rest
-- __CasingDiam__ Well casing diameter
-- __CasingDept__ Well casing depth
-- __TotalDepth__ Total well depth
-- __DataSource__ Source of data
-- __DiversionN__ Empty column
-- __WellDocs__ Link to Idaho Department of Water Resources (IDWR) documents, including well driller reports
-- __Latitude__ Empty column
-- __Longitude__ Empty column
-- __SpatialDat__ Unknown
-- __geometry__ Geometry column for geospatial visualizations
+- __OBJECTID:__ A unique ID for each object
+- __WellID:__ A unique ID for each well
+- __PermitID:__ A unique ID for each permit
+- __MetalTagNu:__ Some kind of unique id
+- __CurrentSta:__ Empty column
+- __Constructi:__ (YYYY-MM-DD)
+- __Owner:__ Owner name (FIRSTNAME LASTNAME)
+- __AppType:__ Empty column
+- __WellUse:__ Thing for which well is being used
+- __BasinNumbe:__ Unknown (integer)
+- __CountyName:__ County name
+- __Township:__ Unknown
+- __Range:__ Unknown
+- __Section:__ Unknown (integer)
+- __QQQ:__ Unknown (NE, NW, SE, SW)
+- __QQ:__ Unknown (NE, NW, SE, SW)
+- __Quarter:__ Unknown (NE, NW, SE, SW)
+- __GovLotNum:__ Empty column
+- __WellAddres:__ Address of well (directions from landmarks)
+- __Lot:__ Unknown
+- __Block:__ Unknown
+- __subdivisio:__ Subdivision name
+- __Production:__ Well production (gallons)
+- __StaticWate:__ Static water level: amount of water (distance from measuring point to water level in the well) under normal conditions, while at rest
+- __CasingDiam:__ Well casing diameter
+- __CasingDept:__ Well casing depth
+- __TotalDepth:__ Total well depth
+- __DataSource:__ Source of data
+- __DiversionN:__ Empty column
+- __WellDocs:__ Link to Idaho Department of Water Resources (IDWR) documents, including well driller reports
+- __Latitude:__ Empty column
+- __Longitude:__ Empty column
+- __SpatialDat:__ Unknown
+- __geometry:__ Geometry column for geospatial visualizations
 
 
 ### Variable summary

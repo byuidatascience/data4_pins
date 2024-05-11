@@ -2,7 +2,7 @@
 title: "Primary Enrollment: Selected Countries"
 author: "DS 350"
 date: "2024-05-08"
-categories: [world, education]
+categories: [DS350, world, education]
 description: "Share of children of who are enrolled in primary education amongst the total population of children of official primary school age.\nNet enrollment rate for primary school is calculated by dividing the number of students of official school age enrolled in primary education by the population of the age group which officially corresponds to primary education, and multiplying by 100."
 params: 
     source: "https://ourworldindata.org/grapher/primary-enrollment-selected-countries?facet=entity&country=HUN~GBR~CHN~IND~NER~ARG~JPN~AUT~BRB~BEN~BRA~KHM~CHL~CUB~DNK~LBR~LBY~MYS~MLI~MOZ~NPL~NLD~PAN~PER~POL~ECU~SLV~SWZ~FIN~GMB~DEU~GRC~GTM~GUY~HTI~ROU~SEN~SRB~SLE~LKA~SDN~CHE~SYR~TGO~TTO~VEN~YEM~ZWE~ZMB"
@@ -65,10 +65,10 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Entity__ Country name
-- __Code__ 3-letter code for each country
-- __Year__ Year
-- __Primary adjusted enrolment ratio (Lee-Lee (2016))__ Number of school-age children enrolled in primary education / population of school-age children * 100
+- __Entity:__ Country name
+- __Code:__ 3-letter code for each country
+- __Year:__ Year
+- __Primary adjusted enrolment ratio (Lee-Lee (2016)):__ Number of school-age children enrolled in primary education / population of school-age children * 100
 
 ### Variable summary
 

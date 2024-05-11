@@ -2,7 +2,7 @@
 title: "Lead Concentration of U.S. Children Blood"
 author: "DS 350"
 date: "2024-05-08"
-categories: [world, environmentalhealth, health]
+categories: [DS350, world, environmentalhealth, health]
 description: "Concentration of lead in the blood of U.S. children"
 params: 
     source: "https://ourworldindata.org/grapher/lead-blood-usa-children?country=95th+percentile~Median"
@@ -65,10 +65,10 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __entity__ Whether the metric is a 95th percentile or a median (95th percentile, Median)
-- __code__ Normally the 3-letter code for each country in OWID datasets, but empty in this dataset because it's irrelevant
-- __year__ Year
-- __Lead blood concentrations in children__ (micrograms per deciliter)
+- __entity:__ Whether the metric is a 95th percentile or a median (95th percentile, Median)
+- __code:__ Normally the 3-letter code for each country in OWID datasets, but empty in this dataset because it's irrelevant
+- __year:__ Year
+- __Lead blood concentrations in children:__ (micrograms per deciliter)
 
 
 

@@ -2,7 +2,7 @@
 title: "Sales"
 author: "DS 350"
 date: "2024-05-08"
-categories: [businesses]
+categories: [DS350, businesses]
 description: "Sales of various businesses over time"
 params: 
     source: ""
@@ -65,10 +65,10 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Name__ Business name
-- __Type__ Business type
-- __Time__ (YYYY-MM-DD HR:MIN:SEC)
-- __Amount__ Sales (dollars)
+- __Name:__ Business name
+- __Type:__ Business type
+- __Time:__ (YYYY-MM-DD HR:MIN:SEC)
+- __Amount:__ Sales (dollars)
 
 ### Variable summary
 

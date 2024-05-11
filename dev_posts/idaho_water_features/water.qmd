@@ -2,7 +2,7 @@
 title: "Idaho Water Features"
 author: "DS 350"
 date: "2024-05-09"
-categories: [infrastructure, idaho, resources, geospatial]
+categories: [DS350, infrastructure, idaho, resources, geospatial]
 description: "Data on water features of Montana, Nevada, Oregon, Washington, and primarily Idaho. Includes geometry for geospatial visualizations. "
 params: 
     source: ""
@@ -65,33 +65,33 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __FNODE___ Unknown (integer)
-- __TNODE___ Unknown (integer)
-- __LPOLY___ Unknown (integer)
-- __RPOLY___ Unknown (integer)
-- __LENGTH_MET__ Unknown (decimal)
-- __HYD250___ Unknown (integer)
-- __HYD250_ID__ Unknown (integer)
-- __MAJOR1__ Unknown (0, 50)
-- __MINOR1__ Unknown (integer)
-- __MINOR2__ Unknown (integer)
-- __MINOR3__ Unknown (integer)
-- __HUC__ Unknown (integer)
-- __SEG__ Unknown (integer)
-- __RMI__ Unknown (decimal)
-- __FEAT_NAME__ Name of water feature
-- __FEAT_SRC__ unknown (A1, A9)
-- __STATE__ State (IDAH = Idaho, MONT = Montana, NEVA = Nevada, OREG = Oregon, WASH = Washington)
-- __STATE_2__ Same as STATE, but with UTAH and WYOM (Wyoming) included
-- __COUNTY__ County (COUNTYNAME)
-- __COUNTY_2__ County, except with a lot more null values (COUNTYNAME)
-- __QUAD100__ Unknown regional information
-- __QUAD100_2__ Unknown regional information
-- __QUAD75__ Unknown regional information
-- __QUAD75_2__ Unknown regional information
-- __TYPE__ Type of water feature (Canal or Ditch, Intermittent, Lake or Pond, Other Hydro, Stream)
-- __SOURCETHM__ Unknown (Export_output.sh, Hyd250.shp)
-- __geometry__ Geometry column for geospatial visualizations
+- __FNODE_:__ Unknown (integer)
+- __TNODE_:__ Unknown (integer)
+- __LPOLY_:__ Unknown (integer)
+- __RPOLY_:__ Unknown (integer)
+- __LENGTH_MET:__ Unknown (decimal)
+- __HYD250_:__ Unknown (integer)
+- __HYD250_ID:__ Unknown (integer)
+- __MAJOR1:__ Unknown (0, 50)
+- __MINOR1:__ Unknown (integer)
+- __MINOR2:__ Unknown (integer)
+- __MINOR3:__ Unknown (integer)
+- __HUC:__ Unknown (integer)
+- __SEG:__ Unknown (integer)
+- __RMI:__ Unknown (decimal)
+- __FEAT_NAME:__ Name of water feature
+- __FEAT_SRC:__ unknown (A1, A9)
+- __STATE:__ State (IDAH = Idaho, MONT = Montana, NEVA = Nevada, OREG = Oregon, WASH = Washington)
+- __STATE_2:__ Same as STATE, but with UTAH and WYOM (Wyoming) included
+- __COUNTY:__ County (COUNTYNAME)
+- __COUNTY_2:__ County, except with a lot more null values (COUNTYNAME)
+- __QUAD100:__ Unknown regional information
+- __QUAD100_2:__ Unknown regional information
+- __QUAD75:__ Unknown regional information
+- __QUAD75_2:__ Unknown regional information
+- __TYPE:__ Type of water feature (Canal or Ditch, Intermittent, Lake or Pond, Other Hydro, Stream)
+- __SOURCETHM:__ Unknown (Export_output.sh, Hyd250.shp)
+- __geometry:__ Geometry column for geospatial visualizations
 
 
 ### Variable summary

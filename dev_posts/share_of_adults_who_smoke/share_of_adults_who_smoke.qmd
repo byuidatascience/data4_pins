@@ -2,7 +2,7 @@
 title: "Share of Adults Who Smoke"
 author: "DS 350"
 date: "2024-05-08"
-categories: [health, world, substanceabuse]
+categories: [DS350, health, world, substanceabuse]
 description: "Share of people aged 15 and older who smoke any tobacco product on a daily or non-daily basis. It excludes smokeless tobacco use. Smoking is a risk factor for chronic complications, including cancers, cardiovascular disease, and premature death."
 params: 
     source: "https://ourworldindata.org/grapher/share-of-adults-who-smoke?tab=chart&country=High+income~Lower+middle+income~Middle+income~Sub-Saharan+Africa+%28excluding+high+income%29~Upper+middle+income~OWID_WRL"
@@ -65,10 +65,10 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __entity__ Country name
-- __code__ 3-letter code for each country
-- __year__ Year
-- __Adults who smoke__ Prevalence of current tobacco use (% of adults)
+- __entity:__ Country name
+- __code:__ 3-letter code for each country
+- __year:__ Year
+- __Adults who smoke:__ Prevalence of current tobacco use (% of adults)
 
 ### Variable summary
 
