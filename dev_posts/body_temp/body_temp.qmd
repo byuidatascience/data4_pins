@@ -2,8 +2,8 @@
 title: "Body Temperature"
 author: "MATH 221"
 date: "2024-04-25"
-categories: [health]
-description: "The body temperatures of 149 men and women"
+categories: [MATH221, health]
+description: "Data on body temperature extracted from a figure"
 params: 
     source: "Representative data from:
 Mackowiak, P. A., Wasserman, S. S., and Levine, M. M.
@@ -71,8 +71,8 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Gender__ Gender of subject.  
-- __BodyTemp__ Body temperature (Fahrenheit)
+- __Gender:__ Gender of subject.  
+- __BodyTemp:__ Body temperature (Fahrenheit)
 
 
 ### Variable summary
