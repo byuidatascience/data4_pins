@@ -2,7 +2,7 @@
 title: "Chipotle"
 author: "DS 350"
 date: "2024-05-06"
-categories: [business]
+categories: [DS350, business]
 description: "Data on various Chipotle locations. See https://docs.safegraph.com/docs/monthly-patterns#section-raw-visit-counts for a more detailed data dictionary."
 params: 
     source: "Safegraph \"patterns\" dataset"
@@ -65,28 +65,28 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __placekey__ 	Unique and persistent ID tied to this POI. 
-- __latitude__ Latitude of the place of interest.
-- __longitude__ Longitude of the place of interest.
-- __street_address__ Street address of the place of interest
-- __city__ The city of the point of interest
-- __region__ The state, province or county of the place of interest. 
-- __postal_code__ The postal code of the place of interest.
-- __phone_number__ Phone Number of place of interest
-- __open_hours__ Open hours of place of interest
-- __date_range_start__ Start time for measurement period in ISO 8601 format of YYYY-MM-DDTHH:mm:SS±hh:mm (local time with offset from GMT).
-- __date_range_end__ End time for measurement period in ISO 8601 format of YYYY-MM-DDTHH:mm:SS±hh:mm (local time with offset from GMT). The end time will be the last day of the month at 12 a.m. local time.
-- __raw_visit_counts__ Number of visits in our panel to this POI during the date range.
-- __raw_visitor_counts__ Number of unique visitors from our panel to this POI during the date range.
-- __visits_by_day__ The number of visits to the POI each day (local time) over the covered time period. 
-- __distance_from_home__ Median distance from home travelled by visitors (of visitors whose home we have identified) (meters).
-- __median_dwell__ Median minimum dwell time in minutes. 
-- __bucketed_dwell_times__ The distribution of visit dwell times based on pre-specified buckets. Key is the range of dwell time in minutes and value is number of visits that were within that range.
-- __related_same_day_brand__ Other brands that the visitors to this POI visited on the same day as the visit to this POI. Limited to top 20. 
-- __related_same_month_brand__ Other brands that the visitors to this POI visited in the same month as the visit to this POI. Limited to top 20. 
-- __popularity_by_hour__ The number of visits in each hour over the course of the date range, in local time. First element in the array corresponds to the hour of midnight to 1 am, second is 1am to 2am, etc.
-- __popularity_by_day__ The number of visits in total on each day of the week (in local time) over the course of the date range. 
-- __device_type__ The number of visitors to the POI that are using Android vs. iOS.
+- __placekey:__ Unique and persistent ID tied to this POI. 
+- __latitude:__ Latitude of the place of interest.
+- __longitude:__ Longitude of the place of interest.
+- __street_address:__ Street address of the place of interest
+- __city:__ The city of the point of interest
+- __region:__ The state, province or county of the place of interest. 
+- __postal_code:__ The postal code of the place of interest.
+- __phone_number:__ Phone Number of place of interest
+- __open_hours:__ Open hours of place of interest
+- __date_range_start:__ Start time for measurement period in ISO 8601 format of YYYY-MM-DDTHH:mm:SS±hh:mm (local time with offset from GMT).
+- __date_range_end:__ End time for measurement period in ISO 8601 format of YYYY-MM-DDTHH:mm:SS±hh:mm (local time with offset from GMT). The end time will be the last day of the month at 12 a.m. local time.
+- __raw_visit_counts:__ Number of visits in our panel to this POI during the date range.
+- __raw_visitor_counts:__ Number of unique visitors from our panel to this POI during the date range.
+- __visits_by_day:__ The number of visits to the POI each day (local time) over the covered time period. 
+- __distance_from_home:__ Median distance from home travelled by visitors (of visitors whose home we have identified) (meters).
+- __median_dwell:__ Median minimum dwell time in minutes. 
+- __bucketed_dwell_times:__ The distribution of visit dwell times based on pre-specified buckets. Key is the range of dwell time in minutes and value is number of visits that were within that range.
+- __related_same_day_brand:__ Other brands that the visitors to this POI visited on the same day as the visit to this POI. Limited to top 20. 
+- __related_same_month_brand:__ Other brands that the visitors to this POI visited in the same month as the visit to this POI. Limited to top 20. 
+- __popularity_by_hour:__ The number of visits in each hour over the course of the date range, in local time. First element in the array corresponds to the hour of midnight to 1 am, second is 1am to 2am, etc.
+- __popularity_by_day:__ The number of visits in total on each day of the week (in local time) over the course of the date range. 
+- __device_type:__ The number of visitors to the POI that are using Android vs. iOS.
 
 ### Variable summary
 

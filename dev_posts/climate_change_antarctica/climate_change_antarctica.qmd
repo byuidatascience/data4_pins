@@ -2,7 +2,7 @@
 title: "Climate Change: Antarctica"
 author: "DS 350"
 date: "2024-05-08"
-categories: [world, climate]
+categories: [DS350, world, climate]
 description: "The amount of sea ice in Antarctica over time"
 params: 
     source: "https://ourworldindata.org/explorers/climate-change?facet=none&country=OWID_WRL~ATA&Metric=Antarctic+sea+ice+extent&Long-run+series%3F=false"
@@ -65,11 +65,11 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Entity__ Country name
-- __Code__ 3-letter code for each country
-- __Year__ Year
-- __antarctic_sea_ice_september__ Amount of sea ice in Antarctica in September (millions of square kilometers)
-- __antarctic_sea_ice_february__ Amount of sea ice in Antarctica in February (millions of square kilometers)
+- __Entity:__ Country name
+- __Code:__ 3-letter code for each country
+- __Year:__ Year
+- __antarctic_sea_ice_september:__ Amount of sea ice in Antarctica in September (millions of square kilometers)
+- __antarctic_sea_ice_february:__ Amount of sea ice in Antarctica in February (millions of square kilometers)
 
 ### Variable summary
 

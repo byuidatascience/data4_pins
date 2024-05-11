@@ -2,7 +2,7 @@
 title: "Climate Change: Ocean"
 author: "DS 350"
 date: "2024-05-08"
-categories: [world, climate]
+categories: [DS 350, world, climate]
 description: "Ocean heat content is measured relative to the 1971–2000 average, which is set at zero for reference. It is measured in 10²² joules. For reference, 10²² joules are equal to approximately 17 times the amount of energy used globally every year."
 params: 
     source: "https://ourworldindata.org/explorers/climate-change?facet=none&country=~OWID_WRL&Metric=Ocean+heat+content+%28top+700m%29&Long-run+series%3F=fals"

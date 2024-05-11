@@ -2,7 +2,7 @@
 title: "Chiropractors"
 author: "MATH 221"
 date: "2024-04-25"
-categories: [health, business]
+categories: [MATH221, health, business]
 description: "The reasons people go to chiropractors in Europe, Australia, and the United States"
 params: 
     source: ""
@@ -65,9 +65,9 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Reason__ Reason patient went to chiropractor
-- __Location__ Europe, Australia, or the United States
-- __Count__ Count of patients who had that reason for getting chiropractic care
+- __Reason:__ Reason patient went to chiropractor
+- __Location:__ Europe, Australia, or the United States
+- __Count:__ Count of patients who had that reason for getting chiropractic care
 
 ### Variable summary
 
