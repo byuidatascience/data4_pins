@@ -2,7 +2,7 @@
 title: "Movie Revenue"
 author: "MATH 221"
 date: "2024-04-25"
-categories: [entertainment]
+categories: [MATH221, entertainment]
 description: "The budget and worldwide revenue of movies released from 1991 to 2015"
 params: 
     source: ""
@@ -65,10 +65,10 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Release.Date__ Date the movie was released (MM/DD/YYYY) 
-- __Movie__ Movie title
-- __Production.Budget__ Production Budget (dollars)
-- __Worldwide.Gross__ Money the movie made at box offices worldwide (dollars)
+- __Release.Date:__ Date the movie was released (MM/DD/YYYY) 
+- __Movie:__ Movie title
+- __Production.Budget:__ Production Budget (dollars)
+- __Worldwide.Gross:__ Money the movie made at box offices worldwide (dollars)
 
 ### Variable summary
 

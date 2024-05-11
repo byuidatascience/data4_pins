@@ -2,7 +2,7 @@
 title: "Carwash"
 author: "DS 350"
 date: "2024-05-08"
-categories: [businesses]
+categories: [DS350, businesses]
 description: "Carwash sales over time"
 params: 
     source: ""
@@ -65,10 +65,10 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __name__ Carwash name
-- __type__ Carwash type
-- __time__ (YYYY-MM-DD HR:MIN:SEC)
-- __amount__ Sales (dollars)
+- __name:__ Carwash name
+- __type:__ Carwash type
+- __time:__ (YYYY-MM-DD HR:MIN:SEC)
+- __amount:__ Sales (dollars)
 
 ### Variable summary
 
