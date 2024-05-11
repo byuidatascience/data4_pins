@@ -2,7 +2,7 @@
 title: "2015 Census"
 author: "MATH 221"
 date: "2024-05-02"
-categories: [population]
+categories: [MATH221, population]
 description: ""
 params: 
     source: ""
@@ -65,43 +65,43 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __censusid__ Unique ID for each county
-- __state__ Unknown
-- __county__ Unknown
-- __totalpop__ .
-- __men__ .
-- __women__ .
-- __hispanic__ .
-- __white__ .
-- __black__ .
-- __native__ .
-- __asian__ .
-- __pacific__ .
-- __citizen__ .
-- __income__ .
-- __incomeerr__ .
-- __incomepercap__ .
-- __incomepercaperr__ .
-- __poverty__ .
-- __childpoverty__ .
-- __professional__ .
-- __service__ .
-- __office__ .
-- __construction__ .
-- __production__ .
-- __drive__ .
-- __carpool__ .
-- __transit__ .
-- __walk__ .
-- __othertransp__ .
-- __workathome__ .
-- __meancommute__ .
-- __employed__ .
-- __privatework__ .
-- __publicwork__ .
-- __selfemployed__ .
-- __familywork__ .
-- __unemployment__ .
+- __censusid:__ Unique ID for each county
+- __state:__ Unknown
+- __county:__ Unknown
+- __totalpop:__ .
+- __men:__ .
+- __women:__ .
+- __hispanic:__ .
+- __white:__ .
+- __black:__ .
+- __native:__ .
+- __asian:__ .
+- __pacific:__ .
+- __citizen:__ .
+- __income:__ .
+- __incomeerr:__ .
+- __incomepercap:__ .
+- __incomepercaperr:__ .
+- __poverty:__ .
+- __childpoverty:__ .
+- __professional:__ .
+- __service:__ .
+- __office:__ .
+- __construction:__ .
+- __production:__ .
+- __drive:__ .
+- __carpool:__ .
+- __transit:__ .
+- __walk:__ .
+- __othertransp:__ .
+- __workathome:__ .
+- __meancommute:__ .
+- __employed:__ .
+- __privatework:__ .
+- __publicwork:__ .
+- __selfemployed:__ .
+- __familywork:__ .
+- __unemployment:__ .
 
 ### Variable summary
 

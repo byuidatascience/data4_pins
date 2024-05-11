@@ -2,7 +2,7 @@
 title: "Cause of Death"
 author: "MATH 221"
 date: "2024-04-25"
-categories: [health, nutrition, mortality]
+categories: [MATH221, health, nutrition, mortality]
 description: "Researchers used forensic autopsy results to assess the causes of death in several malnourished people in Japan.  The ultimate goal of the research is to reduce premature death in this vulnerable population.  People were identified as malnourished if their body mass index (BMI) was less than 16."
 params: 
     source: "Hideto Suzuki, Takanobu Tanifuji, Nobuyuki Abe, and Tatsushige Fukunaga. Causes of death in forensic autopsy cases of malnourished persons. Legal Medicine, In press, 2012."
@@ -65,10 +65,10 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Gender__ Gender (Male, Female)
-- __Disease__ Disease recorded as cause of death
-- __Age__ Age group (20-54, 55-64, 65-74, 75+)
-- __Count__ Count of people that died of a certain disease in a certain age group
+- __Gender:__ Gender (Male, Female)
+- __Disease:__ Disease recorded as cause of death
+- __Age:__ Age group (20-54, 55-64, 65-74, 75+)
+- __Count:__ Count of people that died of a certain disease in a certain age group
 
 ### Variable summary
 
