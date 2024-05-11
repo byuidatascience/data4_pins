@@ -1,8 +1,8 @@
 ---
-title: "Bone Minerals"
+title: "Bone Mineral Density"
 author: "MATH 221"
 date: "2024-04-25"
-categories: [health]
+categories: [MATH221, health]
 description: "Kudzu is a plant that was imported to the United States from Japan and now covers over seven million acres in the South. The plant contains chemicals called isoflavones that have been shown to have beneficial effects on bones. One study used three groups of rats to compare a control group with rats that were fed either a low dose or a high dose of isoflavones from kudzu. One of the outcomes examined was the bone mineral density in the femur (in grams per square centimeter).\nResearchers would like to test if the mean bone mineral density is different for the three different groups. "
 params: 
     source: ""
@@ -65,8 +65,8 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Treatment__ Whether the rat was in the control group, the high dose group, or the low dose group.   
-- __Bone.Mineral.Density__ Bone mineral density of the rat's femur (g/cm^2^)
+- __Treatment:__ Whether the rat was in the control group, the high dose group, or the low dose group.   
+- __Bone.Mineral.Density:__ Bone mineral density of the rat's femur (g/cm^2^)
 
 
 ### Variable summary
