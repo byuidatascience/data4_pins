@@ -2,7 +2,7 @@
 title: "Body Measurements"
 author: "MATH 221"
 date: "2024-04-22"
-categories: [health]
+categories: [MATH221, health]
 description: "Estimating percentage of body fat is one method by which the health of a person is assessed.  To measure it accurately is often inconvenient or costly (finding density involves underwater weighing), so methods of estimation have been derived using more conveniently obtained measurements. \nThe densities of 252 men were measured, and from that, their percent body fat was determined.  Many other body measurements were also taken for comparison and estimation. "
 params: 
     source: "Roger W. Johnson. Statlib—datasets archive. Website. http://lib.stat.cmu.edu/datasets/bodyfat"
@@ -65,21 +65,21 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Density__ Density determined from underwater weighing (g/cm^3^)
-- __BodyFat__ Percent body fat from Siri's (1956) equation
-- __Age__ Age (years)
-- __Weight__ Weight (lbs)
-- __Height__ Height (inches)
-- __Neck__ Neck circumference (cm)
-- __Chest__ Chest circumference (cm)
-- __Abdomen__ Abdomen circumference (cm)
-- __Hip__ Hip circumference (cm)
-- __Thigh__ Thigh circumference (cm)
-- __Knee__ Knee circumference (cm)
-- __Ankle__ Ankle circumference (cm)
-- __Bicep__ Biceps (extended) circumference (cm)
-- __Forearm__ Forearm circumference (cm)
-- __Wrist__ Wrist circumference (cm)
+- __Density:__ Density determined from underwater weighing (g/cm^3^)
+- __BodyFat:__ Percent body fat from Siri's (1956) equation
+- __Age:__ Age (years)
+- __Weight:__ Weight (lbs)
+- __Height:__ Height (inches)
+- __Neck:__ Neck circumference (cm)
+- __Chest:__ Chest circumference (cm)
+- __Abdomen:__ Abdomen circumference (cm)
+- __Hip:__ Hip circumference (cm)
+- __Thigh:__ Thigh circumference (cm)
+- __Knee:__ Knee circumference (cm)
+- __Ankle:__ Ankle circumference (cm)
+- __Bicep:__ Biceps (extended) circumference (cm)
+- __Forearm:__ Forearm circumference (cm)
+- __Wrist:__ Wrist circumference (cm)
 
 
 ### Variable summary
