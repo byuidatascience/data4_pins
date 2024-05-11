@@ -2,7 +2,8 @@ library(tidyverse)
 library(pins)
 library(connectapi)
 
-bleu_scores <- read_csv('https://github.com/byuistats/data/raw/master/BLEU-Scores/BLEU-Scores.csv')
+bleu_scores <- read_csv('https://github.com/byuistats/data/raw/master/BLEU-Scores/BLEU-Scores.csv') %>% 
+  rename(BleuScore = x)
 
 
 # Publish the data to the server with Bro. Hathaway as the owner.
