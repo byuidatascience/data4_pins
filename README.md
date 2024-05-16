@@ -21,7 +21,17 @@ Each dataset needs 1) a script that will read the data from its source and 2) a 
 
 ### The script
 
-The script should be a self-contained R script that will 1) load in the libraries that it requires, 2) read in the data from its source, 3) perform any necessary wrangling, and 4) post the data to pins. See the _template_script.R File in XXXX for a guided example.
+The script should be a self-contained R script that will  
+1) load in the libraries that it requires  
+2) read in the data from its source  
+Paste in the link to the data file, or put in the code that will retrieve it.  
+3) perform any necessary wrangling  
+Get the data into whatever shape is best.
+4) post the data to pins.  
+All you have to change is the dataset_name - make it match the object that now contains your data.
+
+See the _template_script.R File in XXXX for a template.  
+
 
 
 ### The QMD
