@@ -323,7 +323,7 @@ CDC_parser <- function(year, url) {
 
 # PARSE DATA FILE
 # Now run the function for each year you want:
-parse_cdc(2023, "ftp://ftp.cdc.gov/pub/Health_Statistics/NCHS/Datasets/DVS/mortality/mort2023us.zip")
+parse_cdc(2023, "ftp://ftp.cdc.gov/pub/Health_Statistics/NCHS/Datasets/DVS/mortality/mort2022us.zip")
 
 
 #########################################################################################################################
