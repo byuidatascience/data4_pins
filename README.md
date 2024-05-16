@@ -34,7 +34,7 @@ The QMD reads the script you made for your dataset and allows a user to download
 - __column2name:__ Description of the second column (unit) 
 - __column3name:__ Description of the third column (unit) 
 
-In QMDs, you make text bold by \__surrounding it with underscores\__, and use "-" to create a bulleted list. 
+In QMDs, you make text bold by \_\_surrounding it with underscores\_\_, and use "-" to create a bulleted list. 
 
 3) Locate the two commented out chunks of code. One should be labelled as R, the other should be labelled as Python. If your script is in R, uncomment the R chunk. If your script is in Python, uncomment the Python chunk. Change 'YOURFILEPATH' to the file path of your script.
 
