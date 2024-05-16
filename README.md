@@ -30,9 +30,9 @@ The QMD reads the script you made for your dataset and allows a user to download
 1) Change the general information in the YAML (the text between two "---" dashes - it defines a few parameters for the rest of the document), including the categories by which your dataset will be searchable. 
 2) Replace 'SOME TYPE OF DATA DICTIONARY' with a data dictionary. Please use this format:
 
-\- \_\_column1name:\_\_ Description of the first column (unit) 
-\- \_\_column2name:\_\_ Description of the second column (unit) 
-\- \_\_column3name:\_\_ Description of the third column (unit) 
+\- \_\_column1name:\_\_ Description of the first column (unit) \n
+\- \_\_column2name:\_\_ Description of the second column (unit) \n
+\- \_\_column3name:\_\_ Description of the third column (unit) \n
 
 In QMDs, you make text bold by \_\_surrounding it with underscores\_\_, and use "-" to create a bulleted list. 
 
