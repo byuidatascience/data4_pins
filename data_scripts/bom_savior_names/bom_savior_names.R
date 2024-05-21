@@ -1,50 +1,12 @@
-pacman::p_load(tidyverse, pins, connectapi, googledrive, readxl, stringi, patchwork, rio, ggrepel)
+pacman::p_load(tidyverse, pins, connectapi, googledrive)
 
-# This loads a cleaner dataset than the one that's built below.
-bom_savior_names <- read_rds('https://byuistats.github.io/M335/data/BoM_SaviorNames.rds')
-
-# This builds a messier dataset that isn't the one the students use. 
-#' scriptures <- import("http://scriptures.nephi.org/downloads/lds-scriptures.csv.zip")
-#' 
-#' 
-#' bmnames <- rio::import("https://byuistats.github.io/M335/data/BoM_SaviorNames.rds")
-#' #' need to loop through largest to smallest savior names
-#' bmnames <- bmnames %>% arrange(desc(nchar)) %>%
-#'   mutate(order = 1:n())
-#' 
-#' 
-#' #' Create data for each book
-#' bm <- scriptures %>% filter(volume_short_title == "BoM")
-#' 
-#' 
-#' #### To get top verses in BOM with savior names
-#' bm <- scriptures %>% filter(volume_short_title == "BoM") %>%
-#'   mutate(scripture_sub = scripture_text) # I am going to alter text in this column.  I want to keep the original text in a separate column
-#' 
-#' for (i in seq_along(bmnames$name)){
-#'   
-#'   sname <- str_c("\\b",bmnames$name[i], "\\b")
-#'   replace_name <- paste0("xfound_",i) # using an identifier in the text as the replacement
-#'   
-#'   # This creates a vector that has the count of the ith name in each verse.
-#'   bm_locs <- bm$scripture_sub %>% 
-#'     str_count(sname) %>%
-#'     unlist()
-#'   
-#'   # now create a new column in the bm tibble that shows the count for the name_i
-#'   bm[,paste0("name_", i)] <- bm_locs
-#'   
-#'   # This line replaces the substitute text column with the name id name_i
-#'   bm$scripture_sub <- bm$scripture_sub %>% str_replace_all(sname, replace_name)
-#'   #  print(i)
-#' } 
-#' 
-#' # Now create two columns. 
-#' #   count_name = number of names in that verse. 
-#' #   cum_name is the cumulative number of names by the end of that verse.
-#' bom_savior_names <- bm %>%
-#'   mutate(count_name = rowSums(.[colnames(bm) %in% paste0("name_", 1:112)]),
-#'          cum_name = cumsum(count_name))
+# Download the file from google drive
+sdrive <- shared_drive_find("byuids_data") # This will ask for authentication.
+google_file <- drive_ls(sdrive) |>
+  filter(stringr::str_detect(name, "bom_savior_names"))
+tempf <- tempfile()
+drive_download(google_file, tempf)
+bom_savior_names <- read_csv(tempf)
 
 # Publish the data to the server with Bro. Hathaway as the owner.
 board <- board_connect()
