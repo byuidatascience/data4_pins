@@ -10,6 +10,7 @@ library(tibble)
 parse_cdc <- function(year, url, folder_path = "death_data") {
   
   #last2 year
+  browser()
   l2 <- stringr::str_sub(year, 3, 4)
   fnames <- c("deaths", "guns", "suicide")
   
@@ -88,7 +89,7 @@ parse_cdc <- function(year, url, folder_path = "death_data") {
   
   # remove temp files
   tfiles <- list.files(temp_dir, full.names = TRUE)
-  file.remove(tfiles)
+  #file.remove(tfiles)
   
   
   # Drop empty fields
@@ -206,6 +207,7 @@ parse_cdc <- function(year, url, folder_path = "death_data") {
 CDC_parser <- function(year, url) {
   
   # Set up files
+  browser()
   all_deaths_name <- paste0("deaths_", substr(year, 3, 4))
   all_deaths_save <- paste0("all_deaths_", substr(year, 3, 4), ".RData")
   gun_name <- paste0("guns_", substr(year, 3, 4))
@@ -323,8 +325,9 @@ CDC_parser <- function(year, url) {
 
 # PARSE DATA FILE
 # Now run the function for each year you want:
-parse_cdc(2023, "ftp://ftp.cdc.gov/pub/Health_Statistics/NCHS/Datasets/DVS/mortality/mort2022us.zip")
-
+parse_cdc(2022, "https://ftp.cdc.gov/pub/health_statistics/NCHS/Datasets/DVS/mortality/mort2022ps.zip")
+https://ftp.cdc.gov/pub/health_statistics/NCHS/Datasets/DVS/mortality/
+  https://ftp.cdc.gov/pub/health_statistics/NCHS/Datasets/DVS/mortality/mort2022ps.zip
 
 #########################################################################################################################
 
