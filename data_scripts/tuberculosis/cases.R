@@ -1,5 +1,6 @@
 library(tidyverse)
-
+library(pins)
+library(connectapi)
 
 tb_cases <- read_csv("https://extranet.who.int/tme/generateCSV.asp?ds=notifications")
 
