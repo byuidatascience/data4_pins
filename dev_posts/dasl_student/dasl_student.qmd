@@ -2,7 +2,7 @@
 title: "DASL Student"
 author: "MATH 221"
 date: "2024-04-27"
-categories: [health]
+categories: [MATH221, health]
 description: "In his landmark paper on the t-distribution, William S. Gosset referenced data on the number of additional hours of sleep patients obtained by using the drug laevohysocyamine hydrobromide.  If the drug is not effective, then the mean number of addition hours of sleep should be zero."
 params: 
     source: "W. S. Gosset. The probable error of a mean. Biometrika, 6:1-25, 1908.  "
@@ -65,7 +65,7 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __AdditionalSleep__ Hours of additional sleep gained by patients from using the drug
+- __AdditionalSleep:__ Hours of additional sleep gained by patients from using the drug
 
 ### Variable summary
 
