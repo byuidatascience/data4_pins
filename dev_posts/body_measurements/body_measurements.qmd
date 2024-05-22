@@ -3,7 +3,7 @@ title: "Body Measurements"
 author: "MATH 221"
 date: "2024-04-22"
 categories: [MATH221, health]
-description: "Estimating percentage of body fat is one method by which the health of a person is assessed.  To measure it accurately is often inconvenient or costly (finding density involves underwater weighing), so methods of estimation have been derived using more conveniently obtained measurements. \nThe densities of 252 men were measured, and from that, their percent body fat was determined.  Many other body measurements were also taken for comparison and estimation. "
+description: "Estimating percentage of body fat is one method by which the health of a person is assessed. To measure it accurately is often inconvenient or costly (finding density involves underwater weighing), so methods of estimation have been derived using more conveniently obtained measurements. \nThe densities of 252 men were measured, and from that, their percent body fat was determined. Many other body measurements were also taken for comparison and estimation. "
 params: 
     source: "Roger W. Johnson. Statlib—datasets archive. Website. http://lib.stat.cmu.edu/datasets/bodyfat"
     pins_name: 'hathawayj/body_measurements'
