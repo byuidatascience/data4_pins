@@ -3,7 +3,21 @@ title: "Estuarine Crocodiles"
 author: "MATH 221"
 date: "2024-04-29"
 categories: [animals, ecology]
-description: "Head and Body length of estuarine crocodiles"
+description: "Head and Body length of estuarine crocodiles\nAdditional Information:  
+
+96-minute National Geographic SuperCroc video can be found at snagfilms.com: http://www.snagfilms.com/films/title/supercroc/ 
+
+or at AOL Video: http://video.aol.com/video-detail/supercroc/36028815056645860  
+
+Bones are illustrated at http://www.supercroc.org/supercroc/anatomy.htm  
+
+Original article can be accessed here:  
+
+https://adam.byui.edu/cgi-bin/remoteauth-byui.pl?url=http://www.sciencemag.org/cgi/content/full/294/5546/151 
+
+For PDF format: 
+
+https://adam.byui.edu/cgi-bin/remoteauth-byui.pl?url=http://www.sciencemag.org/cgi/reprint/294/5546/1516.pdf  "
 params: 
     source: "Paul C. Sereno, Hans C. E. Larsson, Christian A. Sidor, and Boub´e Gado.
 The giant crocodyliform Sarcosuchus from the cretaceous of Africa.
