@@ -2,10 +2,10 @@
 title: "Vietnam War Draft"
 author: "MATH 221"
 date: "2024-04-29"
-categories: [politics, war]
+categories: [MATH221, politics, war]
 description: "An aggregated dataset that totals the amount of people drafted for the Vietnam War over time"
 params: 
-    source: ""
+    source: "Unknown"
     pins_name: 'hathawayj/draft_vietnam'
     available: all
 ---
@@ -65,14 +65,14 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __day_month__ Day of the month
-- __day_year__ Day of the year
-- __month__ Month (number)
-- __month_name__ Month (name)
-- __n69__ Count of people drafted for each day during 1969
-- __n70__ Count of people drafted for each day during 1970
-- __n71__ Count of people drafted for each day during 1971
-- __n72__ Count of people drafted for each day during 1972
+- __day_month:__ Day of the month
+- __day_year:__ Day of the year
+- __month:__ Month (number)
+- __month_name:__ Month (name)
+- __n69:__ Count of people drafted for each day during 1969
+- __n70:__ Count of people drafted for each day during 1970
+- __n71:__ Count of people drafted for each day during 1971
+- __n72:__ Count of people drafted for each day during 1972
 
 ### Variable summary
 
