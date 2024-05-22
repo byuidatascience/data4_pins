@@ -2,7 +2,7 @@
 title: "Estuarine Crocodiles"
 author: "MATH 221"
 date: "2024-04-29"
-categories: [animals, ecology]
+categories: [MATH221, animals, ecology]
 description: "Head and Body length of estuarine crocodiles\nAdditional Information:  
 
 96-minute National Geographic SuperCroc video can be found at snagfilms.com: http://www.snagfilms.com/films/title/supercroc/ 
