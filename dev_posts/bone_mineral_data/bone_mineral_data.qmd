@@ -5,7 +5,7 @@ date: "2024-04-25"
 categories: [MATH221, health]
 description: "Kudzu is a plant that was imported to the United States from Japan and now covers over seven million acres in the South. The plant contains chemicals called isoflavones that have been shown to have beneficial effects on bones. One study used three groups of rats to compare a control group with rats that were fed either a low dose or a high dose of isoflavones from kudzu. One of the outcomes examined was the bone mineral density in the femur (in grams per square centimeter).\nResearchers would like to test if the mean bone mineral density is different for the three different groups. "
 params: 
-    source: ""
+    source: "Unknown"
     pins_name: 'hathawayj/bone_mineral_data'
     available: all
 ---
