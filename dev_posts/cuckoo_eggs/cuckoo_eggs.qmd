@@ -65,8 +65,8 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __HostSpecies__ Species of the bird in which a cuckoo laid its egg
-- __LengthofCuckooEggs__ Cuckoo egg length (millimeters)
+- __HostSpecies:__ Species of the bird in which a cuckoo laid its egg
+- __LengthofCuckooEggs:__ Cuckoo egg length (millimeters)
 
 ### Variable summary
 
