@@ -5,7 +5,7 @@ date: "2024-04-25"
 categories: [MATH221, entertainment]
 description: "The budget and worldwide revenue of movies released from 1991 to 2015"
 params: 
-    source: ""
+    source: "Unknown"
     pins_name: 'hathawayj/boxoffice_movie_cost_revenue'
     available: all
 ---
