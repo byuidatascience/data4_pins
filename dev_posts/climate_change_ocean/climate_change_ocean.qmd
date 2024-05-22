@@ -68,10 +68,10 @@ This data is available to __`r params$available`__.
 - __Entity:__ Country name
 - __Code:__ 3-letter code for each country
 - __Year:__ Year
-- __700m_ocean_heat_content_iap:__ .
-- __700m_ocean_heat_content_noaa:__ .
-- __700m_ocean_heat_content_csiro:__ .
-- __700m_ocean_heat_content_mrijma:__ .
+- __700m_ocean_heat_content_iap:__ Ocean heat content found by the Chinese Academy of Sciences' institute of Atmospheric Physics (IAP) in 10^22^ joules
+- __700m_ocean_heat_content_noaa:__ Ocean heat content found by the U.S. National Oceanic and Atmospheric Administration (NOAA) in 10^22^ joules
+- __700m_ocean_heat_content_csiro:__ Ocean heat content found by the Australia's Commonwealth Scientific and Industrial Research Organisation (CSIRO) in 10^22^ joules
+- __700m_ocean_heat_content_mrijma:__ Ocean heat content found by the Japan Meteorological Agency's Meteorological Research Institute (MRI/JMA) in 10^22^ joules
 
 ### Variable summary
 

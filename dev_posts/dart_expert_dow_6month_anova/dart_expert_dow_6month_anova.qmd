@@ -3,9 +3,9 @@ title: "DART Expert DOW 6-month ANOVA"
 author: "MATH 221"
 date: "2024-04-27"
 categories: [finance]
-description: ""
+description: "Percent return of the 3 stock picking options (DARTS, DJIA, PROS)"
 params: 
-    source: ""
+    source: "Bro. Hathaway"
     pins_name: 'hathawayj/dart_expert_dow_6month_anova'
     available: all
 ---
@@ -65,9 +65,9 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __contest_period__ Time period
-- __variable__ The 3 stock-picking options (DARTS, DJIA, PROS)
-- __value__ Percent change in stock value for that period
+- __contest_period:__ Time period
+- __variable:__ The 3 stock-picking options (DARTS, DJIA, PROS)
+- __value:__ Percent change in stock value for that period
 
 
 ### Variable summary
