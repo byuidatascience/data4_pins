@@ -3,9 +3,9 @@ title: "Gratitude"
 author: "MATH 221"
 date: "2024-04-29"
 categories: [mentalhealth]
-description: "In a study, people were asked to journal on either things they were grateful for, hassles, or events. They were given a happiness score based on a survey."
+description: "In a study, people were asked to journal on either things they were grateful for, hassles, or events. They were given a happiness score based on a survey.\nIn 2003 Professors Robert Emmons and Michael McCullough scientifically \“examine[d] the influence of grateful thinking on psychological well-being in daily life.\”  The researchers wanted to know if being grateful would cause a difference in perceptions of life as a whole. \nThe researchers randomly assigned 192 undergraduate participants into three experimental groups.  Each student was asked to complete a weekly journal in which they recorded five specific things and then answered some questions about their feelings about life in general.  The groups were as follows:\nGroup 1 (Gratitude): The participants in this group were asked to record five things each week for which they were grateful or thankful.\nGroup 2 (Hassles): The volunteers in this group recorded five irritants that had occurred to them in the previous week.\nGroup 3 (Events—Control group): The people in the events group recorded five things that occurred in the past week that had an impact on them.   "
 params: 
-    source: ""
+    source: "Robert A. Emmons and Michael E. McCullough. Counting blessings versus burdens: An experimental investigation of gratitude and subjective well-being in daily life. Journal of Personality and Social Psychology, 84(2):377-389, 2003.  "
     pins_name: 'hathawayj/gratitude'
     available: all
 ---
@@ -65,9 +65,9 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Grateful__ Happiness score of those who recorded things they were grateful for
-- __Hassles__ Happiness score of those who recorded their hassles
-- __Events__ Happiness score of those who recorded the events of their lives
+- __Grateful:__ Happiness score of those who recorded things they were grateful for
+- __Hassles:__ Happiness score of those who recorded their hassles
+- __Events:__ Happiness score of those who recorded the events of their lives
 
 
 ### Variable summary
