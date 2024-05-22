@@ -2,10 +2,10 @@
 title: "Biggest Loser"
 author: "MATH 221"
 date: "2024-05-02"
-categories: [entertainment]
-description: ""
+categories: [entertainment, questionablebeautystandards]
+description: "A dataset containing information on Biggest Loser contestants. "
 params: 
-    source: ""
+    source: "Unknown"
     pins_name: 'hathawayj/biggest_loser'
     available: all
 ---
@@ -73,8 +73,8 @@ This data is available to __`r params$available`__.
 - __height__ Height (in)
 - __season__ Season of show (1 to 17)
 - __trainer__ Trainer first name
-- __prop_initial_weight_lost__ .
-- __prop_initial_weight_lost_week1__ .
+- __prop_initial_weight_lost__ Unknown (appears to be a quantity of weight in lbs)
+- __prop_initial_weight_lost_week1__ Unknown (Presumes to be weight lost, but numbers are NOT the difference between the initial weight and weight after one week) 
 - __winner__ Whether contestant won or lost (lost, won)
 
 
