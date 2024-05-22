@@ -2,10 +2,12 @@
 title: "Hot Dog Health"
 author: "MATH 221"
 date: "2024-04-30"
-categories: [health, food]
-description: "Nutritional content of various hot dog types"
+categories: [MATH221, health, food]
+description: "Researchers for Consumer Reports wanted to determine how nutritional content varied between different types of hot dogs.  They conducted a laboratory analysis of three types: (beef, poultry, and meat (mostly pork and beef with up to 15% poultry). "
 params: 
-    source: ""
+    source: "Cornell University DASL Project. The data and story library. Website. http://lib.stat.cmu.edu/DASL/Datafiles/Hotdogs.html. 
+
+Consumer Reports, 366-367, June 1986. "
     pins_name: 'hathawayj/hot_dog_health'
     available: all
 ---
@@ -65,9 +67,9 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Type__ Hot dog type
-- __Calories__ Calories
-- __Sodium__ Sodium (mg)
+- __Type:__ Hot dog type (Beef, Meat, Poultry)
+- __Calories:__ Calories
+- __Sodium:__ Sodium (mg)
 
 
 ### Variable summary
