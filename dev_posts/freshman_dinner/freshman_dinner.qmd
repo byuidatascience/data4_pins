@@ -2,10 +2,10 @@
 title: "Freshman Dinner"
 author: "MATH 221"
 date: "2024-04-29"
-categories: []
+categories: [MATH221]
 description: "The number of times freshman students from Colorado and Utah cooked their own dinner in a month"
 params: 
-    source: ""
+    source: "Unknown"
     pins_name: 'hathawayj/freshman_dinner'
     available: all
 ---
