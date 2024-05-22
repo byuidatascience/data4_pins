@@ -2,10 +2,10 @@
 title: "Euro Weight"
 author: "MATH 221"
 date: "2024-04-29"
-categories: [finance]
-description: "The weight of 2,000 euro coins"
+categories: [MATH221, currency]
+description: "The weight of 2,000 euro coins, measured in laboratory conditions. Researcher Herman Callaert (Hasselt University, Belgium) suggested that the weights of Euro coins might not be as normally distributed as one would think. The introduction of the Euro had a significant impact on the people of Belgium, and educators wanted more real data, so these data were collected to use in schools."
 params: 
-    source: ""
+    source: "Journal of Statistics Education Volume 14, Number 2 (2006) \nCopyright info: Copyright © 2006 by Ziv Shkedy, Marc Aerts, and Herman Callaert, all rights reserved. "
     pins_name: 'hathawayj/euro_weight'
     available: all
 ---
@@ -65,9 +65,9 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Case__ A unique ID for each euro
-- __Weight__ Euro weight (grams)
-- __Batch__ Batch to which euro belongs
+- __Case:__ A unique ID for each euro
+- __Weight:__ Euro weight (grams, to the nearest mg)
+- __Batch:__ Batch to which euro belongs
 
 ### Variable summary
 
