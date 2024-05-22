@@ -2,10 +2,12 @@
 title: "Forced Expiratory Volume"
 author: "MATH 221"
 date: "2024-04-29"
-categories: [health]
-description: "Forced expiratory volume is the amount of air a person can exhale during a forced breath. This dataset includes the forced expiratory volume of various youths under 20 years of age."
+categories: [MATH221, health]
+description: "Forced expiratory volume is the amount of air a person can exhale during a forced breath. This dataset includes the forced expiratory volume of various youths under 20 years of age. Bear in mind that the age of the younger children throw off some analysis if not taken into account."
 params: 
-    source: ""
+    source: "M. Kahn. An exhalent problem for teaching statistics. Journal of Statistics Education, 13(2), 2003. 
+
+Bernard Rosner. Fundamentals of Biostatistics. Duxbury, Belmont, CA, USA, sixth edition, 2006. "
     pins_name: 'hathawayj/forced_expiratory_volume'
     available: all
 ---
@@ -65,11 +67,11 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Age__ Person age (years)
-- __FEV__ Forced expiratory volume (liters)
-- __Height__ Person height (inches)
-- __Gender__ Gender (Female, Male)
-- __SmokingStatus__ Smoking status (Smoker, Nonsmoker)
+- __Age:__ Person age (years)
+- __FEV:__ Forced expiratory volume (liters)
+- __Height:__ Person height (inches)
+- __Gender:__ Gender (Female, Male)
+- __SmokingStatus:__ Smoking status (Smoker, Nonsmoker)
 
 ### Variable summary
 
