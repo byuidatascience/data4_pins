@@ -65,12 +65,12 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __HatSize__ Hat height (in)
-- __Circumference__ Hat circumference (in)
-- __MajorAxis__ The length of the longer axis of the ellipse created by the hat band (in)
-- __MinorAxis__ The length of the shorter axis of the ellipse created by the hat band (in)
-- __WhereMade__ The unique key of the store in which the hat was made
-- __Manufacturer__ The unique key of the hat manufacturer
+- __HatSize:__ Hat height (in)
+- __Circumference:__ Hat circumference (in)
+- __MajorAxis:__ The length of the longer axis of the ellipse created by the hat band (in)
+- __MinorAxis:__ The length of the shorter axis of the ellipse created by the hat band (in)
+- __WhereMade:__ The unique key of the store in which the hat was made
+- __Manufacturer:__ The unique key of the hat manufacturer
 
 
 ### Variable summary
