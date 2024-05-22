@@ -65,10 +65,10 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Taste__ A subjective score for the taste of each cheese, obtained by combining the scores of several tasters; higher values indicate better taste 
-- __Acetic__ Natural logarithm of concentration of acetic acid in the sample
-- __H2S__ Natural logarithm of concentration of hydrogen sulfide in the sample 
-- __Lactic__ Lactic acid concentration
+- __Taste:__ A subjective score for the taste of each cheese, obtained by combining the scores of several tasters; higher values indicate better taste 
+- __Acetic:__ Natural logarithm of concentration of acetic acid in the sample
+- __H2S:__ Natural logarithm of concentration of hydrogen sulfide in the sample 
+- __Lactic:__ Lactic acid concentration
 
 ### Variable summary
 
