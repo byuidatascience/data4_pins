@@ -2,10 +2,10 @@
 title: "BYUI GPAs"
 author: "MATH 221"
 date: "2024-04-29"
-categories: [education]
+categories: [MATH221, education]
 description: "The GPAs of various BYUI students"
 params: 
-    source: ""
+    source: "Unknown"
     pins_name: 'hathawayj/gpas_byui'
     available: all
 ---
@@ -65,9 +65,9 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Age__ Student age
-- __GPA__ GPA (0-4)
-- __Major__ Student major
+- __Age:__ Student age
+- __GPA:__ GPA (0-4)
+- __Major:__ Student major
 
 ### Variable summary
 
