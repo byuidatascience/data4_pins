@@ -3,9 +3,9 @@ title: "2015 Census"
 author: "MATH 221"
 date: "2024-05-02"
 categories: [MATH221, population]
-description: ""
+description: "Documentation on this dataset is scarce, so tread lightly. Dataset contains summary statistics from a 2015 census in the U.S. It is grouped by county."
 params: 
-    source: ""
+    source: "Unknown"
     pins_name: 'hathawayj/census_2015'
     available: all
 ---
@@ -66,42 +66,42 @@ This data is available to __`r params$available`__.
 ### Variable description
 
 - __censusid:__ Unique ID for each county
-- __state:__ Unknown
-- __county:__ Unknown
-- __totalpop:__ .
-- __men:__ .
-- __women:__ .
-- __hispanic:__ .
-- __white:__ .
-- __black:__ .
-- __native:__ .
-- __asian:__ .
-- __pacific:__ .
-- __citizen:__ .
-- __income:__ .
-- __incomeerr:__ .
-- __incomepercap:__ .
-- __incomepercaperr:__ .
-- __poverty:__ .
-- __childpoverty:__ .
-- __professional:__ .
-- __service:__ .
-- __office:__ .
-- __construction:__ .
-- __production:__ .
-- __drive:__ .
-- __carpool:__ .
-- __transit:__ .
-- __walk:__ .
-- __othertransp:__ .
-- __workathome:__ .
-- __meancommute:__ .
-- __employed:__ .
-- __privatework:__ .
-- __publicwork:__ .
-- __selfemployed:__ .
-- __familywork:__ .
-- __unemployment:__ .
+- __state:__ State that county is in
+- __county:__ County name
+- __totalpop:__ Total population of county
+- __men:__ Total population of men
+- __women:__ Total population of women
+- __hispanic:__ Percent of population that is marked as Hispanic
+- __white:__ Percent of population that is marked as White
+- __black:__ Percent of population that is marked as Black
+- __native:__ Percent of population that is marked as Native
+- __asian:__ Percent of population that is marked as Asian
+- __pacific:__ Percent of population that is marked as Pacific
+- __citizen:__ Unknown, could refer to total population of citizens
+- __income:__ Unknown, appears to be a summary statistic of some kind involving income
+- __incomeerr:__ Unknown
+- __incomepercap:__ Unknown, appears to relate to income per capita
+- __incomepercaperr:__ Unknown
+- __poverty:__ Unknown, possibly a percent of people in poverty
+- __childpoverty:__ Unknown, possibly a percent of children in poverty
+- __professional:__ Percent of people working in the category "professional"
+- __service:__ Percent of people working in the category "service"
+- __office:__ Percent of people working in the category "office"
+- __construction:__ Percent of people working in the category "construction"
+- __production:__ Percent of people working in the category "production"
+- __drive:__ Percent of people who fit into the category "drive"
+- __carpool:__ Percent of people who fit into the category "carpool"
+- __transit:__ Percent of people who fit into the category "transit"
+- __walk:__ Percent of people who fit into the category "walk"
+- __othertransp:__ Percent of people who fit into the category "other transport"
+- __workathome:__ Percent of people who fit into the category "work at home"
+- __meancommute:__ Most likely the mean duration of commutes (min)
+- __employed:__ Total people employed
+- __privatework:__ Percent of people who fit into the category "private work"
+- __publicwork:__ Percent of people who fit into the category "public work"
+- __selfemployed:__ Percent of people who fit into the category "self employed"
+- __familywork:__ Percent of people who fit into the category "family work"
+- __unemployment:__ Unemployment percentage (not part of the percentages in the previous 4 columns)
 
 ### Variable summary
 
