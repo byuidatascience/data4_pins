@@ -3,9 +3,10 @@ title: "Diving Elephant Seals"
 author: "MATH 221"
 date: "2024-04-29"
 categories: [ecology, animals]
-description: "Information about various elephant seals and their dives"
+description: 'Researchers Jessica U. Meir and Paul J. Ponganis measured the body temperatures of a sample of diving elephant seals.  A thermistor was placed at a specific location on each seal to measure its body temperature.  They showed that the body temperature of seals tends to decrease as they dive.  The researchers estimated the typical body temperature of each seal at the time they initiate a dive and called this the “representative temperature” of the seal. 
+The researchers deployed each seal and took measurements on body temperature as well as diving depth and duration.  Masses, dive counts, and deployment durations were also recorded. '
 params: 
-    source: ""
+    source: "Jessica U. Meir and Paul J. Ponganis. Blood temperature profiles of diving elephant seals. Physiological & Biochemical Zoology, 83(3):531-540, May/Jun 2010. "
     pins_name: 'hathawayj/diving_elephant_seals'
     available: all
 ---
@@ -74,11 +75,11 @@ This data is available to __`r params$available`__.
 - __SD.Dive.Duration..min.__ Standard deviation of dive duration (minutes)
 - __Min.Dive.Duration..min.__ Minimum dive duration (minutes)
 - __Max.Dive.Duration..min.__ Maximum dive duration (minutes)
-- __Mean.Max.Depth..m.__ Mean depth of dive (meters)
-- __SD.Max.Depth..m.__ Standard deviation of dive depth (meters)
+- __Mean.Max.Depth..m.__ Mean maximum depth of dive (meters)
+- __SD.Max.Depth..m.__ Standard deviation of max dive depth (meters)
 - __Min.Max.Depth..m.__ Minimum dive depth (meters)
 - __Max.Max.Depth..m.__ Maximum dive depth (meters)
-- __Representative.Temperature __ Venous temperature of seal (C)
+- __Representative.Temperature __ Typical body temperature of seal at initiation of dive (C)
 
 
 ### Variable summary
