@@ -5,7 +5,7 @@ date: "2024-04-27"
 categories: [products, health, food]
 description: "Calorie and sodium contents of different types of hot dogs"
 params: 
-    source: ""
+    source: "Cornell University DASL Project. The data and story library. Website. http://lib.stat.cmu.edu/DASL/ "
     pins_name: 'hathawayj/dasl_hot_dog_nutrition'
     available: all
 ---
@@ -65,9 +65,9 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Type__ Type of hot dog (beef, meat, poultry)
-- __Calories__ Calorie content (calories)
-- __Sodium__ Sodium content (mg) 
+- __Type:__ Type of hot dog (beef, meat, poultry)
+- __Calories:__ Calorie content (calories)
+- __Sodium:__ Sodium content (mg) 
 
 ### Variable summary
 
