@@ -65,9 +65,9 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Trial__ An ID for each trial
-- __Helium__ Distance the helium football traveled (yards) 
-- __Air__ Distance the air football traveled (yards) 
+- __Trial:__ An ID for each trial
+- __Helium:__ Distance the helium football traveled (yards) 
+- __Air:__ Distance the air football traveled (yards) 
 
 ### Variable summary
 
