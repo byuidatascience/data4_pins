@@ -2,7 +2,7 @@
 title: "DART Expert DOW 6-month ANOVA"
 author: "MATH 221"
 date: "2024-04-27"
-categories: [finance]
+categories: [finance, stocks]
 description: "Percent return of the 3 stock picking options (DARTS, DJIA, PROS)"
 params: 
     source: "Bro. Hathaway"
