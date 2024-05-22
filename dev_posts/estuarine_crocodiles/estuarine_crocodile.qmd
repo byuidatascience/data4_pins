@@ -3,7 +3,13 @@ title: "Estuarine Crocodiles"
 author: "MATH 221"
 date: "2024-04-29"
 categories: [MATH221, animals, ecology]
-description: "Head and Body length of estuarine crocodiles\nAdditional Information:  
+description: "Head and Body length of estuarine crocodiles\nThese data were collected in order to estimate the length of the Sarcosuchus imperator, nicknamed “SuperCroc.”   
+
+Sarcosuchus is a large creature that lived about 112 million years ago. It seems to resemble modern crocodiles, even though it is currently believed that Sarcosuchus is not an ancestor of extant crocodiles. 
+
+A complete skeleton of Sarcosuchus has not yet been discovered, but a remarkably complete skull and other bones from a large specimen of this species were found in Niger, Africa.  These fossils are in the collections of the Musée National du Niger (MNN). This is the largest verified Sarcosuchus skull.  Unfortunately, many of the tail bones have not been recovered, making a positive determination of the length of Sarcosuchus impossible. 
+
+Because the skull length of Sarchosuchus is known, the researchers wanted to use the head-to-body length ratios of modern crocodiles to estimate the body length of Sarcosuchus.  The skull shape is similar to Gavialis gangeticus and Crocodylus porosus, so those species were used for estimation. \nAdditional Information:  
 
 96-minute National Geographic SuperCroc video can be found at snagfilms.com: http://www.snagfilms.com/films/title/supercroc/ 
 
