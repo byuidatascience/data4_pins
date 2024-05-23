@@ -2,10 +2,10 @@
 title: "Double Stuf Oreos"
 author: "MATH 221"
 date: "2024-05-01"
-categories: [food, products, advertising]
+categories: [MATH221, food, products, advertising]
 description: "A group of statistics students wanted to test the claim that Double Stuf Oreo cookies have twice as much filling (“Stuf”) as the traditional Oreo cookies.\nThe students purchased traditional and Double Stuf Oreo cookies from local grocery stores.  The students were separated into traditional and Double Stuf groups based on their last names.  Each student chose a cookie from their group’s package.  They carefully scraped the white filling from the cookies and weighed it to the nearest tenth of a gram on small balance scales. "
 params: 
-    source: ""
+    source: "Marie A. Revak and Jihan G. Williams. The double stuf dilemma. Mathematics Teacher, 92(8):674-675, November 1999. "
     pins_name: 'hathawayj/oreo_double_stuf'
     available: all
 ---
@@ -65,8 +65,8 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Traditional__ Weight of filling in traditional oreos (grams)
-- __DoubleStuf__ Weight of filling in DoubleStuf oreos (grams)
+- __Traditional:__ Weight of filling in traditional oreos (grams)
+- __DoubleStuf:__ Weight of filling in DoubleStuf oreos (grams)
 
 
 
