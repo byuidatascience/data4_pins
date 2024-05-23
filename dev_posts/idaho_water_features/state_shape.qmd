@@ -3,7 +3,7 @@ title: "Idaho Shape"
 author: "DS 350"
 date: "2024-05-09"
 categories: [DS350, idaho, geospatial, geography]
-description: ""
+description: "Geospatial and location-identifying (on a state and county level) data of the United States. Includes a geometry column for geospatial visualizations. "
 params: 
     source: ""
     pins_name: 'hathawayj/state_shape'
