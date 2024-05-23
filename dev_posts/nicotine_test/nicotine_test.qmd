@@ -2,10 +2,10 @@
 title: "Nicotine Test"
 author: "MATH 221"
 date: "2024-05-01"
-categories: [health]
+categories: [MATH221, health, substanceabuse]
 description: "Cigarette labels warn pregnant women against smoking.  Does nicotine actually reach the fetus, crossing the protective placental barrier?  Researchers selected consecutive pregnant women delivering at an Egyptian hospital and categorized them as 1) either active smoker 2) passive smokers or 3) nonsmokers. They then analyzed the newborns’ meconium for cotinine content, the metabolized form of nicotine. Meconium is a newborn’s first stool right after birth, composed of materials ingested by the fetus in utero, and is a good biological marker for fetal exposure to drugs or other chemical agents. \nResearchers want to know if the mean levels of cotinine in the meconium are different fromnewborns of mothers between the three groups listed above. "
 params: 
-    source: ""
+    source: "Unknown"
     pins_name: 'hathawayj/nicotine_test'
     available: all
 ---
@@ -65,8 +65,8 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Cotinine.Level__ Level of Cotinine (metabolized nicotine) found in newborn meconium (first stool after birth, indicative of things that fetus ingested in utero)
-- __Group__ Mother group (Active Smoker, Nonsmoker, Passive Smoker)
+- __Cotinine.Level:__ Level of Cotinine (metabolized nicotine) found in newborn meconium (first stool after birth, indicative of things that fetus ingested in utero)
+- __Group:__ Mother group (Active Smoker, Nonsmoker, Passive Smoker)
 
 
 ### Variable summary
