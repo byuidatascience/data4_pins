@@ -2,7 +2,7 @@
 title: "Manatees"
 author: "MATH 221"
 date: "2024-04-30"
-categories: [animals, population, ecology]
+categories: [MATH221, animals, population, ecology]
 description: "Manatees are curious, peaceful sea creatures that like to sun themselves just below the ocean's surface.  Sadly, this puts them in direct contact with powerboat propellers.  This has been a serious problem off the coast of Florida for many years.\nThe number of Florida powerboat registrations and the number of manatees killed by powerboats were recorded for the years 1977-2006. "
 params: 
     source: "Brigitte Baldi and David S. Moore. The Practice of Statistics in the Life Sciences, pages 67-68. W. H. Freeman and Company, New York, NY, 2009"
