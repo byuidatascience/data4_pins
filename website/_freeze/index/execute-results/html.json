@@ -1,0 +1,15 @@
+{
+  "hash": "db71b4cb9510e76de2f3b03d2bc648d6",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\nlisting:\n  contents: posts/**/*.qmd\n  sort: \"author desc\"\n  type: grid\n  categories: true\n  sort-ui: [author, title, file-modified]\n  filter-ui: [author, title, description, categories]\n  feed: true\n  fields: [author, title, description, categories, file-modified]\n  page-size: 100\npage-layout: full\ntitle-block-banner: true\n---\n\n\n## Data Overview\n\nThe `Author` is the originating BYU-I course that prompted the data. All terms are searchable. This page shows all datasets available on this site.  You can explore datasets by topic or course by browsing [data topics](data_topics.qmd). We leverage the Posit's pin packages in [Python (pins)](https://pypi.org/project/pins/) and [R (pins)](https://pins.rstudio.com/).\n\nFor R users, the following process will read the data from this website. You will need to change `DATANAMEONPOSIT` to the actual name.\n\n\n\n::: {.cell}\n\n```{.r .cell-code  code-fold=\"true\" code-summary=\"R code example to read data\"}\nlibrary(pins)\nurl_data <- \"https://posit.byui.edu/data/DATANAMEONPOSIT/\"\nboard_url <- board_connect_url(c(\"dat\" = url_data))\ndat <- pin_read(board_url, \"dat\")\n```\n:::\n\n\nUse the following python function (`read_url_pin()`) to access the data in a Pandas DataFrame.\n\n\n::: {.cell}\n\n```{.python .cell-code  code-fold=\"true\" code-summary=\"Python code example to read data\"}\nimport pandas as pd\nimport requests\nfrom io import BytesIO\n\ndef read_url_pin(name):\n  url = \"https://posit.byui.edu/data/\" + name + \"/\" + name + \".parquet\"\n  response = requests.get(url)\n  if response.status_code == 200:\n    parquet_content = BytesIO(response.content)\n    pandas_dataframe = pd.read_parquet(parquet_content)\n    return pandas_dataframe\n  else:\n    print(f\"Failed to retrieve data. Status code: {response.status_code}\")\n    return None\n\n# Example usage:\npandas_df = read_url_pin(\"DATANAMEONPOSIT\")\n```\n:::\n\n\n## Data Posts",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

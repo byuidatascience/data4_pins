@@ -6,16 +6,17 @@
       version="2.0">
 <channel>
 <title>BYU-I Course Project Data</title>
-<link>https://byuidatascience.github.io/index.html</link>
+<link>https://byuidatascience.github.io/</link>
 <atom:link href="https://byuidatascience.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Documentation on the avaialable data that we use in our courses.</description>
-<generator>quarto-1.3.450</generator>
-<lastBuildDate>Thu, 25 Jan 2024 07:00:00 GMT</lastBuildDate>
+<generator>quarto-1.4.553</generator>
+<lastBuildDate>Thu, 25 Apr 2024 06:00:00 GMT</lastBuildDate>
 <item>
-  <title>Table of Information about Marathons</title>
-  <dc:creator>DS 150</dc:creator>
-  <link>https://byuidatascience.github.io/posts/marathons/race_info.html</link>
+  <title>Book of Mormon Wordprint</title>
+  <dc:creator>MATH 221</dc:creator>
+  <link>https://byuidatascience.github.io/posts/intro_stats/book_of_mormon_wordprint.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -24,16 +25,14 @@
 <h1></h1>
 <section id="data-details" class="level2">
 <h2 class="anchored" data-anchor-id="data-details">Data details</h2>
-<p>There are <strong>6,888 rows</strong> and <strong>5 columns</strong>. The data source<sup>1</sup> is used to create our data that is stored in our <a href="https://posit.byui.edu/content/2e7f072f-d19c-408b-9791-7ea6e44a5502/_rev161/">pins table</a>. You can access this pin from a connection to <a href="https://posit.byui.edu">posit.byui.edu</a> using <code>hathawayj/race_info</code>.</p>
+<p>There are <strong>30 rows</strong> and <strong>3 columns</strong>. The data source<sup>1</sup> is used to create our data that is stored in our <a href="https://posit.byui.edu/content/fe401b5b-e861-4880-b04a-9adeefdfe842/_rev421/">pins table</a>. You can access this pin from a connection to <a href="https://posit.byui.edu">posit.byui.edu</a> using <code>hathawayj/book_of_mormon_wordprint</code>.</p>
 <p>This data is available to <strong>all</strong>.</p>
 <section id="variable-description" class="level3">
 <h3 class="anchored" data-anchor-id="variable-description">Variable description</h3>
 <ul>
-<li><strong>year:</strong> The year of the marathon</li>
-<li><strong>marathon:</strong> The name of the marathon</li>
-<li><strong>country:</strong> The country where the marathon occured</li>
-<li><strong>finishers:</strong> The number of finishers at the marathon</li>
-<li><strong>mean_time:</strong> The average finish time in minutes</li>
+<li><strong>Author:</strong> Author or speaker name</li>
+<li><strong>Word:</strong> The word being counted</li>
+<li><strong>Count:</strong> How many times each word was used</li>
 </ul>
 </section>
 <section id="variable-summary" class="level3">
@@ -43,17 +42,17 @@
 <p><strong>Variable type: numeric</strong></p>
 <table class="table table-sm table-striped small">
 <colgroup>
-<col style="width: 14%">
-<col style="width: 10%">
-<col style="width: 14%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 5%">
+<col style="width: 17%">
+<col style="width: 12%">
+<col style="width: 17%">
 <col style="width: 7%">
-<col style="width: 8%">
+<col style="width: 7%">
+<col style="width: 3%">
+<col style="width: 7%">
+<col style="width: 5%">
 <col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 7%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -72,43 +71,17 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">year</td>
+<td style="text-align: left;">Count</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">1</td>
-<td style="text-align: right;">2007.53</td>
-<td style="text-align: right;">4.73</td>
-<td style="text-align: right;">1970.00</td>
-<td style="text-align: right;">2005.00</td>
-<td style="text-align: right;">2008</td>
-<td style="text-align: right;">2011.0</td>
-<td style="text-align: right;">2013.0</td>
-<td style="text-align: left;">▁▁▁▂▇</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">finishers</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1421.21</td>
-<td style="text-align: right;">4166.05</td>
-<td style="text-align: right;">1.00</td>
-<td style="text-align: right;">87.75</td>
-<td style="text-align: right;">224</td>
-<td style="text-align: right;">842.5</td>
-<td style="text-align: right;">50062.0</td>
-<td style="text-align: left;">▇▁▁▁▁</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">mean_time</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">270.47</td>
-<td style="text-align: right;">35.52</td>
-<td style="text-align: right;">139.07</td>
-<td style="text-align: right;">250.85</td>
-<td style="text-align: right;">263</td>
-<td style="text-align: right;">280.0</td>
-<td style="text-align: right;">614.5</td>
-<td style="text-align: left;">▁▇▁▁▁</td>
+<td style="text-align: right;">38.93</td>
+<td style="text-align: right;">23.11</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">21.25</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">60.5</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: left;">▇▃▂▃▂</td>
 </tr>
 </tbody>
 </table>
@@ -142,159 +115,77 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">marathon</td>
+<td style="text-align: left;">Author</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
 <td style="text-align: right;">6</td>
-<td style="text-align: right;">64</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">1176</td>
+<td style="text-align: right;">5</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">country</td>
+<td style="text-align: left;">Word</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">2</td>
-<td style="text-align: right;">14</td>
+<td style="text-align: right;">4</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">43</td>
+<td style="text-align: right;">6</td>
 <td style="text-align: right;">0</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
-<div class="cell" data-file="../../../data_scripts/marathon/race_info.R">
-<details>
+<div class="cell">
+<details class="code-fold">
 <summary>Explore generating code using R</summary>
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1">pacman<span class="sc" style="color: #5E5E5E;
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+font-style: inherit;">library</span>(tidyverse)</span>
+<span id="cb1-2"><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">p_load</span>(pins, tidyverse, downloader, fs, glue, rvest, pins, connectapi)</span>
-<span id="cb1-2"></span>
-<span id="cb1-3"><span class="co" style="color: #5E5E5E;
+font-style: inherit;">library</span>(pins)</span>
+<span id="cb1-3"><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"># Data origin. This works.</span></span>
-<span id="cb1-4">race_info <span class="ot" style="color: #003B4F;
+font-style: inherit;">library</span>(connectapi)</span>
+<span id="cb1-4"></span>
+<span id="cb1-5">book_of_mormon_wordprint <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">read_html</span>(<span class="st" style="color: #20794D;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"https://faculty.chicagobooth.edu/george.wu/research/marathon/marathon_names.htm"</span>) <span class="sc" style="color: #5E5E5E;
+font-style: inherit;">'https://github.com/byuistats/data/raw/master/BookOfMormonWordprint/BookOfMormonWordprint.csv'</span>)</span>
+<span id="cb1-6"></span>
+<span id="cb1-7"></span>
+<span id="cb1-8"><span class="co" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">%&gt;%</span></span>
-<span id="cb1-5">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">html_nodes</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"table"</span>) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%&gt;%</span> </span>
-<span id="cb1-6">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">html_table</span>() <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%&gt;%</span></span>
-<span id="cb1-7">  .[[<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>]]</span>
-<span id="cb1-8"></span>
-<span id="cb1-9"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Wrangle</span></span>
-<span id="cb1-10"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">colnames</span>(race_info) <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> race_info[<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>,]</span>
-<span id="cb1-11"></span>
-<span id="cb1-12">race_info <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> race_info[<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>,] <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%&gt;%</span> </span>
-<span id="cb1-13">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">as_tibble</span>() <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%&gt;%</span></span>
-<span id="cb1-14">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">rename_all</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"str_to_lower"</span>) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%&gt;%</span></span>
-<span id="cb1-15">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">year =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">as.integer</span>(year), <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">finishers =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">as.integer</span>(finishers), </span>
-<span id="cb1-16">         <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">`</span><span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">mean time</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">`</span> <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">as.numeric</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">`</span><span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">mean time</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">`</span>)) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%&gt;%</span></span>
-<span id="cb1-17">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">rename</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">mean_time =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">`</span><span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">mean time</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">`</span>)</span>
-<span id="cb1-18"></span>
-<span id="cb1-19">board <span class="ot" style="color: #003B4F;
+font-style: inherit;"># Publish the data to the server with Bro. Hathaway as the owner.</span></span>
+<span id="cb1-9">board <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">board_connect</span>()</span>
-<span id="cb1-20"><span class="fu" style="color: #4758AB;
+<span id="cb1-10"><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">pin_write</span>(board, race_info, <span class="at" style="color: #657422;
+font-style: inherit;">pin_write</span>(board, book_of_mormon_wordprint, <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">type =</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"parquet"</span>) </span>
-<span id="cb1-21"></span>
-<span id="cb1-22">pin_name <span class="ot" style="color: #003B4F;
+font-style: inherit;">"parquet"</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">access_type =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"all"</span>)</span>
+<span id="cb1-11"></span>
+<span id="cb1-12">pin_name <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"race_info"</span></span>
-<span id="cb1-23">meta <span class="ot" style="color: #003B4F;
+font-style: inherit;">"book_of_mormon_wordprint"</span></span>
+<span id="cb1-13">meta <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -303,12 +194,12 @@ background-color: null;
 font-style: inherit;">paste0</span>(<span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"hathawayj/"</span>, pin_name))</span>
-<span id="cb1-24">client <span class="ot" style="color: #003B4F;
+<span id="cb1-14">client <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">connect</span>()</span>
-<span id="cb1-25">my_app <span class="ot" style="color: #003B4F;
+<span id="cb1-15">my_app <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -317,51 +208,13 @@ background-color: null;
 font-style: inherit;">$</span>local<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">$</span>content_id)</span>
-<span id="cb1-26"><span class="fu" style="color: #4758AB;
+<span id="cb1-16"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">set_vanity_url</span>(my_app, <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">paste0</span>(<span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"data/"</span>, pin_name))</span>
-<span id="cb1-27"></span>
-<span id="cb1-28"></span>
-<span id="cb1-29"></span>
-<span id="cb1-30"></span>
-<span id="cb1-31"></span>
-<span id="cb1-32"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Data details</span></span>
-<span id="cb1-33"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># dpr_document(race_info, extension = ".R.md", export_folder = usethis::proj_get(),</span></span>
-<span id="cb1-34"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#              object_name = "race_info", title = "Table of Information about Marathons",</span></span>
-<span id="cb1-35"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#              description = "An interesting data set to see the effects of goals on what should be a unimodal distrubtion of finish times. The NYT had a good article - https://www.nytimes.com/2014/04/23/upshot/what-good-marathons-and-bad-investments-have-in-common.html?rref=upshot&amp;_r=1",</span></span>
-<span id="cb1-36"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#              source = "https://faculty.chicagobooth.edu/george.wu/research/marathon/marathon_names.htm",</span></span>
-<span id="cb1-37"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#              var_details = list(year = "The year of the marathon", </span></span>
-<span id="cb1-38"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#                                 marathon = "The name of the marathon",</span></span>
-<span id="cb1-39"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#                                 country = "The country where the marathon was held",</span></span>
-<span id="cb1-40"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#                                 finishers = "The number of finishers at the marathon",</span></span>
-<span id="cb1-41"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#                                 mean_time = "The average finish time in minutes."))</span></span>
-<span id="cb1-42"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># </span></span></code></pre></div>
+font-style: inherit;">"data/"</span>, pin_name))</span></code></pre></div>
 </details>
 </div>
 <!-- ```{python}
@@ -377,7 +230,7 @@ font-style: inherit;"># </span></span></code></pre></div>
 <section id="access-data" class="level2">
 <h2 class="anchored" data-anchor-id="access-data">Access data</h2>
 <p>This data is available to <strong>all</strong>.</p>
-<p><strong>Direct Download:</strong> <a href="https://posit.byui.edu/content/2e7f072f-d19c-408b-9791-7ea6e44a5502/race_info.parquet">race_info.parquet</a></p>
+<p><strong>Direct Download:</strong> <a href="https://posit.byui.edu/content/fe401b5b-e861-4880-b04a-9adeefdfe842/book_of_mormon_wordprint.parquet">book_of_mormon_wordprint.parquet</a></p>
 <section id="r-and-python-download" class="level4">
 <h4 class="anchored" data-anchor-id="r-and-python-download"><strong>R and Python Download:</strong></h4>
 <section id="url-connections" class="level5">
@@ -390,7 +243,7 @@ font-style: inherit;">library</span>(pins)</span>
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"https://posit.byui.edu/data/race_info/"</span></span>
+font-style: inherit;">"https://posit.byui.edu/data/book_of_mormon_wordprint/"</span></span>
 <span id="cb2-3">board_url <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
@@ -492,12 +345,12 @@ font-style: inherit;"># Example usage:</span></span>
 background-color: null;
 font-style: inherit;">=</span> read_url_pin(<span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"race_info"</span>)</span></code></pre></div>
+font-style: inherit;">"book_of_mormon_wordprint"</span>)</span></code></pre></div>
 </section>
 </section>
 <section id="authenticated-connection" class="level4">
 <h4 class="anchored" data-anchor-id="authenticated-connection"><strong>Authenticated Connection:</strong></h4>
-<p>Our connect server is <a href="https://posit.byui.edu/connect/#/content/listing?filter=min_role:viewer&amp;filter=content_type:all&amp;view_type=compact">https://posit.byui.edu</a> which you assign to your <code>CONNECT_SERVER</code> environment variable. You must <a href="https://docs.posit.co/connect/user/api-keys/#api-keys-creating">create and API key</a> and store it in your environment under <code>CONNECT_API_KEY</code>.</p>
+<p>Our connect server is <a href="https://posit.byui.edu/connect/#/content/listing?filter=min_role:viewer&amp;filter=content_type:all&amp;view_type=compact">https://posit.byui.edu</a> which you assign to your <code>CONNECT_SERVER</code> environment variable. You must <a href="https://docs.posit.co/connect/user/api-keys/#api-keys-creating">create an API key</a> and store it in your environment under <code>CONNECT_API_KEY</code>.</p>
 <p><em>Read more about <a href="../../environment.html">environment variables and the pins package</a> to understand how these environment variables are stored and accessed in R and Python with pins.</em></p>
 <div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -517,7 +370,7 @@ font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">pin_read</span>(board, <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"hathawayj/race_info"</span>)</span></code></pre></div>
+font-style: inherit;">"hathawayj/book_of_mormon_wordprint"</span>)</span></code></pre></div>
 <div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">import</span> os</span>
@@ -554,7 +407,7 @@ font-style: inherit;">=</span>API_KEY)</span>
 background-color: null;
 font-style: inherit;">=</span> board.pin_read(<span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"hathawayj/race_info"</span>)</span></code></pre></div>
+font-style: inherit;">"hathawayj/book_of_mormon_wordprint"</span>)</span></code></pre></div>
 
 
 </section>
@@ -565,18 +418,883 @@ font-style: inherit;">"hathawayj/race_info"</span>)</span></code></pre></div>
 <div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
-<li id="fn1"><p><a href="https://faculty.chicagobooth.edu/george.wu/research/marathon/marathon_names.htm">https://faculty.chicagobooth.edu/george.wu/research/marathon/marathon_names.htm</a>↩︎</p></li>
+<li id="fn1"><p><a href="Wayne A. Larsen, Alvin C. Rencher, and Tim Layton. Who wrote the Book of Mormon? An analysis of wordprints. BYU Studies, 20(3):225-251, 1980. John L. Hilton. On verifying wordprint studies: Book of mormon. BYU Studies, 30(3):90-106, 1990.">Wayne A. Larsen, Alvin C. Rencher, and Tim Layton. Who wrote the Book of Mormon? An analysis of wordprints. BYU Studies, 20(3):225-251, 1980. John L. Hilton. On verifying wordprint studies: Book of mormon. BYU Studies, 30(3):90-106, 1990.</a>↩︎</p></li>
 </ol>
 </section></div> ]]></description>
-  <category>marathon</category>
-  <guid>https://byuidatascience.github.io/posts/marathons/race_info.html</guid>
-  <pubDate>Thu, 25 Jan 2024 07:00:00 GMT</pubDate>
+  <category>MATH221</category>
+  <category>religion</category>
+  <guid>https://byuidatascience.github.io/posts/intro_stats/book_of_mormon_wordprint.html</guid>
+  <pubDate>Thu, 25 Apr 2024 06:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Apollo Missions</title>
+  <dc:creator>MATH 221</dc:creator>
+  <link>https://byuidatascience.github.io/posts/intro_stats/apollo.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="section" class="level1">
+<h1></h1>
+<section id="data-details" class="level2">
+<h2 class="anchored" data-anchor-id="data-details">Data details</h2>
+<p>There are <strong>8 rows</strong> and <strong>6 columns</strong>. The data source<sup>1</sup> is used to create our data that is stored in our <a href="https://posit.byui.edu/content/2747fc9a-1ebc-4a99-824b-2e6e458b2fc0/_rev417/">pins table</a>. You can access this pin from a connection to <a href="https://posit.byui.edu">posit.byui.edu</a> using <code>hathawayj/apollo</code>.</p>
+<p>This data is available to <strong>all</strong>.</p>
+<section id="variable-description" class="level3">
+<h3 class="anchored" data-anchor-id="variable-description">Variable description</h3>
+<ul>
+<li><strong>Mission</strong> Apollo mission name</li>
+<li><strong>LaunchDate</strong> Date of launch</li>
+<li><strong>LunarLandingSite</strong> Location of landing</li>
+<li><strong>DistanceTraveledOnMoon</strong> Distance probe travelled on moon (kilometers)</li>
+<li><strong>MassOfSamples</strong> Total mass of lunar rock samples collected (kilograms)</li>
+<li><strong>MissionDuration</strong> Total duration of mission (days)</li>
+</ul>
+</section>
+<section id="variable-summary" class="level3">
+<h3 class="anchored" data-anchor-id="variable-summary">Variable summary</h3>
+<div class="cell">
+<div class="cell-output-display">
+<p><strong>Variable type: numeric</strong></p>
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 10%">
+<col style="width: 14%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 7%">
+<col style="width: 6%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">skim_variable</th>
+<th style="text-align: right;">n_missing</th>
+<th style="text-align: right;">complete_rate</th>
+<th style="text-align: right;">mean</th>
+<th style="text-align: right;">sd</th>
+<th style="text-align: right;">p0</th>
+<th style="text-align: right;">p25</th>
+<th style="text-align: right;">p50</th>
+<th style="text-align: right;">p75</th>
+<th style="text-align: right;">p100</th>
+<th style="text-align: left;">hist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">DistanceTraveledOnMoon</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0.75</td>
+<td style="text-align: right;">15.02</td>
+<td style="text-align: right;">14.62</td>
+<td style="text-align: right;">0.30</td>
+<td style="text-align: right;">1.92</td>
+<td style="text-align: right;">15.25</td>
+<td style="text-align: right;">27.67</td>
+<td style="text-align: right;">30.00</td>
+<td style="text-align: left;">▇▁▁▁▇</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">MassOfSamples</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0.75</td>
+<td style="text-align: right;">63.17</td>
+<td style="text-align: right;">36.40</td>
+<td style="text-align: right;">20.00</td>
+<td style="text-align: right;">36.00</td>
+<td style="text-align: right;">59.50</td>
+<td style="text-align: right;">91.25</td>
+<td style="text-align: right;">110.00</td>
+<td style="text-align: left;">▇▃▁▃▇</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">MissionDuration</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.88</td>
+<td style="text-align: right;">9.89</td>
+<td style="text-align: right;">2.38</td>
+<td style="text-align: right;">5.95</td>
+<td style="text-align: right;">8.57</td>
+<td style="text-align: right;">10.19</td>
+<td style="text-align: right;">11.69</td>
+<td style="text-align: right;">12.58</td>
+<td style="text-align: left;">▃▃▃▇▇</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<p><strong>Variable type: character</strong></p>
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 13%">
+<col style="width: 18%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 8%">
+<col style="width: 12%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">skim_variable</th>
+<th style="text-align: right;">n_missing</th>
+<th style="text-align: right;">complete_rate</th>
+<th style="text-align: right;">min</th>
+<th style="text-align: right;">max</th>
+<th style="text-align: right;">empty</th>
+<th style="text-align: right;">n_unique</th>
+<th style="text-align: right;">whitespace</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Mission</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.88</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">LaunchDate</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.88</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">LunarLandingSite</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.88</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<details class="code-fold">
+<summary>Explore generating code using R</summary>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(tidyverse)</span>
+<span id="cb1-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(pins)</span>
+<span id="cb1-3"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(connectapi)</span>
+<span id="cb1-4"></span>
+<span id="cb1-5">apollo <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'https://github.com/byuistats/data/raw/master/Apollo/Apollo.csv'</span>)</span>
+<span id="cb1-6"></span>
+<span id="cb1-7"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Publish the data to the server with Bro. Hathaway as the owner.</span></span>
+<span id="cb1-8">board <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">board_connect</span>()</span>
+<span id="cb1-9"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">pin_write</span>(board, apollo, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">type =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"parquet"</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">access_type =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"all"</span>)</span>
+<span id="cb1-10"></span>
+<span id="cb1-11">pin_name <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"apollo"</span></span>
+<span id="cb1-12">meta <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">pin_meta</span>(board, <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">paste0</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"hathawayj/"</span>, pin_name))</span>
+<span id="cb1-13">client <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">connect</span>()</span>
+<span id="cb1-14">my_app <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">content_item</span>(client, meta<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>local<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>content_id)</span>
+<span id="cb1-15"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">set_vanity_url</span>(my_app, <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">paste0</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"data/"</span>, pin_name))</span></code></pre></div>
+</details>
+</div>
+<!-- ```{python}
+#| echo: true
+#| eval: false
+#| code-fold: true
+#| code-summary: Explore generating code using Python
+#| code-line-numbers: true
+#| file: ../../../data_scripts/YOURFILEPATH
+``` -->
+</section>
+</section>
+<section id="access-data" class="level2">
+<h2 class="anchored" data-anchor-id="access-data">Access data</h2>
+<p>This data is available to <strong>all</strong>.</p>
+<p><strong>Direct Download:</strong> <a href="https://posit.byui.edu/content/2747fc9a-1ebc-4a99-824b-2e6e458b2fc0/apollo.parquet">apollo.parquet</a></p>
+<section id="r-and-python-download" class="level4">
+<h4 class="anchored" data-anchor-id="r-and-python-download"><strong>R and Python Download:</strong></h4>
+<section id="url-connections" class="level5">
+<h5 class="anchored" data-anchor-id="url-connections"><strong>URL Connections:</strong></h5>
+<p>For public data, any user can connect and read the data using <code>pins::board_connect_url()</code> in R.</p>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(pins)</span>
+<span id="cb2-2">url_data <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://posit.byui.edu/data/apollo/"</span></span>
+<span id="cb2-3">board_url <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">board_connect_url</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"dat"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> url_data))</span>
+<span id="cb2-4">dat <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">pin_read</span>(board_url, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"dat"</span>)</span></code></pre></div>
+<p>Use this custom function in Python to have the data in a Pandas DataFrame.</p>
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> pandas <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> pd</span>
+<span id="cb3-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> requests</span>
+<span id="cb3-3"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> io <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> BytesIO</span>
+<span id="cb3-4"></span>
+<span id="cb3-5"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> read_url_pin(name):</span>
+<span id="cb3-6">  url <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://posit.byui.edu/data/"</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> name <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"/"</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> name <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">".parquet"</span></span>
+<span id="cb3-7">  response <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> requests.get(url)</span>
+<span id="cb3-8">  <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">if</span> response.status_code <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">200</span>:</span>
+<span id="cb3-9">    parquet_content <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> BytesIO(response.content)</span>
+<span id="cb3-10">    pandas_dataframe <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> pd.read_parquet(parquet_content)</span>
+<span id="cb3-11">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> pandas_dataframe</span>
+<span id="cb3-12">  <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">else</span>:</span>
+<span id="cb3-13">    <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(<span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f"Failed to retrieve data. Status code: </span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>response<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span>status_code<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"</span>)</span>
+<span id="cb3-14">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">None</span></span>
+<span id="cb3-15"></span>
+<span id="cb3-16"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Example usage:</span></span>
+<span id="cb3-17">pandas_df <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> read_url_pin(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"apollo"</span>)</span></code></pre></div>
+</section>
+</section>
+<section id="authenticated-connection" class="level4">
+<h4 class="anchored" data-anchor-id="authenticated-connection"><strong>Authenticated Connection:</strong></h4>
+<p>Our connect server is <a href="https://posit.byui.edu/connect/#/content/listing?filter=min_role:viewer&amp;filter=content_type:all&amp;view_type=compact">https://posit.byui.edu</a> which you assign to your <code>CONNECT_SERVER</code> environment variable. You must <a href="https://docs.posit.co/connect/user/api-keys/#api-keys-creating">create and API key</a> and store it in your environment under <code>CONNECT_API_KEY</code>.</p>
+<p><em>Read more about <a href="../../environment.html">environment variables and the pins package</a> to understand how these environment variables are stored and accessed in R and Python with pins.</em></p>
+<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(pins)</span>
+<span id="cb4-2">board <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">board_connect</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">auth =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"auto"</span>)</span>
+<span id="cb4-3">dat <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">pin_read</span>(board, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"hathawayj/apollo"</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> os</span>
+<span id="cb5-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> pins <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> board_rsconnect</span>
+<span id="cb5-3"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> dotenv <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> load_dotenv</span>
+<span id="cb5-4">load_dotenv()</span>
+<span id="cb5-5">API_KEY <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> os.getenv(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'CONNECT_API_KEY'</span>)</span>
+<span id="cb5-6">SERVER <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> os.getenv(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'CONNECT_SERVER'</span>)</span>
+<span id="cb5-7"></span>
+<span id="cb5-8">board <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> board_rsconnect(server_url<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>SERVER, api_key<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>API_KEY)</span>
+<span id="cb5-9">dat <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> board.pin_read(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"hathawayj/apollo"</span>)</span></code></pre></div>
+
+
+</section>
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p><a href="NASA. Apollo lunar surface journal. Website, accessed May 2010. http://www.hq.nasa.gov/alsj/frame.html. NASA. Apollo program summary report. Website, accessed May 2010. http://history.nasa.gov/apsr/apsr.htm. NASA. Apollo flight summary. Website, accessed May 2010. http://science.ksc.nasa.gov/history/apollo/flight-summary.txt.">NASA. Apollo lunar surface journal. Website, accessed May 2010. http://www.hq.nasa.gov/alsj/frame.html. NASA. Apollo program summary report. Website, accessed May 2010. http://history.nasa.gov/apsr/apsr.htm. NASA. Apollo flight summary. Website, accessed May 2010. http://science.ksc.nasa.gov/history/apollo/flight-summary.txt.</a>↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>astronomy</category>
+  <category>physics</category>
+  <guid>https://byuidatascience.github.io/posts/intro_stats/apollo.html</guid>
+  <pubDate>Wed, 13 Mar 2024 06:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Baby Boom</title>
+  <dc:creator>MATH 221</dc:creator>
+  <link>https://byuidatascience.github.io/posts/intro_stats/baby_boom.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="section" class="level1">
+<h1></h1>
+<section id="data-details" class="level2">
+<h2 class="anchored" data-anchor-id="data-details">Data details</h2>
+<p>There are <strong>44 rows</strong> and <strong>4 columns</strong>. The data source<sup>1</sup> is used to create our data that is stored in our <a href="https://posit.byui.edu/content/f9cc5331-68f2-4492-a98f-18954429ea67/_rev418/">pins table</a>. You can access this pin from a connection to <a href="https://posit.byui.edu">posit.byui.edu</a> using <code>hathawayj/baby_boom</code>.</p>
+<p>This data is available to <strong>all</strong>.</p>
+<section id="variable-description" class="level3">
+<h3 class="anchored" data-anchor-id="variable-description">Variable description</h3>
+<ul>
+<li><strong>Time</strong> Time of birth, 24-hour clock (2010 = 8:10 PM)</li>
+<li><strong>Gender</strong> Gender of baby (1 - female, 2 = male)</li>
+<li><strong>Weight</strong> Weight of baby (grams)</li>
+<li><strong>Minutes</strong> Number of minutes past midnight the baby was born</li>
+<li><strong>WaitTimes</strong> Number of minutes between the current and previous births</li>
+</ul>
+</section>
+<section id="variable-summary" class="level3">
+<h3 class="anchored" data-anchor-id="variable-summary">Variable summary</h3>
+<div class="cell">
+<div class="cell-output-display">
+<p><strong>Variable type: numeric</strong></p>
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 10%">
+<col style="width: 15%">
+<col style="width: 8%">
+<col style="width: 7%">
+<col style="width: 5%">
+<col style="width: 8%">
+<col style="width: 7%">
+<col style="width: 8%">
+<col style="width: 5%">
+<col style="width: 6%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">skim_variable</th>
+<th style="text-align: right;">n_missing</th>
+<th style="text-align: right;">complete_rate</th>
+<th style="text-align: right;">mean</th>
+<th style="text-align: right;">sd</th>
+<th style="text-align: right;">p0</th>
+<th style="text-align: right;">p25</th>
+<th style="text-align: right;">p50</th>
+<th style="text-align: right;">p75</th>
+<th style="text-align: right;">p100</th>
+<th style="text-align: left;">hist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gender</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.59</td>
+<td style="text-align: right;">0.50</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">2.0</td>
+<td style="text-align: right;">2.00</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">▆▁▁▁▇</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Weight</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">3275.95</td>
+<td style="text-align: right;">528.03</td>
+<td style="text-align: right;">1745</td>
+<td style="text-align: right;">3141.50</td>
+<td style="text-align: right;">3404.0</td>
+<td style="text-align: right;">3571.75</td>
+<td style="text-align: right;">4162</td>
+<td style="text-align: left;">▂▁▂▇▃</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Minutes</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">788.73</td>
+<td style="text-align: right;">416.07</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">482.75</td>
+<td style="text-align: right;">846.5</td>
+<td style="text-align: right;">1158.50</td>
+<td style="text-align: right;">1435</td>
+<td style="text-align: left;">▆▃▆▇▇</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">WaitTimes</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.98</td>
+<td style="text-align: right;">33.26</td>
+<td style="text-align: right;">29.56</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">14.00</td>
+<td style="text-align: right;">27.0</td>
+<td style="text-align: right;">46.00</td>
+<td style="text-align: right;">157</td>
+<td style="text-align: left;">▇▃▁▁▁</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>NULL</code></pre>
+</div>
+</div>
+<div class="cell">
+<details class="code-fold">
+<summary>Explore generating code using R</summary>
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(tidyverse)</span>
+<span id="cb2-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(pins)</span>
+<span id="cb2-3"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(connectapi)</span>
+<span id="cb2-4"></span>
+<span id="cb2-5">baby_boom <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'https://github.com/byuistats/data/raw/master/BabyBoom-JSE/BabyBoom-JSE.csv'</span>)</span>
+<span id="cb2-6"></span>
+<span id="cb2-7"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Publish the data to the server with Bro. Hathaway as the owner.</span></span>
+<span id="cb2-8">board <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">board_connect</span>()</span>
+<span id="cb2-9"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">pin_write</span>(board, baby_boom, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">type =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"parquet"</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">access_type =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"all"</span>)</span>
+<span id="cb2-10"></span>
+<span id="cb2-11">pin_name <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"baby_boom"</span></span>
+<span id="cb2-12">meta <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">pin_meta</span>(board, <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">paste0</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"hathawayj/"</span>, pin_name))</span>
+<span id="cb2-13">client <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">connect</span>()</span>
+<span id="cb2-14">my_app <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">content_item</span>(client, meta<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>local<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>content_id)</span>
+<span id="cb2-15"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">set_vanity_url</span>(my_app, <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">paste0</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"data/"</span>, pin_name))</span></code></pre></div>
+</details>
+</div>
+<!-- ```{python}
+#| echo: true
+#| eval: false
+#| code-fold: true
+#| code-summary: Explore generating code using Python
+#| code-line-numbers: true
+#| file: ../../../data_scripts/intro_stats/baby_boom.R
+``` -->
+</section>
+</section>
+<section id="access-data" class="level2">
+<h2 class="anchored" data-anchor-id="access-data">Access data</h2>
+<p>This data is available to <strong>all</strong>.</p>
+<p><strong>Direct Download:</strong> <a href="https://posit.byui.edu/content/f9cc5331-68f2-4492-a98f-18954429ea67/baby_boom.parquet">baby_boom.parquet</a></p>
+<section id="r-and-python-download" class="level4">
+<h4 class="anchored" data-anchor-id="r-and-python-download"><strong>R and Python Download:</strong></h4>
+<section id="url-connections" class="level5">
+<h5 class="anchored" data-anchor-id="url-connections"><strong>URL Connections:</strong></h5>
+<p>For public data, any user can connect and read the data using <code>pins::board_connect_url()</code> in R.</p>
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(pins)</span>
+<span id="cb3-2">url_data <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://posit.byui.edu/data/baby_boom/"</span></span>
+<span id="cb3-3">board_url <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">board_connect_url</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"dat"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> url_data))</span>
+<span id="cb3-4">dat <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">pin_read</span>(board_url, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"dat"</span>)</span></code></pre></div>
+<p>Use this custom function in Python to have the data in a Pandas DataFrame.</p>
+<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> pandas <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> pd</span>
+<span id="cb4-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> requests</span>
+<span id="cb4-3"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> io <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> BytesIO</span>
+<span id="cb4-4"></span>
+<span id="cb4-5"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> read_url_pin(name):</span>
+<span id="cb4-6">  url <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://posit.byui.edu/data/"</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> name <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"/"</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> name <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">".parquet"</span></span>
+<span id="cb4-7">  response <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> requests.get(url)</span>
+<span id="cb4-8">  <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">if</span> response.status_code <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">200</span>:</span>
+<span id="cb4-9">    parquet_content <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> BytesIO(response.content)</span>
+<span id="cb4-10">    pandas_dataframe <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> pd.read_parquet(parquet_content)</span>
+<span id="cb4-11">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> pandas_dataframe</span>
+<span id="cb4-12">  <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">else</span>:</span>
+<span id="cb4-13">    <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(<span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f"Failed to retrieve data. Status code: </span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>response<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span>status_code<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"</span>)</span>
+<span id="cb4-14">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">None</span></span>
+<span id="cb4-15"></span>
+<span id="cb4-16"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Example usage:</span></span>
+<span id="cb4-17">pandas_df <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> read_url_pin(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"baby_boom"</span>)</span></code></pre></div>
+</section>
+</section>
+<section id="authenticated-connection" class="level4">
+<h4 class="anchored" data-anchor-id="authenticated-connection"><strong>Authenticated Connection:</strong></h4>
+<p>Our connect server is <a href="https://posit.byui.edu/connect/#/content/listing?filter=min_role:viewer&amp;filter=content_type:all&amp;view_type=compact">https://posit.byui.edu</a> which you assign to your <code>CONNECT_SERVER</code> environment variable. You must <a href="https://docs.posit.co/connect/user/api-keys/#api-keys-creating">create and API key</a> and store it in your environment under <code>CONNECT_API_KEY</code>.</p>
+<p><em>Read more about <a href="../../environment.html">environment variables and the pins package</a> to understand how these environment variables are stored and accessed in R and Python with pins.</em></p>
+<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(pins)</span>
+<span id="cb5-2">board <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">board_connect</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">auth =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"auto"</span>)</span>
+<span id="cb5-3">dat <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">pin_read</span>(board, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"hathawayj/baby_boom"</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> os</span>
+<span id="cb6-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> pins <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> board_rsconnect</span>
+<span id="cb6-3"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> dotenv <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> load_dotenv</span>
+<span id="cb6-4">load_dotenv()</span>
+<span id="cb6-5">API_KEY <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> os.getenv(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'CONNECT_API_KEY'</span>)</span>
+<span id="cb6-6">SERVER <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> os.getenv(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'CONNECT_SERVER'</span>)</span>
+<span id="cb6-7"></span>
+<span id="cb6-8">board <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> board_rsconnect(server_url<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>SERVER, api_key<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>API_KEY)</span>
+<span id="cb6-9">dat <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> board.pin_read(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"hathawayj/baby_boom"</span>)</span></code></pre></div>
+
+
+</section>
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p><a href="S Steele. Babies by the dozen for Christmas: 24-hour baby boom. The Sunday Mail (Brisbane), page 7, December 21, 1997. Peter K. Dunn. A simple dataset for demonstrating common distributions. Journal of Statistics Education, 7(3), 1999.">S Steele. Babies by the dozen for Christmas: 24-hour baby boom. The Sunday Mail (Brisbane), page 7, December 21, 1997. Peter K. Dunn. A simple dataset for demonstrating common distributions. Journal of Statistics Education, 7(3), 1999.</a>↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>population</category>
+  <category>health</category>
+  <category>anthropology</category>
+  <guid>https://byuidatascience.github.io/posts/intro_stats/baby_boom.html</guid>
+  <pubDate>Wed, 13 Mar 2024 06:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Child height and weight measurements for all data from three studies at one year of age.</title>
   <dc:creator>DS 150</dc:creator>
   <link>https://byuidatascience.github.io/posts/childhealth/all_child_365_days.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -750,14 +1468,14 @@ font-style: inherit;">"hathawayj/race_info"</span>)</span></code></pre></div>
 </table>
 </div>
 </div>
-<div class="cell" data-file="../../../data_scripts/childheath/child_365_days.r">
-<details>
+<div class="cell">
+<details class="code-fold">
 <summary>Explore generating code using R</summary>
 <div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1">pacman<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, , pins, connectapi)</span>
+font-style: inherit;">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, pins, connectapi)</span>
 <span id="cb1-2"></span>
 <span id="cb1-3">hbgd_temp <span class="ot" style="color: #003B4F;
 background-color: null;
@@ -1286,7 +2004,7 @@ font-style: inherit;">"days_365"</span>)</span></code></pre></div>
 </section>
 <section id="authenticated-connection" class="level4">
 <h4 class="anchored" data-anchor-id="authenticated-connection"><strong>Authenticated Connection:</strong></h4>
-<p>Our connect server is <a href="https://posit.byui.edu/connect/#/content/listing?filter=min_role:viewer&amp;filter=content_type:all&amp;view_type=compact">https://posit.byui.edu</a> which you assign to your <code>CONNECT_SERVER</code> environment variable. You must <a href="https://docs.posit.co/connect/user/api-keys/#api-keys-creating">create and API key</a> and store it in your environment under <code>CONNECT_API_KEY</code>.</p>
+<p>Our connect server is <a href="https://posit.byui.edu/connect/#/content/listing?filter=min_role:viewer&amp;filter=content_type:all&amp;view_type=compact">https://posit.byui.edu</a> which you assign to your <code>CONNECT_SERVER</code> environment variable. You must <a href="https://docs.posit.co/connect/user/api-keys/#api-keys-creating">create an API key</a> and store it in your environment under <code>CONNECT_API_KEY</code>.</p>
 <p><em>Read more about <a href="../../environment.html">environment variables and the pins package</a> to understand how these environment variables are stored and accessed in R and Python with pins.</em></p>
 <div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -1367,6 +2085,7 @@ font-style: inherit;">"hathawayj/days_365"</span>)</span></code></pre></div>
   <dc:creator>DS 150</dc:creator>
   <link>https://byuidatascience.github.io/posts/childhealth/all_child_summary.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1610,14 +2329,14 @@ font-style: inherit;">"hathawayj/days_365"</span>)</span></code></pre></div>
 </table>
 </div>
 </div>
-<div class="cell" data-file="../../../data_scripts/childheath/child_summary.r">
-<details>
+<div class="cell">
+<details class="code-fold">
 <summary>Explore generating code using R</summary>
 <div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1">pacman<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, , pins, connectapi)</span>
+font-style: inherit;">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, pins, connectapi)</span>
 <span id="cb1-2"></span>
 <span id="cb1-3"><span class="co" style="color: #5E5E5E;
 background-color: null;
@@ -2178,7 +2897,7 @@ font-style: inherit;">"childhealth_summary"</span>)</span></code></pre></div>
 </section>
 <section id="authenticated-connection" class="level4">
 <h4 class="anchored" data-anchor-id="authenticated-connection"><strong>Authenticated Connection:</strong></h4>
-<p>Our connect server is <a href="https://posit.byui.edu/connect/#/content/listing?filter=min_role:viewer&amp;filter=content_type:all&amp;view_type=compact">https://posit.byui.edu</a> which you assign to your <code>CONNECT_SERVER</code> environment variable. You must <a href="https://docs.posit.co/connect/user/api-keys/#api-keys-creating">create and API key</a> and store it in your environment under <code>CONNECT_API_KEY</code>.</p>
+<p>Our connect server is <a href="https://posit.byui.edu/connect/#/content/listing?filter=min_role:viewer&amp;filter=content_type:all&amp;view_type=compact">https://posit.byui.edu</a> which you assign to your <code>CONNECT_SERVER</code> environment variable. You must <a href="https://docs.posit.co/connect/user/api-keys/#api-keys-creating">create an API key</a> and store it in your environment under <code>CONNECT_API_KEY</code>.</p>
 <p><em>Read more about <a href="../../environment.html">environment variables and the pins package</a> to understand how these environment variables are stored and accessed in R and Python with pins.</em></p>
 <div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -2259,6 +2978,7 @@ font-style: inherit;">"hathawayj/childhealth_summary"</span>)</span></code></pre
   <dc:creator>DS 150</dc:creator>
   <link>https://byuidatascience.github.io/posts/childhealth/dutch_birth.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -2382,8 +3102,8 @@ font-style: inherit;">"hathawayj/childhealth_summary"</span>)</span></code></pre
 </table>
 </div>
 </div>
-<div class="cell" data-file="../../../data_scripts/childheath/dutch_birth.r">
-<details>
+<div class="cell">
+<details class="code-fold">
 <summary>Explore generating code using R</summary>
 <div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1">pacman<span class="sc" style="color: #5E5E5E;
 background-color: null;
@@ -2626,7 +3346,7 @@ font-style: inherit;">"birth_dutch"</span>)</span></code></pre></div>
 </section>
 <section id="authenticated-connection" class="level4">
 <h4 class="anchored" data-anchor-id="authenticated-connection"><strong>Authenticated Connection:</strong></h4>
-<p>Our connect server is <a href="https://posit.byui.edu/connect/#/content/listing?filter=min_role:viewer&amp;filter=content_type:all&amp;view_type=compact">https://posit.byui.edu</a> which you assign to your <code>CONNECT_SERVER</code> environment variable. You must <a href="https://docs.posit.co/connect/user/api-keys/#api-keys-creating">create and API key</a> and store it in your environment under <code>CONNECT_API_KEY</code>.</p>
+<p>Our connect server is <a href="https://posit.byui.edu/connect/#/content/listing?filter=min_role:viewer&amp;filter=content_type:all&amp;view_type=compact">https://posit.byui.edu</a> which you assign to your <code>CONNECT_SERVER</code> environment variable. You must <a href="https://docs.posit.co/connect/user/api-keys/#api-keys-creating">create an API key</a> and store it in your environment under <code>CONNECT_API_KEY</code>.</p>
 <p><em>Read more about <a href="../../environment.html">environment variables and the pins package</a> to understand how these environment variables are stored and accessed in R and Python with pins.</em></p>
 <div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -2707,6 +3427,7 @@ font-style: inherit;">"hathawayj/birth_dutch"</span>)</span></code></pre></div>
   <dc:creator>DS 150</dc:creator>
   <link>https://byuidatascience.github.io/posts/childhealth/dutch_child.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -2900,14 +3621,14 @@ font-style: inherit;">"hathawayj/birth_dutch"</span>)</span></code></pre></div>
 </table>
 </div>
 </div>
-<div class="cell" data-file="../../../data_scripts/childheath/dutch_child.r">
-<details>
+<div class="cell">
+<details class="code-fold">
 <summary>Explore generating code using R</summary>
 <div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1">pacman<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, , pins, connectapi)</span>
+font-style: inherit;">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, pins, connectapi)</span>
 <span id="cb1-2"></span>
 <span id="cb1-3">tdat <span class="ot" style="color: #003B4F;
 background-color: null;
@@ -3127,7 +3848,7 @@ font-style: inherit;">"childhealth_dutch"</span>)</span></code></pre></div>
 </section>
 <section id="authenticated-connection" class="level4">
 <h4 class="anchored" data-anchor-id="authenticated-connection"><strong>Authenticated Connection:</strong></h4>
-<p>Our connect server is <a href="https://posit.byui.edu/connect/#/content/listing?filter=min_role:viewer&amp;filter=content_type:all&amp;view_type=compact">https://posit.byui.edu</a> which you assign to your <code>CONNECT_SERVER</code> environment variable. You must <a href="https://docs.posit.co/connect/user/api-keys/#api-keys-creating">create and API key</a> and store it in your environment under <code>CONNECT_API_KEY</code>.</p>
+<p>Our connect server is <a href="https://posit.byui.edu/connect/#/content/listing?filter=min_role:viewer&amp;filter=content_type:all&amp;view_type=compact">https://posit.byui.edu</a> which you assign to your <code>CONNECT_SERVER</code> environment variable. You must <a href="https://docs.posit.co/connect/user/api-keys/#api-keys-creating">create an API key</a> and store it in your environment under <code>CONNECT_API_KEY</code>.</p>
 <p><em>Read more about <a href="../../environment.html">environment variables and the pins package</a> to understand how these environment variables are stored and accessed in R and Python with pins.</em></p>
 <div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -3208,6 +3929,7 @@ font-style: inherit;">"hathawayj/childhealth_dutch"</span>)</span></code></pre><
   <dc:creator>DS 150</dc:creator>
   <link>https://byuidatascience.github.io/posts/childhealth/height_coef.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -3373,8 +4095,8 @@ font-style: inherit;">"hathawayj/childhealth_dutch"</span>)</span></code></pre><
 </table>
 </div>
 </div>
-<div class="cell" data-file="../../../data_scripts/childheath/height_coef.r">
-<details>
+<div class="cell">
+<details class="code-fold">
 <summary>Explore generating code using R</summary>
 <div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
@@ -3391,7 +4113,7 @@ background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs,</span>
-<span id="cb1-6">  glue, rvest, , pins, connectapi, growthstandards)</span>
+<span id="cb1-6">  glue, rvest, pins, connectapi, growthstandards)</span>
 <span id="cb1-7"></span>
 <span id="cb1-8"></span>
 <span id="cb1-9">height_coef <span class="ot" style="color: #003B4F;
@@ -3695,7 +4417,7 @@ font-style: inherit;">"height_coef"</span>)</span></code></pre></div>
 </section>
 <section id="authenticated-connection" class="level4">
 <h4 class="anchored" data-anchor-id="authenticated-connection"><strong>Authenticated Connection:</strong></h4>
-<p>Our connect server is <a href="https://posit.byui.edu/connect/#/content/listing?filter=min_role:viewer&amp;filter=content_type:all&amp;view_type=compact">https://posit.byui.edu</a> which you assign to your <code>CONNECT_SERVER</code> environment variable. You must <a href="https://docs.posit.co/connect/user/api-keys/#api-keys-creating">create and API key</a> and store it in your environment under <code>CONNECT_API_KEY</code>.</p>
+<p>Our connect server is <a href="https://posit.byui.edu/connect/#/content/listing?filter=min_role:viewer&amp;filter=content_type:all&amp;view_type=compact">https://posit.byui.edu</a> which you assign to your <code>CONNECT_SERVER</code> environment variable. You must <a href="https://docs.posit.co/connect/user/api-keys/#api-keys-creating">create an API key</a> and store it in your environment under <code>CONNECT_API_KEY</code>.</p>
 <p><em>Read more about <a href="../../environment.html">environment variables and the pins package</a> to understand how these environment variables are stored and accessed in R and Python with pins.</em></p>
 <div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -3776,6 +4498,7 @@ font-style: inherit;">"hathawayj/height_coef"</span>)</span></code></pre></div>
   <dc:creator>DS 150</dc:creator>
   <link>https://byuidatascience.github.io/posts/childhealth/maled_child.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -4072,8 +4795,8 @@ font-style: inherit;">"hathawayj/height_coef"</span>)</span></code></pre></div>
 </table>
 </div>
 </div>
-<div class="cell" data-file="../../../data_scripts/childheath/maled_child.r">
-<details>
+<div class="cell">
+<details class="code-fold">
 <summary>Explore generating code using R</summary>
 <div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="do" style="color: #5E5E5E;
 background-color: null;
@@ -4086,7 +4809,7 @@ font-style: inherit;"># https://clinepidb.org/ce/app/record/dataset/DS_5c41b8722
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, , pins, connectapi)</span>
+font-style: inherit;">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, pins, connectapi)</span>
 <span id="cb1-5"></span>
 <span id="cb1-6">sdrive <span class="ot" style="color: #003B4F;
 background-color: null;
@@ -4444,7 +5167,7 @@ font-style: inherit;">"childhealth_maled"</span>)</span></code></pre></div>
 </section>
 <section id="authenticated-connection" class="level4">
 <h4 class="anchored" data-anchor-id="authenticated-connection"><strong>Authenticated Connection:</strong></h4>
-<p>Our connect server is <a href="https://posit.byui.edu/connect/#/content/listing?filter=min_role:viewer&amp;filter=content_type:all&amp;view_type=compact">https://posit.byui.edu</a> which you assign to your <code>CONNECT_SERVER</code> environment variable. You must <a href="https://docs.posit.co/connect/user/api-keys/#api-keys-creating">create and API key</a> and store it in your environment under <code>CONNECT_API_KEY</code>.</p>
+<p>Our connect server is <a href="https://posit.byui.edu/connect/#/content/listing?filter=min_role:viewer&amp;filter=content_type:all&amp;view_type=compact">https://posit.byui.edu</a> which you assign to your <code>CONNECT_SERVER</code> environment variable. You must <a href="https://docs.posit.co/connect/user/api-keys/#api-keys-creating">create an API key</a> and store it in your environment under <code>CONNECT_API_KEY</code>.</p>
 <p><em>Read more about <a href="../../environment.html">environment variables and the pins package</a> to understand how these environment variables are stored and accessed in R and Python with pins.</em></p>
 <div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -4525,6 +5248,7 @@ font-style: inherit;">"hathawayj/childhealth_maled"</span>)</span></code></pre><
   <dc:creator>DS 150</dc:creator>
   <link>https://byuidatascience.github.io/posts/childhealth/us_birth.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -4754,14 +5478,14 @@ font-style: inherit;">"hathawayj/childhealth_maled"</span>)</span></code></pre><
 </table>
 </div>
 </div>
-<div class="cell" data-file="../../../data_scripts/childheath/us_birth.r">
-<details>
+<div class="cell">
+<details class="code-fold">
 <summary>Explore generating code using R</summary>
 <div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1">pacman<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, , pins, connectapi)</span>
+font-style: inherit;">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, pins, connectapi)</span>
 <span id="cb1-2"></span>
 <span id="cb1-3">hbgd_temp <span class="ot" style="color: #003B4F;
 background-color: null;
@@ -5033,7 +5757,7 @@ font-style: inherit;">"birth_us"</span>)</span></code></pre></div>
 </section>
 <section id="authenticated-connection" class="level4">
 <h4 class="anchored" data-anchor-id="authenticated-connection"><strong>Authenticated Connection:</strong></h4>
-<p>Our connect server is <a href="https://posit.byui.edu/connect/#/content/listing?filter=min_role:viewer&amp;filter=content_type:all&amp;view_type=compact">https://posit.byui.edu</a> which you assign to your <code>CONNECT_SERVER</code> environment variable. You must <a href="https://docs.posit.co/connect/user/api-keys/#api-keys-creating">create and API key</a> and store it in your environment under <code>CONNECT_API_KEY</code>.</p>
+<p>Our connect server is <a href="https://posit.byui.edu/connect/#/content/listing?filter=min_role:viewer&amp;filter=content_type:all&amp;view_type=compact">https://posit.byui.edu</a> which you assign to your <code>CONNECT_SERVER</code> environment variable. You must <a href="https://docs.posit.co/connect/user/api-keys/#api-keys-creating">create an API key</a> and store it in your environment under <code>CONNECT_API_KEY</code>.</p>
 <p><em>Read more about <a href="../../environment.html">environment variables and the pins package</a> to understand how these environment variables are stored and accessed in R and Python with pins.</em></p>
 <div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -5114,6 +5838,7 @@ font-style: inherit;">"hathawayj/birth_us"</span>)</span></code></pre></div>
   <dc:creator>DS 150</dc:creator>
   <link>https://byuidatascience.github.io/posts/childhealth/us_child.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -5344,14 +6069,14 @@ font-style: inherit;">"hathawayj/birth_us"</span>)</span></code></pre></div>
 </table>
 </div>
 </div>
-<div class="cell" data-file="../../../data_scripts/childheath/dutch_child.r">
-<details>
+<div class="cell">
+<details class="code-fold">
 <summary>Explore generating code using R</summary>
 <div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1">pacman<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, , pins, connectapi)</span>
+font-style: inherit;">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, pins, connectapi)</span>
 <span id="cb1-2"></span>
 <span id="cb1-3">tdat <span class="ot" style="color: #003B4F;
 background-color: null;
@@ -5571,7 +6296,7 @@ font-style: inherit;">"birth_us"</span>)</span></code></pre></div>
 </section>
 <section id="authenticated-connection" class="level4">
 <h4 class="anchored" data-anchor-id="authenticated-connection"><strong>Authenticated Connection:</strong></h4>
-<p>Our connect server is <a href="https://posit.byui.edu/connect/#/content/listing?filter=min_role:viewer&amp;filter=content_type:all&amp;view_type=compact">https://posit.byui.edu</a> which you assign to your <code>CONNECT_SERVER</code> environment variable. You must <a href="https://docs.posit.co/connect/user/api-keys/#api-keys-creating">create and API key</a> and store it in your environment under <code>CONNECT_API_KEY</code>.</p>
+<p>Our connect server is <a href="https://posit.byui.edu/connect/#/content/listing?filter=min_role:viewer&amp;filter=content_type:all&amp;view_type=compact">https://posit.byui.edu</a> which you assign to your <code>CONNECT_SERVER</code> environment variable. You must <a href="https://docs.posit.co/connect/user/api-keys/#api-keys-creating">create an API key</a> and store it in your environment under <code>CONNECT_API_KEY</code>.</p>
 <p><em>Read more about <a href="../../environment.html">environment variables and the pins package</a> to understand how these environment variables are stored and accessed in R and Python with pins.</em></p>
 <div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -5652,6 +6377,7 @@ font-style: inherit;">"hathawayj/birth_us"</span>)</span></code></pre></div>
   <dc:creator>DS 150</dc:creator>
   <link>https://byuidatascience.github.io/posts/childhealth/weight_coef.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -5817,8 +6543,8 @@ font-style: inherit;">"hathawayj/birth_us"</span>)</span></code></pre></div>
 </table>
 </div>
 </div>
-<div class="cell" data-file="../../../data_scripts/childheath/weight_coef.r">
-<details>
+<div class="cell">
+<details class="code-fold">
 <summary>Explore generating code using R</summary>
 <div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
@@ -6139,7 +6865,7 @@ font-style: inherit;">"weight_coef"</span>)</span></code></pre></div>
 </section>
 <section id="authenticated-connection" class="level4">
 <h4 class="anchored" data-anchor-id="authenticated-connection"><strong>Authenticated Connection:</strong></h4>
-<p>Our connect server is <a href="https://posit.byui.edu/connect/#/content/listing?filter=min_role:viewer&amp;filter=content_type:all&amp;view_type=compact">https://posit.byui.edu</a> which you assign to your <code>CONNECT_SERVER</code> environment variable. You must <a href="https://docs.posit.co/connect/user/api-keys/#api-keys-creating">create and API key</a> and store it in your environment under <code>CONNECT_API_KEY</code>.</p>
+<p>Our connect server is <a href="https://posit.byui.edu/connect/#/content/listing?filter=min_role:viewer&amp;filter=content_type:all&amp;view_type=compact">https://posit.byui.edu</a> which you assign to your <code>CONNECT_SERVER</code> environment variable. You must <a href="https://docs.posit.co/connect/user/api-keys/#api-keys-creating">create an API key</a> and store it in your environment under <code>CONNECT_API_KEY</code>.</p>
 <p><em>Read more about <a href="../../environment.html">environment variables and the pins package</a> to understand how these environment variables are stored and accessed in R and Python with pins.</em></p>
 <div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -6213,26 +6939,6 @@ font-style: inherit;">"hathawayj/weight_coef"</span>)</span></code></pre></div>
   <category>health</category>
   <category>child</category>
   <guid>https://byuidatascience.github.io/posts/childhealth/weight_coef.html</guid>
-  <pubDate>Sun, 05 Nov 2023 06:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Birthdates of professional athletes</title>
-  <dc:creator>DS 150</dc:creator>
-  <link>https://byuidatascience.github.io/posts/welcome/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>This is the first post in a Quarto blog. Welcome!</p>
-<p><img src="https://byuidatascience.github.io/posts/welcome/thumbnail.jpg" class="img-fluid"></p>
-<p>Since this post doesn’t specify an explicit <code>image</code>, the first image in the post will be used in the listing page of posts.</p>
-
-
-
- ]]></description>
-  <category>DS150</category>
-  <guid>https://byuidatascience.github.io/posts/welcome/index.html</guid>
   <pubDate>Sun, 05 Nov 2023 06:00:00 GMT</pubDate>
 </item>
 </channel>

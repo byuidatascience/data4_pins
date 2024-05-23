@@ -6,11 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="DS 150">
-<meta name="dcterms.date" content="2023-11-05">
-<meta name="description" content="Longitudinal height and weight measurements during ages 0-2 years for a representative sample of 1,933 Dutch children born in 1988-1989.">
 
-<title>BYU-I Course Project Data - Dutch child height and weight measurements</title>
+<title>BYU-I Course Project Data - Math 221: Introduction to Statistics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,61 +20,29 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -105,19 +70,77 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">BYU-I Course Project Data</span>
     </a>
   </div>
@@ -137,7 +160,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="../../index.xml"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="./index.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -152,337 +175,91 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Dutch child height and weight measurements</h1>
-                  <div>
-        <div class="description">
-          Longitudinal height and weight measurements during ages 0-2 years for a representative sample of 1,933 Dutch children born in 1988-1989.
-        </div>
-      </div>
-                          <div class="quarto-categories">
-                <div class="quarto-category">health</div>
-                <div class="quarto-category">child</div>
-              </div>
-                  </div>
+    <div class="quarto-title column-page">
+      <h1 class="title">Math 221: Introduction to Statistics</h1>
+                      </div>
   </div>
     
   
-  <div class="quarto-title-meta">
+  <div class="quarto-title-meta column-page">
 
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>DS 150 </p>
-            </div>
-    </div>
       
-      <div>
-      <div class="quarto-title-meta-heading">Published</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">November 5, 2023</p>
-      </div>
-    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
 
 
 
 
 
-<section id="section" class="level1">
-<h1></h1>
-<section id="data-details" class="level2">
-<h2 class="anchored" data-anchor-id="data-details">Data details</h2>
-<p>There are <strong>2,000 rows</strong> and <strong>8 columns</strong>. The data source<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> is used to create our data that is stored in our <a href="https://posit.byui.edu/content/1091db55-3d31-4071-b60e-a2253aa63298/_rev64/">pins table</a>. You can access this pin from a connection to <a href="https://posit.byui.edu">posit.byui.edu</a> using <code>hathawayj/childhealth_dutch</code>.</p>
-<section id="variable-description" class="level3">
-<h3 class="anchored" data-anchor-id="variable-description">Variable description</h3>
-<ul>
-<li><strong>subjid:</strong> unique identifyer of each child</li>
-<li><strong>sex:</strong> Male or Female</li>
-<li><strong>agedays:</strong> Age in days</li>
-<li><strong>gagebrth:</strong> Gestational age at birth (days)</li>
-<li><strong>htcm:</strong> Length/height in cm (34-102)</li>
-<li><strong>wtkg:</strong> Weight measurement in kg (0.8-20.5)</li>
-<li><strong>haz:</strong> Height in SDS relative to WHO child growth standard</li>
-<li><strong>waz:</strong> Weight in SDS relative to WHO child growth standard</li>
-</ul>
-</section>
-<section id="variable-summary" class="level3">
-<h3 class="anchored" data-anchor-id="variable-summary">Variable summary</h3>
-<div class="cell">
-<div class="cell-output-display">
-<p><strong>Variable type: numeric</strong></p>
-<table class="table table-sm table-striped small">
-<colgroup>
-<col style="width: 13%">
-<col style="width: 9%">
-<col style="width: 13%">
-<col style="width: 8%">
-<col style="width: 6%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 5%">
-</colgroup>
+<p>The data available for Math 221.</p>
+
+
+
+
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+<table class="quarto-listing-table table">
 <thead>
-<tr class="header">
-<th style="text-align: left;">skim_variable</th>
-<th style="text-align: right;">n_missing</th>
-<th style="text-align: right;">complete_rate</th>
-<th style="text-align: right;">mean</th>
-<th style="text-align: right;">sd</th>
-<th style="text-align: right;">p0</th>
-<th style="text-align: right;">p25</th>
-<th style="text-align: right;">p50</th>
-<th style="text-align: right;">p75</th>
-<th style="text-align: right;">p100</th>
-<th style="text-align: left;">hist</th>
+<tr>
+<th>
+Date
+</th>
+<th>
+Title
+</th>
+<th>
+Description
+</th>
 </tr>
 </thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">subjid</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1.00</td>
-<td style="text-align: right;">10637.52</td>
-<td style="text-align: right;">500.27</td>
-<td style="text-align: right;">10001.00</td>
-<td style="text-align: right;">10064.00</td>
-<td style="text-align: right;">11018.00</td>
-<td style="text-align: right;">11072.00</td>
-<td style="text-align: right;">11127.00</td>
-<td style="text-align: left;">▆▁▁▁▇</td>
+<tbody class="list">
+<tr data-index="0" data-categories="MATH221,religion" data-listing-date-sort="1714024800000" data-listing-file-modified-sort="1716476913586" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="424" data-listing-title-sort="Book of Mormon Wordprint" data-listing-filename-sort="book_of_mormon_wordprint.qmd">
+<td>
+<span class="listing-date">Apr 25, 2024</span>
+</td>
+<td>
+<a href="./posts/intro_stats/book_of_mormon_wordprint.html" class="title listing-title">Book of Mormon Wordprint</a>
+</td>
+<td>
+<span class="listing-description">For several years, researchers have used statistics to try to determine the author of a disputed literary work. These techniques have been applied to the Federalist Papers, disputed Shakespearean plays, and other works including the Book of Mormon. These methods are commonly called wordprinting or stylometry. One technique used in wordprint analysis is to count the frequency with which an author uses non-contextual words. These are words that do not convey meaning but connect the ideas into sentences. It is postulated that an author who is trying to forge a work would not be able to control their subconscious use of these words. So, if Joseph Smith wrote the Book of Mormon, we should expect to see his “wordprint” throughout the text, and the frequency of use of non-contextual words is one way to observe this. The most common non-contextual words used in The Book of Mormon are “and,” “of,” “that,” “the,” “to,” and “unto.” Blocks of text were taken from 2 Nephi 4 (Nephi, son of Lehi), Enos 1 (Enos, son of Jacob), 3 Nephi 15 (Jesus Christ), Moroni 9 (Mormon, son of Mormon), and Moroni 10 (Moroni, son of Mormon)</span>
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">agedays</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">1.00</td>
-<td style="text-align: right;">274.38</td>
-<td style="text-align: right;">238.33</td>
-<td style="text-align: right;">0.00</td>
-<td style="text-align: right;">58.00</td>
-<td style="text-align: right;">196.00</td>
-<td style="text-align: right;">456.00</td>
-<td style="text-align: right;">978.00</td>
-<td style="text-align: left;">▇▃▃▂▁</td>
+<tr data-index="1" data-categories="astronomy,physics" data-listing-date-sort="1710309600000" data-listing-file-modified-sort="1716416069155" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="439" data-listing-title-sort="Apollo Missions" data-listing-filename-sort="apollo.qmd">
+<td>
+<span class="listing-date">Mar 13, 2024</span>
+</td>
+<td>
+<a href="./posts/intro_stats/apollo.html" class="title listing-title">Apollo Missions</a>
+</td>
+<td>
+<span class="listing-description">During the 1960s and early 1970s, the United States was in a race to explore the moon. Seven missions (Apollo 11 through Apollo 17) were launched in an attempt to reach the lunar surface. Each of these successfully landed on the moon, with the exception of Apollo 13. The lunar landing of Apollo 13 was aborted due to a failure of cryogenic oxygen tank 2. Miraculously, all three astronauts returned safely to Earth. Data was collected from records that were recorded for each mission.</span>
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">gagebrth</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1.00</td>
-<td style="text-align: right;">281.35</td>
-<td style="text-align: right;">12.52</td>
-<td style="text-align: right;">227.00</td>
-<td style="text-align: right;">276.00</td>
-<td style="text-align: right;">283.00</td>
-<td style="text-align: right;">290.00</td>
-<td style="text-align: right;">304.00</td>
-<td style="text-align: left;">▁▁▂▇▆</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">htcm</td>
-<td style="text-align: right;">40</td>
-<td style="text-align: right;">0.98</td>
-<td style="text-align: right;">69.08</td>
-<td style="text-align: right;">12.42</td>
-<td style="text-align: right;">38.00</td>
-<td style="text-align: right;">57.50</td>
-<td style="text-align: right;">69.50</td>
-<td style="text-align: right;">79.00</td>
-<td style="text-align: right;">97.00</td>
-<td style="text-align: left;">▁▇▆▇▂</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">wtkg</td>
-<td style="text-align: right;">19</td>
-<td style="text-align: right;">0.99</td>
-<td style="text-align: right;">8.10</td>
-<td style="text-align: right;">3.30</td>
-<td style="text-align: right;">1.18</td>
-<td style="text-align: right;">5.08</td>
-<td style="text-align: right;">8.22</td>
-<td style="text-align: right;">10.70</td>
-<td style="text-align: right;">16.50</td>
-<td style="text-align: left;">▅▇▇▆▂</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">haz</td>
-<td style="text-align: right;">40</td>
-<td style="text-align: right;">0.98</td>
-<td style="text-align: right;">0.30</td>
-<td style="text-align: right;">1.10</td>
-<td style="text-align: right;">-6.60</td>
-<td style="text-align: right;">-0.38</td>
-<td style="text-align: right;">0.37</td>
-<td style="text-align: right;">1.02</td>
-<td style="text-align: right;">3.71</td>
-<td style="text-align: left;">▁▁▃▇▁</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">waz</td>
-<td style="text-align: right;">19</td>
-<td style="text-align: right;">0.99</td>
-<td style="text-align: right;">0.29</td>
-<td style="text-align: right;">0.99</td>
-<td style="text-align: right;">-5.98</td>
-<td style="text-align: right;">-0.30</td>
-<td style="text-align: right;">0.33</td>
-<td style="text-align: right;">0.96</td>
-<td style="text-align: right;">3.11</td>
-<td style="text-align: left;">▁▁▂▇▂</td>
+<tr data-index="2" data-categories="population,health,anthropology" data-listing-date-sort="1710309600000" data-listing-file-modified-sort="1716475606346" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="451" data-listing-title-sort="Baby Boom" data-listing-filename-sort="baby_boom.qmd">
+<td>
+<span class="listing-date">Mar 13, 2024</span>
+</td>
+<td>
+<a href="./posts/intro_stats/baby_boom.html" class="title listing-title">Baby Boom</a>
+</td>
+<td>
+<span class="listing-description">The Mater Mothers’ Hospital is a busy hospital in Brisbane, Australia. The birth weights and times of all children born on December 18, 1997 in this hospital were recorded. </span>
+</td>
 </tr>
 </tbody>
 </table>
+<div class="listing-no-matching d-none">
+No matching items
 </div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<p><strong>Variable type: character</strong></p>
-<table class="table table-sm table-striped small">
-<colgroup>
-<col style="width: 19%">
-<col style="width: 13%">
-<col style="width: 19%">
-<col style="width: 5%">
-<col style="width: 5%">
-<col style="width: 8%">
-<col style="width: 12%">
-<col style="width: 15%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">skim_variable</th>
-<th style="text-align: right;">n_missing</th>
-<th style="text-align: right;">complete_rate</th>
-<th style="text-align: right;">min</th>
-<th style="text-align: right;">max</th>
-<th style="text-align: right;">empty</th>
-<th style="text-align: right;">n_unique</th>
-<th style="text-align: right;">whitespace</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">sex</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">0</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="cell">
-<details class="code-fold">
-<summary>Explore generating code using R</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(tidyverse, fs, sf, arrow, googledrive, downloader, fs, glue, rvest, pins, connectapi)</span>
-<span id="cb1-2"><a href="#cb1-2"></a></span>
-<span id="cb1-3"><a href="#cb1-3"></a>tdat <span class="ot">&lt;-</span> <span class="fu">tempfile</span>()</span>
-<span id="cb1-4"><a href="#cb1-4"></a><span class="fu">download</span>(<span class="st">"https://github.com/stefvanbuuren/brokenstick/raw/71dc99e62ce57b58d5c1d2a1074fbd4bf394e559/data/smocc_hgtwgt.rda"</span>,tdat, <span class="at">mode =</span> <span class="st">"wb"</span>)</span>
-<span id="cb1-5"><a href="#cb1-5"></a></span>
-<span id="cb1-6"><a href="#cb1-6"></a><span class="fu">load</span>(tdat)</span>
-<span id="cb1-7"><a href="#cb1-7"></a></span>
-<span id="cb1-8"><a href="#cb1-8"></a>childhealth_dutch <span class="ot">&lt;-</span> smocc_hgtwgt <span class="sc">|&gt;</span></span>
-<span id="cb1-9"><a href="#cb1-9"></a>  <span class="fu">select</span>(subjid, sex, agedays, gagebrth, htcm, wtkg, haz, waz)</span>
-<span id="cb1-10"><a href="#cb1-10"></a></span>
-<span id="cb1-11"><a href="#cb1-11"></a>board <span class="ot">&lt;-</span> <span class="fu">board_connect</span>()</span>
-<span id="cb1-12"><a href="#cb1-12"></a></span>
-<span id="cb1-13"><a href="#cb1-13"></a><span class="fu">pin_write</span>(board, childhealth_dutch, <span class="st">"childhealth_dutch"</span>, <span class="at">type =</span> <span class="st">"parquet"</span>, <span class="at">access_type =</span> <span class="st">"all"</span>)</span>
-<span id="cb1-14"><a href="#cb1-14"></a></span>
-<span id="cb1-15"><a href="#cb1-15"></a>pin_name <span class="ot">&lt;-</span> <span class="st">"childhealth_dutch"</span></span>
-<span id="cb1-16"><a href="#cb1-16"></a>meta <span class="ot">&lt;-</span> <span class="fu">pin_meta</span>(board, <span class="fu">paste0</span>(<span class="st">"hathawayj/"</span>, pin_name))</span>
-<span id="cb1-17"><a href="#cb1-17"></a>client <span class="ot">&lt;-</span> <span class="fu">connect</span>()</span>
-<span id="cb1-18"><a href="#cb1-18"></a>my_app <span class="ot">&lt;-</span> <span class="fu">content_item</span>(client, meta<span class="sc">$</span>local<span class="sc">$</span>content_id)</span>
-<span id="cb1-19"><a href="#cb1-19"></a><span class="fu">set_vanity_url</span>(my_app, <span class="fu">paste0</span>(<span class="st">"data/"</span>, pin_name))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-</div>
-<!-- ```{python}
-#| echo: true
-#| eval: false
-#| code-fold: true
-#| code-summary: Explore generating code using Python
-#| code-line-numbers: true
-# file: ../../../data_scripts/childhealth.py
-``` -->
-</section>
-</section>
-<section id="access-data" class="level2">
-<h2 class="anchored" data-anchor-id="access-data">Access data</h2>
-<p>This data is available to <strong>all</strong>.</p>
-<p><strong>Direct Download:</strong> <a href="https://posit.byui.edu/content/1091db55-3d31-4071-b60e-a2253aa63298/childhealth_dutch.parquet">childhealth_dutch.parquet</a></p>
-<section id="r-and-python-download" class="level4">
-<h4 class="anchored" data-anchor-id="r-and-python-download"><strong>R and Python Download:</strong></h4>
-<section id="url-connections" class="level5">
-<h5 class="anchored" data-anchor-id="url-connections"><strong>URL Connections:</strong></h5>
-<p>For public data, any user can connect and read the data using <code>pins::board_connect_url()</code> in R.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(pins)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>url_data <span class="ot">&lt;-</span> <span class="st">"https://posit.byui.edu/data/childhealth_dutch/"</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>board_url <span class="ot">&lt;-</span> <span class="fu">board_connect_url</span>(<span class="fu">c</span>(<span class="st">"dat"</span> <span class="ot">=</span> url_data))</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">pin_read</span>(board_url, <span class="st">"dat"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Use this custom function in Python to have the data in a Pandas DataFrame.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> io <span class="im">import</span> BytesIO</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> read_url_pin(name):</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  url <span class="op">=</span> <span class="st">"https://posit.byui.edu/data/"</span> <span class="op">+</span> name <span class="op">+</span> <span class="st">"/"</span> <span class="op">+</span> name <span class="op">+</span> <span class="st">".parquet"</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  response <span class="op">=</span> requests.get(url)</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> response.status_code <span class="op">==</span> <span class="dv">200</span>:</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    parquet_content <span class="op">=</span> BytesIO(response.content)</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    pandas_dataframe <span class="op">=</span> pd.read_parquet(parquet_content)</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> pandas_dataframe</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span>:</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Failed to retrieve data. Status code: </span><span class="sc">{</span>response<span class="sc">.</span>status_code<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="va">None</span></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Example usage:</span></span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>pandas_df <span class="op">=</span> read_url_pin(<span class="st">"childhealth_dutch"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-</section>
-<section id="authenticated-connection" class="level4">
-<h4 class="anchored" data-anchor-id="authenticated-connection"><strong>Authenticated Connection:</strong></h4>
-<p>Our connect server is <a href="https://posit.byui.edu/connect/#/content/listing?filter=min_role:viewer&amp;filter=content_type:all&amp;view_type=compact">https://posit.byui.edu</a> which you assign to your <code>CONNECT_SERVER</code> environment variable. You must <a href="https://docs.posit.co/connect/user/api-keys/#api-keys-creating">create an API key</a> and store it in your environment under <code>CONNECT_API_KEY</code>.</p>
-<p><em>Read more about <a href="../../environment.html">environment variables and the pins package</a> to understand how these environment variables are stored and accessed in R and Python with pins.</em></p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(pins)</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>board <span class="ot">&lt;-</span> <span class="fu">board_connect</span>(<span class="at">auth =</span> <span class="st">"auto"</span>)</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">pin_read</span>(board, <span class="st">"hathawayj/childhealth_dutch"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pins <span class="im">import</span> board_rsconnect</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> dotenv <span class="im">import</span> load_dotenv</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>load_dotenv()</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>API_KEY <span class="op">=</span> os.getenv(<span class="st">'CONNECT_API_KEY'</span>)</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>SERVER <span class="op">=</span> os.getenv(<span class="st">'CONNECT_SERVER'</span>)</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>board <span class="op">=</span> board_rsconnect(server_url<span class="op">=</span>SERVER, api_key<span class="op">=</span>API_KEY)</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>dat <span class="op">=</span> board.pin_read(<span class="st">"hathawayj/childhealth_dutch"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
-
-</section>
-</section>
-</section>
-
-
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p><a href="https://github.com/stefvanbuuren/brokenstick">https://github.com/stefvanbuuren/brokenstick</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main> <!-- /main -->
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

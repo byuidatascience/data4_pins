@@ -1,0 +1,17 @@
+---
+title: "Math 221: Introduction to Statistics"
+listing:
+  contents: 
+    posts/intro_stats/*.qmd
+  sort: "date desc"
+  type: table
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  fields: [date, title, description]
+page-layout: full
+title-block-banner: true
+---
+
+
+The data available for Math 221.

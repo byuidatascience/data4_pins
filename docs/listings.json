@@ -1,20 +1,14 @@
 [
   {
-    "listing": "/childhealth-series.html",
+    "listing": "/m221-series.html",
     "items": [
-      "/posts/childhealth/dutch_child.html",
-      "/posts/childhealth/maled_child.html",
-      "/posts/childhealth/dutch_birth.html",
-      "/posts/childhealth/all_child_summary.html",
-      "/posts/childhealth/height_coef.html",
-      "/posts/childhealth/all_child_365_days.html",
-      "/posts/childhealth/us_birth.html",
-      "/posts/childhealth/weight_coef.html",
-      "/posts/childhealth/us_child.html"
+      "/posts/intro_stats/book_of_mormon_wordprint.html",
+      "/posts/intro_stats/apollo.html",
+      "/posts/intro_stats/baby_boom.html"
     ]
   },
   {
-    "listing": "/index.html",
+    "listing": "/childhealth-series.html",
     "items": [
       "/posts/childhealth/all_child_365_days.html",
       "/posts/childhealth/all_child_summary.html",
@@ -24,14 +18,29 @@
       "/posts/childhealth/maled_child.html",
       "/posts/childhealth/us_birth.html",
       "/posts/childhealth/us_child.html",
-      "/posts/childhealth/weight_coef.html",
-      "/posts/marathons/race_info.html",
-      "/posts/welcome/index.html"
+      "/posts/childhealth/weight_coef.html"
     ]
   },
   {
     "listing": "/ds150-series.html",
     "items": [
+      "/posts/childhealth/all_child_365_days.html",
+      "/posts/childhealth/all_child_summary.html",
+      "/posts/childhealth/dutch_birth.html",
+      "/posts/childhealth/dutch_child.html",
+      "/posts/childhealth/height_coef.html",
+      "/posts/childhealth/maled_child.html",
+      "/posts/childhealth/us_birth.html",
+      "/posts/childhealth/us_child.html",
+      "/posts/childhealth/weight_coef.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/intro_stats/apollo.html",
+      "/posts/intro_stats/baby_boom.html",
+      "/posts/intro_stats/book_of_mormon_wordprint.html",
       "/posts/childhealth/all_child_365_days.html",
       "/posts/childhealth/all_child_summary.html",
       "/posts/childhealth/dutch_birth.html",

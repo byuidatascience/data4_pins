@@ -1,71 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://byuidatascience.github.io/childhealth-series.html</loc>
-    <lastmod>2024-01-24T20:23:39.670Z</lastmod>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/book_of_mormon_wordprint.html</loc>
+    <lastmod>2024-05-23T15:08:33.586Z</lastmod>
   </url>
   <url>
-    <loc>https://byuidatascience.github.io/environment.html</loc>
-    <lastmod>2024-01-24T20:23:38.988Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/index.html</loc>
-    <lastmod>2024-01-24T20:23:38.466Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/welcome/index.html</loc>
-    <lastmod>2024-01-24T20:23:36.367Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/childhealth/weight_coef.html</loc>
-    <lastmod>2024-01-24T20:23:33.194Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/childhealth/all_child_365_days.html</loc>
-    <lastmod>2024-01-24T20:23:27.046Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/childhealth/all_child_summary.html</loc>
-    <lastmod>2024-01-24T20:23:20.805Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/childhealth/maled_child.html</loc>
-    <lastmod>2024-01-24T20:23:14.363Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/marathons/race_info.html</loc>
-    <lastmod>2024-01-24T20:23:07.932Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/childhealth/dutch_child.html</loc>
-    <lastmod>2024-01-24T20:23:10.856Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/childhealth/dutch_birth.html</loc>
-    <lastmod>2024-01-24T20:23:17.563Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/childhealth/height_coef.html</loc>
-    <lastmod>2024-01-24T20:23:23.872Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/childhealth/us_birth.html</loc>
-    <lastmod>2024-01-24T20:23:30.252Z</lastmod>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/apollo.html</loc>
+    <lastmod>2024-05-22T22:14:29.155Z</lastmod>
   </url>
   <url>
     <loc>https://byuidatascience.github.io/posts/childhealth/us_child.html</loc>
-    <lastmod>2024-01-24T20:23:36.120Z</lastmod>
+    <lastmod>2024-05-22T21:57:41.071Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/childhealth/maled_child.html</loc>
+    <lastmod>2024-05-22T21:57:41.071Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/childhealth/dutch_child.html</loc>
+    <lastmod>2024-05-22T21:57:41.071Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/childhealth/all_child_summary.html</loc>
+    <lastmod>2024-05-22T21:57:41.071Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/m221-series.html</loc>
+    <lastmod>2024-05-23T14:54:37.193Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/environment.html</loc>
+    <lastmod>2023-11-10T23:22:43.842Z</lastmod>
   </url>
   <url>
     <loc>https://byuidatascience.github.io/data_topics.html</loc>
-    <lastmod>2024-01-24T20:23:36.614Z</lastmod>
+    <lastmod>2023-11-10T17:49:58.087Z</lastmod>
   </url>
   <url>
     <loc>https://byuidatascience.github.io/about.html</loc>
-    <lastmod>2024-01-24T20:23:38.721Z</lastmod>
+    <lastmod>2023-11-08T18:03:37.748Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/childhealth-series.html</loc>
+    <lastmod>2023-11-10T17:57:58.387Z</lastmod>
   </url>
   <url>
     <loc>https://byuidatascience.github.io/ds150-series.html</loc>
-    <lastmod>2024-01-24T20:23:39.343Z</lastmod>
+    <lastmod>2023-11-10T23:39:17.180Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/index.html</loc>
+    <lastmod>2023-11-16T20:31:36.056Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/childhealth/all_child_365_days.html</loc>
+    <lastmod>2024-05-22T21:57:41.070Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/childhealth/dutch_birth.html</loc>
+    <lastmod>2024-05-22T21:57:41.071Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/childhealth/height_coef.html</loc>
+    <lastmod>2024-05-22T21:57:41.071Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/childhealth/us_birth.html</loc>
+    <lastmod>2024-05-22T21:57:41.071Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/childhealth/weight_coef.html</loc>
+    <lastmod>2024-05-22T21:57:41.071Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/baby_boom.html</loc>
+    <lastmod>2024-05-23T14:46:46.346Z</lastmod>
   </url>
 </urlset>
