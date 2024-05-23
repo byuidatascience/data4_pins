@@ -2,10 +2,10 @@
 title: "Hubble's Constant: Supernovas"
 author: "MATH 221"
 date: "2024-04-30"
-categories: [astronomy, physics]
-description: ""
+categories: [MATH221, astronomy, physics]
+description: "Recession velocity and distance for 36 supernovas were recorded using the Hubble Space Telescope. "
 params: 
-    source: ""
+    source: "Wendy L. Freedman et al. Final results from the hubble space telescope key project to measure the hubble constant. The Astrophysical Journal, 553:43-72, May 20, 2001. "
     pins_name: 'hathawayj/hubbles_constant_supernovas'
     available: all
 ---
@@ -65,9 +65,9 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Supernova__ A unique key for each supernova
-- __Velocity__ Velocity of... ()
-- __Distance__ Distance of... ()
+- __Supernova:__ A unique key for each supernova
+- __Velocity:__ Recession velocity from earth (km/sec)
+- __Distance:__ Distance from Earth (megaparsecs)
 
 
 ### Variable summary
