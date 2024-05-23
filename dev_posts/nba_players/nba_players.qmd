@@ -2,10 +2,10 @@
 title: "NBA Players"
 author: "MATH 221"
 date: "2024-05-01"
-categories: [sports]
-description: ""
+categories: [MATH221, sports]
+description: "A large dataset of NBA players that spans decades. It has some useful columns and a slew of weird columns of unknown purpose. "
 params: 
-    source: ""
+    source: "Unknown"
     pins_name: 'hathawayj/nba_players'
     available: all
 ---
@@ -72,60 +72,60 @@ This data is available to __`r params$available`__.
 - __select__ (Hide, View)
 - __pos__ Position on team
 - __height__ Height (cm)
-- __weight__ Weight ()
+- __weight__ Weight (kg)
 - __college__ College
 - __born__ Birth year (YYYY)
 - __birth_city__ City of birth
 - __birth_state__ State of birth
 - __age__ age (years)
-- __tm__ .
-- __g__ .
-- __gs__ .
-- __mp__ .
-- __per__ .
-- __ts___ .
-- __x3par__ .
-- __ftr__ .
-- __orb___ .
-- __drb___ .
-- __trb___ .
-- __ast___ .
-- __stl__ .
-- __blk___ .
-- __tov___ .
-- __usg___ .
+- __tm__ Unknown
+- __g__ Unknown
+- __gs__ Unknown
+- __mp__ Unknown
+- __per__ Unknown
+- __ts___ Unknown
+- __x3par__ Unknown
+- __ftr__ Unknown
+- __orb___ Unknown
+- __drb___ Unknown
+- __trb___ Unknown
+- __ast___ Unknown
+- __stl__ Unknown
+- __blk___ Unknown
+- __tov___ Unknown
+- __usg___ Unknown
 - __blanl__ Empty Column
-- __ows__ .
-- __dws__ .
-- __ws__ .
-- __ws_48__ .
+- __ows__ Unknown
+- __dws__ Unknown
+- __ws__ Unknown
+- __ws_48__ Unknown
 - __blank2__ Empty column
-- __obpm__ .
-- __dbpm__ .
-- __bpm__ .
-- __vorp__ .
-- __fg__ .
-- __fga__ .
-- __fg___ .
-- __x3p__ .
-- __x3pa__ .
-- __x3p___ .
-- __x2p__ .
-- __x2pa__ .
-- __x2p___ .
-- __efg___ .
-- __ft__ .
-- __fta__ .
-- __ft___ .
-- __orb__ .
-- __drb__ .
-- __trb__ .
-- __ast__ .
-- __stl__ .
-- __blk__ .
-- __tov__ .
-- __pf__ .
-- __pts__ .
+- __obpm__ Unknown
+- __dbpm__ Unknown
+- __bpm__ Unknown
+- __vorp__ Unknown
+- __fg__ Unknown
+- __fga__ Unknown
+- __fg___ Unknown
+- __x3p__ Unknown
+- __x3pa__ Unknown
+- __x3p___ Unknown
+- __x2p__ Unknown
+- __x2pa__ Unknown
+- __x2p___ Unknown
+- __efg___ Unknown
+- __ft__ Unknown
+- __fta__ Unknown
+- __ft___ Unknown
+- __orb__ Unknown
+- __drb__ Unknown
+- __trb__ Unknown
+- __ast__ Unknown
+- __stl__ Unknown
+- __blk__ Unknown
+- __tov__ Unknown
+- __pf__ Unknown
+- __pts__ Unknown
 
 
 ### Variable summary
