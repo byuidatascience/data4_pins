@@ -2,7 +2,7 @@
 title: "Reading Practice"
 author: "MATH 221"
 date: "2024-05-01"
-categories: [education]
+categories: [MATH221, education]
 description: "These data represent the number of days each week that children with developmental problems (the DEV group) and children without developmental problems (the GEN group) participate in reading at home. \nData based on Table 3 in the following article: \nArlene M. Butz, Michael Crocetti, Richard E. Thompson, and Paul H. Lipkin. Promoting reading in children: Do reading practices differ in children with developmental problems? "
 params: 
     source: "Clinical Pediatrics, 48(3):275–283, 2009."
@@ -65,8 +65,8 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Group__ Group - DEV (children with developmental problems), GEN (children without developmental problems)
-- __Nights__ Number of days a week children participate in reading at home
+- __Group:__ Group - DEV (children with developmental problems), GEN (children without developmental problems)
+- __Nights:__ Number of days a week children participate in reading at home
 
 
 ### Variable summary
