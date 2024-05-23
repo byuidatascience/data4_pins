@@ -2,7 +2,7 @@
 title: "Nosocomial Infections"
 author: "MATH 221"
 date: "2024-05-01"
-categories: [health]
+categories: [MATH221, health]
 description: "Data representing the total number of days patients were hospitalized. Patients were matched based on having a similar condition and other physical characteristics. The data gives the number of days each patient spent in the hospital. \nInfected = patient had a  nosocomial infection. \nNotInfected = patient did not have a nosocomial infection."
 params: 
     source: "Based on: A Asensio Vegas, V Monge  Jodra, M Lizán García. Nosocomial Infection in Surgery Wards: A Controlled Study of       Increased Duration of Hospital Stays and Direct Cost of Hospitalization. European Journal of Epidemiology, 9(5):504-510, September 1993."
@@ -65,9 +65,9 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __PatientPairs__ A unique key identifying each pair of patients
-- __Infected__ Number of days infected patient spent in the hospital
-- __NotInfected__ Number of days not infected patient spent in the hospital
+- __PatientPairs:__ A unique key identifying each pair of patients
+- __Infected:__ Number of days infected patient spent in the hospital
+- __NotInfected:__ Number of days not infected patient spent in the hospital
 
 
 ### Variable summary
