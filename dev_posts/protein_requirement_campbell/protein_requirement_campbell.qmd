@@ -2,7 +2,7 @@
 title: "Protein Requirement Campbell"
 author: "MATH 221"
 date: "2024-05-01"
-categories: [health, biology, nutrition]
+categories: [MATH221, health, biology, nutrition]
 description: "The protein requirement of an individual is the amount of protein they must consume daily to stay in equilibrium. This number varies from individual to individual. Nutritionists often give the protein requirement in terms of grams of good quality protein per kilogram of body weight per day (g P * kg-1 * d-1).\nIt is very difficult and expensive to measure the protein requirement in humans, but research into this area is very important. For example, how much protein should you give to a patient in a health care facility who must be fed enterally (i.e., through a feeding tube)? There are several ways in which nutritionists have tried to measure the protein requirement. Traditionally, they have used a method called Nitrogen Balance.\nIn a nitrogen balance experiment, researchers provide a carefully controlled diet containing prescribed amounts of protein to each subject for an extended period of time.  They then collect data on the amount of protein utilized by the body. This includes collecting and analyzing samples of urine, feces, blood, sweat, tears, exfoliated skin, etc.  Most researchers collect urine and fecal samples and estimate other losses. The protein requirement is estimated as the level of intake required so that the amount of protein consumed is exactly equal to the losses. Because of the difficulty of measuring protein losses, and since protein is essentially the only source for dietary nitrogen, nitrogen is used as a marker for protein.\nA nitrogen balance experiment was conducted to determine if there is a difference in the mean protein requirement of individuals in four groups: \n1. Old men (age 63-81)\n2. Old women (age 63-81)\n3. Young men (age 21-46)\n4. Young women (age 21-46)\nSubjects were provided with a controlled diet for three months and were required to comply with study protocol. The data set gives the measured protein requirements for each of the subjects. "
 params: 
     source: "Wayne W. Campbell, Craig A. Johnson, George P. McCabe, and Nadine S. Carnell. Dietary protein requirements of younger and older adults. American Journal of Clinical Nutrition, 88(5):1322-1329, 2008. "
@@ -65,10 +65,10 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Group__ Group number (1 = elderly male, 2 = elderly woman, 3 = young male, 4 = young female)
-- __Gender__ Gender (Female, Male)
-- __Age__ Age (Elderly, Young)
-- __ProteinRequirement__ The protein requirement determined from the experiment in grams of protein per kilogram of body weight per day
+- __Group:__ Group number (1 = elderly male, 2 = elderly woman, 3 = young male, 4 = young female)
+- __Gender:__ Gender (Female, Male)
+- __Age:__ Age (Elderly, Young)
+- __ProteinRequirement:__ The protein requirement determined from the experiment in grams of protein per kilogram of body weight per day
 
 
 ### Variable summary
