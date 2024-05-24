@@ -65,9 +65,9 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Date__ Date (Monthname day, YYYY)
-- __HeartAttacks__ Count of heart attacks
-- __TimePeriod__ Time period group (Control, World Cup)
+- __Date:__ Date (Monthname day, YYYY)
+- __HeartAttacks:__ Count of heart attacks
+- __TimePeriod:__ Time period group (Control, World Cup)
 
 
 ### Variable summary
@@ -91,7 +91,7 @@ skim(dat) |> yank("character")
 #| code-fold: true
 #| code-summary: Explore generating code using R
 #| code-line-numbers: true
-#| file: ../../../data_scripts/world_cup_heart_attacks.R
+#| file: ../../../data_scripts/intro_stats/world_cup_heart_attacks.R
 ```
 
 <!-- ```{python}
