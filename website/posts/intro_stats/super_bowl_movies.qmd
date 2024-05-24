@@ -5,7 +5,7 @@ date: "2024-05-02"
 categories: [entertainment]
 description: "Revenue of films and whether or not they were advertised during the Superbowl or not"
 params: 
-    source: ""
+    source: "WorldwideBoxOffice.com. Website. http://www.worldwideboxoffice.com/.  "
     pins_name: 'hathawayj/super_bowl_movies'
     available: all
 ---
@@ -65,10 +65,10 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Year__ Release Year
-- __AdvertisedinSuperBowl__ Whether movie was advertised in Superbowl or not (No, Yes)
-- __Title__ Movie title
-- __GrossRevenueMillion__ Gross Revenue (millions of dollars)
+- __Year:__ Release Year
+- __AdvertisedinSuperBowl:__ Whether movie was advertised in Superbowl or not (No, Yes)
+- __Title:__ Movie title
+- __GrossRevenueMillion:__ Gross Revenue (millions of dollars)
 
 
 ### Variable summary
@@ -92,7 +92,7 @@ skim(dat) |> yank("character")
 #| code-fold: true
 #| code-summary: Explore generating code using R
 #| code-line-numbers: true
-#| file: ../../../data_scripts/super_bowl_movies.R
+#| file: ../../../data_scripts/intro_stats/super_bowl_movies.R
 ```
 
 <!-- ```{python}
