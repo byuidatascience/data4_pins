@@ -93,7 +93,7 @@ skim(dat) |> yank("character")
 #| code-fold: true
 #| code-summary: Explore generating code using R
 #| code-line-numbers: true
-#| file: ../../../data_scripts/cardiac_arrest_health.R
+#| file: ../../../data_scripts/intro_stats/cardiac_arrest_health.R
 ```
 
 <!-- ```{python}

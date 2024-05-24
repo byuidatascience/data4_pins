@@ -124,7 +124,7 @@ skim(dat) |> yank("character")
 #| code-fold: true
 #| code-summary: Explore generating code using R
 #| code-line-numbers: true
-#| file: ../../../data_scripts/census_2015.R
+#| file: ../../../data_scripts/intro_stats/census_2015.R
 ```
 
 <!-- ```{python}
