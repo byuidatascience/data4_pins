@@ -100,7 +100,7 @@ skim(dat) |> yank("character")
 #| code-fold: true
 #| code-summary: Explore generating code using Python
 #| code-line-numbers: true
-#| file: ../../../data_scripts/car_wash.R
+#| file: ../../../data_scripts/data_wrangling/car_wash.R
 ``` 
 
 
