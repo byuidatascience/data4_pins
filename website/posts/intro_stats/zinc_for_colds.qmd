@@ -3,7 +3,7 @@ title: "Zinc for Colds"
 author: "MATH 221"
 date: "2024-05-02"
 categories: [health]
-description: "As a possible treatment for common colds, we tested zinc gluconate lozenges in a double-blind, placebo controlled, clinical trial. One 23-mg zinc lozenge or matched placebo was dissolved in the mouth every 2 wakeful hours after an initial double dose."
+description: "Note that this dataset was extracted from a figure in a report. As a possible treatment for common colds, we tested zinc gluconate lozenges in a double-blind, placebo controlled, clinical trial. One 23-mg zinc lozenge or matched placebo was dissolved in the mouth every 2 wakeful hours after an initial double dose."
 params: 
     source: "Figure 1 in http://www.ncbi.nlm.nih.gov/pmc/articles/PMC185426/pdf/aac00190-0044.pdf"
     pins_name: 'hathawayj/zinc_for_colds'
@@ -90,7 +90,7 @@ skim(dat) |> yank("character")
 #| code-fold: true
 #| code-summary: Explore generating code using R
 #| code-line-numbers: true
-#| file: ../../../data_scripts/zinc_for_colds.R
+#| file: ../../../data_scripts/intro_stats/zinc_for_colds.R
 ```
 
 <!-- ```{python}
