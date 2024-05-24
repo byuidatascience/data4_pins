@@ -3,9 +3,9 @@ title: "Worldwide Heights Estimates"
 author: "DS 350"
 date: "2024-05-06"
 categories: [DS350, population]
-description: "Mean resident height of various countries over time"
+description: "Mean resident height of various countries over time. Note that the dataset it messy and needs cleaning. "
 params: 
-    source: ""
+    source: "Unknown"
     pins_name: 'hathawayj/worldwide_heights_estimates'
     available: all
 ---
@@ -92,7 +92,7 @@ skim(dat) |> yank("character")
 #| code-fold: true
 #| code-summary: Explore generating code using R
 #| code-line-numbers: true
-#| file: ../../../data_scripts/worldwide_heights_estimates.R
+#| file: ../../../data_scripts/worldwide_heights_estimates/worldwide_heights_estimates.R
 ```
 
 <!-- ```{python}
