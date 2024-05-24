@@ -96,7 +96,7 @@ skim(dat) |> yank("character")
 #| code-fold: true
 #| code-summary: Explore generating code using R
 #| code-line-numbers: true
-#| file: ../../../data_scripts/access_drinking_water_stacked.R
+#| file: ../../../data_scripts/intro_stats/access_drinking_water_stacked.R
 ```
 
 <!-- ```{python}

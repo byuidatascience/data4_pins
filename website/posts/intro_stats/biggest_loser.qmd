@@ -99,7 +99,7 @@ skim(dat) |> yank("character")
 #| code-fold: true
 #| code-summary: Explore generating code using R
 #| code-line-numbers: true
-#| file: ../../../data_scripts/biggest_loser.R
+#| file: ../../../data_scripts/intro_stats/biggest_loser.R
 ```
 
 <!-- ```{python}
