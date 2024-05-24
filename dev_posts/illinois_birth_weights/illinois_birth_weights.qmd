@@ -65,9 +65,9 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Black_US__ Birth weight of babies with black mothers born in the US  (grams)
-- __Black_Africa__ Birth weight of babies with black mothers born in Africa (grams)
-- __White_US__ Birth weight of babies with white mothers born in the US (grams)
+- __Black_US:__ Birth weight of babies with black mothers born in the US  (grams)
+- __Black_Africa:__ Birth weight of babies with black mothers born in Africa (grams)
+- __White_US:__ Birth weight of babies with white mothers born in the US (grams)
 
 
 ### Variable summary
@@ -91,7 +91,7 @@ skim(dat) |> yank("character")
 #| code-fold: true
 #| code-summary: Explore generating code using R
 #| code-line-numbers: true
-#| file: ../../../data_scripts/illinois_birth_weights.R
+#| file: ../../../data_scripts/intro_stats/illinois_birth_weights.R
 ```
 
 <!-- ```{python}
