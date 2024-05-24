@@ -65,7 +65,7 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __VertebralHeight__ Height of the T4 vertebra of the subject (centimeters) 
+- __VertebralHeight:__ Height of the T4 vertebra of the subject (centimeters) 
 
 
 ### Variable summary
@@ -89,7 +89,7 @@ skim(dat) |> yank("character")
 #| code-fold: true
 #| code-summary: Explore generating code using R
 #| code-line-numbers: true
-#| file: ../../../data_scripts/vertebral_heights.R
+#| file: ../../../data_scripts/intro_stats/vertebral_heights.R
 ```
 
 <!-- ```{python}
