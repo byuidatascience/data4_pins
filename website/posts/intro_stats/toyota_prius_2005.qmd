@@ -65,15 +65,15 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Year__ Year
-- __Vehicle__ Vehicle name
-- __IsCertified__ Whether vehicle is certified or not (No, Yes)
-- __Price__ Vehicle price
-- __Mileage__ Mileage
-- __Seller__ Seller Name and Phone Number
-- __TypeOfSeller__ Seller type (Dealer, Private)
-- __Body__ Body (Hatch)
-- __Color__ Vehicle color
+- __Year:__ Year
+- __Vehicle:__ Vehicle name
+- __IsCertified:__ Whether vehicle is certified or not (No, Yes)
+- __Price:__ Vehicle price
+- __Mileage:__ Mileage
+- __Seller:__ Seller Name and Phone Number
+- __TypeOfSeller:__ Seller type (Dealer, Private)
+- __Body:__ Body (Hatch)
+- __Color:__ Vehicle color
 
 
 ### Variable summary
@@ -97,7 +97,7 @@ skim(dat) |> yank("character")
 #| code-fold: true
 #| code-summary: Explore generating code using R
 #| code-line-numbers: true
-#| file: ../../../data_scripts/toyota_prius_2005.R
+#| file: ../../../data_scripts/intro_stats/toyota_prius_2005.R
 ```
 
 <!-- ```{python}
