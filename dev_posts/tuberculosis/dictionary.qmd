@@ -3,7 +3,7 @@ title: "World Health Organization (WHO) Tuberculosis csv file column names"
 author: "DS 150"
 date: "2024-02-20"
 categories: [health]
-description: "File found at https://extranet.who.int/tme/generateCSV.asp?ds=dictionary"
+description: "Data dictionary for tuberculosis datasets. File found at https://extranet.who.int/tme/generateCSV.asp?ds=dictionary"
 params: 
     source: "https://www.who.int/tb/country/data/download/en/"
     pins_name: 'hathawayj/dictionary'
