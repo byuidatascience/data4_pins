@@ -10,7 +10,501 @@
 <atom:link href="https://byuidatascience.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Documentation on the avaialable data that we use in our courses.</description>
 <generator>quarto-1.4.553</generator>
-<lastBuildDate>Thu, 25 Apr 2024 06:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 08 May 2024 06:00:00 GMT</lastBuildDate>
+<item>
+  <title>Climate Change: Antarctica</title>
+  <dc:creator>DS 350</dc:creator>
+  <link>https://byuidatascience.github.io/posts/intro_stats/climate_change_antarctica.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="section" class="level1">
+<h1></h1>
+<section id="data-details" class="level2">
+<h2 class="anchored" data-anchor-id="data-details">Data details</h2>
+<p>There are <strong>40 rows</strong> and <strong>5 columns</strong>. The data source<sup>1</sup> is used to create our data that is stored in our <a href="https://posit.byui.edu/content/d4a8e7a8-8011-44cc-b7ca-ab0d19b030b9/_rev435/">pins table</a>. You can access this pin from a connection to <a href="https://posit.byui.edu">posit.byui.edu</a> using <code>hathawayj/climate_change_antarctica</code>.</p>
+<p>This data is available to <strong>all</strong>.</p>
+<section id="variable-description" class="level3">
+<h3 class="anchored" data-anchor-id="variable-description">Variable description</h3>
+<ul>
+<li><strong>Entity:</strong> Country name</li>
+<li><strong>Code:</strong> 3-letter code for each country</li>
+<li><strong>Year:</strong> Year</li>
+<li><strong>antarctic_sea_ice_september:</strong> Amount of sea ice in Antarctica in September (millions of square kilometers)</li>
+<li><strong>antarctic_sea_ice_february:</strong> Amount of sea ice in Antarctica in February (millions of square kilometers)</li>
+</ul>
+</section>
+<section id="variable-summary" class="level3">
+<h3 class="anchored" data-anchor-id="variable-summary">Variable summary</h3>
+<div class="cell">
+<div class="cell-output-display">
+<p><strong>Variable type: numeric</strong></p>
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 7%">
+<col style="width: 10%">
+<col style="width: 8%">
+<col style="width: 7%">
+<col style="width: 6%">
+<col style="width: 9%">
+<col style="width: 8%">
+<col style="width: 9%">
+<col style="width: 6%">
+<col style="width: 4%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">skim_variable</th>
+<th style="text-align: right;">n_missing</th>
+<th style="text-align: right;">complete_rate</th>
+<th style="text-align: right;">mean</th>
+<th style="text-align: right;">sd</th>
+<th style="text-align: right;">p0</th>
+<th style="text-align: right;">p25</th>
+<th style="text-align: right;">p50</th>
+<th style="text-align: right;">p75</th>
+<th style="text-align: right;">p100</th>
+<th style="text-align: left;">hist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Year</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1998.5</td>
+<td style="text-align: right;">11.69</td>
+<td style="text-align: right;">1979</td>
+<td style="text-align: right;">1988.75</td>
+<td style="text-align: right;">1998.5</td>
+<td style="text-align: right;">2008.25</td>
+<td style="text-align: right;">2018</td>
+<td style="text-align: left;">▇▇▇▇▇</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">antarctic_sea_ice_september</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">18527513.5</td>
+<td style="text-align: right;">436200.40</td>
+<td style="text-align: right;">17680013</td>
+<td style="text-align: right;">18185013.29</td>
+<td style="text-align: right;">18565013.6</td>
+<td style="text-align: right;">18805013.74</td>
+<td style="text-align: right;">19760014</td>
+<td style="text-align: left;">▂▇▇▂▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">antarctic_sea_ice_february</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3072252.2</td>
+<td style="text-align: right;">424448.59</td>
+<td style="text-align: right;">2290002</td>
+<td style="text-align: right;">2840002.08</td>
+<td style="text-align: right;">2985002.2</td>
+<td style="text-align: right;">3212502.35</td>
+<td style="text-align: right;">3890003</td>
+<td style="text-align: left;">▂▅▇▁▃</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<p><strong>Variable type: character</strong></p>
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 13%">
+<col style="width: 19%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 8%">
+<col style="width: 12%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">skim_variable</th>
+<th style="text-align: right;">n_missing</th>
+<th style="text-align: right;">complete_rate</th>
+<th style="text-align: right;">min</th>
+<th style="text-align: right;">max</th>
+<th style="text-align: right;">empty</th>
+<th style="text-align: right;">n_unique</th>
+<th style="text-align: right;">whitespace</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Entity</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Code</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<details class="code-fold">
+<summary>Explore generating code using R</summary>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1">pacman<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">p_load</span>(tidyverse, pins, connectapi, owidR, googledrive)</span>
+<span id="cb1-2"></span>
+<span id="cb1-3"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># owid() doesn't work for this dataset right now because the source site is down 5/8/2024</span></span>
+<span id="cb1-4"></span>
+<span id="cb1-5"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># owid() function downloads current data directly from Our World in Data.</span></span>
+<span id="cb1-6"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Use owid_search() to search for other OWID datasets.</span></span>
+<span id="cb1-7"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># For more information, see the package documentation here: https://github.com/piersyork/owidR/blob/main/README.md</span></span>
+<span id="cb1-8"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># climate_change_antarctica &lt;- owid('climate-change-antarctica')</span></span>
+<span id="cb1-9"></span>
+<span id="cb1-10"></span>
+<span id="cb1-11"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Until that issue is resolved, the data can be found in the google drive</span></span>
+<span id="cb1-12"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Download the file from google drive</span></span>
+<span id="cb1-13">sdrive <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">shared_drive_find</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"byuids_data"</span>) <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># This will ask for authentication.</span></span>
+<span id="cb1-14">google_file <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">drive_ls</span>(sdrive) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb1-15">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">filter</span>(stringr<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">str_detect</span>(name, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"climate-change-antarctica"</span>))</span>
+<span id="cb1-16">tempf <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">tempfile</span>()</span>
+<span id="cb1-17"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">drive_download</span>(google_file, tempf)</span>
+<span id="cb1-18">climate_change_antarctica <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(tempf)</span>
+<span id="cb1-19"></span>
+<span id="cb1-20"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Publish the data to the server with Bro. Hathaway as the owner.</span></span>
+<span id="cb1-21">board <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">board_connect</span>()</span>
+<span id="cb1-22"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">pin_write</span>(board, climate_change_antarctica, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">type =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"parquet"</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">access_type =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"all"</span>)</span>
+<span id="cb1-23"></span>
+<span id="cb1-24">pin_name <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"climate_change_antarctica"</span></span>
+<span id="cb1-25">meta <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">pin_meta</span>(board, <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">paste0</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"hathawayj/"</span>, pin_name))</span>
+<span id="cb1-26">client <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">connect</span>()</span>
+<span id="cb1-27">my_app <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">content_item</span>(client, meta<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>local<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>content_id)</span>
+<span id="cb1-28"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">set_vanity_url</span>(my_app, <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">paste0</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"data/"</span>, pin_name))</span></code></pre></div>
+</details>
+</div>
+<!-- ```{python}
+#| echo: true
+#| eval: false
+#| code-fold: true
+#| code-summary: Explore generating code using Python
+#| code-line-numbers: true
+#| file: ../../../data_scripts/YOURFILEPATH
+``` -->
+</section>
+</section>
+<section id="access-data" class="level2">
+<h2 class="anchored" data-anchor-id="access-data">Access data</h2>
+<p>This data is available to <strong>all</strong>.</p>
+<p><strong>Direct Download:</strong> <a href="https://posit.byui.edu/content/d4a8e7a8-8011-44cc-b7ca-ab0d19b030b9/climate_change_antarctica.parquet">climate_change_antarctica.parquet</a></p>
+<section id="r-and-python-download" class="level4">
+<h4 class="anchored" data-anchor-id="r-and-python-download"><strong>R and Python Download:</strong></h4>
+<section id="url-connections" class="level5">
+<h5 class="anchored" data-anchor-id="url-connections"><strong>URL Connections:</strong></h5>
+<p>For public data, any user can connect and read the data using <code>pins::board_connect_url()</code> in R.</p>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(pins)</span>
+<span id="cb2-2">url_data <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://posit.byui.edu/data/climate_change_antarctica/"</span></span>
+<span id="cb2-3">board_url <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">board_connect_url</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"dat"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> url_data))</span>
+<span id="cb2-4">dat <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">pin_read</span>(board_url, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"dat"</span>)</span></code></pre></div>
+<p>Use this custom function in Python to have the data in a Pandas DataFrame.</p>
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> pandas <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> pd</span>
+<span id="cb3-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> requests</span>
+<span id="cb3-3"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> io <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> BytesIO</span>
+<span id="cb3-4"></span>
+<span id="cb3-5"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> read_url_pin(name):</span>
+<span id="cb3-6">  url <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://posit.byui.edu/data/"</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> name <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"/"</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> name <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">".parquet"</span></span>
+<span id="cb3-7">  response <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> requests.get(url)</span>
+<span id="cb3-8">  <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">if</span> response.status_code <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">200</span>:</span>
+<span id="cb3-9">    parquet_content <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> BytesIO(response.content)</span>
+<span id="cb3-10">    pandas_dataframe <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> pd.read_parquet(parquet_content)</span>
+<span id="cb3-11">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> pandas_dataframe</span>
+<span id="cb3-12">  <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">else</span>:</span>
+<span id="cb3-13">    <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(<span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f"Failed to retrieve data. Status code: </span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>response<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span>status_code<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"</span>)</span>
+<span id="cb3-14">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">None</span></span>
+<span id="cb3-15"></span>
+<span id="cb3-16"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Example usage:</span></span>
+<span id="cb3-17">pandas_df <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> read_url_pin(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"climate_change_antarctica"</span>)</span></code></pre></div>
+</section>
+</section>
+<section id="authenticated-connection" class="level4">
+<h4 class="anchored" data-anchor-id="authenticated-connection"><strong>Authenticated Connection:</strong></h4>
+<p>Our connect server is <a href="https://posit.byui.edu/connect/#/content/listing?filter=min_role:viewer&amp;filter=content_type:all&amp;view_type=compact">https://posit.byui.edu</a> which you assign to your <code>CONNECT_SERVER</code> environment variable. You must <a href="https://docs.posit.co/connect/user/api-keys/#api-keys-creating">create an API key</a> and store it in your environment under <code>CONNECT_API_KEY</code>.</p>
+<p><em>Read more about <a href="../../environment.html">environment variables and the pins package</a> to understand how these environment variables are stored and accessed in R and Python with pins.</em></p>
+<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(pins)</span>
+<span id="cb4-2">board <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">board_connect</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">auth =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"auto"</span>)</span>
+<span id="cb4-3">dat <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">pin_read</span>(board, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"hathawayj/climate_change_antarctica"</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> os</span>
+<span id="cb5-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> pins <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> board_rsconnect</span>
+<span id="cb5-3"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> dotenv <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> load_dotenv</span>
+<span id="cb5-4">load_dotenv()</span>
+<span id="cb5-5">API_KEY <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> os.getenv(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'CONNECT_API_KEY'</span>)</span>
+<span id="cb5-6">SERVER <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> os.getenv(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'CONNECT_SERVER'</span>)</span>
+<span id="cb5-7"></span>
+<span id="cb5-8">board <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> board_rsconnect(server_url<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>SERVER, api_key<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>API_KEY)</span>
+<span id="cb5-9">dat <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> board.pin_read(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"hathawayj/climate_change_antarctica"</span>)</span></code></pre></div>
+
+
+</section>
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p><a href="https://ourworldindata.org/explorers/climate-change?facet=none&amp;country=OWID_WRL~ATA&amp;Metric=Antarctic+sea+ice+extent&amp;Long-run+series%3F=false">https://ourworldindata.org/explorers/climate-change?facet=none&amp;country=OWID_WRL~ATA&amp;Metric=Antarctic+sea+ice+extent&amp;Long-run+series%3F=false</a>↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>DS350</category>
+  <category>world</category>
+  <category>climate</category>
+  <guid>https://byuidatascience.github.io/posts/intro_stats/climate_change_antarctica.html</guid>
+  <pubDate>Wed, 08 May 2024 06:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Book of Mormon Wordprint</title>
   <dc:creator>MATH 221</dc:creator>

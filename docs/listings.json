@@ -1,15 +1,11 @@
 [
   {
-    "listing": "/m221-series.html",
+    "listing": "/index.html",
     "items": [
-      "/posts/intro_stats/book_of_mormon_wordprint.html",
       "/posts/intro_stats/apollo.html",
-      "/posts/intro_stats/baby_boom.html"
-    ]
-  },
-  {
-    "listing": "/childhealth-series.html",
-    "items": [
+      "/posts/intro_stats/baby_boom.html",
+      "/posts/intro_stats/book_of_mormon_wordprint.html",
+      "/posts/intro_stats/climate_change_antarctica.html",
       "/posts/childhealth/all_child_365_days.html",
       "/posts/childhealth/all_child_summary.html",
       "/posts/childhealth/dutch_birth.html",
@@ -36,11 +32,8 @@
     ]
   },
   {
-    "listing": "/index.html",
+    "listing": "/childhealth-series.html",
     "items": [
-      "/posts/intro_stats/apollo.html",
-      "/posts/intro_stats/baby_boom.html",
-      "/posts/intro_stats/book_of_mormon_wordprint.html",
       "/posts/childhealth/all_child_365_days.html",
       "/posts/childhealth/all_child_summary.html",
       "/posts/childhealth/dutch_birth.html",
@@ -50,6 +43,15 @@
       "/posts/childhealth/us_birth.html",
       "/posts/childhealth/us_child.html",
       "/posts/childhealth/weight_coef.html"
+    ]
+  },
+  {
+    "listing": "/m221-series.html",
+    "items": [
+      "/posts/intro_stats/climate_change_antarctica.html",
+      "/posts/intro_stats/book_of_mormon_wordprint.html",
+      "/posts/intro_stats/apollo.html",
+      "/posts/intro_stats/baby_boom.html"
     ]
   }
 ]

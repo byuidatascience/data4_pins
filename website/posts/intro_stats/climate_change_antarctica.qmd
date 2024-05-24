@@ -92,7 +92,7 @@ skim(dat) |> yank("character")
 #| code-fold: true
 #| code-summary: Explore generating code using R
 #| code-line-numbers: true
-#| file: ../../../data_scripts/climate_change_antarctica.R
+#| file: ../../../data_scripts/intro_stats/climate_change_antarctica.R
 ```
 
 <!-- ```{python}
