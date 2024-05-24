@@ -65,11 +65,11 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Twin__ ID for each pair of twins
-- __Age__ Age at time of diagnosis (years)
-- __Gender__ Gender of twins (M, F)
-- __NonDiabeticHeight__ Height of non-diabetic twin (cm)
-- __DiabeticHeight__ Height of diabetic twin (cm)
+- __Twin:__ ID for each pair of twins
+- __Age:__ Age at time of diagnosis (years)
+- __Gender:__ Gender of twins (M, F)
+- __NonDiabeticHeight:__ Height of non-diabetic twin (cm)
+- __DiabeticHeight:__ Height of diabetic twin (cm)
 
 
 ### Variable summary
@@ -93,7 +93,7 @@ skim(dat) |> yank("character")
 #| code-fold: true
 #| code-summary: Explore generating code using R
 #| code-line-numbers: true
-#| file: ../../../data_scripts/twins_diabetes.R
+#| file: ../../../data_scripts/intro_stats/twins_diabetes.R
 ```
 
 <!-- ```{python}
