@@ -2,7 +2,7 @@
 title: "Math Self Efficacy"
 author: "MATH 221"
 date: "2024-04-30"
-categories: [education]
+categories: [MATH221, education]
 description: "  Shane Goodwin and other researchers studied factors that affect a student's confidence  
   on a multiple-choice Mathematics exam. A group of n = 139 students in an Intermediate   
   Algebra course at BYU-Idaho participated in the study. 
@@ -85,9 +85,9 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Gender__ Gender (M, F)
-- __Score__ Percent of questions right on exam
-- __ConfidenceRatingMean__ Mean of confidence ratings for each student (see description for scale)
+- __Gender:__ Gender (M, F)
+- __Score:__ Percent of questions right on exam
+- __ConfidenceRatingMean:__ Mean of confidence ratings for each student (see description for scale)
 
 
 ### Variable summary

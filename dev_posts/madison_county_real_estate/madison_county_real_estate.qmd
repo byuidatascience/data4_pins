@@ -2,10 +2,10 @@
 title: "Madison County Real Estate"
 author: "MATH 221"
 date: "2024-04-29"
-categories: [realestate, economics]
-description: "Real estate prices are very variable, and they depend on a variety of factors. To analyze some of the effects different attributes of houses may have on the price, these data were collected.\nA search for homes in Madison County on snakerivermls.com was conducted, and the data were recorded. "
+categories: [MATH221, realestate, economics]
+description: "Note that these data are from 2010, and no longer relevant unless you're interested in ancient history. Real estate prices are very variable, and they depend on a variety of factors. To analyze some of the effects different attributes of houses may have on the price, these data were collected.\nA search for homes in Madison County on snakerivermls.com was conducted, and the data were recorded. "
 params: 
-    source: ""
+    source: "Snake River Regional MLS. Snake River MLS. Website, accessed January 2010. http://snakerivermls.com/. "
     pins_name: 'hathawayj/madison_county_real_estate'
     available: all
 ---
@@ -65,23 +65,23 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __ListPrice__ Listing price (dollars)
-- __Bedrooms__ Count of bedrooms
-- __TotalBaths__ Count of bathrooms
-- __Style__ House style (1 Story, 2 Story)
-- __Age__ House age as of 2010 (years)
-- __LotSize__ Size of lot (acres)
-- __SQFT__ Square footage (ft^2^)
-- __Taxes__ Annual property taxes (dollars)
-- __IsFixerUpper__ Whether property needs repairs or not (No, Yes)
-- __Elementary__ Elementary school of the district the house belongs to 
-- __JrHigh__ Junior high school of the district the house belongs to
-- __High__ High school of the district the house belongs to 
-- __Subdivision__ Subdivision name
-- __City__ City in which property is located
-- __County__ County in which property is located
-- __Fireplace__ Whether property has a fireplace or not (No, Yes)
-- __FloodPlain__ Whether property is built on flood plain or not (N = no, U = unknown, Y = yes)
+- __ListPrice:__ Listing price (dollars)
+- __Bedrooms:__ Count of bedrooms
+- __TotalBaths:__ Count of bathrooms
+- __Style:__ House style (1 Story, 2 Story)
+- __Age:__ House age as of 2010 (years)
+- __LotSize:__ Size of lot (acres)
+- __SQFT:__ Square footage (ft^2^)
+- __Taxes:__ Annual property taxes (dollars)
+- __IsFixerUpper:__ Whether property needs repairs or not (No, Yes)
+- __Elementary:__ Elementary school of the district the house belongs to 
+- __JrHigh:__ Junior high school of the district the house belongs to
+- __High:__ High school of the district the house belongs to 
+- __Subdivision:__ Subdivision name
+- __City:__ City in which property is located
+- __County:__ County in which property is located
+- __Fireplace:__ Whether property has a fireplace or not (No, Yes)
+- __FloodPlain:__ Whether property is built on flood plain or not (N = no, U = unknown, Y = yes)
 
 ### Variable summary
 

@@ -2,10 +2,10 @@
 title: "Singer Heights"
 author: "MATH 221"
 date: "2024-05-02"
-categories: [music]
+categories: [MATH221, music]
 description: "The heights of singers by their group (Soprano, Alto, Tenor, Bass)"
 params: 
-    source: ""
+    source: "Unknown"
     pins_name: 'hathawayj/singer_heights'
     available: all
 ---

@@ -2,7 +2,7 @@
 title: "Lead Exposure and Behavior"
 author: "MATH 221"
 date: "2024-04-30"
-categories: [health, environmentalhealth, behavioralscience]
+categories: [MATH221, health, environmentalhealth, behavioralscience]
 description: "Researchers investigated whether exposure to lead affected the behavior in poor children between the ages of 1 and 3 years old.\nThe researchers measured the blood lead level of each child in the study.  Children with blood lead levels between 0 and 0.48 µmol/L were classified as “Nonexposed,” and those with lead levels between 0.48 and 1.20 µmol/L were classified as “Exposed.”  Other researchers gave the children a behavior assessment, called the Behavior Rating Scale (BRS).  The scores on the BRS are percentiles.  Higher numbers are more desirable, since they indicate fewer problematic behaviors. "
 params: 
     source: "Alan L. Mendelsohn, Benard P. Dreyer, Arthur H. Fierman, Carolyn M. Rosen, Lori A. Legano, Hillary A. Kruger, Sylvia W. Lim, and Cheryl D. Courtlandt. Low-level lead exposure and behavior in early childhood. Pediatrics, 101(3):10, 1998. "
@@ -65,11 +65,11 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Group__ Subject group based on lead exposure (Nonexposed, Exposed)
-- __Gender__ Gender (M, F)
-- __Age__ Age (months)
-- __Lead__ Concentration of lead in blood (micromoles per liter)
-- __BRS__ Score from Behavior Rating Scale (BRS), in percentiles: higher numbers indicate less problematic behavior
+- __Group:__ Subject group based on lead exposure (Nonexposed, Exposed)
+- __Gender:__ Gender (M, F)
+- __Age:__ Age (months)
+- __Lead:__ Concentration of lead in blood (micromoles per liter)
+- __BRS:__ Score from Behavior Rating Scale (BRS), in percentiles: higher numbers indicate less problematic behavior
 
 ### Variable summary
 

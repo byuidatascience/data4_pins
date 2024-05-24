@@ -2,10 +2,10 @@
 title: "Old Faithful"
 author: "MATH 221"
 date: "2024-05-01"
-categories: [environment]
-description: "Waiting time between eruptions and the duration of the eruption for the Old Faithful geyser in Yellowstone National Park, Wyoming, USA."
+categories: [MATH221, environment, geology]
+description: "Waiting time between eruptions and the duration of the eruption for the Old Faithful geyser in Yellowstone National Park, Wyoming, USA.\nResearchers observed 272 eruptions of this geyser. The researchers recorded the duration of each eruption (in minutes) and the waiting time until the next eruption (in minutes). "
 params: 
-    source: ""
+    source: "A. Azzalini and A. W. Bowman. A look at some data on the Old Faithful geyser. Applied Statistics, 39:357-365, 1990."
     pins_name: 'hathawayj/old_faithful'
     available: all
 ---
@@ -65,8 +65,8 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Duration__ Duration of eruption (min)
-- __Wait__ Duration of wait between eruptions (min)
+- __Duration:__ Duration of eruption (min)
+- __Wait:__ Duration of wait between eruptions (min)
 
 
 ### Variable summary

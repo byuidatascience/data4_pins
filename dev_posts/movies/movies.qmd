@@ -2,10 +2,10 @@
 title: "Movies"
 author: "MATH 221"
 date: "2024-05-02"
-categories: [entertainment]
-description: ""
+categories: [MATH221, entertainment]
+description: "A large dataset containing movies. There are some unknown columns, but some may potentially be of interest."
 params: 
-    source: ""
+    source: "unknown"
     pins_name: 'hathawayj/movies'
     available: all
 ---
@@ -70,17 +70,17 @@ This data is available to __`r params$available`__.
 - __length__ Movie length (min)
 - __budget__ Budget (dollars)
 - __rating__ Rating
-- __votes__ .
-- __r1__ .
-- __r2__ .
-- __r3__ .
-- __r4__ .
-- __r5__ .
-- __r6__ .
-- __r7__ .
-- __r8__ .
-- __r9__ .
-- __r10__ .
+- __votes__ Unkown
+- __r1__ Unkown
+- __r2__ Unkown
+- __r3__ Unkown
+- __r4__ Unkown
+- __r5__ Unkown
+- __r6__ Unkown
+- __r7__ Unkown
+- __r8__ Unkown
+- __r9__ Unkown
+- __r10__ Unkown
 - __mpaa__ Motion Picture Association of America rating (NC-17, PG, PG-13, R)
 - __Action__ Whether film pertains to action genre or not (0, 1)
 - __Animation__ Whether film pertains to animation genre or not (0, 1)

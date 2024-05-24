@@ -2,10 +2,10 @@
 title: "JSE Hats"
 author: "MATH 221"
 date: "2024-04-30"
-categories: [products, haberdashery]
+categories: [MATH221, products, haberdashery]
 description: "The dimensions of various hats"
 params: 
-    source: ""
+    source: "Unknown"
     pins_name: 'hathawayj/jse_hats'
     available: all
 ---

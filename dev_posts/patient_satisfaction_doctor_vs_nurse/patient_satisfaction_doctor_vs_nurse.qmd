@@ -2,7 +2,7 @@
 title: "Patient Satisfaction: Doctor vs. Nurse"
 author: "MATH 221"
 date: "2024-05-01"
-categories: [health]
+categories: [MATH221, health]
 description: "1033 patients with no regular health care provider were randomly assigned to receive treatment from either a doctor or a nurse practitioner for primary and follow-up care after an emergency room or urgent care facility visit. \nPatients were interviewed 6 months later to assess their overall level of satisfaction with the care they had received. \nThere were 389 patients assigned to see a doctor and 644 patients assigned to see a nurse practitioner.\nThe satisfaction scores are based on a 5-point scale, where 5 is the most positive responses.\nThe variable \"Group\" indicates whether a patient was assigned to see a doctor (Group = 1) or Nurse (Group = 2). The variable \"Satisfaction\" gives the satisfaction scores reported by the patients.\nIs there a difference in the mean satisfaction rating given by patients treated by doctors versus nurse practioners?"
 params: 
     source: "Mary O. Mundinger, et. al., Primary Care Outcomes in Patients Treated by Nurse Practitioners or Physicians: A Randomized Trial. JAMA, 283:59-68, 2000. "
@@ -65,8 +65,8 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Group__ Whether a patient was assigned to a doctor (1) or a nurse (2)
-- __Satisfaction__ Satisfaction score (1-5, 5 being most positive)
+- __Group:__ Whether a patient was assigned to a doctor (1) or a nurse (2)
+- __Satisfaction:__ Satisfaction score (1-5, 5 being most positive)
 
 
 
