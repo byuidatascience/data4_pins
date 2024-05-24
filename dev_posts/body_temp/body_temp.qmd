@@ -3,7 +3,7 @@ title: "Body Temperature"
 author: "MATH 221"
 date: "2024-04-25"
 categories: [MATH221, health]
-description: "Data on body temperature extracted from a figure"
+description: "Data on body temperature extracted from a figure. Note that this data is representative."
 params: 
     source: "Representative data from:
 Mackowiak, P. A., Wasserman, S. S., and Levine, M. M.
@@ -96,7 +96,7 @@ skim(dat) |> yank("character")
 #| code-fold: true
 #| code-summary: Explore generating code using R
 #| code-line-numbers: true
-#| file: ../../../data_scripts/body_temp.R
+#| file: ../../../data_scripts/intro_stats/body_temp.R
 ```
 
 <!-- ```{python}
