@@ -65,8 +65,8 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __Wrong.Site__ Costs incurred by hospital from wrong site errors (dollars)
-- __Wrong.Patient__ Costs incurred by hospital from wrong patient errors (dollars)
+- __Wrong.Site:__ Costs incurred by hospital from wrong site errors (dollars)
+- __Wrong.Patient:__ Costs incurred by hospital from wrong patient errors (dollars)
 
 
 
@@ -91,7 +91,7 @@ skim(dat) |> yank("character")
 #| code-fold: true
 #| code-summary: Explore generating code using R
 #| code-line-numbers: true
-#| file: ../../../data_scripts/wrong_site_wrong_patient.R
+#| file: ../../../data_scripts/intro_stats/wrong_site_wrong_patient.R
 ```
 
 <!-- ```{python}
