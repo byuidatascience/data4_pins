@@ -11,7 +11,7 @@ params:
 ---
 
 
-```{r}a
+```{r}
 #| echo: false
 title <- params$title
 description <- params$description

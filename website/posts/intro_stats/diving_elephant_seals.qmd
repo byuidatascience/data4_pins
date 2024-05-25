@@ -3,7 +3,7 @@ title: "Diving Elephant Seals"
 author: "MATH 221"
 date: "2024-04-29"
 categories: [ecology, animals]
-description: "Researchers Jessica U. Meir and Paul J. Ponganis measured the body temperatures of a sample of diving elephant seals.  A thermistor was placed at a specific location on each seal to measure its body temperature.  They showed that the body temperature of seals tends to decrease as they dive.  The researchers estimated the typical body temperature of each seal at the time they initiate a dive and called this the \“representative temperature\” of the seal. 
+description: "Researchers Jessica U. Meir and Paul J. Ponganis measured the body temperatures of a sample of diving elephant seals.  A thermistor was placed at a specific location on each seal to measure its body temperature.  They showed that the body temperature of seals tends to decrease as they dive.  The researchers estimated the typical body temperature of each seal at the time they initiate a dive and called this the 'representative temperature' of the seal. 
 The researchers deployed each seal and took measurements on body temperature as well as diving depth and duration.  Masses, dive counts, and deployment durations were also recorded. "
 params: 
     source: "Jessica U. Meir and Paul J. Ponganis. Blood temperature profiles of diving elephant seals. Physiological & Biochemical Zoology, 83(3):531-540, May/Jun 2010. "

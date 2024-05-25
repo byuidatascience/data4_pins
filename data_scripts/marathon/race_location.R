@@ -3,7 +3,7 @@ pacman::p_load(pins, tidyverse, downloader, fs, glue, rvest, connectapi)
 # Load the data from Race Info.
 url_data <- "https://posit.byui.edu/data/race_info/"
 board_url <- board_connect_url(c("dat" = url_data))
-dat <- pin_read(board_url, "dat") # Error: Unauthorized (HTTP 401). Needs a system for authorization to read from the pins
+dat <- pin_read(board_url, "dat")
 
 
 # Wrangle

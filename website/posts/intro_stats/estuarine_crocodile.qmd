@@ -33,7 +33,7 @@ Science, 294:1516–1519, 2001."
 ---
 
 
-```{r}a
+```{r}
 #| echo: false
 title <- params$title
 description <- params$description

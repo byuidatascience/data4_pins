@@ -2,10 +2,12 @@
 
 Explore data specific to a category or course.
 
-## By data catagory
+## By data category
 
 - [Child Health](childhealth-series.qmd): Height and weight measurement data.
+- [Marathons](marathon-series.qmd): Marathon runner performance.
 
 ## By course
 
 - [DS 150: Data Intuition and Insight](ds150-series.qmd)
+- [Math 221: Introductory Statistics](m221-series.qmd)

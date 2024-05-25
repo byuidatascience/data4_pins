@@ -1,0 +1,16 @@
+---
+title: "Child Health Data"
+listing:
+  contents: posts/childhealth
+  sort: "date desc"
+  type: table
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  fields: [date, title, description]
+page-layout: full
+title-block-banner: true
+---
+
+
+The data focused on Child Health.

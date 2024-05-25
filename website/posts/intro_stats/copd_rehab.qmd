@@ -21,7 +21,7 @@ J. C. Waterhouse, S. J. Walters, Y. Oluboyede, and R. A. Lawson. A randomised 2x
 ---
 
 
-```{r}a
+```{r}
 #| echo: false
 title <- params$title
 description <- params$description

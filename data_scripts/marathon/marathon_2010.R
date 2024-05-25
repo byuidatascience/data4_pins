@@ -1,4 +1,4 @@
-pacman::p_load(pins, tidyverse, downloader, fs, glue, rvest, googledrive, connectapis)
+pacman::p_load(pins, tidyverse, downloader, fs, glue, rvest, googledrive, connectapi)
 
 
 # Data is from master_marathon. 
