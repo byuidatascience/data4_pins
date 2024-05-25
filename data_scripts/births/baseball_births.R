@@ -10,12 +10,12 @@ baseball_births <- Lahman::People %>%
   filter(!is.na(birthday))
 
 # Data details
-dpr_document(baseball_births, extension = ".md.R", export_folder = usethis::proj_get(),
-             object_name = "baseball_births", 
-             title = "The birth dates of MLB players",
-             description = "Data obtained from Lahman http://www.seanlahman.com/baseball-archive/statistics/",
-             source = "https://github.com/cdalzell/Lahman",
-             var_details = baseball_description)
+# dpr_document(baseball_births, extension = ".md.R", export_folder = usethis::proj_get(),
+#              object_name = "baseball_births", 
+#              title = "The birth dates of MLB players",
+#              description = "Data obtained from Lahman http://www.seanlahman.com/baseball-archive/statistics/",
+#              source = "https://github.com/cdalzell/Lahman",
+#              var_details = baseball_description)
 
 
 # Publish the data to the server with Bro. Hathaway as the owner.

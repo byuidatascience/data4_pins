@@ -55,12 +55,12 @@ basketball_births <- basketball_list %>%
 # write_csv(basketball_births, "basketball.csv")
 
 # Data details
-dpr_document(basketball_births, extension = ".md.R", export_folder = usethis::proj_get(),
-             object_name = "basketball_births", 
-             title = "The birth dates of NBA/ABA players",
-             description = "Data obtained from https://www.basketball-reference.com",
-             source = "https://www.basketball-reference.com/friv/birthdays.fcgi?month=1&day=1",
-             var_details = basketball_description)
+# dpr_document(basketball_births, extension = ".md.R", export_folder = usethis::proj_get(),
+#              object_name = "basketball_births", 
+#              title = "The birth dates of NBA/ABA players",
+#              description = "Data obtained from https://www.basketball-reference.com",
+#              source = "https://www.basketball-reference.com/friv/birthdays.fcgi?month=1&day=1",
+#              var_details = basketball_description)
 
 
 # Publish the data to the server with Bro. Hathaway as the owner.
