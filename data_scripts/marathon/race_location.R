@@ -3,7 +3,8 @@ pacman::p_load(pins, tidyverse, downloader, fs, glue, rvest, connectapi)
 # Load the data from Race Info.
 url_data <- "https://posit.byui.edu/data/race_info/"
 board_url <- board_connect_url(c("dat" = url_data))
-dat <- pin_read(board_url, "dat")
+dat <- pin_read(board_url, "dat") # Error in http_download(url = paste0(url, "data.txt"), path_dir = cache_dir,  : Unauthorized (HTTP 401).
+# If this bug can't be fixed, just put the dataset on the google drive and have this script read it in. 
 
 
 # Wrangle
