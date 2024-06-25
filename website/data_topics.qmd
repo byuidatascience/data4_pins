@@ -6,8 +6,12 @@ Explore data specific to a category or course.
 
 - [Child Health](childhealth-series.qmd): Height and weight measurement data.
 - [Marathons](marathon-series.qmd): Marathon runner performance.
+- [Tuberculosis](tuberculosis-series.qmd): Tuberculosis data from the WHO.
 
 ## By course
 
 - [DS 150: Data Intuition and Insight](ds150-series.qmd)
+- [DS 250: Data Science Programming](ds250-series.qmd)
+- [DS 350: Data Wrangling and Visualization](ds350-series.qmd)
 - [Math 221: Introductory Statistics](m221-series.qmd)
+- [Math 119: Applied Calculus for Data Analysis](M119-series.qmd)

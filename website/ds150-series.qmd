@@ -4,6 +4,7 @@ listing:
   contents: 
     - posts/childhealth/*.qmd
     - posts/marathons/*.qmd
+    - posts/tuberculosis/*.qmd
   sort: "date desc"
   type: table
   categories: false

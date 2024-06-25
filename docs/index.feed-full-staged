@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>BYU-I Course Project Data</title>
+<link>https://byuidatascience.github.io/</link>
+<atom:link href="https://byuidatascience.github.io/index.xml" rel="self" type="application/rss+xml"/>
+<description>Documentation on the avaialable data that we use in our courses.</description>
+<generator>quarto-1.4.553</generator>
+<lastBuildDate>Wed, 08 May 2024 06:00:00 GMT</lastBuildDate>
+<item>
+  <title>{B4F502887207:/posts/intro_stats/access_drinking_water_stacked.html}</title>
+  <dc:creator>DS 350</dc:creator>
+  <link>https://byuidatascience.github.io/posts/intro_stats/access_drinking_water_stacked.html</link>
+  <description>{B4F502887207:/posts/intro_stats/access_drinking_water_stacked.html}</description>
+  <category>DS350</category>
+  <category>world</category>
+  <category>resources</category>
+  <guid>https://byuidatascience.github.io/posts/intro_stats/access_drinking_water_stacked.html</guid>
+  <pubDate>Wed, 08 May 2024 06:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/intro_stats/climate_change_antarctica.html}</title>
+  <dc:creator>DS 350</dc:creator>
+  <link>https://byuidatascience.github.io/posts/intro_stats/climate_change_antarctica.html</link>
+  <description>{B4F502887207:/posts/intro_stats/climate_change_antarctica.html}</description>
+  <category>DS350</category>
+  <category>world</category>
+  <category>climate</category>
+  <guid>https://byuidatascience.github.io/posts/intro_stats/climate_change_antarctica.html</guid>
+  <pubDate>Wed, 08 May 2024 06:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/intro_stats/climate_change_ocean.html}</title>
+  <dc:creator>DS 350</dc:creator>
+  <link>https://byuidatascience.github.io/posts/intro_stats/climate_change_ocean.html</link>
+  <description>{B4F502887207:/posts/intro_stats/climate_change_ocean.html}</description>
+  <category>DS 350</category>
+  <category>world</category>
+  <category>climate</category>
+  <guid>https://byuidatascience.github.io/posts/intro_stats/climate_change_ocean.html</guid>
+  <pubDate>Wed, 08 May 2024 06:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/intro_stats/biggest_loser.html}</title>
+  <dc:creator>MATH 221</dc:creator>
+  <link>https://byuidatascience.github.io/posts/intro_stats/biggest_loser.html</link>
+  <description>{B4F502887207:/posts/intro_stats/biggest_loser.html}</description>
+  <category>entertainment</category>
+  <category>questionablebeautystandards</category>
+  <guid>https://byuidatascience.github.io/posts/intro_stats/biggest_loser.html</guid>
+  <pubDate>Thu, 02 May 2024 06:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/intro_stats/cardiac_arrest_health.html}</title>
+  <dc:creator>MATH 221</dc:creator>
+  <link>https://byuidatascience.github.io/posts/intro_stats/cardiac_arrest_health.html</link>
+  <description>{B4F502887207:/posts/intro_stats/cardiac_arrest_health.html}</description>
+  <category>MATH221</category>
+  <category>health</category>
+  <guid>https://byuidatascience.github.io/posts/intro_stats/cardiac_arrest_health.html</guid>
+  <pubDate>Thu, 02 May 2024 06:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/intro_stats/census_2015.html}</title>
+  <dc:creator>MATH 221</dc:creator>
+  <link>https://byuidatascience.github.io/posts/intro_stats/census_2015.html</link>
+  <description>{B4F502887207:/posts/intro_stats/census_2015.html}</description>
+  <category>MATH221</category>
+  <category>population</category>
+  <guid>https://byuidatascience.github.io/posts/intro_stats/census_2015.html</guid>
+  <pubDate>Thu, 02 May 2024 06:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/intro_stats/copd_rehab.html}</title>
+  <dc:creator>MATH 221</dc:creator>
+  <link>https://byuidatascience.github.io/posts/intro_stats/copd_rehab.html</link>
+  <description>{B4F502887207:/posts/intro_stats/copd_rehab.html}</description>
+  <category>MATH221</category>
+  <category>health</category>
+  <guid>https://byuidatascience.github.io/posts/intro_stats/copd_rehab.html</guid>
+  <pubDate>Thu, 02 May 2024 06:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/intro_stats/movies.html}</title>
+  <dc:creator>MATH 221</dc:creator>
+  <link>https://byuidatascience.github.io/posts/intro_stats/movies.html</link>
+  <description>{B4F502887207:/posts/intro_stats/movies.html}</description>
+  <category>MATH221</category>
+  <category>entertainment</category>
+  <guid>https://byuidatascience.github.io/posts/intro_stats/movies.html</guid>
+  <pubDate>Thu, 02 May 2024 06:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/intro_stats/singer_heights.html}</title>
+  <dc:creator>MATH 221</dc:creator>
+  <link>https://byuidatascience.github.io/posts/intro_stats/singer_heights.html</link>
+  <description>{B4F502887207:/posts/intro_stats/singer_heights.html}</description>
+  <category>MATH221</category>
+  <category>music</category>
+  <guid>https://byuidatascience.github.io/posts/intro_stats/singer_heights.html</guid>
+  <pubDate>Thu, 02 May 2024 06:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/intro_stats/soccer_shoes.html}</title>
+  <dc:creator>MATH 221</dc:creator>
+  <link>https://byuidatascience.github.io/posts/intro_stats/soccer_shoes.html</link>
+  <description>{B4F502887207:/posts/intro_stats/soccer_shoes.html}</description>
+  <category>sports</category>
+  <category>products</category>
+  <category>advertising</category>
+  <guid>https://byuidatascience.github.io/posts/intro_stats/soccer_shoes.html</guid>
+  <pubDate>Thu, 02 May 2024 06:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/intro_stats/soviet_accidents.html}</title>
+  <dc:creator>MATH 221</dc:creator>
+  <link>https://byuidatascience.github.io/posts/intro_stats/soviet_accidents.html</link>
+  <description>{B4F502887207:/posts/intro_stats/soviet_accidents.html}</description>
+  <category>occupationalsafety</category>
+  <category>military</category>
+  <category>mechanicalengineering</category>
+  <guid>https://byuidatascience.github.io/posts/intro_stats/soviet_accidents.html</guid>
+  <pubDate>Thu, 02 May 2024 06:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/intro_stats/speed_of_light_by_michelson_1879.html}</title>
+  <dc:creator>MATH 221</dc:creator>
+  <link>https://byuidatascience.github.io/posts/intro_stats/speed_of_light_by_michelson_1879.html</link>
+  <description>{B4F502887207:/posts/intro_stats/speed_of_light_by_michelson_1879.html}</description>
+  <category>MATH221</category>
+  <category>science</category>
+  <category>physics</category>
+  <guid>https://byuidatascience.github.io/posts/intro_stats/speed_of_light_by_michelson_1879.html</guid>
+  <pubDate>Thu, 02 May 2024 06:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/intro_stats/speed_of_light_by_michelson_1882.html}</title>
+  <dc:creator>MATH 221</dc:creator>
+  <link>https://byuidatascience.github.io/posts/intro_stats/speed_of_light_by_michelson_1882.html</link>
+  <description>{B4F502887207:/posts/intro_stats/speed_of_light_by_michelson_1882.html}</description>
+  <category>MATH221</category>
+  <category>science</category>
+  <category>physics</category>
+  <guid>https://byuidatascience.github.io/posts/intro_stats/speed_of_light_by_michelson_1882.html</guid>
+  <pubDate>Thu, 02 May 2024 06:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/intro_stats/super_bowl_movies.html}</title>
+  <dc:creator>MATH 221</dc:creator>
+  <link>https://byuidatascience.github.io/posts/intro_stats/super_bowl_movies.html</link>
+  <description>{B4F502887207:/posts/intro_stats/super_bowl_movies.html}</description>
+  <category>entertainment</category>
+  <guid>https://byuidatascience.github.io/posts/intro_stats/super_bowl_movies.html</guid>
+  <pubDate>Thu, 02 May 2024 06:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/intro_stats/twins_diabetes.html}</title>
+  <dc:creator>MATH 221</dc:creator>
+  <link>https://byuidatascience.github.io/posts/intro_stats/twins_diabetes.html</link>
+  <description>{B4F502887207:/posts/intro_stats/twins_diabetes.html}</description>
+  <category>health</category>
+  <guid>https://byuidatascience.github.io/posts/intro_stats/twins_diabetes.html</guid>
+  <pubDate>Thu, 02 May 2024 06:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/intro_stats/vertebral_heights.html}</title>
+  <dc:creator>MATH 221</dc:creator>
+  <link>https://byuidatascience.github.io/posts/intro_stats/vertebral_heights.html</link>
+  <description>{B4F502887207:/posts/intro_stats/vertebral_heights.html}</description>
+  <category>health</category>
+  <category>anthropology</category>
+  <guid>https://byuidatascience.github.io/posts/intro_stats/vertebral_heights.html</guid>
+  <pubDate>Thu, 02 May 2024 06:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/intro_stats/world_cup_heart_attacks.html}</title>
+  <dc:creator>MATH 221</dc:creator>
+  <link>https://byuidatascience.github.io/posts/intro_stats/world_cup_heart_attacks.html</link>
+  <description>{B4F502887207:/posts/intro_stats/world_cup_heart_attacks.html}</description>
+  <category>sports</category>
+  <category>health</category>
+  <guid>https://byuidatascience.github.io/posts/intro_stats/world_cup_heart_attacks.html</guid>
+  <pubDate>Thu, 02 May 2024 06:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/intro_stats/wrong_site_wrong_patient.html}</title>
+  <dc:creator>MATH 221</dc:creator>
+  <link>https://byuidatascience.github.io/posts/intro_stats/wrong_site_wrong_patient.html</link>
+  <description>{B4F502887207:/posts/intro_stats/wrong_site_wrong_patient.html}</description>
+  <category>health</category>
+  <guid>https://byuidatascience.github.io/posts/intro_stats/wrong_site_wrong_patient.html</guid>
+  <pubDate>Thu, 02 May 2024 06:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/intro_stats/zinc_for_colds.html}</title>
+  <dc:creator>MATH 221</dc:creator>
+  <link>https://byuidatascience.github.io/posts/intro_stats/zinc_for_colds.html</link>
+  <description>{B4F502887207:/posts/intro_stats/zinc_for_colds.html}</description>
+  <category>health</category>
+  <guid>https://byuidatascience.github.io/posts/intro_stats/zinc_for_colds.html</guid>
+  <pubDate>Thu, 02 May 2024 06:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/intro_stats/nasdaq_price_and_volume.html}</title>
+  <dc:creator>MATH 221</dc:creator>
+  <link>https://byuidatascience.github.io/posts/intro_stats/nasdaq_price_and_volume.html</link>
+  <description>{B4F502887207:/posts/intro_stats/nasdaq_price_and_volume.html}</description>
+  <category>finance</category>
+  <guid>https://byuidatascience.github.io/posts/intro_stats/nasdaq_price_and_volume.html</guid>
+  <pubDate>Wed, 01 May 2024 06:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

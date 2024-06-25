@@ -1,0 +1,17 @@
+---
+title: "MATH 119: Applied Calculus for Data Analysis"
+listing:
+  contents: 
+    - posts/led/*.qmd
+  sort: "date desc"
+  type: table
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  fields: [date, title, description]
+page-layout: full
+title-block-banner: true
+---
+
+
+Data used in MATH 119.

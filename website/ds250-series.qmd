@@ -1,0 +1,18 @@
+---
+title: "DS 250: Data Science Programming"
+listing:
+  contents: 
+    - posts/childhealth/*.qmd
+    - posts/marathons/*.qmd
+  sort: "date desc"
+  type: table
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  fields: [date, title, description]
+page-layout: full
+title-block-banner: true
+---
+
+
+Some of the data used in DS 250.
