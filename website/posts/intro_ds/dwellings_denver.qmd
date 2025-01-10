@@ -1,12 +1,12 @@
 ---
-title: "All of the runners for marathons with lat and long locations"
-author: "DS 150"
-date: "2024-01-26"
-categories: [marathon]
-description: "This data set has ~150k observations."
+title: "Denver residential dwelling sales for 2013"
+author: "DS 250"
+date: "2024-02-01"
+categories: [housing, DS250]
+description: "Attributes of each dwelling with their selling price for homes that sold in Denver in 2013"
 params: 
-    source: "http://faculty.chicagobooth.edu/george.wu/research/marathon/data.htm"
-    pins_name: 'hathawayj/marathon_location'
+    source: "https://www.denvergov.org/opendata/dataset/city-and-county-of-denver-real-property-sales-book-2013"
+    pins_name: 'hathawayj/dwellings_denver'
     available: all
 ---
 
@@ -65,14 +65,34 @@ This data is available to __`r params$available`__.
 
 ### Variable description
 
-- __age__ The age of the runner
-- __gender__ The gender of the runner (M/F)
-- __chiptime__ The time in minutes for the runner
-- __year__ The year of the marathon
-- __marathon__ The name of the marathon
-- __country__ The country where the marathon was held
-- __finishers__ The number of finishers at the marathon
-
+- __parcel:__ The parcel id
+- __nbhd:__ Neigborhood of the home
+- __abstrprd:__ No clue
+- __livearea:__ Square footage that is liveable
+- __finbsmnt:__ Square footage finished in the basement
+- __basement:__ Total square footage of the basement
+- __yrbuilt:__ Year the home was built
+- __condition:__ Condition of the home (6 levels provided)
+- __quality:__ A letter ratting
+- __totunits:__ How many dwelling units in the building
+- __stories:__ The number of stories
+- __gartype:__ Details on the garage type
+- __nocars:__ size of the garage in cars
+- __xtraffic:__ emtpy
+- __floorlvl:__ Mostly for apartments.  What level the living unit is on
+- __numbdrm:__ Number of bedrooms
+- __numbaths:__ Number of bathrooms
+- __arcstyle:__ Type of home
+- __sprice:__ Selling price
+- __deduct:__ Deduction from the selling price
+- __netprice:__ Net price of home
+- __tasp:__ Tax assesed selling price
+- __smonth:__ Month sold
+- __syear:__ Year sold
+- __qualified:__ Q or U with 66 percent Q
+- __status:__ I or V with over 90 percent I
+                      
+                      
 ### Variable summary
 
 ```{r}
@@ -88,23 +108,23 @@ skim(dat) |> yank("numeric")
 skim(dat) |> yank("character")
 ```
 
-```{r}
+<!-- ```{r}
 #| echo: true
 #| eval: false
 #| code-fold: true
 #| code-summary: Explore generating code using R
 #| code-line-numbers: true
-#| file: ../../../data_scripts/marathon/marathon_location.R
-```
+#| file: ../../../data_scripts/YOURFILEPATH
+``` -->
 
-<!-- ```{python}
+```{python}
 #| echo: true
 #| eval: false
 #| code-fold: true
 #| code-summary: Explore generating code using Python
 #| code-line-numbers: true
-#| file: ../../../data_scripts/YOURFILEPATH
-``` -->
+#| file: ../../../data_scripts/dwellings/dwellings_denver.py
+```
 
 
 ## Access data

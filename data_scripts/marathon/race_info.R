@@ -12,9 +12,11 @@ colnames(race_info) <- race_info[1,]
 race_info <- race_info[-1,] %>%
   as_tibble() %>%
   rename_all("str_to_lower") %>%
-  mutate(year = as.integer(year), finishers = as.integer(finishers),
-         `mean time` = as.numeric(`mean time`)) %>%
-  rename(mean_time = `mean time`)
+  mutate(
+    year = as.integer(year),
+    finishers = as.integer(finishers),
+    marathon = stringr::str_replace(marathon, "\n ", ""),
+    `mean_time` = as.numeric(`mean_time`))
 
 board <- board_connect()
 pin_write(board, race_info, type = "parquet")

@@ -35,3 +35,4 @@ rsconnect/
 .gitignore
 .DS_Store
 data4_pins.Rproj
+*_secrets.json

@@ -1,32 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://byuidatascience.github.io/posts/marathons/race_info.html</loc>
+    <loc>https://byuidatascience.github.io/posts/tuberculosis/utilization.html</loc>
+    <lastmod>2024-06-25T16:27:25.340Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/tuberculosis/estimates.html</loc>
+    <lastmod>2024-06-25T16:26:54.881Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/tuberculosis/cases.html</loc>
+    <lastmod>2024-06-25T16:26:29.997Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/marathons/race_location.html</loc>
+    <lastmod>2025-01-10T23:13:21.553Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/marathons/marathon_sample.html</loc>
     <lastmod>2024-05-25T17:06:49.082Z</lastmod>
   </url>
   <url>
-    <loc>https://byuidatascience.github.io/posts/marathons/marathon_nyc.html</loc>
-    <lastmod>2024-05-25T17:06:49.081Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/marathons/marathon_big_sur.html</loc>
+    <loc>https://byuidatascience.github.io/posts/marathons/marathon_jerusalem.html</loc>
     <lastmod>2024-05-25T17:06:49.080Z</lastmod>
   </url>
   <url>
-    <loc>https://byuidatascience.github.io/posts/marathons/marathon_2010.html</loc>
-    <lastmod>2024-05-25T17:06:49.079Z</lastmod>
+    <loc>https://byuidatascience.github.io/posts/marathons/marathon_berlin.html</loc>
+    <lastmod>2024-06-25T17:00:23.702Z</lastmod>
   </url>
   <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/wrong_site_wrong_patient.html</loc>
-    <lastmod>2024-05-25T16:44:29.288Z</lastmod>
+    <loc>https://byuidatascience.github.io/posts/led/led_testing.html</loc>
+    <lastmod>2024-06-25T16:36:47.500Z</lastmod>
   </url>
   <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/vertebral_heights.html</loc>
-    <lastmod>2024-05-25T16:44:29.247Z</lastmod>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/zinc_for_colds.html</loc>
+    <lastmod>2024-05-25T16:44:29.293Z</lastmod>
   </url>
   <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/super_bowl_movies.html</loc>
-    <lastmod>2024-05-25T16:44:29.247Z</lastmod>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/world_cup_heart_attacks.html</loc>
+    <lastmod>2024-05-25T16:44:29.292Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/twins_diabetes.html</loc>
+    <lastmod>2024-05-25T16:44:29.297Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/speed_of_light_by_michelson_1882.html</loc>
+    <lastmod>2024-06-25T16:53:57.896Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/soviet_accidents.html</loc>
+    <lastmod>2024-06-25T16:40:32.790Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/singer_heights.html</loc>
+    <lastmod>2024-06-25T16:43:43.851Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/reading_practices.html</loc>
+    <lastmod>2024-06-25T16:55:35.303Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/pine_beetle.html</loc>
+    <lastmod>2024-06-25T16:46:34.281Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/oreo_double_stuf.html</loc>
+    <lastmod>2024-05-25T16:44:29.292Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/nosocomial_infections.html</loc>
+    <lastmod>2024-06-25T16:48:12.505Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/nba_players.html</loc>
+    <lastmod>2024-06-25T16:57:32.178Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/music_height_long.html</loc>
+    <lastmod>2024-06-25T16:58:29.593Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/math_self_efficacy.html</loc>
+    <lastmod>2024-06-25T16:59:37.220Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/madison_county_real_estate.html</loc>
+    <lastmod>2024-06-25T17:02:55.985Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/jse_hats.html</loc>
+    <lastmod>2024-06-25T17:04:00.670Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/illinois_birth_weights.html</loc>
+    <lastmod>2024-06-25T17:04:45.541Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/hot_dog_health.html</loc>
+    <lastmod>2024-06-25T17:06:19.314Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/gpas_byui.html</loc>
+    <lastmod>2024-06-25T17:08:35.968Z</lastmod>
   </url>
   <url>
     <loc>https://byuidatascience.github.io/posts/intro_stats/freshman_dinner.html</loc>
@@ -85,20 +161,24 @@
     <lastmod>2024-05-25T16:33:36.108Z</lastmod>
   </url>
   <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/bleu_scores.html</loc>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/body_measurements.html</loc>
+    <lastmod>2024-05-25T16:33:36.108Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/biggest_loser.html</loc>
+    <lastmod>2024-05-25T16:41:51.210Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/baby_boom.html</loc>
+    <lastmod>2024-05-23T14:46:46.346Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/ampm_heights.html</loc>
     <lastmod>2024-05-25T16:33:36.107Z</lastmod>
   </url>
   <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/batting_averages.html</loc>
-    <lastmod>2024-05-25T16:33:36.107Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/apollo.html</loc>
-    <lastmod>2024-05-22T22:14:29.155Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/access_drinking_water_stacked.html</loc>
-    <lastmod>2024-05-25T16:33:36.107Z</lastmod>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/Mahon.html</loc>
+    <lastmod>2024-06-25T17:02:27.484Z</lastmod>
   </url>
   <url>
     <loc>https://byuidatascience.github.io/posts/childhealth/us_child.html</loc>
@@ -117,24 +197,28 @@
     <lastmod>2024-05-22T21:57:41.071Z</lastmod>
   </url>
   <url>
-    <loc>https://byuidatascience.github.io/marathon-series.html</loc>
-    <lastmod>2024-05-25T17:08:50.426Z</lastmod>
+    <loc>https://byuidatascience.github.io/posts/intro_ds/dwellings_denver.html</loc>
+    <lastmod>2025-01-10T22:40:52.979Z</lastmod>
   </url>
   <url>
-    <loc>https://byuidatascience.github.io/index.html</loc>
-    <lastmod>2023-11-16T20:31:36.056Z</lastmod>
+    <loc>https://byuidatascience.github.io/tuberculosis-series.html</loc>
+    <lastmod>2024-06-25T16:38:08.822Z</lastmod>
   </url>
   <url>
-    <loc>https://byuidatascience.github.io/ds150-series.html</loc>
-    <lastmod>2024-06-25T16:28:21.489Z</lastmod>
+    <loc>https://byuidatascience.github.io/m221-series.html</loc>
+    <lastmod>2024-05-23T14:54:37.193Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/ds250-series.html</loc>
+    <lastmod>2025-01-10T22:38:26.276Z</lastmod>
   </url>
   <url>
     <loc>https://byuidatascience.github.io/childhealth-series.html</loc>
     <lastmod>2023-11-10T17:57:58.387Z</lastmod>
   </url>
   <url>
-    <loc>https://byuidatascience.github.io/about.html</loc>
-    <lastmod>2023-11-08T18:03:37.748Z</lastmod>
+    <loc>https://byuidatascience.github.io/M119-series.html</loc>
+    <lastmod>2024-06-25T16:37:06.582Z</lastmod>
   </url>
   <url>
     <loc>https://byuidatascience.github.io/data_topics.html</loc>
@@ -145,8 +229,24 @@
     <lastmod>2023-11-10T23:22:43.842Z</lastmod>
   </url>
   <url>
-    <loc>https://byuidatascience.github.io/m221-series.html</loc>
-    <lastmod>2024-05-23T14:54:37.193Z</lastmod>
+    <loc>https://byuidatascience.github.io/about.html</loc>
+    <lastmod>2023-11-08T18:03:37.748Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/ds150-series.html</loc>
+    <lastmod>2024-06-25T16:28:21.489Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/ds350-series.html</loc>
+    <lastmod>2024-06-25T16:38:55.501Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/marathon-series.html</loc>
+    <lastmod>2024-05-25T17:08:50.426Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/index.html</loc>
+    <lastmod>2023-11-16T20:31:36.056Z</lastmod>
   </url>
   <url>
     <loc>https://byuidatascience.github.io/posts/childhealth/all_child_365_days.html</loc>
@@ -169,20 +269,24 @@
     <lastmod>2024-05-22T21:57:41.071Z</lastmod>
   </url>
   <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/ampm_heights.html</loc>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/access_drinking_water_stacked.html</loc>
     <lastmod>2024-05-25T16:33:36.107Z</lastmod>
   </url>
   <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/baby_boom.html</loc>
-    <lastmod>2024-05-23T14:46:46.346Z</lastmod>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/apollo.html</loc>
+    <lastmod>2024-05-22T22:14:29.155Z</lastmod>
   </url>
   <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/biggest_loser.html</loc>
-    <lastmod>2024-05-25T16:41:51.210Z</lastmod>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/batting_averages.html</loc>
+    <lastmod>2024-05-25T16:33:36.107Z</lastmod>
   </url>
   <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/body_measurements.html</loc>
-    <lastmod>2024-05-25T16:33:36.108Z</lastmod>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/bleu_scores.html</loc>
+    <lastmod>2024-05-25T16:33:36.107Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/body_temp.html</loc>
+    <lastmod>2024-06-25T17:11:03.112Z</lastmod>
   </url>
   <url>
     <loc>https://byuidatascience.github.io/posts/intro_stats/book_of_mormon_wordprint.html</loc>
@@ -237,48 +341,100 @@
     <lastmod>2024-05-25T16:33:36.112Z</lastmod>
   </url>
   <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/oreo_double_stuf.html</loc>
-    <lastmod>2024-05-25T16:44:29.292Z</lastmod>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/gharial_crocodiles.html</loc>
+    <lastmod>2024-06-25T17:09:34.308Z</lastmod>
   </url>
   <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/twins_diabetes.html</loc>
-    <lastmod>2024-05-25T16:44:29.297Z</lastmod>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/gratitude.html</loc>
+    <lastmod>2024-06-25T17:08:07.186Z</lastmod>
   </url>
   <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/world_cup_heart_attacks.html</loc>
-    <lastmod>2024-05-25T16:44:29.292Z</lastmod>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/hubbles_constant_supernovas.html</loc>
+    <lastmod>2024-06-25T17:05:12.192Z</lastmod>
   </url>
   <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/zinc_for_colds.html</loc>
-    <lastmod>2024-05-25T16:44:29.293Z</lastmod>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/insulin_resistance_depression.html</loc>
+    <lastmod>2024-06-25T17:04:21.073Z</lastmod>
   </url>
   <url>
-    <loc>https://byuidatascience.github.io/posts/marathons/marathon_berlin.html</loc>
-    <lastmod>2024-06-25T17:00:23.702Z</lastmod>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/lead_exposure_and_behavior.html</loc>
+    <lastmod>2024-06-25T17:03:23.904Z</lastmod>
   </url>
   <url>
-    <loc>https://byuidatascience.github.io/posts/marathons/marathon_jerusalem.html</loc>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/manatees.html</loc>
+    <lastmod>2024-06-25T17:02:00.906Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/movies.html</loc>
+    <lastmod>2024-06-25T16:58:59.237Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/nasdaq_price_and_volume.html</loc>
+    <lastmod>2024-06-25T16:58:04.114Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/nicotine_test.html</loc>
+    <lastmod>2024-06-25T16:49:31.724Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/old_faithful.html</loc>
+    <lastmod>2024-06-25T16:47:34.988Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/patient_satisfaction_doctor_vs_nurse.html</loc>
+    <lastmod>2024-06-25T16:48:47.520Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/protein_requirement_campbell.html</loc>
+    <lastmod>2024-06-25T16:56:08.875Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/ree_classical_music.html</loc>
+    <lastmod>2024-06-25T16:54:50.273Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/soccer_shoes.html</loc>
+    <lastmod>2024-06-25T16:39:39.011Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/speed_of_light_by_michelson_1879.html</loc>
+    <lastmod>2024-06-25T16:53:43.437Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/super_bowl_movies.html</loc>
+    <lastmod>2024-05-25T16:44:29.247Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/vertebral_heights.html</loc>
+    <lastmod>2024-05-25T16:44:29.247Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/intro_stats/wrong_site_wrong_patient.html</loc>
+    <lastmod>2024-05-25T16:44:29.288Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/led/led_study.html</loc>
+    <lastmod>2024-06-25T16:36:25.717Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/marathons/marathon_2010.html</loc>
+    <lastmod>2024-05-25T17:06:49.079Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/marathons/marathon_big_sur.html</loc>
     <lastmod>2024-05-25T17:06:49.080Z</lastmod>
   </url>
   <url>
-    <loc>https://byuidatascience.github.io/posts/marathons/marathon_sample.html</loc>
+    <loc>https://byuidatascience.github.io/posts/marathons/marathon_nyc.html</loc>
+    <lastmod>2024-05-25T17:06:49.081Z</lastmod>
+  </url>
+  <url>
+    <loc>https://byuidatascience.github.io/posts/marathons/race_info.html</loc>
     <lastmod>2024-05-25T17:06:49.082Z</lastmod>
   </url>
   <url>
     <loc>https://byuidatascience.github.io/posts/tuberculosis/budget.html</loc>
     <lastmod>2024-06-25T16:26:06.319Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/tuberculosis/cases.html</loc>
-    <lastmod>2024-06-25T16:26:29.997Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/tuberculosis/estimates.html</loc>
-    <lastmod>2024-06-25T16:26:54.881Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/tuberculosis/utilization.html</loc>
-    <lastmod>2024-06-25T16:27:25.340Z</lastmod>
   </url>
   <url>
     <loc>https://byuidatascience.github.io/posts/tuberculosis/dictionary.html</loc>
@@ -287,153 +443,5 @@
   <url>
     <loc>https://byuidatascience.github.io/posts/tuberculosis/outcomes.html</loc>
     <lastmod>2024-06-25T16:36:06.306Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/led/led_study.html</loc>
-    <lastmod>2024-06-25T16:36:25.717Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/led/led_testing.html</loc>
-    <lastmod>2024-06-25T16:36:47.500Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/M119-series.html</loc>
-    <lastmod>2024-06-25T16:37:06.582Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/tuberculosis-series.html</loc>
-    <lastmod>2024-06-25T16:38:08.822Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/soccer_shoes.html</loc>
-    <lastmod>2024-06-25T16:39:39.011Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/soviet_accidents.html</loc>
-    <lastmod>2024-06-25T16:40:32.790Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/singer_heights.html</loc>
-    <lastmod>2024-06-25T16:43:43.851Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/pine_beetle.html</loc>
-    <lastmod>2024-06-25T16:46:34.281Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/old_faithful.html</loc>
-    <lastmod>2024-06-25T16:47:34.988Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/nosocomial_infections.html</loc>
-    <lastmod>2024-06-25T16:48:12.505Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/patient_satisfaction_doctor_vs_nurse.html</loc>
-    <lastmod>2024-06-25T16:48:47.520Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/nicotine_test.html</loc>
-    <lastmod>2024-06-25T16:49:31.724Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/speed_of_light_by_michelson_1882.html</loc>
-    <lastmod>2024-06-25T16:53:57.896Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/speed_of_light_by_michelson_1879.html</loc>
-    <lastmod>2024-06-25T16:53:43.437Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/ree_classical_music.html</loc>
-    <lastmod>2024-06-25T16:54:50.273Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/reading_practices.html</loc>
-    <lastmod>2024-06-25T16:55:35.303Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/protein_requirement_campbell.html</loc>
-    <lastmod>2024-06-25T16:56:08.875Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/nba_players.html</loc>
-    <lastmod>2024-06-25T16:57:32.178Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/nasdaq_price_and_volume.html</loc>
-    <lastmod>2024-06-25T16:58:04.114Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/music_height_long.html</loc>
-    <lastmod>2024-06-25T16:58:29.593Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/movies.html</loc>
-    <lastmod>2024-06-25T16:58:59.237Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/math_self_efficacy.html</loc>
-    <lastmod>2024-06-25T16:59:37.220Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/ds250-series.html</loc>
-    <lastmod>2024-06-25T16:00:11.764Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/ds350-series.html</loc>
-    <lastmod>2024-06-25T16:38:55.501Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/manatees.html</loc>
-    <lastmod>2024-06-25T17:02:00.906Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/Mahon.html</loc>
-    <lastmod>2024-06-25T17:02:27.484Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/madison_county_real_estate.html</loc>
-    <lastmod>2024-06-25T17:02:55.985Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/lead_exposure_and_behavior.html</loc>
-    <lastmod>2024-06-25T17:03:23.904Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/jse_hats.html</loc>
-    <lastmod>2024-06-25T17:04:00.670Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/insulin_resistance_depression.html</loc>
-    <lastmod>2024-06-25T17:04:21.073Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/illinois_birth_weights.html</loc>
-    <lastmod>2024-06-25T17:04:45.541Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/hubbles_constant_supernovas.html</loc>
-    <lastmod>2024-06-25T17:05:12.192Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/hot_dog_health.html</loc>
-    <lastmod>2024-06-25T17:06:19.314Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/gratitude.html</loc>
-    <lastmod>2024-06-25T17:08:07.186Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/gpas_byui.html</loc>
-    <lastmod>2024-06-25T17:08:35.968Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/gharial_crocodiles.html</loc>
-    <lastmod>2024-06-25T17:09:34.308Z</lastmod>
-  </url>
-  <url>
-    <loc>https://byuidatascience.github.io/posts/intro_stats/body_temp.html</loc>
-    <lastmod>2024-06-25T17:11:03.112Z</lastmod>
   </url>
 </urlset>

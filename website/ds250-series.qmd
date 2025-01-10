@@ -2,8 +2,7 @@
 title: "DS 250: Data Science Programming"
 listing:
   contents: 
-    - posts/childhealth/*.qmd
-    - posts/marathons/*.qmd
+    - posts/intro_ds/*.qmd
   sort: "date desc"
   type: table
   categories: false

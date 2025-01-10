@@ -9,7 +9,7 @@
 <link>https://byuidatascience.github.io/</link>
 <atom:link href="https://byuidatascience.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Documentation on the avaialable data that we use in our courses.</description>
-<generator>quarto-1.4.553</generator>
+<generator>quarto-1.5.56</generator>
 <lastBuildDate>Wed, 08 May 2024 06:00:00 GMT</lastBuildDate>
 <item>
   <title>Access to Drinking Water</title>
@@ -45,7 +45,7 @@
 <div class="cell">
 <div class="cell-output-display">
 <p><strong>Variable type: numeric</strong></p>
-<table class="table table-sm table-striped small">
+<table class="caption-top table table-sm table-striped small">
 <colgroup>
 <col style="width: 49%">
 <col style="width: 6%">
@@ -160,7 +160,7 @@
 <div class="cell">
 <div class="cell-output-display">
 <p><strong>Variable type: character</strong></p>
-<table class="table table-sm table-striped small">
+<table class="caption-top table table-sm table-striped small">
 <colgroup>
 <col style="width: 19%">
 <col style="width: 13%">
@@ -353,6 +353,7 @@ font-style: inherit;">import</span> BytesIO</span>
 <span id="cb3-4"></span>
 <span id="cb3-5"><span class="kw" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">def</span> read_url_pin(name):</span>
 <span id="cb3-6">  url <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -376,6 +377,7 @@ background-color: null;
 font-style: inherit;">=</span> requests.get(url)</span>
 <span id="cb3-8">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">if</span> response.status_code <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
@@ -389,9 +391,11 @@ background-color: null;
 font-style: inherit;">=</span> pd.read_parquet(parquet_content)</span>
 <span id="cb3-11">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> pandas_dataframe</span>
 <span id="cb3-12">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">else</span>:</span>
 <span id="cb3-13">    <span class="bu" style="color: null;
 background-color: null;
@@ -408,6 +412,7 @@ background-color: null;
 font-style: inherit;">"</span>)</span>
 <span id="cb3-14">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> <span class="va" style="color: #111111;
 background-color: null;
 font-style: inherit;">None</span></span>
@@ -532,7 +537,7 @@ font-style: inherit;">"hathawayj/access_drinking_water_stacked"</span>)</span></
 <div class="cell">
 <div class="cell-output-display">
 <p><strong>Variable type: numeric</strong></p>
-<table class="table table-sm table-striped small">
+<table class="caption-top table table-sm table-striped small">
 <colgroup>
 <col style="width: 21%">
 <col style="width: 7%">
@@ -608,7 +613,7 @@ font-style: inherit;">"hathawayj/access_drinking_water_stacked"</span>)</span></
 <div class="cell">
 <div class="cell-output-display">
 <p><strong>Variable type: character</strong></p>
-<table class="table table-sm table-striped small">
+<table class="caption-top table table-sm table-striped small">
 <colgroup>
 <col style="width: 19%">
 <col style="width: 13%">
@@ -847,6 +852,7 @@ font-style: inherit;">import</span> BytesIO</span>
 <span id="cb3-4"></span>
 <span id="cb3-5"><span class="kw" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">def</span> read_url_pin(name):</span>
 <span id="cb3-6">  url <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -870,6 +876,7 @@ background-color: null;
 font-style: inherit;">=</span> requests.get(url)</span>
 <span id="cb3-8">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">if</span> response.status_code <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
@@ -883,9 +890,11 @@ background-color: null;
 font-style: inherit;">=</span> pd.read_parquet(parquet_content)</span>
 <span id="cb3-11">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> pandas_dataframe</span>
 <span id="cb3-12">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">else</span>:</span>
 <span id="cb3-13">    <span class="bu" style="color: null;
 background-color: null;
@@ -902,6 +911,7 @@ background-color: null;
 font-style: inherit;">"</span>)</span>
 <span id="cb3-14">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> <span class="va" style="color: #111111;
 background-color: null;
 font-style: inherit;">None</span></span>
@@ -1028,7 +1038,7 @@ font-style: inherit;">"hathawayj/climate_change_antarctica"</span>)</span></code
 <div class="cell">
 <div class="cell-output-display">
 <p><strong>Variable type: numeric</strong></p>
-<table class="table table-sm table-striped small">
+<table class="caption-top table table-sm table-striped small">
 <colgroup>
 <col style="width: 26%">
 <col style="width: 8%">
@@ -1130,7 +1140,7 @@ font-style: inherit;">"hathawayj/climate_change_antarctica"</span>)</span></code
 <div class="cell">
 <div class="cell-output-display">
 <p><strong>Variable type: character</strong></p>
-<table class="table table-sm table-striped small">
+<table class="caption-top table table-sm table-striped small">
 <colgroup>
 <col style="width: 19%">
 <col style="width: 13%">
@@ -1368,6 +1378,7 @@ font-style: inherit;">import</span> BytesIO</span>
 <span id="cb3-4"></span>
 <span id="cb3-5"><span class="kw" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">def</span> read_url_pin(name):</span>
 <span id="cb3-6">  url <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -1391,6 +1402,7 @@ background-color: null;
 font-style: inherit;">=</span> requests.get(url)</span>
 <span id="cb3-8">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">if</span> response.status_code <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
@@ -1404,9 +1416,11 @@ background-color: null;
 font-style: inherit;">=</span> pd.read_parquet(parquet_content)</span>
 <span id="cb3-11">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> pandas_dataframe</span>
 <span id="cb3-12">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">else</span>:</span>
 <span id="cb3-13">    <span class="bu" style="color: null;
 background-color: null;
@@ -1423,6 +1437,7 @@ background-color: null;
 font-style: inherit;">"</span>)</span>
 <span id="cb3-14">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> <span class="va" style="color: #111111;
 background-color: null;
 font-style: inherit;">None</span></span>
@@ -1553,7 +1568,7 @@ font-style: inherit;">"hathawayj/climate_change_ocean"</span>)</span></code></pr
 <div class="cell">
 <div class="cell-output-display">
 <p><strong>Variable type: numeric</strong></p>
-<table class="table table-sm table-striped small">
+<table class="caption-top table table-sm table-striped small">
 <colgroup>
 <col style="width: 28%">
 <col style="width: 9%">
@@ -1681,7 +1696,7 @@ font-style: inherit;">"hathawayj/climate_change_ocean"</span>)</span></code></pr
 <div class="cell">
 <div class="cell-output-display">
 <p><strong>Variable type: character</strong></p>
-<table class="table table-sm table-striped small">
+<table class="caption-top table table-sm table-striped small">
 <colgroup>
 <col style="width: 26%">
 <col style="width: 12%">
@@ -1890,6 +1905,7 @@ font-style: inherit;">import</span> BytesIO</span>
 <span id="cb3-4"></span>
 <span id="cb3-5"><span class="kw" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">def</span> read_url_pin(name):</span>
 <span id="cb3-6">  url <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -1913,6 +1929,7 @@ background-color: null;
 font-style: inherit;">=</span> requests.get(url)</span>
 <span id="cb3-8">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">if</span> response.status_code <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
@@ -1926,9 +1943,11 @@ background-color: null;
 font-style: inherit;">=</span> pd.read_parquet(parquet_content)</span>
 <span id="cb3-11">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> pandas_dataframe</span>
 <span id="cb3-12">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">else</span>:</span>
 <span id="cb3-13">    <span class="bu" style="color: null;
 background-color: null;
@@ -1945,6 +1964,7 @@ background-color: null;
 font-style: inherit;">"</span>)</span>
 <span id="cb3-14">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> <span class="va" style="color: #111111;
 background-color: null;
 font-style: inherit;">None</span></span>
@@ -2064,7 +2084,7 @@ font-style: inherit;">"hathawayj/biggest_loser"</span>)</span></code></pre></div
 <div class="cell">
 <div class="cell-output-display">
 <p><strong>Variable type: numeric</strong></p>
-<table class="table table-sm table-striped small">
+<table class="caption-top table table-sm table-striped small">
 <colgroup>
 <col style="width: 18%">
 <col style="width: 12%">
@@ -2266,6 +2286,7 @@ font-style: inherit;">import</span> BytesIO</span>
 <span id="cb4-4"></span>
 <span id="cb4-5"><span class="kw" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">def</span> read_url_pin(name):</span>
 <span id="cb4-6">  url <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -2289,6 +2310,7 @@ background-color: null;
 font-style: inherit;">=</span> requests.get(url)</span>
 <span id="cb4-8">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">if</span> response.status_code <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
@@ -2302,9 +2324,11 @@ background-color: null;
 font-style: inherit;">=</span> pd.read_parquet(parquet_content)</span>
 <span id="cb4-11">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> pandas_dataframe</span>
 <span id="cb4-12">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">else</span>:</span>
 <span id="cb4-13">    <span class="bu" style="color: null;
 background-color: null;
@@ -2321,6 +2345,7 @@ background-color: null;
 font-style: inherit;">"</span>)</span>
 <span id="cb4-14">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> <span class="va" style="color: #111111;
 background-color: null;
 font-style: inherit;">None</span></span>
@@ -2476,7 +2501,7 @@ font-style: inherit;">"hathawayj/cardiac_arrest_health"</span>)</span></code></p
 <div class="cell">
 <div class="cell-output-display">
 <p><strong>Variable type: numeric</strong></p>
-<table class="table table-sm table-striped small">
+<table class="caption-top table table-sm table-striped small">
 <colgroup>
 <col style="width: 14%">
 <col style="width: 9%">
@@ -2968,7 +2993,7 @@ font-style: inherit;">"hathawayj/cardiac_arrest_health"</span>)</span></code></p
 <div class="cell">
 <div class="cell-output-display">
 <p><strong>Variable type: character</strong></p>
-<table class="table table-sm table-striped small">
+<table class="caption-top table table-sm table-striped small">
 <colgroup>
 <col style="width: 19%">
 <col style="width: 13%">
@@ -3157,6 +3182,7 @@ font-style: inherit;">import</span> BytesIO</span>
 <span id="cb3-4"></span>
 <span id="cb3-5"><span class="kw" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">def</span> read_url_pin(name):</span>
 <span id="cb3-6">  url <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -3180,6 +3206,7 @@ background-color: null;
 font-style: inherit;">=</span> requests.get(url)</span>
 <span id="cb3-8">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">if</span> response.status_code <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
@@ -3193,9 +3220,11 @@ background-color: null;
 font-style: inherit;">=</span> pd.read_parquet(parquet_content)</span>
 <span id="cb3-11">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> pandas_dataframe</span>
 <span id="cb3-12">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">else</span>:</span>
 <span id="cb3-13">    <span class="bu" style="color: null;
 background-color: null;
@@ -3212,6 +3241,7 @@ background-color: null;
 font-style: inherit;">"</span>)</span>
 <span id="cb3-14">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> <span class="va" style="color: #111111;
 background-color: null;
 font-style: inherit;">None</span></span>
@@ -3332,7 +3362,7 @@ font-style: inherit;">"hathawayj/census_2015"</span>)</span></code></pre></div>
 <div class="cell">
 <div class="cell-output-display">
 <p><strong>Variable type: numeric</strong></p>
-<table class="table table-sm table-striped small">
+<table class="caption-top table table-sm table-striped small">
 <colgroup>
 <col style="width: 16%">
 <col style="width: 11%">
@@ -3538,6 +3568,7 @@ font-style: inherit;">import</span> BytesIO</span>
 <span id="cb4-4"></span>
 <span id="cb4-5"><span class="kw" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">def</span> read_url_pin(name):</span>
 <span id="cb4-6">  url <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -3561,6 +3592,7 @@ background-color: null;
 font-style: inherit;">=</span> requests.get(url)</span>
 <span id="cb4-8">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">if</span> response.status_code <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
@@ -3574,9 +3606,11 @@ background-color: null;
 font-style: inherit;">=</span> pd.read_parquet(parquet_content)</span>
 <span id="cb4-11">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> pandas_dataframe</span>
 <span id="cb4-12">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">else</span>:</span>
 <span id="cb4-13">    <span class="bu" style="color: null;
 background-color: null;
@@ -3593,6 +3627,7 @@ background-color: null;
 font-style: inherit;">"</span>)</span>
 <span id="cb4-14">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> <span class="va" style="color: #111111;
 background-color: null;
 font-style: inherit;">None</span></span>
@@ -3735,7 +3770,7 @@ font-style: inherit;">"hathawayj/copd_rehab"</span>)</span></code></pre></div>
 <div class="cell">
 <div class="cell-output-display">
 <p><strong>Variable type: numeric</strong></p>
-<table class="table table-sm table-striped small">
+<table class="caption-top table table-sm table-striped small">
 <colgroup>
 <col style="width: 12%">
 <col style="width: 8%">
@@ -4058,7 +4093,7 @@ font-style: inherit;">"hathawayj/copd_rehab"</span>)</span></code></pre></div>
 <div class="cell">
 <div class="cell-output-display">
 <p><strong>Variable type: character</strong></p>
-<table class="table table-sm table-striped small">
+<table class="caption-top table table-sm table-striped small">
 <colgroup>
 <col style="width: 19%">
 <col style="width: 13%">
@@ -4247,6 +4282,7 @@ font-style: inherit;">import</span> BytesIO</span>
 <span id="cb3-4"></span>
 <span id="cb3-5"><span class="kw" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">def</span> read_url_pin(name):</span>
 <span id="cb3-6">  url <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -4270,6 +4306,7 @@ background-color: null;
 font-style: inherit;">=</span> requests.get(url)</span>
 <span id="cb3-8">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">if</span> response.status_code <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
@@ -4283,9 +4320,11 @@ background-color: null;
 font-style: inherit;">=</span> pd.read_parquet(parquet_content)</span>
 <span id="cb3-11">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> pandas_dataframe</span>
 <span id="cb3-12">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">else</span>:</span>
 <span id="cb3-13">    <span class="bu" style="color: null;
 background-color: null;
@@ -4302,6 +4341,7 @@ background-color: null;
 font-style: inherit;">"</span>)</span>
 <span id="cb3-14">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> <span class="va" style="color: #111111;
 background-color: null;
 font-style: inherit;">None</span></span>
@@ -4424,7 +4464,7 @@ font-style: inherit;">"hathawayj/movies"</span>)</span></code></pre></div>
 <div class="cell">
 <div class="cell-output-display">
 <p><strong>Variable type: numeric</strong></p>
-<table class="table table-sm table-striped small">
+<table class="caption-top table table-sm table-striped small">
 <colgroup>
 <col style="width: 18%">
 <col style="width: 13%">
@@ -4474,7 +4514,7 @@ font-style: inherit;">"hathawayj/movies"</span>)</span></code></pre></div>
 <div class="cell">
 <div class="cell-output-display">
 <p><strong>Variable type: character</strong></p>
-<table class="table table-sm table-striped small">
+<table class="caption-top table table-sm table-striped small">
 <colgroup>
 <col style="width: 19%">
 <col style="width: 13%">
@@ -4673,6 +4713,7 @@ font-style: inherit;">import</span> BytesIO</span>
 <span id="cb3-4"></span>
 <span id="cb3-5"><span class="kw" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">def</span> read_url_pin(name):</span>
 <span id="cb3-6">  url <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -4696,6 +4737,7 @@ background-color: null;
 font-style: inherit;">=</span> requests.get(url)</span>
 <span id="cb3-8">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">if</span> response.status_code <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
@@ -4709,9 +4751,11 @@ background-color: null;
 font-style: inherit;">=</span> pd.read_parquet(parquet_content)</span>
 <span id="cb3-11">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> pandas_dataframe</span>
 <span id="cb3-12">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">else</span>:</span>
 <span id="cb3-13">    <span class="bu" style="color: null;
 background-color: null;
@@ -4728,6 +4772,7 @@ background-color: null;
 font-style: inherit;">"</span>)</span>
 <span id="cb3-14">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> <span class="va" style="color: #111111;
 background-color: null;
 font-style: inherit;">None</span></span>
@@ -4848,7 +4893,7 @@ font-style: inherit;">"hathawayj/singer_heights"</span>)</span></code></pre></di
 <div class="cell">
 <div class="cell-output-display">
 <p><strong>Variable type: numeric</strong></p>
-<table class="table table-sm table-striped small">
+<table class="caption-top table table-sm table-striped small">
 <colgroup>
 <col style="width: 18%">
 <col style="width: 13%">
@@ -4898,7 +4943,7 @@ font-style: inherit;">"hathawayj/singer_heights"</span>)</span></code></pre></di
 <div class="cell">
 <div class="cell-output-display">
 <p><strong>Variable type: character</strong></p>
-<table class="table table-sm table-striped small">
+<table class="caption-top table table-sm table-striped small">
 <colgroup>
 <col style="width: 19%">
 <col style="width: 13%">
@@ -5077,6 +5122,7 @@ font-style: inherit;">import</span> BytesIO</span>
 <span id="cb3-4"></span>
 <span id="cb3-5"><span class="kw" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">def</span> read_url_pin(name):</span>
 <span id="cb3-6">  url <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -5100,6 +5146,7 @@ background-color: null;
 font-style: inherit;">=</span> requests.get(url)</span>
 <span id="cb3-8">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">if</span> response.status_code <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
@@ -5113,9 +5160,11 @@ background-color: null;
 font-style: inherit;">=</span> pd.read_parquet(parquet_content)</span>
 <span id="cb3-11">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> pandas_dataframe</span>
 <span id="cb3-12">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">else</span>:</span>
 <span id="cb3-13">    <span class="bu" style="color: null;
 background-color: null;
@@ -5132,6 +5181,7 @@ background-color: null;
 font-style: inherit;">"</span>)</span>
 <span id="cb3-14">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> <span class="va" style="color: #111111;
 background-color: null;
 font-style: inherit;">None</span></span>
@@ -5255,7 +5305,7 @@ font-style: inherit;">"hathawayj/soccer_shoes"</span>)</span></code></pre></div>
 <div class="cell">
 <div class="cell-output-display">
 <p><strong>Variable type: numeric</strong></p>
-<table class="table table-sm table-striped small">
+<table class="caption-top table table-sm table-striped small">
 <colgroup>
 <col style="width: 18%">
 <col style="width: 13%">
@@ -5305,7 +5355,7 @@ font-style: inherit;">"hathawayj/soccer_shoes"</span>)</span></code></pre></div>
 <div class="cell">
 <div class="cell-output-display">
 <p><strong>Variable type: character</strong></p>
-<table class="table table-sm table-striped small">
+<table class="caption-top table table-sm table-striped small">
 <colgroup>
 <col style="width: 20%">
 <col style="width: 13%">
@@ -5504,6 +5554,7 @@ font-style: inherit;">import</span> BytesIO</span>
 <span id="cb3-4"></span>
 <span id="cb3-5"><span class="kw" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">def</span> read_url_pin(name):</span>
 <span id="cb3-6">  url <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -5527,6 +5578,7 @@ background-color: null;
 font-style: inherit;">=</span> requests.get(url)</span>
 <span id="cb3-8">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">if</span> response.status_code <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
@@ -5540,9 +5592,11 @@ background-color: null;
 font-style: inherit;">=</span> pd.read_parquet(parquet_content)</span>
 <span id="cb3-11">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> pandas_dataframe</span>
 <span id="cb3-12">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">else</span>:</span>
 <span id="cb3-13">    <span class="bu" style="color: null;
 background-color: null;
@@ -5559,6 +5613,7 @@ background-color: null;
 font-style: inherit;">"</span>)</span>
 <span id="cb3-14">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> <span class="va" style="color: #111111;
 background-color: null;
 font-style: inherit;">None</span></span>
@@ -5683,7 +5738,7 @@ font-style: inherit;">"hathawayj/soviet_accidents"</span>)</span></code></pre></
 <div class="cell">
 <div class="cell-output-display">
 <p><strong>Variable type: numeric</strong></p>
-<table class="table table-sm table-striped small">
+<table class="caption-top table table-sm table-striped small">
 <colgroup>
 <col style="width: 15%">
 <col style="width: 10%">
@@ -5772,7 +5827,7 @@ font-style: inherit;">"hathawayj/soviet_accidents"</span>)</span></code></pre></
 <div class="cell">
 <div class="cell-output-display">
 <p><strong>Variable type: character</strong></p>
-<table class="table table-sm table-striped small">
+<table class="caption-top table table-sm table-striped small">
 <colgroup>
 <col style="width: 19%">
 <col style="width: 13%">
@@ -5951,6 +6006,7 @@ font-style: inherit;">import</span> BytesIO</span>
 <span id="cb3-4"></span>
 <span id="cb3-5"><span class="kw" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">def</span> read_url_pin(name):</span>
 <span id="cb3-6">  url <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -5974,6 +6030,7 @@ background-color: null;
 font-style: inherit;">=</span> requests.get(url)</span>
 <span id="cb3-8">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">if</span> response.status_code <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
@@ -5987,9 +6044,11 @@ background-color: null;
 font-style: inherit;">=</span> pd.read_parquet(parquet_content)</span>
 <span id="cb3-11">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> pandas_dataframe</span>
 <span id="cb3-12">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">else</span>:</span>
 <span id="cb3-13">    <span class="bu" style="color: null;
 background-color: null;
@@ -6006,6 +6065,7 @@ background-color: null;
 font-style: inherit;">"</span>)</span>
 <span id="cb3-14">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> <span class="va" style="color: #111111;
 background-color: null;
 font-style: inherit;">None</span></span>
@@ -6126,7 +6186,7 @@ font-style: inherit;">"hathawayj/speed_of_light_by_michelson_1879"</span>)</span
 <div class="cell">
 <div class="cell-output-display">
 <p><strong>Variable type: numeric</strong></p>
-<table class="table table-sm table-striped small">
+<table class="caption-top table table-sm table-striped small">
 <colgroup>
 <col style="width: 15%">
 <col style="width: 11%">
@@ -6326,6 +6386,7 @@ font-style: inherit;">import</span> BytesIO</span>
 <span id="cb4-4"></span>
 <span id="cb4-5"><span class="kw" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">def</span> read_url_pin(name):</span>
 <span id="cb4-6">  url <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -6349,6 +6410,7 @@ background-color: null;
 font-style: inherit;">=</span> requests.get(url)</span>
 <span id="cb4-8">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">if</span> response.status_code <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
@@ -6362,9 +6424,11 @@ background-color: null;
 font-style: inherit;">=</span> pd.read_parquet(parquet_content)</span>
 <span id="cb4-11">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> pandas_dataframe</span>
 <span id="cb4-12">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">else</span>:</span>
 <span id="cb4-13">    <span class="bu" style="color: null;
 background-color: null;
@@ -6381,6 +6445,7 @@ background-color: null;
 font-style: inherit;">"</span>)</span>
 <span id="cb4-14">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> <span class="va" style="color: #111111;
 background-color: null;
 font-style: inherit;">None</span></span>
@@ -6504,7 +6569,7 @@ font-style: inherit;">"hathawayj/speed_of_light_by_michelson_1882"</span>)</span
 <div class="cell">
 <div class="cell-output-display">
 <p><strong>Variable type: numeric</strong></p>
-<table class="table table-sm table-striped small">
+<table class="caption-top table table-sm table-striped small">
 <colgroup>
 <col style="width: 20%">
 <col style="width: 9%">
@@ -6567,7 +6632,7 @@ font-style: inherit;">"hathawayj/speed_of_light_by_michelson_1882"</span>)</span
 <div class="cell">
 <div class="cell-output-display">
 <p><strong>Variable type: character</strong></p>
-<table class="table table-sm table-striped small">
+<table class="caption-top table table-sm table-striped small">
 <colgroup>
 <col style="width: 27%">
 <col style="width: 12%">
@@ -6756,6 +6821,7 @@ font-style: inherit;">import</span> BytesIO</span>
 <span id="cb3-4"></span>
 <span id="cb3-5"><span class="kw" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">def</span> read_url_pin(name):</span>
 <span id="cb3-6">  url <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -6779,6 +6845,7 @@ background-color: null;
 font-style: inherit;">=</span> requests.get(url)</span>
 <span id="cb3-8">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">if</span> response.status_code <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
@@ -6792,9 +6859,11 @@ background-color: null;
 font-style: inherit;">=</span> pd.read_parquet(parquet_content)</span>
 <span id="cb3-11">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> pandas_dataframe</span>
 <span id="cb3-12">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">else</span>:</span>
 <span id="cb3-13">    <span class="bu" style="color: null;
 background-color: null;
@@ -6811,6 +6880,7 @@ background-color: null;
 font-style: inherit;">"</span>)</span>
 <span id="cb3-14">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> <span class="va" style="color: #111111;
 background-color: null;
 font-style: inherit;">None</span></span>
@@ -6933,7 +7003,7 @@ font-style: inherit;">"hathawayj/super_bowl_movies"</span>)</span></code></pre><
 <div class="cell">
 <div class="cell-output-display">
 <p><strong>Variable type: numeric</strong></p>
-<table class="table table-sm table-striped small">
+<table class="caption-top table table-sm table-striped small">
 <colgroup>
 <col style="width: 19%">
 <col style="width: 10%">
@@ -7022,7 +7092,7 @@ font-style: inherit;">"hathawayj/super_bowl_movies"</span>)</span></code></pre><
 <div class="cell">
 <div class="cell-output-display">
 <p><strong>Variable type: character</strong></p>
-<table class="table table-sm table-striped small">
+<table class="caption-top table table-sm table-striped small">
 <colgroup>
 <col style="width: 19%">
 <col style="width: 13%">
@@ -7201,6 +7271,7 @@ font-style: inherit;">import</span> BytesIO</span>
 <span id="cb3-4"></span>
 <span id="cb3-5"><span class="kw" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">def</span> read_url_pin(name):</span>
 <span id="cb3-6">  url <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -7224,6 +7295,7 @@ background-color: null;
 font-style: inherit;">=</span> requests.get(url)</span>
 <span id="cb3-8">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">if</span> response.status_code <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
@@ -7237,9 +7309,11 @@ background-color: null;
 font-style: inherit;">=</span> pd.read_parquet(parquet_content)</span>
 <span id="cb3-11">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> pandas_dataframe</span>
 <span id="cb3-12">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">else</span>:</span>
 <span id="cb3-13">    <span class="bu" style="color: null;
 background-color: null;
@@ -7256,6 +7330,7 @@ background-color: null;
 font-style: inherit;">"</span>)</span>
 <span id="cb3-14">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> <span class="va" style="color: #111111;
 background-color: null;
 font-style: inherit;">None</span></span>
@@ -7374,7 +7449,7 @@ font-style: inherit;">"hathawayj/twins_diabetes"</span>)</span></code></pre></di
 <div class="cell">
 <div class="cell-output-display">
 <p><strong>Variable type: numeric</strong></p>
-<table class="table table-sm table-striped small">
+<table class="caption-top table table-sm table-striped small">
 <colgroup>
 <col style="width: 19%">
 <col style="width: 12%">
@@ -7576,6 +7651,7 @@ font-style: inherit;">import</span> BytesIO</span>
 <span id="cb4-4"></span>
 <span id="cb4-5"><span class="kw" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">def</span> read_url_pin(name):</span>
 <span id="cb4-6">  url <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -7599,6 +7675,7 @@ background-color: null;
 font-style: inherit;">=</span> requests.get(url)</span>
 <span id="cb4-8">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">if</span> response.status_code <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
@@ -7612,9 +7689,11 @@ background-color: null;
 font-style: inherit;">=</span> pd.read_parquet(parquet_content)</span>
 <span id="cb4-11">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> pandas_dataframe</span>
 <span id="cb4-12">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">else</span>:</span>
 <span id="cb4-13">    <span class="bu" style="color: null;
 background-color: null;
@@ -7631,6 +7710,7 @@ background-color: null;
 font-style: inherit;">"</span>)</span>
 <span id="cb4-14">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> <span class="va" style="color: #111111;
 background-color: null;
 font-style: inherit;">None</span></span>
@@ -7752,7 +7832,7 @@ font-style: inherit;">"hathawayj/vertebral_heights"</span>)</span></code></pre><
 <div class="cell">
 <div class="cell-output-display">
 <p><strong>Variable type: numeric</strong></p>
-<table class="table table-sm table-striped small">
+<table class="caption-top table table-sm table-striped small">
 <colgroup>
 <col style="width: 18%">
 <col style="width: 13%">
@@ -7802,7 +7882,7 @@ font-style: inherit;">"hathawayj/vertebral_heights"</span>)</span></code></pre><
 <div class="cell">
 <div class="cell-output-display">
 <p><strong>Variable type: character</strong></p>
-<table class="table table-sm table-striped small">
+<table class="caption-top table table-sm table-striped small">
 <colgroup>
 <col style="width: 19%">
 <col style="width: 13%">
@@ -7991,6 +8071,7 @@ font-style: inherit;">import</span> BytesIO</span>
 <span id="cb3-4"></span>
 <span id="cb3-5"><span class="kw" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">def</span> read_url_pin(name):</span>
 <span id="cb3-6">  url <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -8014,6 +8095,7 @@ background-color: null;
 font-style: inherit;">=</span> requests.get(url)</span>
 <span id="cb3-8">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">if</span> response.status_code <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
@@ -8027,9 +8109,11 @@ background-color: null;
 font-style: inherit;">=</span> pd.read_parquet(parquet_content)</span>
 <span id="cb3-11">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> pandas_dataframe</span>
 <span id="cb3-12">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">else</span>:</span>
 <span id="cb3-13">    <span class="bu" style="color: null;
 background-color: null;
@@ -8046,6 +8130,7 @@ background-color: null;
 font-style: inherit;">"</span>)</span>
 <span id="cb3-14">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> <span class="va" style="color: #111111;
 background-color: null;
 font-style: inherit;">None</span></span>
@@ -8166,7 +8251,7 @@ font-style: inherit;">"hathawayj/world_cup_heart_attacks"</span>)</span></code><
 <div class="cell">
 <div class="cell-output-display">
 <p><strong>Variable type: numeric</strong></p>
-<table class="table table-sm table-striped small">
+<table class="caption-top table table-sm table-striped small">
 <colgroup>
 <col style="width: 14%">
 <col style="width: 10%">
@@ -8372,6 +8457,7 @@ font-style: inherit;">import</span> BytesIO</span>
 <span id="cb4-4"></span>
 <span id="cb4-5"><span class="kw" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">def</span> read_url_pin(name):</span>
 <span id="cb4-6">  url <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -8395,6 +8481,7 @@ background-color: null;
 font-style: inherit;">=</span> requests.get(url)</span>
 <span id="cb4-8">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">if</span> response.status_code <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
@@ -8408,9 +8495,11 @@ background-color: null;
 font-style: inherit;">=</span> pd.read_parquet(parquet_content)</span>
 <span id="cb4-11">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> pandas_dataframe</span>
 <span id="cb4-12">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">else</span>:</span>
 <span id="cb4-13">    <span class="bu" style="color: null;
 background-color: null;
@@ -8427,6 +8516,7 @@ background-color: null;
 font-style: inherit;">"</span>)</span>
 <span id="cb4-14">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> <span class="va" style="color: #111111;
 background-color: null;
 font-style: inherit;">None</span></span>
@@ -8546,7 +8636,7 @@ font-style: inherit;">"hathawayj/wrong_site_wrong_patient"</span>)</span></code>
 <div class="cell">
 <div class="cell-output-display">
 <p><strong>Variable type: numeric</strong></p>
-<table class="table table-sm table-striped small">
+<table class="caption-top table table-sm table-striped small">
 <colgroup>
 <col style="width: 32%">
 <col style="width: 10%">
@@ -8761,6 +8851,7 @@ font-style: inherit;">import</span> BytesIO</span>
 <span id="cb4-4"></span>
 <span id="cb4-5"><span class="kw" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">def</span> read_url_pin(name):</span>
 <span id="cb4-6">  url <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -8784,6 +8875,7 @@ background-color: null;
 font-style: inherit;">=</span> requests.get(url)</span>
 <span id="cb4-8">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">if</span> response.status_code <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
@@ -8797,9 +8889,11 @@ background-color: null;
 font-style: inherit;">=</span> pd.read_parquet(parquet_content)</span>
 <span id="cb4-11">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> pandas_dataframe</span>
 <span id="cb4-12">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">else</span>:</span>
 <span id="cb4-13">    <span class="bu" style="color: null;
 background-color: null;
@@ -8816,6 +8910,7 @@ background-color: null;
 font-style: inherit;">"</span>)</span>
 <span id="cb4-14">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> <span class="va" style="color: #111111;
 background-color: null;
 font-style: inherit;">None</span></span>
@@ -8937,7 +9032,7 @@ font-style: inherit;">"hathawayj/zinc_for_colds"</span>)</span></code></pre></di
 <div class="cell">
 <div class="cell-output-display">
 <p><strong>Variable type: numeric</strong></p>
-<table class="table table-sm table-striped small">
+<table class="caption-top table table-sm table-striped small">
 <colgroup>
 <col style="width: 11%">
 <col style="width: 8%">
@@ -9000,7 +9095,7 @@ font-style: inherit;">"hathawayj/zinc_for_colds"</span>)</span></code></pre></di
 <div class="cell">
 <div class="cell-output-display">
 <p><strong>Variable type: character</strong></p>
-<table class="table table-sm table-striped small">
+<table class="caption-top table table-sm table-striped small">
 <colgroup>
 <col style="width: 19%">
 <col style="width: 13%">
@@ -9189,6 +9284,7 @@ font-style: inherit;">import</span> BytesIO</span>
 <span id="cb3-4"></span>
 <span id="cb3-5"><span class="kw" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">def</span> read_url_pin(name):</span>
 <span id="cb3-6">  url <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -9212,6 +9308,7 @@ background-color: null;
 font-style: inherit;">=</span> requests.get(url)</span>
 <span id="cb3-8">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">if</span> response.status_code <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
@@ -9225,9 +9322,11 @@ background-color: null;
 font-style: inherit;">=</span> pd.read_parquet(parquet_content)</span>
 <span id="cb3-11">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> pandas_dataframe</span>
 <span id="cb3-12">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">else</span>:</span>
 <span id="cb3-13">    <span class="bu" style="color: null;
 background-color: null;
@@ -9244,6 +9343,7 @@ background-color: null;
 font-style: inherit;">"</span>)</span>
 <span id="cb3-14">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> <span class="va" style="color: #111111;
 background-color: null;
 font-style: inherit;">None</span></span>
